@@ -42,11 +42,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Distance\CosineSimilarity.cs" />
+    <Compile Include="Distance\DistanceCalculator.cs" />
+    <Compile Include="Distance\EuclideanDistance.cs" />
+    <Compile Include="Distance\ManhattanDistance.cs" />
+    <Compile Include="Distance\PearsonCorrelation.cs" />
+    <Compile Include="Distance\SupremumDistance.cs" />
+    <Compile Include="Hdbscanstar\Cluster.cs" />
+    <Compile Include="Hdbscanstar\Constraint.cs" />
+    <Compile Include="Hdbscanstar\HDBSCANStar.cs" />
+    <Compile Include="Hdbscanstar\HDBSCANStarRunner.cs" />
+    <Compile Include="Hdbscanstar\OutlierScore.cs" />
+    <Compile Include="Hdbscanstar\UndirectedGraph.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\BitSet.cs" />
+    <Compile Include="Utils\ExtractExpressionFromTextFiles.cs" />
+    <Compile Include="Utils\TextFileToExpressionVector.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="dataset.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Samples\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
