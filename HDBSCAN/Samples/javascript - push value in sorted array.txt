@@ -1,0 +1,2 @@
+push value in sorted array
+Hi guys, I need help with this - 'the string needs to be inserted at its sorted position'. I have managed to push value in array, and then to sort value, but it's not good. Here is my bin http://jsbin.com/misuneyiwo/edit?html,js,output  submitted by /u/alghouty [link] [comments] 

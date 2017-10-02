@@ -1,0 +1,2 @@
+How do I open a Facebook url in the app on mobile view and the full page version on the desktop?
+I've been able to get the page to open on the web page on the computer using standard url - https://www.facebook.com/FaceBookPageName and opening on the app using the app deep link on the phone - fb://page/FacebookPageId but I cant figure out how to use both links because - fb://page/FacebookPageId doesn't work on the desktop. Thanks for the help. :)  submitted by /u/MilkyLlama [link] [comments] 

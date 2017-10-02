@@ -1,0 +1,2 @@
+/u/kwazimoto44 on How much ML coursework/experience is needed to actually be able to work in the industry?
+This is great, thank you. If very much depends on who you want to work for in the industry. There's a big difference between Google Brain and some tiny startup.  I guess the main thing to identify is if you'd want to make ML your full-time-all-encompassing role vs. working on a specific, more narrow application geared towards a startup, thus possibly getting rid of the need for a PhD   

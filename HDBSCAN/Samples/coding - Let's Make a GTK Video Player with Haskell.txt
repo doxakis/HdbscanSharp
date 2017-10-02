@@ -1,0 +1,2 @@
+Let's Make a GTK Video Player with Haskell
+submitted by /u/iamkeyur [link] [comments] 

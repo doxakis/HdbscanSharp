@@ -1,0 +1,2 @@
+/u/lakshayg on Commercial use of open source libraries.
+I find this helpful as a quick reference for various licenses: https://choosealicense.com   

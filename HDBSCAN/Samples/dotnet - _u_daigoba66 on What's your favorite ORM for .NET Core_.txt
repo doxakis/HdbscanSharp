@@ -1,0 +1,2 @@
+/u/daigoba66 on What's your favorite ORM for .NET Core?
+For full ORMs I think the only options are EF Core or LLBLGen. There are plenty of micro-ORMs.   

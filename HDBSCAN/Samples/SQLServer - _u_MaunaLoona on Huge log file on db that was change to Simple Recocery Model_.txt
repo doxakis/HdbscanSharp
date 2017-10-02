@@ -1,0 +1,2 @@
+/u/MaunaLoona on Huge log file on db that was change to Simple Recocery Model.
+Just a word of caution -- shrinking a 50 gb log file might take a while.   

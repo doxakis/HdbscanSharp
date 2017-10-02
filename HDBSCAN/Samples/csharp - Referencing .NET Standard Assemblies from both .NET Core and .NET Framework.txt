@@ -1,0 +1,2 @@
+Referencing .NET Standard Assemblies from both .NET Core and .NET Framework
+ submitted by /u/klootas [link] [comments]    

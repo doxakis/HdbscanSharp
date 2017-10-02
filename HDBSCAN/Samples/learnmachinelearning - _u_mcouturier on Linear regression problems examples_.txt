@@ -1,0 +1,2 @@
+/u/mcouturier on Linear regression problems examples?
+I guess regarding the postal code you can give a score from 0 to 1 depending on which postal code you're in. But I understand what you meant to explain, I had doubts about that !   

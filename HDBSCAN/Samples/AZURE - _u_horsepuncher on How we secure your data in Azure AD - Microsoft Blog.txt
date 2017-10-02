@@ -1,0 +1,2 @@
+/u/horsepuncher on How we secure your data in Azure AD - Microsoft Blog
+Kinda skips around the main issue with cloud security breaches is almost all a result if poor resource management and nothing else. Everything in that article is a standard with all cloud companies and not where the issues have been.   

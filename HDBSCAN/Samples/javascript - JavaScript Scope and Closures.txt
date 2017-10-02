@@ -1,0 +1,2 @@
+JavaScript Scope and Closures
+submitted by /u/speckz [link] [comments] 

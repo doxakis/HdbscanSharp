@@ -1,0 +1,2 @@
+"Using 'dbghelp.dll' version '4.0.5'" error
+every 5 seconds the "Using 'dbghelp.dll' version '4.0.5'" error is logged in SQL Server 2008 R2. i already installed SP3 for SQL Server 2008 R2 but issue still appears. Microsoft write "The issue was fixed in the cumulative update 12 for Sql Server 2008 RS SP2". But after installation of SP3 its still available. any tips? THX  submitted by /u/ekime89 [link] [comments] 

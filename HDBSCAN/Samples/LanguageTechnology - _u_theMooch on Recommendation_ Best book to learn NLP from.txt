@@ -1,0 +1,2 @@
+/u/theMooch on Recommendation: Best book to learn NLP from
+You can read an updated version of the book online at nltk.org/book   

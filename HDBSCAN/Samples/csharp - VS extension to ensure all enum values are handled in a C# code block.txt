@@ -1,0 +1,2 @@
+VS extension to ensure all enum values are handled in a C# code block
+ submitted by /u/ajennings [link] [comments]    

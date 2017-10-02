@@ -1,0 +1,2 @@
+[P] A new kind of pooling layer for faster and sharper convergence
+ submitted by /u/singlasahil14 [link] [comments]    

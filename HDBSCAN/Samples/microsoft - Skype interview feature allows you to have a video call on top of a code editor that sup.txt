@@ -1,0 +1,2 @@
+Skype interview feature allows you to have a video call on top of a code editor that supports 7 popular programming languages: C, C++, C#, Java, JavaScript, Python, and Ruby
+ submitted by /u/Khaotic_Kernel [link] [comments]    

@@ -1,0 +1,2 @@
+/u/pelrun on I want to replicate camScanner app.
+That image is literally straight out of the tutorials at http://www.pyimagesearch.com/... More specifically http://www.pyimagesearch.com/2014/09/01/build-kick-ass-mobile-document-scanner-just-5-minutes/   

@@ -1,0 +1,2 @@
+/u/LukaLightBringer on Javascript spacing matters... sort of?
+In the first example the period is interpreted as part of a number literal so the interpreter is expecting a number but gets a 't' character instead, thus throwing an error. In the second example the period is interpreted as a property accessor since the space terminates the number literal interpretation.   

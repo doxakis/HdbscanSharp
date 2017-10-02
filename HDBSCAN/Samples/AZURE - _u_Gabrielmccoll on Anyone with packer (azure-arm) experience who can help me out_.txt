@@ -1,0 +1,2 @@
+/u/Gabrielmccoll on Anyone with packer (azure-arm) experience who can help me out?
+Of course ! If it's not firewall or DNS it's proxy. Thanks for letting me know   

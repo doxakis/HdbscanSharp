@@ -1,0 +1,2 @@
+/u/nirataro on Which ASP.NET technology to use?
+Mvc core 2. There is little reason to use MVC 5   

@@ -1,0 +1,2 @@
+How can I find a URL needle in an internet haystack?
+I'm trying to find one valid file on a website, and I know the structure of its address is website.com/.../filenameXXXXX.png, where XXXXX is a random 5-digit number. I know 'filename', but I don't know the number, or how to quickly access 100000 URL's, only one of which is real. Can someone help me out here?  submitted by /u/Frogstarpancake [link] [comments] 

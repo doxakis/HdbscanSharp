@@ -1,0 +1,2 @@
+/u/adammathias on When learning a vector space from unstructured text using multi-dimensional scaling, should you remove infrequent words?
+I should have mentioned: just as often we see the opposite - people removing stopwords or symbols.   

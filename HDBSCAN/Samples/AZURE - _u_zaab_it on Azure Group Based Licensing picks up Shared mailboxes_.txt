@@ -1,0 +1,2 @@
+/u/zaab_it on Azure Group Based Licensing picks up Shared mailboxes?
+If the shared mailboxes are in the group... It's normal. Shared mailbox are link to a user object in Azure AD.   

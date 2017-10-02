@@ -1,0 +1,2 @@
+/u/TheJamaican on Computer Vision / Environment Mapping Question
+Thanks Laxn and Joe, your comments lead me to find opencv and aruco markers. I'm working with that now and it appears that might do what I want. I really appreciate it.   

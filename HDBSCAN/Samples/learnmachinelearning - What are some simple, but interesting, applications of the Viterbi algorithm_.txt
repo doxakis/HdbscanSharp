@@ -1,0 +1,2 @@
+What are some simple, but interesting, applications of the Viterbi algorithm?
+I know about POS tagging but that's a standard example and I'm looking to apply the algorithm to something different. What are your suggestions?  submitted by /u/starstruck_21 [link] [comments] 

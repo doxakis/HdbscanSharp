@@ -1,0 +1,2 @@
+/u/djsjdnksls on Learning ML functions with C++, need help for library.
+For neural networks tensorflow works for c++ as well. And for regular classifiers, you could use dlib(http://dlib.net/ml.html) which boasts being much faster than other libraries such as sklearn   

@@ -1,0 +1,2 @@
+Configuring Database Mail Notifications in MS SQL Server
+submitted by /u/Jimmy_Lor [link] [comments] 

@@ -1,0 +1,2 @@
+[D] Good tutorial or introduction to POMDPs
+Is there a text with a good mathematical treatment of POMDPs and on the approximate/exact methods of solving them? I did a prelim google search, but I couldn't find a comprehensive one.  submitted by /u/bronzestick [link] [comments] 

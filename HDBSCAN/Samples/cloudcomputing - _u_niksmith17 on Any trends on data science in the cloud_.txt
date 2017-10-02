@@ -1,0 +1,2 @@
+/u/niksmith17 on Any trends on data science in the cloud?
+I recently read a great article on data science industry perspectives. Here is a link if you are interested: https://devops.com/data-science-industry-perspectives-cloud/   

@@ -1,0 +1,2 @@
+/u/webauteur on Career in Artificial Intelligence
+I keep running into insurmountable technical issues. Over the Labor Day weekend I valiantly tried to get my Movidius Neural Compute Stick working and failed. Then I tried to install Caffe on Windows and encountered endless compiler errors. Also I can't run the script to create the AWS EC2 instance I need for a course on http://course.fast.ai I wasted my entire Labor Day weekend struggling with these technical problems. :(   

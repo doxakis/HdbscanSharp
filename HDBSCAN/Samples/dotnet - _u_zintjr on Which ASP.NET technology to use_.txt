@@ -1,0 +1,2 @@
+/u/zintjr on Which ASP.NET technology to use?
+Seems like Asp.Net Core Razor Pages would be a good fit for you; here is a blog post someone posted a few days ago that covers it. Good luck!   

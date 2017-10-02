@@ -1,0 +1,2 @@
+/u/sentient_machine on Anyone here familiar with Document Frequency Thresholding?
+Okay thanks for the explanation. But how do we decide the right threshold number for the experiment?   

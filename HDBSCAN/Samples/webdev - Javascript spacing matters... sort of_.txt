@@ -1,0 +1,2 @@
+Javascript spacing matters... sort of?
+So @wesbos tweeted out today an issue he was having with octal toString() conversions. I messed around with it and found that  078.toString(8)  throws an error, but  078 .toString(8)  does not. (difference being the space). Why is that? Why does the space affect how the code runs? Is this in error in the implementation? Are there any other weird edge cases like this?  submitted by /u/BritishAlien [link] [comments] 

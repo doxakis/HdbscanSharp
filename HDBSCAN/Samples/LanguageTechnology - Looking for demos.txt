@@ -1,0 +1,2 @@
+Looking for demos
+Hi I have a friend coming from cognitive psychology and linguistics who is very skeptical about the progress of deep learning and NLP and I would like to show him some examples of automatic sentence generation or sentence completions. He is especially skeptical about a topic called long-term dependencies and grammatical correcteness. Ideally they would be online demos such as the one of Sutskever. Anybody can help me out?  submitted by /u/sjap [link] [comments] 

@@ -1,0 +1,2 @@
+"Do the people who design your JavaScript framework actually use it? The answer for Angular 1 and 2 is no. This is really important."
+submitted by /u/textfile [link] [comments] 

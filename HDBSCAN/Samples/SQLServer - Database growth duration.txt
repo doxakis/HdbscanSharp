@@ -1,0 +1,2 @@
+Database growth duration
+What would cause database growth not to be instant? I have IFI enabled and confirmed it's working by trace flag output in the error log for zeroing on data files. I have low latency storage confirmed by monitoring.  submitted by /u/unexpected_potato [link] [comments] 

@@ -1,0 +1,2 @@
+How to get only some data from one database to another
+Our company has some data that is in a test database that we now want in our live database. However, our live database continued being worked in while we also worked in the test, so I won't be able to just take all the data in test and put it into live. Is there any way to insert only certain data from test into live? This is in Infor Visual.  submitted by /u/ArmenianCustodian [link] [comments] 

@@ -1,0 +1,2 @@
+/u/Skuto on A Python module for parallel optimization of expensive black-box functions
+Quickly skimming the paper, I'm missing a comparison with other work in this field. Parallel search is typical for algorithms in this field, so that isn't new. And with expensive evaluations, speed of convergence is paramount. But I don't see any evaluation of that for the proposed method.   

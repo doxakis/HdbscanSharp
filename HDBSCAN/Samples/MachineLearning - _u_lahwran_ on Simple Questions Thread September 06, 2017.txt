@@ -1,0 +1,2 @@
+/u/lahwran_ on Simple Questions Thread September 06, 2017
+"see" is unclear here, and I think if you defined it clearly enough, you would recognize what the computer is doing as "seeing", but still consider it to be "processing it pixel by pixel". the useful answer is "the computer is doing the same vague class of perception thing that human visual systems do, even though it's not exactly the same implementation or as good at its job yet." depending on the model, there would probably be some features that matched the one white pixel.   

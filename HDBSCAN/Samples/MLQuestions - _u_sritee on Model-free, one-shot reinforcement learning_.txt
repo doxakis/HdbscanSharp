@@ -1,0 +1,2 @@
+/u/sritee on Model-free, one-shot reinforcement learning?
+I actually worked on this problem last winter on a real vehicle, albeit failed to get it to work. I guess we just get as much data as possible and train traditional deep rl. Problem is that we cannot sample everything eg. in simulation the agent gets to choose the actions, here everything is done off-policy. I think doing this on a vehicle and getting it to work will be groundbreaking.   

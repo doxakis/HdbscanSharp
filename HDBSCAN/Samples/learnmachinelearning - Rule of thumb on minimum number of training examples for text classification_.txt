@@ -1,0 +1,2 @@
+Rule of thumb on minimum number of training examples for text classification?
+Ideally the more text the better. But is there a rule of thumb on the minimum number of training examples for text classification? e.g. If I am trying to predict short sentences of text against 16 labels, and post-preprocessing my input vector is a TF-IDF vector of ~530 words, what's the minimum number of samples I should aim for before testing?  submitted by /u/BaddWolff- [link] [comments] 

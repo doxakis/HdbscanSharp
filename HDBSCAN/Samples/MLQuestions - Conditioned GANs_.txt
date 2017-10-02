@@ -1,0 +1,2 @@
+Conditioned GANs.
+Wanted to do something like this - http://scribbler.eye.gatech.edu/paper.pdf. could someone point me to working model for this? They have mentioned building on (https://github.com/TengdaHan/Convolutional_Sketch_Inversion). However, I do not have much experience with GANs and do not know how to adapt a normal CNN to a GAN. Any help with this would be greatly appreciated too.  submitted by /u/minnuu [link] [comments] 

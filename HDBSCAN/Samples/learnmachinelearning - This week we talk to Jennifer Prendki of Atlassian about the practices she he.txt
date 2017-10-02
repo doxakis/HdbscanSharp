@@ -1,0 +1,2 @@
+This week we talk to Jennifer Prendki of Atlassian about the practices she helped develop at WalmartLabs, including the measurement and management of machine learning models in production and more generally, building agile processes and teams from machine learning.
+ submitted by /u/Fatman_Johnson [link] [comments]    

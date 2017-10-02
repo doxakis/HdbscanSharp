@@ -1,0 +1,2 @@
+/u/nosoupforyou on Question About DataGrid Center in XAML
+Won't this work?     I haven't tried doing this while using a setter property on the overall columns but I'd assume it would work.   

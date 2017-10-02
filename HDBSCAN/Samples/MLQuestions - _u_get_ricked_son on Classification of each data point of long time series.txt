@@ -1,0 +1,2 @@
+/u/get_ricked_son on Classification of each data point of long time series
+Sorry to barge in but what would you do in case there were segments of classes?   

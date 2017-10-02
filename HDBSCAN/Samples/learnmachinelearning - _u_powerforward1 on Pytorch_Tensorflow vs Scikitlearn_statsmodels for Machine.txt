@@ -1,0 +1,2 @@
+/u/powerforward1 on Pytorch/Tensorflow vs Scikitlearn/statsmodels for Machine learning
+I mean can pytorch do what skl does? Simple regression on same data set, what's the difference. Not using it for deep learning or constructing CNNs Mainly asking b/c I want to see if I can just jump to pytorch for ML instead of learning skl   

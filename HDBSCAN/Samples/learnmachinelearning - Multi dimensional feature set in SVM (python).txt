@@ -1,0 +1,2 @@
+Multi dimensional feature set in SVM (python)
+I am trying do an Image Classification where each sample of training data contains data of the current pixel with the 8 surrounding ones. Where can I find examples of SVM, in python, that use 5 or more features in training?  submitted by /u/Testher75 [link] [comments] 

@@ -1,0 +1,2 @@
+/u/Tripts on Are there web design jobs that focus on CSS/JS rather than Photoshop? (Implementing designs rather than making them)
+You can work on dev teams perfectly fine without knowing React or Angular2. That said it is something worth working towards learning but I wouldn't let that hold you back from finding a job.   

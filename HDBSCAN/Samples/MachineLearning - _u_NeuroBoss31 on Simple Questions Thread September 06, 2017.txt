@@ -1,0 +1,2 @@
+/u/NeuroBoss31 on Simple Questions Thread September 06, 2017
+I believe return_sequences=True   

@@ -1,0 +1,2 @@
+T4 Generation for nullable version of class
+I've ran into a situation where I need a version of a rather large object structure with all of the value type properties changed to their nullable counterparts in order to capture 'incomplete' data sets (coming in as JSON). I would like to generate these as real .cs files on build with all non-nullable value types converted to their nullable counterpart. Which code generation tool is best suited to this? I'm thinking either T4, Roslyn, or CS-Script?  submitted by /u/Carl64 [link] [comments] 

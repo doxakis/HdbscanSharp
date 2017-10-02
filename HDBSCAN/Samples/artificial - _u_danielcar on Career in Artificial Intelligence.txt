@@ -1,0 +1,2 @@
+/u/danielcar on Career in Artificial Intelligence
+You have lofty goals compared to me. Perhaps a basics approach would work better. Have you gone through this tutorial? http://neuralnetworksanddeeplearning.com/ Also recommend tensorflow tutorials.   

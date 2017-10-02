@@ -1,0 +1,2 @@
+How to create a floating panel in your web page?
+I want to create a simple floating panel (with custom html in it) which sticks at the bottom of page and stays sticky if the main page content scrolls. How can I do it? You can recommend any libraries to achieve this.  submitted by /u/segmentationfaulter [link] [comments] 

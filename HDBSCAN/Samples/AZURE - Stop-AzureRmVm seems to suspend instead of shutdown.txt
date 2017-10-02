@@ -1,0 +1,2 @@
+Stop-AzureRmVm seems to suspend instead of shutdown
+Has anyone ever observed a VM in Azure after being Stopped (deallocated) seems to get suspended in the "stopping" state, so that starting the VM next time will actually complete the shutdown sequence, resulting in a Stopped VM?  submitted by /u/NaughtyGee [link] [comments] 

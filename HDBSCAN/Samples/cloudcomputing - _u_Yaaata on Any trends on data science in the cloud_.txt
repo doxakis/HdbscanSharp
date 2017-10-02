@@ -1,0 +1,2 @@
+/u/Yaaata on Any trends on data science in the cloud?
+Well, there are a few emerging use-cases of data management in the cloud, especially related to machine learning technology based on Data Robot, Azure ML, IBM Watson, AWS, Google Prediction. Sneak-peaked at: https://squadex.com/insights/data-science-industry-perspectives-cloud/   

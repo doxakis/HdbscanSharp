@@ -1,0 +1,2 @@
+Single Shot Multi Detector Question: Batch Sampler
+I have read thru SSD paper, and currently reading the source code. When they say batch sampler, is it the MultiBox default boxes sampler or is it the random patch sampler? I am referring to this https://github.com/weiliu89/caffe/blob/ssd/examples/ssd/ssd_pascal_orig.py#L89 If it is the random patch sample, where I can change the size of the default boxes size?  submitted by /u/shinmember [link] [comments] 

@@ -1,0 +1,2 @@
+/u/arjosoer on Used .NET Core for a while? What are your thoughts about it?
+For a new project .net core is great. Much easier to keep your project organized and clean. Two thoughts 1) We used entity framework -- not sure I would use that again -- for 95 percent of the time it works great but for the times that it does not it is a real pain. 2) We choose to use Razor with Jquery which was fast, easy and reliable. I sometimes wonder if we should have used web api with Angular or React as we have some UI components that is stretching Jquery.   

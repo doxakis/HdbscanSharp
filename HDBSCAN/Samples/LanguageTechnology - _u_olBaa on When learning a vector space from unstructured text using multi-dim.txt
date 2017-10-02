@@ -1,0 +1,2 @@
+/u/olBaa on When learning a vector space from unstructured text using multi-dimensional scaling, should you remove infrequent words?
+MDS will work rather poorly on the bag-of-words vectors in the first place   

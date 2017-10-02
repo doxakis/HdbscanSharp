@@ -1,0 +1,2 @@
+/u/Cock-tail on [N] Meet Michelangelo: Uber's Machine Learning Platform
+There was discussion about this on HN, you might be interested: https://news.ycombinator.com/item?id=15180608 Also, look into FBLearner from Facebook. I'm also working on something similar inside my company.   

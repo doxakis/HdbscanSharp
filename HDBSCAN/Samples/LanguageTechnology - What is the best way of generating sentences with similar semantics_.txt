@@ -1,0 +1,2 @@
+What is the best way of generating sentences with similar semantics?
+Given a seed sentence, how to effectively generate a bunch of sentences having equivalent or similar semantics as the original one? Any paper or established method for this task?  submitted by /u/realcaoyuan [link] [comments] 

@@ -1,0 +1,2 @@
+AS keyword in function creation.
+whats the purpose of having AS at the end of create function? why does everyone put AS keyword after create function or other creates? I cant find any sensible result from google. any pointers ?  submitted by /u/lifosuck [link] [comments] 

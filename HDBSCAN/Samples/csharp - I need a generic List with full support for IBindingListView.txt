@@ -1,0 +1,2 @@
+I need a generic List with full support for IBindingListView
+Well, I have 3 choices: Try to implement the IBinsingListView interface (looks hard). Use a class that already implement it (probably not free) Convert the List to DataTable always :'(  Do you know something for the second choice? I've read about LinqDynamic, but I cannot find documentation.  submitted by /u/Ronald_Me [link] [comments] 

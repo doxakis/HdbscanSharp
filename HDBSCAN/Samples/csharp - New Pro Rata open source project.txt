@@ -1,0 +1,2 @@
+New Pro Rata open source project
+Hi all, I realised that I was sick and tired of writing the same pro rata logic over and over again so I created a new open source project that does this for us. It literally removes hundreds of lines throughout my financial code which involves pro rata rules. Let me know what you think and please feel free to contribute! https://github.com/RhynoVDS/ProRata.NET  submitted by /u/DevelopFrenzy [link] [comments] 

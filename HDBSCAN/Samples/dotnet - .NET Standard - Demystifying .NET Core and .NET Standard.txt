@@ -1,0 +1,2 @@
+.NET Standard - Demystifying .NET Core and .NET Standard
+submitted by /u/rschiefer [link] [comments] 

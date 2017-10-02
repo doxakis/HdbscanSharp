@@ -1,0 +1,2 @@
+Can purely <x,y,z> pre-computed point clouds be used with a monocular RGB camera for the localisation component of SLAM?
+Can the RGB camera infer 3D points and match them to a purely dense point cloud (~5cm) which is a laser scanned point cloud and not a key-point cloud? If so, do you know of any useful links to such material please?   submitted by /u/Dalv-hick [link] [comments] 

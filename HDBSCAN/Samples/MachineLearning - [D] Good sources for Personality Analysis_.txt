@@ -1,0 +1,2 @@
+[D] Good sources for Personality Analysis?
+Hey all. I'm doing a design project that involves personality analysis. From the writing that is submitted I have to be able to break down an analysis of the author's personality into five factors (Five Factors: Openness, Conscientiousness, Extroversion, Agreeableness and Neuroticism). I have training data available to me. But I'm not sure of where to start with the research or methods. Does anyone have any good starting points for the learning I need to do for this project?  submitted by /u/cthulhu_loves_us [link] [comments] 

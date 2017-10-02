@@ -1,0 +1,2 @@
+/u/adammathias on Is plagiarism detection still a topic of serious research, or has it mostly been solved to satisfaction?
+Text and document matching is subfield of natural language processing, so the major advances are the field-wide advances like word embedding and deep learning. Plagiarism detection is an application of document matching, the advances will be things like larger datasets, faster performance, integrations into organisations other tools, UX and so on.   

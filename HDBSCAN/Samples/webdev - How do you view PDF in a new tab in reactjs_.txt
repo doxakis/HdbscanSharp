@@ -1,0 +1,2 @@
+How do you view PDF in a new tab in reactjs?
+The title. If it's impossible, then will it be possible to render pdf/word doc on the page? or download it upon clicking a button? Thanks  submitted by /u/azn4lyfe000 [link] [comments] 

@@ -1,0 +1,2 @@
+/u/jsthrowitaway on for speed, is it possible to set/change the css style of a whole class without iteration through each element having that class?
+yes I was pretty clear in the title - "without iteration through each element". Anyway I received a working answer, thanks though.   

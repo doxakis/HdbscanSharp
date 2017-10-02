@@ -1,0 +1,2 @@
+/u/neobiex on Poor battery life on official Android Oreo (Google Pixel)
+Same. During phone standby, battery drains 2% per hour, and Android System + Android OS are always top two battery drainers in my list.   

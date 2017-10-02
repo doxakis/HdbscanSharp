@@ -1,0 +1,2 @@
+I'd love some feedback on my new React based portfolio!
+11 months ago, I posted here asking for advice on my old portfolio. I've grown a lot as a web developer, and I recently finished rebuilding my portfolio in React! I built the blog using a headless CMS, and a simple contact page. It also uses CSS Grid/Flexbox as well with some Material UI inspiration. I would love some feedback on the new one. Thank you to everyone who is willing to give their insight! Link to old portfolio for reference Link to new portfolio  submitted by /u/milkstarz [link] [comments] 

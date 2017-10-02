@@ -1,0 +1,2 @@
+/u/soulslicer0 on Library that takes in camera poses wrt world, camera matrix and images to generate point cloud?
+i do..but the depth data is quite noisy and quarter the resolution of the rgb. (think noise with a std of 10-20cm). using the depth data would be impossible as the point cloud would look really bad. i was just hoping the depth can act as a seed   

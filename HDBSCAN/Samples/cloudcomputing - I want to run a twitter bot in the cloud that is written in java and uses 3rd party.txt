@@ -1,0 +1,2 @@
+I want to run a twitter bot in the cloud that is written in java and uses 3rd party libraries. What are my options?
+Obviously I'd like to pay as little as possible if at all because it's a very very light app that I want to run. I could always just have it run on my desktop but what's the fun in that. I've tried google app engine but honestly a lot of the stuff is way over my head. Any help is appreciated!  submitted by /u/usernamed_ [link] [comments] 

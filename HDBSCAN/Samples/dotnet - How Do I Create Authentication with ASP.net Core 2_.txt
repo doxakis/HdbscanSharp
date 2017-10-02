@@ -1,0 +1,2 @@
+How Do I Create Authentication with ASP.net Core 2?
+I've been looking everywhere for how to do this, but all the information on it is obsolete since Microsoft broke the "cookie" paradigm they added in ASP.net Core 1.1 (and haven't updated their documentation for Security in Core 2). Basically: how do I write a (safe) username/password login?  submitted by /u/LazyDriver [link] [comments] 

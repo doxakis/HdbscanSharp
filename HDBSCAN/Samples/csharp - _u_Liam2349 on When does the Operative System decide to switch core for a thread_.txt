@@ -1,0 +1,2 @@
+/u/Liam2349 on When does the Operative System decide to switch core for a thread?
+Your processor is probably handling thousands of software threads. It has to constantly switch between them to do what needs doing. Whichever logical processor is available will be used when the software thread is picked up. If you wanted to control this, you'd probably have to make your own OS.   

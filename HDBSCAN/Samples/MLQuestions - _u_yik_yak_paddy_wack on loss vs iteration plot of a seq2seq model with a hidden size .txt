@@ -1,0 +1,2 @@
+/u/yik_yak_paddy_wack on loss vs iteration plot of a seq2seq model with a hidden size of 1
+it appears to; here is an image of the plot (loss over iterations) for a hidden size of 1. As far as inputs and outputs, I have added EOS tokens to both the encoder and decoder inputs but I have only included GO tokens in the decoder inputs.   

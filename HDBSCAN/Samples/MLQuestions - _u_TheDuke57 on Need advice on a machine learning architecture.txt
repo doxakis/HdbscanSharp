@@ -1,0 +1,2 @@
+/u/TheDuke57 on Need advice on a machine learning architecture
+I too am new to ML, so this could be completely off. I might try something along the lines of word2vec might make sense to try. The reason I think it might work is it is measuring similarly between input values, meaning manager positions would kind of cluster together, and marketing positions would cluster. It also might deal with the issue of similar non standard titles applied to the same job code. You can then apply a classifier on top of the output vectors to get your final label.   

@@ -1,0 +1,2 @@
+/u/taejim on I'm running an email course on unit testing T-SQL code (free of course!). Sign up here :)
+This was caught in the spam filter, and while it is technically advertising (although for a free product), I think it's worth getting some publicity - testing of SQL code in a structured manner is not as common as I think it should be.   

@@ -1,0 +1,2 @@
+/u/anttirt on On exceptions
+The problem is that Java is not expressive enough to do that right.  private void bar() throws CheckedException, OtherCheckedException { this.foo((int x) -> { if(x < 0) throw new CheckedException(); }); this.foo((int y) -> { if(x < 0) throw new OtherCheckedException(); }); } private void foo(Consumer c) throws ??? { ...; }     

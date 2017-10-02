@@ -1,0 +1,2 @@
+/u/SpyMaster356 on 30% of Reddit users block Google Analytics, how we adapted to the situation
+There's the reason why GA doesnt let you set user id to an email or name. They don't want to (or can't legally) store that kind of personally identifying data. They don't want to make it easier for companies, clients, nor hackers to spam users.   

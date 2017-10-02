@@ -1,0 +1,2 @@
+/u/adwolesi on I want to replicate camScanner app.
+I created something similar a few weeks ago. Therefore I made a list with useful links: https://github.com/adius/awesome-scanning   

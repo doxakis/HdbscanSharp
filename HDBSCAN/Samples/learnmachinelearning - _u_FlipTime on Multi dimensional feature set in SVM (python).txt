@@ -1,0 +1,2 @@
+/u/FlipTime on Multi dimensional feature set in SVM (python)
+Not sure if this is what you're looking for, but python's sklearn library includes an SVM module: http://scikit-learn.org/stable/modules/svm.html I've had success generating 3D plots from data containing ~70 dimensions per sample. There's not much too it really, just need to pass an array with however many features you want to include. Pretty sure matplotlib also has an SVM implementation.   

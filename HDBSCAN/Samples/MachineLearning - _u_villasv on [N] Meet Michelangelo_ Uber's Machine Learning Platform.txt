@@ -1,0 +1,2 @@
+/u/villasv on [N] Meet Michelangelo: Uber's Machine Learning Platform
+I agree with all points. I'm not a platform engineer, but I did a lot of recent work for my company with cloud infra to get Airflow going smooth and help remediating #2. The next challenge is to improve the feature store, currently a simple big Postgres table. (Any further recommendation tips on this?) PS: I like your username semantic consistency   

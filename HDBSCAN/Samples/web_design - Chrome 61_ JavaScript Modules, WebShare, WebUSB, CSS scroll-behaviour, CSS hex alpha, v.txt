@@ -1,0 +1,2 @@
+Chrome 61: JavaScript Modules, WebShare, WebUSB, CSS scroll-behaviour, CSS hex alpha, visual viewport API, Payment Request API on desktop, more
+ submitted by /u/ZaneHannanAU [link] [comments]    

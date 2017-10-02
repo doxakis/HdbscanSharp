@@ -1,0 +1,2 @@
+/u/findandwrite on I have a basic NLP script using gensim but I think it's written pretty poorly. Can someone advise me from the 10,000' view of how this should be designed? Ive never done this before so I'm really just taking shots in the dark here and would really appreciate some guidance.
+Sorry, I didn't realize this question was better suited for a different sub. Noted. Also, thanks for the suggestion   

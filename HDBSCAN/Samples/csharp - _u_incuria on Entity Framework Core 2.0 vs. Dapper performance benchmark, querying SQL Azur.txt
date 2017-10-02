@@ -1,0 +1,2 @@
+/u/incuria on Entity Framework Core 2.0 vs. Dapper performance benchmark, querying SQL Azure tables
+I had added .AsNotTracking() when I had the query still returning entities but I didn't think it was necessary once I switched to a projection and view model.   

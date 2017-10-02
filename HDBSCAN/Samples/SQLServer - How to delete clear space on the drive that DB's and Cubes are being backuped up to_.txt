@@ -1,0 +1,2 @@
+How to delete clear space on the drive that DB's and Cubes are being backuped up to?
+Hello, Is there something in SSMS that I can use to clean up the backup directories? Like the way I can use Management in SSMS to clear our lag files? Its the drive that hold the DB and SSAS backups that overfull, and I dont want to delete with File Explorer. Thanks  submitted by /u/Data_Geek [link] [comments] 

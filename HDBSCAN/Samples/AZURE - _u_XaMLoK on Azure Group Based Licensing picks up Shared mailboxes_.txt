@@ -1,0 +1,2 @@
+/u/XaMLoK on Azure Group Based Licensing picks up Shared mailboxes?
+What groups are you using to assign licenses? If the shared mailbox is in the scope of the group it will get assigned a license. AAD doesn't really differentiate between a user account and a shared mailbox. The differentiation is on Exchange Online.   

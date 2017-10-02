@@ -1,0 +1,2 @@
+/u/kurashu89 on "Do the people who design your JavaScript framework actually use it? The answer for Angular 1 and 2 is no. This is really important."
+Exactly. I work primarily on the customer servicing app for my company. I don't can't use it inside of production except for a few things. But according to this slide, I'm bad and I should feel bad because I don't eat my own dogfood.   

@@ -1,0 +1,2 @@
+/u/mtVessel on My test is finding that string comparisons are as fast as integer comparisons. Someone want to figure out what I'm doing wrong?
+Why not consult the Reference Source? (spoiler: yes, it checks string length after checking reference equality and nullity)   

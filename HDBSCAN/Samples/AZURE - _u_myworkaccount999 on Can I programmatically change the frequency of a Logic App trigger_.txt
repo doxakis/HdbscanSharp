@@ -1,0 +1,2 @@
+/u/myworkaccount999 on Can I programmatically change the frequency of a Logic App trigger?
+I thought the free tier would be a separate subscription but, as explained to me by a sales rep, it's not. It looks like I'm already exhausting my free allowances.   

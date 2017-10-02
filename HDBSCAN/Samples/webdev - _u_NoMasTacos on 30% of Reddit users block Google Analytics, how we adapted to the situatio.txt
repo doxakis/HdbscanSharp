@@ -1,0 +1,2 @@
+/u/NoMasTacos on 30% of Reddit users block Google Analytics, how we adapted to the situation
+What platform do you use? It likely has a plugin. But you can pass variables directly to it with php.   

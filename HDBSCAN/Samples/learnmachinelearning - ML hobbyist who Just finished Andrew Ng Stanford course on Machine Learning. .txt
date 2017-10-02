@@ -1,0 +1,2 @@
+ML hobbyist who Just finished Andrew Ng Stanford course on Machine Learning. Where to go from here?
+Is there a general advanced ML course that is typically recommended? Is it more like you need to study whatever particular topic you want to further study? I have a good math background (differential equations, linear algebra, stats, etc.), and a bit of a ML hobbyist already (just using NN to make models and classifiers here and there).  submitted by /u/TeslaCarBot [link] [comments] 

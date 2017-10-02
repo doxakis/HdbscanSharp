@@ -1,0 +1,2 @@
+need help making a main screen for a game
+Hi all, just making a game for my school assignment and recently ive had trouble creating a main screen that contains a title and a button called 'start' where once you press it, it loads the game script. If anyone could help that would be great. game script - https://pastebin.com/qsFJA2Uv  submitted by /u/WhitePeopleAreFunny [link] [comments] 

@@ -1,0 +1,2 @@
+/u/ec2-user on Anyone with packer (azure-arm) experience who can help me out?
+It turned out to be the fact that I'm behind http proxies. As soon as I tried it from a non-proxied network it started working. It wasn't obvious since the AWS stuff works from behind the proxy. Thanks again.   

@@ -1,0 +1,2 @@
+/u/xeyve on How exactly are multiple running processes managed on a single core, on an architectural level?
+Watch that   

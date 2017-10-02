@@ -1,0 +1,2 @@
+/u/tdgros on Commercial use of open source libraries.
+Opencv is free to use, except for its contrib module (for instance SIFT is patented in the US).   

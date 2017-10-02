@@ -1,0 +1,2 @@
+/u/AllsWellThatsHaskell on Is this a code smell?
+You keep saying that they're passing the function, which is making me confused. You know the actual inner function doesn't get passed through to the outer function, right? The inner function is evaluated and the result is passed to the outer function.   

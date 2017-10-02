@@ -1,0 +1,2 @@
+centralized method for my MPI code
+Anyone got any idea how do i make one of the peer as a search server that knows about the data held in each peer.  submitted by /u/deathhage [link] [comments] 

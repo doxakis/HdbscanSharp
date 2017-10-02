@@ -1,0 +1,2 @@
+/u/raj_king on How we secure your data in Azure AD - Microsoft Blog
+Well said. Before reading the article I thought of I am gonna know about some new security implementation done in Azure infrastructure, but finally none.   

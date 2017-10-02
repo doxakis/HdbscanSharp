@@ -1,0 +1,2 @@
+Serialization library for using Azure Table Storage with POCOs
+ submitted by /u/Giometrix [link] [comments]    

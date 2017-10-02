@@ -1,0 +1,2 @@
+/u/jlynn5415 on Getting into computer science
+Not books, but Harvards CS50 course is available on edX for free link Also there is a free PDF version of Introduction to Algorithms located [here](is.ptithcm.edu.vn/~tdhuy/Programming/Introduction.to.Algorithms.pdf). These are both great resources for introductory Comp-Sci, although the e-book can be a little verbose at times.   

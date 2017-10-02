@@ -1,0 +1,2 @@
+/u/pelrun on Commercial use of open source libraries.
+No, you cannot link to a GPL library from a closed source application. You're probably confusing the GPL with the LGPL (Lesser GPL), which a lot of libraries are licensed under, and which does permit it. Using opencv as a library is fine, because it's not GPL. If it was GPL, he'd not be able to use it.   

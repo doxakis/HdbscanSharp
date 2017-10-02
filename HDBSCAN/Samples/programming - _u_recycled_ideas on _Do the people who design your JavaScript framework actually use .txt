@@ -1,0 +1,2 @@
+/u/recycled_ideas on "Do the people who design your JavaScript framework actually use it? The answer for Angular 1 and 2 is no. This is really important."
+Horseshit. Having the people who develop a framework also use that framework is crucially important. You can never truly understand the pain points of code if you don't use it. Dog fooding isn't something you only do because you're small.   

@@ -1,0 +1,2 @@
+/u/RiPont on Is this a code smell?
+It's both a builder and fluent. Non-fluent builder would be where each of those methods returns void and you have to call them on separate lines before Execute().   

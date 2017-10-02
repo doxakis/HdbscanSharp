@@ -1,0 +1,2 @@
+/u/plasticscm on Git & refactors: there must be a better way - introducing gmaster client
+Well, we'll be renewing betas until we launch the commercial, and we expect to launch something really affordable. Feedback will be welcome :)   

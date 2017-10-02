@@ -1,0 +1,2 @@
+[D] reinforcement learning algorithm selection as a multi-armed bandit problem
+Has anyone seen any papers discussing this topic? I remember seeing one at one point, but I can no longer find it. If I remember correctly, the gist of the paper was that they used multiple reinforcement learning algorithms training simultaneously and a meta learner which decided which agent to use at any given time step.  submitted by /u/zdwiel [link] [comments] 

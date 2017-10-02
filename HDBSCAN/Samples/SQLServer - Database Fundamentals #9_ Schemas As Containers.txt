@@ -1,0 +1,2 @@
+Database Fundamentals #9: Schemas As Containers
+ submitted by /u/ScaryDBA [link] [comments]    

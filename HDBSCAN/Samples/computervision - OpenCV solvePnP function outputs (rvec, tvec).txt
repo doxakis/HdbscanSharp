@@ -1,0 +1,2 @@
+OpenCV solvePnP function outputs (rvec, tvec)
+I'm new to computer vision and I'm trying to use solvePnP to estimate camera position. I've been looking at openCV documentation and youtube videos to better understand the rvec and tvec outputs, but I'm still a bit lost. Does someone know where I can find a good explanation for those outputs and how to to convert them to a XYZ position of the camera?  submitted by /u/zuliani19 [link] [comments] 

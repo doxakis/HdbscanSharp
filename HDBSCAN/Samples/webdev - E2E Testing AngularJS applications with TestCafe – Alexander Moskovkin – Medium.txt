@@ -1,0 +1,2 @@
+E2E Testing AngularJS applications with TestCafe – Alexander Moskovkin – Medium
+ submitted by /u/henry_tula [link] [comments]    

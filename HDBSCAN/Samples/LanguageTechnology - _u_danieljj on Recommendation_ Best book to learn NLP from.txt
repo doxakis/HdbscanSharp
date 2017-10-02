@@ -1,0 +1,2 @@
+/u/danieljj on Recommendation: Best book to learn NLP from
+I would not recommend starting to read a book. Instead I'd recommend selective reading. First start playing with demos. Like try this: http://deagol.cs.illinois.edu:8080 or corenlp demo. The demo should give you lots of intuition. I recommend reading selectively and base on what you need. One way to do this starting projects with people who are already experienced.   

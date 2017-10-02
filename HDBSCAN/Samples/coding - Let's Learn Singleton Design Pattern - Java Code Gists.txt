@@ -1,0 +1,2 @@
+Let's Learn Singleton Design Pattern - Java Code Gists
+submitted by /u/awsometak [link] [comments] 

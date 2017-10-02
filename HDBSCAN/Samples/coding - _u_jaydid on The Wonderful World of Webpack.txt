@@ -1,0 +1,2 @@
+/u/jaydid on The Wonderful World of Webpack
+Despite the name, Laravel Mix can be used agnostically of your project platform. The steps to use it outside Laravel are defined in the installation guide.   

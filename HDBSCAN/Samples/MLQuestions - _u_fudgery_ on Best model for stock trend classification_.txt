@@ -1,0 +1,2 @@
+/u/fudgery_ on Best model for stock trend classification?
+For the input you describe a convnet would probably do the trick. I'd recommend to experiment with that first. Just stack some layers using Tensorflow and have a look at the accuracy. A normal neural net wouldn't help here, because it would not "see" the movements between data points.   

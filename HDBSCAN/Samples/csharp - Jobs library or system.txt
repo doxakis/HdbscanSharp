@@ -1,0 +1,2 @@
+Jobs library or system
+Looking for recommendations for job scheduling / cron that works with multiple servers. One that could look at several servers in the cluster to find one least in use and run the job on that. I've seen quartz and hang fire but they seem to need a lot of setup work to get something like that going. The jobs fire some every 5 seconds and others hourly, etc.  submitted by /u/allenasm [link] [comments] 

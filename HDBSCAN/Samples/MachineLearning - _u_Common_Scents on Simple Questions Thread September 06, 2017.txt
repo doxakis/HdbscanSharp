@@ -1,0 +1,2 @@
+/u/Common_Scents on Simple Questions Thread September 06, 2017
+The gist I'm getting at it is would a ML program be able to determine a pixel by pixel pattern recognication. So if you train it with 100 images where pixels (68,98) and (92,25) are all black, then you passed it an image where only pixel (68,98) is black, it would recognize a misstep in the pattern and "fill" in (92,25) as black.   

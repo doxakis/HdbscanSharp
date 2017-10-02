@@ -1,0 +1,2 @@
+Cloud Database? NoSQL? Nah, just use CSVs and CsvHelper
+submitted by /u/justintimecoder [link] [comments] 

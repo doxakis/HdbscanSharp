@@ -1,0 +1,2 @@
+/u/CyberByte on dataset of faces and their heritage
+Here is a whole host of data sets for facial recognition: http://www.face-rec.org/databases/ Look for 'ethnic(ity)' and maybe 'rac(e)'. Good look with your project, and ehm... don't use this for anything racist please. :)   

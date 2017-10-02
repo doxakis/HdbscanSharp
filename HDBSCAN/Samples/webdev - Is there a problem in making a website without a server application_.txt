@@ -1,0 +1,2 @@
+Is there a problem in making a website without a server application?
+The website would be very very simple, so I think only an html, css and javascript is enought. Is something wrong in not having a server application in java/python/C#...?  submitted by /u/carbono14 [link] [comments] 

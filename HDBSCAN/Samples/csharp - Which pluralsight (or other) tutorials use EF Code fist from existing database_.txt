@@ -1,0 +1,2 @@
+Which pluralsight (or other) tutorials use EF Code fist from existing database?
+I have been using the .edmx model from existing DB in my MVC projects for 5 years. I want to change to 'code first from existing db" but the only tutorials I can find are doing code first with migrations. I have access to pluralsight and safari books. I would appreciate links/suggestions for some in depth articles/tutorials/etc on code first from existing database. Thanks.  submitted by /u/PhatKiwi [link] [comments] 

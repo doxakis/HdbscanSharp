@@ -1,0 +1,2 @@
+/u/nkk36 on Pytorch/Tensorflow vs Scikitlearn/statsmodels for Machine learning
+What do you mean by basic machine learning/computational statistics? If it means what I think it means then it's probably overkill or not appropriate. For one, neural networks require a lot of data. So if you aren't working with that much data in the first place it doesn't make a ton of sense to use these neural net libraries. I'd just stick with scikitlearn personally, but don't take it from me. Try both and compare results. It could be a fun experiment and a learning opportunity.   

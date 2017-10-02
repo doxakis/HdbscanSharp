@@ -1,0 +1,2 @@
+/u/mrw_im_on_reddit on A collection of (mostly) technical things every software developer should know.
+I think the problem with organization is that people will argue about that, too. :-) Lists like this are actually really helpful to someone like me who doesn't program professionally but just does small projects and scripts at work. I usually browse them to get a good notion of what's in them, and then I refer back to them when I actually need to use the content in them (and then I remember it better, too). But everybody learns differently.   

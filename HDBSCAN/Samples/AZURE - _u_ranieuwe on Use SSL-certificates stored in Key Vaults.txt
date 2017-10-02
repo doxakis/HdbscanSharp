@@ -1,0 +1,2 @@
+/u/ranieuwe on Use SSL-certificates stored in Key Vaults
+It is possible with some not that well known trickery: ARM. You can use ARM to request the Webapp resource provider (RP) to pull down a certificate for you from Azure Key Vault (AKV), by granting the guid of the RP access to AKV. Take a look at this here: https://blogs.msdn.microsoft.com/appserviceteam/2016/05/24/deploying-azure-web-app-certificate-through-key-vault/   

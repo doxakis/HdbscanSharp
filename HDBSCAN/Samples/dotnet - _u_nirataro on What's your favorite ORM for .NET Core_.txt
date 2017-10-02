@@ -1,0 +1,2 @@
+/u/nirataro on What's your favorite ORM for .NET Core?
+I swear by LLBLGen   

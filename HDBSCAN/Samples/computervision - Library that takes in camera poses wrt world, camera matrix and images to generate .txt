@@ -1,0 +1,2 @@
+Library that takes in camera poses wrt world, camera matrix and images to generate point cloud?
+Hi all, is there a library, ideally c++ or python that can compile on linux, that takes in Camera Poses wrt to World Camera Matrixes for the cameras RGB Images (Depth data too for better optimization?) To generate a point cloud?  submitted by /u/soulslicer0 [link] [comments] 

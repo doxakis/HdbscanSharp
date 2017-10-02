@@ -1,0 +1,2 @@
+/u/dh42com on 30% of Reddit users block Google Analytics, how we adapted to the situation
+Its a really crappy two-headed coin to be honest. Most all e-commerce sites compete against Amazon. Amazon has the technology to track users, see what they last looked at, then fire off an email with product suggestions 30 minutes to an hour later. We are putting the pieces in place where anyone who competes with Amazon can set up a system like this for little or no cost. Is it spam? I think it all depends on the user getting the email and their preferences.   

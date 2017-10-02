@@ -1,0 +1,2 @@
+/u/unleashcloud on Is Alibaba Cloud a series competitor in the cloud computing space?
+Above a core service offering, vendors differ in the value add. Google know what people are looking for. Microsoft know what enterprise software is in use. AWS and Alibaba know what people are buying. If vendors develop cloud products that leverage these strengths, and those products are a great fit for a business, that vendor and platform could be a winner for them.   

@@ -1,0 +1,2 @@
+Pytorch/Tensorflow vs Scikitlearn/statsmodels for Machine learning
+Is there a difference when I use DL focused packages like pytorch or tensorflow to do basic machine learning/computational statistics? Should I use pytorch/tensorflow over scikitlearn, etc?  submitted by /u/powerforward1 [link] [comments] 

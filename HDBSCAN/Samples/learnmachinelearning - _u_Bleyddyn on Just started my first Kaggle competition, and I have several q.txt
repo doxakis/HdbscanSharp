@@ -1,0 +1,2 @@
+/u/Bleyddyn on Just started my first Kaggle competition, and I have several questions
+Do I just guess they would help?  Have you tried running each change multiple times with different random seeds? The standard deviation should give you some idea if a change is large enough to be significant.   

@@ -1,0 +1,2 @@
+/u/benjv on Add VNET rule has just turned up in the firewall rule section of Azure SQL Database
+It's in private preview currently, hopefully public/GA coming soon.   
