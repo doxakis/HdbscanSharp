@@ -36,7 +36,7 @@ namespace HDBSCAN.Hdbscanstar
 		 */
 		public static void Run(string[] args)
 		{
-			long overallStartTime = DateTime.Now.Ticks;
+			long overallStartTime = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
 
 			//Parse input parameters from program arguments:
 			HDBSCANStarParameters parameters = CheckInputParameters(args);
@@ -52,7 +52,7 @@ namespace HDBSCAN.Hdbscanstar
 			{
 				dataSet = HDBSCANStar.ReadInDataSet(parameters.inputFile, ',');
 			}
-			catch (IOException ioe)
+			catch (IOException)
 			{
 				Console.WriteLine("Error reading input data set file.");
 				Console.ReadLine();
@@ -70,7 +70,7 @@ namespace HDBSCAN.Hdbscanstar
 				{
 					constraints = HDBSCANStar.ReadInConstraints(parameters.constraintsFile, ',');
 				}
-				catch (IOException e)
+				catch (IOException)
 				{
 					Console.WriteLine("Error reading constraints file.");
 					Console.ReadLine();
@@ -79,15 +79,15 @@ namespace HDBSCAN.Hdbscanstar
 			}
 
 			//Compute core distances:
-			long startTime = DateTime.Now.Ticks;
+			long startTime = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
 			double[] coreDistances = HDBSCANStar.CalculateCoreDistances(dataSet, parameters.minPoints, parameters.distanceFunction);
-			Console.WriteLine("Time to compute core distances (ms): " + (DateTime.Now.Ticks - startTime));
+			Console.WriteLine("Time to compute core distances (ms): " + (DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond - startTime));
 
 			//Calculate minimum spanning tree:
-			startTime = DateTime.Now.Ticks;
+			startTime = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
 			UndirectedGraph mst = HDBSCANStar.ConstructMST(dataSet, coreDistances, true, parameters.distanceFunction);
 			mst.QuicksortByEdgeWeight();
-			Console.WriteLine("Time to calculate MST (ms): " + (DateTime.Now.Ticks - startTime));
+			Console.WriteLine("Time to calculate MST (ms): " + (DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond - startTime));
 			
 			//Remove references to unneeded objects:
 			dataSet = null;
@@ -100,13 +100,13 @@ namespace HDBSCAN.Hdbscanstar
 
 			try
 			{
-				startTime = DateTime.Now.Ticks;
+				startTime = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
 				clusters = HDBSCANStar.ComputeHierarchyAndClusterTree(mst, parameters.minClusterSize,
 						parameters.compactHierarchy, constraints, parameters.hierarchyFile,
 						parameters.clusterTreeFile, ',', pointNoiseLevels, pointLastClusters, parameters.visualizationFile);
-				Console.WriteLine("Time to compute hierarchy and cluster tree (ms): " + (DateTime.Now.Ticks - startTime));
+				Console.WriteLine("Time to compute hierarchy and cluster tree (ms): " + (DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond - startTime));
 			}
-			catch (IOException ioe)
+			catch (IOException)
 			{
 				Console.WriteLine("Error writing to hierarchy file or cluster tree file.");
 				Console.ReadLine();
@@ -122,12 +122,12 @@ namespace HDBSCAN.Hdbscanstar
 			//Compute final flat partitioning:
 			try
 			{
-				startTime = DateTime.Now.Ticks;
+				startTime = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
 				HDBSCANStar.FindProminentClusters(clusters, parameters.hierarchyFile, parameters.partitionFile,
 						',', numPoints, infiniteStability);
-				Console.WriteLine("Time to find flat result (ms): " + (DateTime.Now.Ticks - startTime));
+				Console.WriteLine("Time to find flat result (ms): " + (DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond - startTime));
 			}
-			catch (IOException ioe)
+			catch (IOException)
 			{
 				Console.WriteLine("Error writing to partitioning file.");
 				Console.ReadLine();
@@ -137,19 +137,19 @@ namespace HDBSCAN.Hdbscanstar
 			//Compute outlier scores for each point:
 			try
 			{
-				startTime = DateTime.Now.Ticks;
+				startTime = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
 				HDBSCANStar.CalculateOutlierScores(clusters, pointNoiseLevels, pointLastClusters,
 						coreDistances, parameters.outlierScoreFile, ',', infiniteStability);
-				Console.WriteLine("Time to compute outlier scores (ms): " + (DateTime.Now.Ticks - startTime));
+				Console.WriteLine("Time to compute outlier scores (ms): " + (DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond - startTime));
 			}
-			catch (IOException ioe)
+			catch (IOException)
 			{
 				Console.WriteLine("Error writing to outlier score file.");
 				Console.ReadLine();
 				Environment.Exit(-1);
 			}
-			
-			Console.WriteLine("Overall runtime (ms): " + (DateTime.Now.Ticks - overallStartTime));
+
+			Console.WriteLine("Overall runtime (ms): " + (DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond - overallStartTime));
 		}
 		
 		/**
@@ -181,7 +181,7 @@ namespace HDBSCAN.Hdbscanstar
 					{
 						parameters.minPoints = int.Parse(argument.Substring(MIN_PTS_FLAG.Length));
 					}
-					catch (FormatException nfe)
+					catch (FormatException)
 					{
 						Console.WriteLine("Illegal value for minPts.");
 					}
@@ -193,7 +193,7 @@ namespace HDBSCAN.Hdbscanstar
 					{
 						parameters.minClusterSize = int.Parse(argument.Substring(MIN_CL_SIZE_FLAG.Length));
 					}
-					catch (FormatException nfe)
+					catch (FormatException)
 					{
 						Console.WriteLine("Illegal value for minClSize.");
 					}

@@ -8,6 +8,7 @@ using static HDBSCAN.Hdbscanstar.Constraint;
 using HDBSCAN.Distance;
 using HDBSCAN.Hdbscanstar;
 using HDBSCAN.Utils;
+using System.Globalization;
 
 namespace HDBSCAN.Hdbscanstar
 {
@@ -63,9 +64,9 @@ namespace HDBSCAN.Hdbscanstar
 					try
 					{
 						//If an exception occurs, the attribute will remain 0:
-						attributes[i] = double.Parse(lineContents[i]);
+						attributes[i] = double.Parse(lineContents[i], CultureInfo.InvariantCulture);
 					}
-					catch (FormatException nfe)
+					catch (FormatException)
 					{
 						Console.WriteLine("Illegal value on line " + lineIndex + " of data set: " + lineContents[i]);
 					}
@@ -118,7 +119,7 @@ namespace HDBSCAN.Hdbscanstar
 
 					constraints.Add(new Constraint(pointA, pointB, type));
 				}
-				catch (FormatException nfe)
+				catch (FormatException)
 				{
 					Console.WriteLine("Illegal value on line " + lineIndex + " of data set: " + line);
 				}
@@ -567,14 +568,14 @@ namespace HDBSCAN.Hdbscanstar
 				if (cluster == null)
 					continue;
 				treeWriter.Append(cluster.GetLabel() + "" + delimiter);
-				treeWriter.Append(cluster.GetBirthLevel() + "" + delimiter);
-				treeWriter.Append(cluster.GetDeathLevel() + "" + delimiter);
-				treeWriter.Append(cluster.GetStability() + "" + delimiter);
+				treeWriter.Append(cluster.GetBirthLevel().ToString(CultureInfo.InvariantCulture) + "" + delimiter);
+				treeWriter.Append(cluster.GetDeathLevel().ToString(CultureInfo.InvariantCulture) + "" + delimiter);
+				treeWriter.Append(cluster.GetStability().ToString(CultureInfo.InvariantCulture) + "" + delimiter);
 
 				if (constraints != null)
 				{
-					treeWriter.Append((0.5 * cluster.GetNumConstraintsSatisfied() / constraints.Count) + delimiter);
-					treeWriter.Append((0.5 * cluster.GetPropagatedNumConstraintsSatisfied() / constraints.Count) + delimiter);
+					treeWriter.Append((0.5 * cluster.GetNumConstraintsSatisfied() / constraints.Count).ToString(CultureInfo.InvariantCulture) + "" + delimiter);
+					treeWriter.Append((0.5 * cluster.GetPropagatedNumConstraintsSatisfied() / constraints.Count).ToString(CultureInfo.InvariantCulture) + "" + delimiter);
 				}
 				else
 				{
@@ -674,8 +675,8 @@ namespace HDBSCAN.Hdbscanstar
 				}
 			}
 
-			if (infiniteStability)
-				Console.WriteLine(WARNING_MESSAGE);
+			//if (infiniteStability)
+			//	Console.WriteLine(WARNING_MESSAGE);
 
 			return infiniteStability;
 		}
@@ -704,9 +705,8 @@ namespace HDBSCAN.Hdbscanstar
 			//Take the list of propagated clusters from the root cluster:
 			List<Cluster> solution = clusters[1].GetPropagatedDescendants();
 
-			var reader = File.ReadLines(hierarchyFile);
+			var reader = File.ReadAllText(hierarchyFile);
 			int[] flatPartitioning = new int[numPoints];
-			long currentOffset = 0;
 
 			//Store all the file offsets at which to find the birth points for the flat clustering:
 			List<KeyValuePair<long, List<int>>> significantFileOffsets = new List<KeyValuePair<long, List<int>>>();
@@ -745,10 +745,21 @@ namespace HDBSCAN.Hdbscanstar
 				List<int> clusterList = entry.Value;
 				long offset = entry.Key;
 
-				reader.Skip((int)(offset - currentOffset));
-
-				string line = reader.Take(1).FirstOrDefault();
-				currentOffset = offset + line.Length + 1;
+				int skip = (int)offset;
+				int iSkip = skip;
+				int length = 1;
+				while (iSkip < reader.Length)
+				{
+					char c = reader[iSkip];
+					if (c == '\n')
+					{
+						break;
+					}
+					iSkip++;
+					length++;
+				}
+				
+				string line = reader.Substring(skip, length);
 				string[] lineContents = line.Split(delimiter);
 
 				for (int i = 1; i < lineContents.Length; i++)
@@ -761,8 +772,8 @@ namespace HDBSCAN.Hdbscanstar
 
 			//Output the flat clustering result:
 			StringBuilder writer = new StringBuilder();
-			if (infiniteStability)
-				writer.Append(WARNING_MESSAGE + "\n");
+			//if (infiniteStability)
+			//	writer.Append(WARNING_MESSAGE + "\n");
 
 			for (int i = 0; i < flatPartitioning.Length - 1; i++)
 			{
@@ -820,8 +831,8 @@ namespace HDBSCAN.Hdbscanstar
 			//Output the outlier scores:
 			StringBuilder writer = new StringBuilder();
 
-			if (infiniteStability)
-				writer.Append(WARNING_MESSAGE + "\n");
+			//if (infiniteStability)
+			//	writer.Append(WARNING_MESSAGE + "\n");
 
 			foreach (OutlierScore outlierScore in outlierScores)
 			{

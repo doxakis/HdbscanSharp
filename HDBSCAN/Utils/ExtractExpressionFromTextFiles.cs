@@ -49,7 +49,8 @@ namespace HDBSCAN.Utils
 					}
 
 					var words = sentence.Split(new char[] {
-						' ', '.', '?', '\n', '\r', ',', '!', '(', ')', ';', '"', ':', '-'
+						' ', '.', '?', '\n', '\r', ',', '!', '(', ')', ';', '"', ':', '-', '\\', '/',
+						'[', ']', '{', '}', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'
 					}, StringSplitOptions.RemoveEmptyEntries);
 
 					// Generate group(s)
