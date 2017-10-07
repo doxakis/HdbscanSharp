@@ -1,0 +1,2 @@
+/u/jwmiller5 on Problems with Azure function that only works intermittently
+If it works sometimes, then the code is prob ok. Try increasing the timeout on the ConnectionInfo object   

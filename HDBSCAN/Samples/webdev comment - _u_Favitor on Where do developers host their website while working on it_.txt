@@ -1,0 +1,2 @@
+/u/Favitor on Where do developers host their website while working on it?
+I've heard of cost cutting clients doing this but never a standard reputable business. You might need to change your target client base. But anyway, I should have been a bit clearer. By 'clients server' I mean the server we've spun up for development of that clients website. It's our server until we hand it over to them on project completion.   

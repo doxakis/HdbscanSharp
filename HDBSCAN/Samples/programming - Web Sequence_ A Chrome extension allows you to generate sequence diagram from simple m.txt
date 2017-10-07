@@ -1,0 +1,2 @@
+Web Sequence: A Chrome extension allows you to generate sequence diagram from simple markup text. No dragndrop.
+submitted by /u/Peng-Xiao [link] [comments] 

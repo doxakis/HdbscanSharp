@@ -1,0 +1,2 @@
+Use PowerShell to Enable Azure Analysis Services Firewall
+ submitted by /u/cmendibl3 [link] [comments]    

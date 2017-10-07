@@ -1,0 +1,2 @@
+/u/Tainnor on Rasa Core kicks up the context for chatbots
+Just used RASA recently, just spun up the docker container, didn't even configure anything... worked really well. Cool stuff :)   

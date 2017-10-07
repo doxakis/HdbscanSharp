@@ -1,0 +1,2 @@
+/u/oftheterra on Variables not being set?
+When you divide two integers, the result is always an integer. Fractions aren't rounded up. 0 x 100 = 0   

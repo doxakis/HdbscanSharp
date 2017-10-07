@@ -1,0 +1,2 @@
+Partial update your .NET Core HTTP API resources
+submitted by /u/spetz0 [link] [comments] 

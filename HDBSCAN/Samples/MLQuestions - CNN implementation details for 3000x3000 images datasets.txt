@@ -1,0 +1,2 @@
+CNN implementation details for 3000x3000 images datasets
+Are there any guidelines for filter sizes for a CNN operating on big images? I am a newbie to CNNs but I have a solid understanding of the working on CNNs. Since large images caus the filters to take time to navigate through the whole image, Is it advisable to use large filters if one of the primary distinguishing feature to learn is the colour representation in different images?  submitted by /u/bheemboy69 [link] [comments] 

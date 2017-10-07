@@ -1,0 +1,2 @@
+/u/pissedadmin on computer science vs information systems
+You can do the coding challenges at hackerrank or leetcode for practice. A lot of people will also recommend the exercises in Cracking the Coding Interview.   

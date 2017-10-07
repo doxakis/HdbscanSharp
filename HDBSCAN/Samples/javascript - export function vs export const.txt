@@ -1,0 +1,2 @@
+export function vs export const
+Thinking about ES6 patterns. Which one seems clearer for you? export function name() {} or export const name = () => {}; ??  submitted by /u/joaohkfaria [link] [comments] 

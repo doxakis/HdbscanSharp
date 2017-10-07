@@ -1,0 +1,2 @@
+/u/AltRye on Ideas on how to make Stock market chart that updates live?
+You need something that is continually looking at some API outputting stock price data. Akka streaming comes to mind.   

@@ -1,0 +1,2 @@
+/u/wjwwjw on How to do one class classification using neural nets?
+Maybe if I ask the following question this will clarify things: does the piece of code I just posted print the overall loss or a single training error? If this is the overall loss, how do you compute the individual training loss? Don't get me wrong, I am maybe the one misunderstanding things here.   

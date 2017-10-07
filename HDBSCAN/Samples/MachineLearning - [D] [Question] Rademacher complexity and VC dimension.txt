@@ -1,0 +1,2 @@
+[D] [Question] Rademacher complexity and VC dimension
+Can anyone here please explain Rademacher complexity and VC dimension? I have spent considerable amount of time on it but really couldn't understand it. It would be really helpful if someone can give some pointers on it.  submitted by /u/robo-terp [link] [comments] 

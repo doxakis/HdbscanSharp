@@ -1,0 +1,2 @@
+/u/denaissance on What's the stance on using the "metaprogramming" stuff (such as Reflection)? When is it considered like dirty code? When is it not?
+There is nothing inherently wrong with Reflection/Introspection but you should always be concerned when you come across it because people abuse it. Not only do they abuse it but they often walk around thinking that what they did is good, or cool, or some awesome hack but nineteen times out of twenty it is fragile, unmaintainable, and slow.   

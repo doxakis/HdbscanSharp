@@ -1,0 +1,2 @@
+/u/csp256 on Photorealistic rendering (with Python?)
+While you should definitely try Blender first you should also look into PBRT and derivatives for photorealistic rendering.   

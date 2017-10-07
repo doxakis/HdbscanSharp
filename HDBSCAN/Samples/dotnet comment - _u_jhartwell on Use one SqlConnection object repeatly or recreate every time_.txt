@@ -1,0 +1,2 @@
+/u/jhartwell on Use one SqlConnection object repeatly or recreate every time?
+When using unmanaged resources you should implement the IDisposable interface and free the unmanaged resources there. Then either use using (preferred) or call Dispose directly. Singleton is not needed and could cause issues with connections being closed   

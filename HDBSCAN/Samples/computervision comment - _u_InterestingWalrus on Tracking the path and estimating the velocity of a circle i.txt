@@ -1,0 +1,2 @@
+/u/InterestingWalrus on Tracking the path and estimating the velocity of a circle in a video
+Thanks, I'll look into optical flow tracking u/run7b seems to have used optical flow tracking in the comment above as well   

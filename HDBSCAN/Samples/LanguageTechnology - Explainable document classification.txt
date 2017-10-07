@@ -1,0 +1,2 @@
+Explainable document classification
+Hi, I am currently working on identifying vulnerable customers (ill, learning challenges, addiction, etc.) from communications with companies. It is quite important that the models created are explainable. Other than decision trees what are my options for explainable models? I was thinking about trying a neural model with an attention mechanism and returning an interpretation of the attention mechanism as a justification of the decision.  submitted by /u/kuro-kuris [link] [comments] 

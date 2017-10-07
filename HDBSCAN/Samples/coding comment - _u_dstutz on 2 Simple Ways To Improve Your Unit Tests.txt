@@ -1,0 +1,2 @@
+/u/dstutz on 2 Simple Ways To Improve Your Unit Tests
+TL;DR: The builder pattern allows us to make unit tests easier to read, and can help in instantiating complex auxiliary classes. The fixture pattern allows us to encapsulate the way we create systems under test, and therefore reduces the overhead when changes to the source code occur.    

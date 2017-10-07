@@ -1,0 +1,2 @@
+/u/_lux0n on With ESLint and ES6+, does typescript become much less useful?
+What about hoisting?   

@@ -1,0 +1,2 @@
+Showing an equation is equal to big theta
+I've been working on this problem for hours. I have to show that n3 - 3n2 - n +1 = theta(n3) I'm trying to prove it by using the definition im using.. c1g(n) <= f(n) <= c2g(n) i can prove big oh fine but when i try to solve for big omega, i keep on getting a negative value which throws the whole proof off. can someone please tell me where im going wrong or point me towards the right direction? thank you guys  submitted by /u/xMxTx [link] [comments] 

@@ -1,0 +1,2 @@
+/u/computersmusiclife on The Beauty of the Go Programming Language
+Yeah you should give it a try. To me, it feels that it that makes things more natural :)   

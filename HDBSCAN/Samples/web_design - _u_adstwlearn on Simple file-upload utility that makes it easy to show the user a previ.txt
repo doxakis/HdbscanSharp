@@ -1,0 +1,2 @@
+/u/adstwlearn on Simple file-upload utility that makes it easy to show the user a preview of their image. Easy on the eyes. Pure JavaScript, no dependencies, MIT license.
+Yup it is, then compiled down using babel for distribution.   

@@ -1,0 +1,2 @@
+ECMA-414: Modularizing the JavaScript Standard
+submitted by /u/sitepen [link] [comments] 

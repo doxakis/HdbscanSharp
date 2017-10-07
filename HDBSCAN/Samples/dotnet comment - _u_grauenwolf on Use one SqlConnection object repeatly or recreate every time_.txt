@@ -1,0 +1,2 @@
+/u/grauenwolf on Use one SqlConnection object repeatly or recreate every time?
+Chain is the only ORM I know of that allows you to use a singleton for the database. https://github.com/docevaad/Chain And internally it will still create and dispose connection objects.   

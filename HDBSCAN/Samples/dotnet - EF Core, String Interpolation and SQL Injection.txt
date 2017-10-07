@@ -1,0 +1,2 @@
+EF Core, String Interpolation and SQL Injection
+submitted by /u/fullstackdelivery [link] [comments] 

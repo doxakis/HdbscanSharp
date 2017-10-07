@@ -1,0 +1,2 @@
+/u/lazyFer on Would anyone be willing to try out this SSIS management software and give me some feedback?
+I might be able to throw a 2012 set together...My VS 2013 is set for 2014 packages but I think VS 2010 can be set to 2012. Let me look into that. I personally skipped from 2008 to 2014 and decided not to include a 2008 set of downloads. edit: installing VS 2012 and SSDT now to see if I can provide you with a 2012 set of packages/queue water/executor combination.   

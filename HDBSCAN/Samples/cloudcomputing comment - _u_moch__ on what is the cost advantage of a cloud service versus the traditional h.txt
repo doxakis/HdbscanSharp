@@ -1,0 +1,2 @@
+/u/moch__ on what is the cost advantage of a cloud service versus the traditional hosted enterprise server set up?
+Look up the AWS TCO calculator   

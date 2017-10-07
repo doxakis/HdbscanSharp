@@ -1,0 +1,2 @@
+/u/lrk89 on Sublime Text 3 now has font ligature support
+That's what I thought. VS Code & Atom have had ligatures for years!   

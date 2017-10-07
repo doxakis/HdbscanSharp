@@ -1,0 +1,2 @@
+/u/mojavestorm on Writing great commit messages for better code review
+I enjoy trying to improve my git commit messages because it helps me remember the changes I made and why. I typically find the real challenge to be convincing my team to adopt some standard format. It is typically dismissed as a waste of time. I need an article on persuading others to hop on the clean message train.   

@@ -1,0 +1,2 @@
+A question about the SVD of an image.
+So I am busy trying to do a very trivial image compression technique using the SVD of an image. But I have this question about the singular values of an image. Why do they decrease so rapidly? Is that a property to all images?  submitted by /u/slimos [link] [comments] 

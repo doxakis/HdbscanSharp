@@ -1,0 +1,2 @@
+Problems with Azure function that only works intermittently
+We have an Azure function that uses SFTP to transfer files into our Data Lake. When run locally on premise it works every time. In Azure it sometimes works and sometimes it gives an error: Renci.SshNet.Common.SshOperationTimeoutException : Socket read operation has timed out after 30000 milliseconds. We use the library Ssh.net Any tips?  submitted by /u/joasoze [link] [comments] 

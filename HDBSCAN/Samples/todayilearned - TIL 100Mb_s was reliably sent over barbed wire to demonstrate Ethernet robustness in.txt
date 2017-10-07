@@ -1,0 +1,2 @@
+TIL 100Mb/s was reliably sent over barbed wire to demonstrate Ethernet robustness in a Broadcom showcase
+ submitted by /u/CrackItJack [link] [comments]    

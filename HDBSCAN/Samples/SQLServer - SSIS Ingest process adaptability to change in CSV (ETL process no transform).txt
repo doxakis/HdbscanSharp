@@ -1,0 +1,2 @@
+SSIS Ingest process adaptability to change in CSV (ETL process no transform)
+How adaptable is the SSIS ingest process? If a CSV file is ingested to a SQL server table one to one and there is no transform step how robust is the process to change. For example, if a couple fields are added at the end of each entry what will happen to those fields? Will they just be ignored or will the whole process break?  submitted by /u/BusiAnaDave [link] [comments] 

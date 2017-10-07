@@ -1,0 +1,2 @@
+/u/MiloExtendsPerson on What can I do to set myself apart from the rest?
+Be mindful that your university may have rules you need to abide. Usually I would say that if a course contains predefined assignments/projects then your github project must be private (otherwise next-year students of that course could just copy and paste your code, and you will also be held responsible for that). My advice is to always ask your professor before making your repository public.   

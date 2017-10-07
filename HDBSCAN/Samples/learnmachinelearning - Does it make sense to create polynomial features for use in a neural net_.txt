@@ -1,0 +1,2 @@
+Does it make sense to create polynomial features for use in a neural net?
+I'm trying to get a small boost in performance by using the most important polynomial features in a neural net. But does that make sense? Will the net learn the relationship / interaction between features without creating them manually? I'll likely test it anyway but I have a lot of data so training time is long and I want to see if I'm spinning my wheels :) Thanks!  submitted by /u/zacheism [link] [comments] 

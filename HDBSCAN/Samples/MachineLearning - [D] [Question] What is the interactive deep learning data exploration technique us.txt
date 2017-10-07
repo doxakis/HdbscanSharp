@@ -1,0 +1,2 @@
+[D] [Question] What is the interactive deep learning data exploration technique used in the Jeremy Howard TED talk?
+See from around 13:10 in the talk: https://www.youtube.com/watch?v=t4kyRyKyOpo I know the link has been posted here before, but there wasn't a discussion about this specific topic.  submitted by /u/kamperh [link] [comments] 

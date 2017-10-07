@@ -1,0 +1,2 @@
+/u/nimbomob on Help with a bit of game code
+I would also add a "weight" multiplier to allow for a better tuning Edit: meant this in reply to xampl9   

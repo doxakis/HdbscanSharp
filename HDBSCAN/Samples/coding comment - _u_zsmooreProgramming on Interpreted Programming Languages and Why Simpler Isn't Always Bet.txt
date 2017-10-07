@@ -1,0 +1,2 @@
+/u/zsmooreProgramming on Interpreted Programming Languages and Why Simpler Isn't Always Better
+That code looks pretty nice. I'll have to give Kotlin a try.   

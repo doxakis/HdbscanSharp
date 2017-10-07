@@ -1,0 +1,2 @@
+/u/areyouarealtotoro on Is it recommended to have Azure Backup running on a seperate Azure Subscription?
+All I can guess is if someone gets credentials and just deleted (or crypto'd) all assets you'd have a completely separate tenant where all your backups exist. This assumes you don't store credentials or keys in the primary tenant nor use the same information to access the secondary/backup tenant.   

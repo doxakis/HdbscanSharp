@@ -1,0 +1,2 @@
+/u/BabyToy on How much JS you guys are doing now theses days ? is it still C# everywhere or ?
+I am still using Visual Studio 2017 though, for both node.js and .NET projects. Somehow VS2017 is more responsive and consumes less memory than VS2015. On *nix environments I use VS Code.   

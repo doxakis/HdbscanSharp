@@ -1,0 +1,2 @@
+/u/n00tz on Azure AD Domain Services or VM DC?
+Isn't that Azure AD Domain Services price ON TOP of the price for Azure AD Premium (required for Azure AD Domain Services)? They change this stuff up often enough that I don't try to keep track of it until it's time to engineer the solution for a client. Edit: also, This might help you recognize the correct scenario quicker than asking reddit. Edit2: it appears as though I was wrong about the requirement for Azure AD Premium.   

@@ -1,0 +1,2 @@
+/u/nimbomob on Hey I need help with lists.
+LstDrinks[0] = new urcls(){prop = val} Edit: Also those fields you have are unused   

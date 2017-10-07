@@ -1,0 +1,2 @@
+VM Scale Set with S2S VPN on-prem connection / DHCP
+Does the VM Scale set need to access the on-prem DHCP server to dynamically assign IP addresses, or does the vnet handle this?  submitted by /u/dmcfad1 [link] [comments] 

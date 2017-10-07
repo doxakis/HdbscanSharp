@@ -1,0 +1,2 @@
+/u/DRTYASH on Plagiarism
+Your 'buddy' needs to rewrite at least 30% of the functions to differ the two of yours enough that its not flagged when they run plagerism tests. You also need plausible deniability; put it up on github and give it the same name as your assignment. If you get call in you can claim they found it on github and that you didn't know.   

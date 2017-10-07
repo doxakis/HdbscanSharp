@@ -1,0 +1,2 @@
+/u/flip314 on Writing great commit messages for better code review
+Commit messages should include a bug/change request tracking number when at all applicable, since there's probably much more information available in the bug tracker than should ever be reproduced in a commit message. Not only does it give reviewers valuable information, but it's really helpful when you need to revisit why a change was made.   

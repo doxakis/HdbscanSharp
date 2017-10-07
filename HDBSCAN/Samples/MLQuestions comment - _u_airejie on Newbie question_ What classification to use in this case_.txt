@@ -1,0 +1,2 @@
+/u/airejie on Newbie question: What classification to use in this case?
+You should split your data: take 20% of each class as set them aside. Then fit any classification algorithm (multi class linear SVM, multi class kernel SVM, softmax regression, knn or multilayer perceptron) on the remaining 80%. Then you can test the performance of each algorithm on your test set to see how it would perform if deployed in your application (try scikit learn). Take a look at this example for SVM: https://dataaspirant.com/2017/01/25/svm-classifier-implemenation-python-scikit-learn/   

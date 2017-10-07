@@ -1,0 +1,2 @@
+/u/anon35202 on How to write a good technical paper in field of computer vision and image processing?
+http://cs.stanford.edu/people/karpathy/densecap.pdf From: cs.stanford.edu/people/karpathy/ His qualification is he got hired at Tesla. For a good template on computer vision click here: https://www.overleaf.com/latex/templates/latex-template-for-preparing-an-article-for-submission-to-osa-journals-applied-optics-advances-in-optics-and-photonics-josa-a-josa-b-and-optics-letters/gwgyrtrjkpcy#.WddtuHUrJGM Then click "Open as template" then save as and export as PDF.   

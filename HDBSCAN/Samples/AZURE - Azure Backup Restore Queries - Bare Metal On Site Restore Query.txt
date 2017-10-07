@@ -1,0 +1,2 @@
+Azure Backup Restore Queries - Bare Metal On Site Restore Query
+Hi All, Currently backing up an on prem virtual server using Azure Backup. We're able to restore individual files no issues. Is it possible to recover the entire VHD so we can then potentially mount them back on prem on a recovery host? Hope this makes sense. If not I'm happy to try and answer any queries.  submitted by /u/Izual_Rebirth [link] [comments] 

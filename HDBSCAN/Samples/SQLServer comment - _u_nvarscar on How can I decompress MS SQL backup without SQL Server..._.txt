@@ -1,0 +1,2 @@
+/u/nvarscar on How can I decompress MS SQL backup without SQL Server...?
+I don't think that would be possible. There might be some 3rd party tool out there that does that but I never heard of tools that are supporting such conversion. Restore-backup seems to be the only way.   

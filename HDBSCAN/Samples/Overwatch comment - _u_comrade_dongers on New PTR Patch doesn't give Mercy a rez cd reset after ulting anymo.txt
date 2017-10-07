@@ -1,0 +1,2 @@
+/u/comrade_dongers on New PTR Patch doesn't give Mercy a rez cd reset after ulting anymore
+Transformation ults (like Genji, Soldier, Bastion) don't cancel on stuns, the ult will be active afterwards. This is a follow-up on the patch on ptr before that deplenished ult charge immediately on press. RIP-Tire speed has been nerfed. Genji can now slash mid-activation (this is probably a bug).   

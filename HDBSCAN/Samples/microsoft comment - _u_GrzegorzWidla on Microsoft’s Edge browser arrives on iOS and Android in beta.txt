@@ -1,0 +1,2 @@
+/u/GrzegorzWidla on Microsoft’s Edge browser arrives on iOS and Android in beta
+No, because Windows is an open platform while iOS is only on small set of devices made by Apple and nobody could, no matter what, reach their level of optimization so I'd rather have single point of failure or security problems than multiple on closed platform that I, as a user, cant really protect myself.   

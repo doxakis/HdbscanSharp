@@ -1,0 +1,2 @@
+/u/Grimnur87 on Replace numbers with alpha alias?
+Any language supporting Regexes can be used to write a global find-and-replace script. In Python you just need to use the re.sub function for each substitution you intend to make. Examples of usage here: http://pythontesting.net/python/regex-search-replace-examples/   

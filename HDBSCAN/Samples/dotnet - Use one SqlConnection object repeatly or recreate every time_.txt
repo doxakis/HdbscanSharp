@@ -1,0 +1,2 @@
+Use one SqlConnection object repeatly or recreate every time?
+I make a Windows Service that will read value from hardware and constantly write data to database. Should I use one application level connection object (open-write-close all the way) or should I "using" (new-open-write-close-dispose) new connection object every time I need to. Which way leaves less "residue" in database & memory or does it make any different?  submitted by /u/khun_panya [link] [comments] 

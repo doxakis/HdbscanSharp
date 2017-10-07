@@ -1,0 +1,2 @@
+why does this not work? (array)
+float[] array = new float[] {1f}; float[,] array2 = new float[2,1]{ {0f}, {0f} }; // this is where the problem occurs array2[0] = array; // i want to replace a set of values, there's no change in length or dimensions  submitted by /u/Isaiahmk989 [link] [comments] 

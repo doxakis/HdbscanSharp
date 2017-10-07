@@ -1,0 +1,2 @@
+/u/2called_chaos on Chrome is having a seizure, any idea on how to fix besides displaying scrollbar all the time?
+You are so right, don't know what my brain was thinking about the width. I'm very certain it's some kind of floating number problem, as (especially) Chrome's WebKit's GPU acceleration has some issues. The thing is, the span that contains the changing text is positioned absolute to the surrounding panel-div which doesn't change in height or width no matter what is inside that span.   

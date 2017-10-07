@@ -1,0 +1,2 @@
+I made Python-like decorator for anyton (singleton, doubleton, x-ton).... Need comments.
+https://gist.github.com/notalentgeek/93343e519de6f28f6043b75b364036b0 I am rather new to JS. Especially the OOP stuffs. Is this the optimal way to singleton a "class"?  submitted by /u/reddit_lonely [link] [comments] 

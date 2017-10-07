@@ -1,0 +1,2 @@
+/u/butAblip on The future of assistive speech devices?
+I think, given the current state of machine learning, that this problem has either already been solved in one form or another, or it isn't going to be particularly hard to solve. I'll get back to you after doing some research on this   

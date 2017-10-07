@@ -1,0 +1,2 @@
+/u/TioLuiso on IdentityServer4 Updated to .NET Core 2
+Awesomic!!! Is there support for SAML? I believe I read there would be support at September 2017   

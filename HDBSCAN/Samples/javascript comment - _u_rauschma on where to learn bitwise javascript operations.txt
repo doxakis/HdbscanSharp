@@ -1,0 +1,2 @@
+/u/rauschma on where to learn bitwise javascript operations
+Not a video, but relatively thorough: http://speakingjs.com/es5/ch11.html#bitwise_operators There are a few things to look out for (coercion to 32 bits etc.).   

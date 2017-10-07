@@ -1,0 +1,2 @@
+Query to select all non-dba users from the database
+Hi there, I am new to SQL and was wondering if someone could please help me out with a query to list all non-DBA users from either the current database and potentially also the entire server (all databases)? Thank you so much!  submitted by /u/stylehelp [link] [comments] 

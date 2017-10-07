@@ -1,0 +1,2 @@
+/u/TheDeepFryar on Does SSIS bypass query optimizer that is used in SSMS?
+Thanks for confirming. I didn't get the job anyways, but I'm by no means upset about that!   

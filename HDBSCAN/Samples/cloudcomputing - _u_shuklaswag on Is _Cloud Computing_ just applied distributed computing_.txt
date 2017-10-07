@@ -1,0 +1,2 @@
+/u/shuklaswag on Is "Cloud Computing" just applied distributed computing?
+I see - so it's correct to say that the primary distinguishing factor between distributed computing and cloud computing is the focus on virtualized services and on-demand resource allocation?   

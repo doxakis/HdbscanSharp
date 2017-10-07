@@ -1,0 +1,2 @@
+This little lib for WPF(MVVM) will make you save time and tons of codelines in all situations. Try it!
+submitted by /u/methu_salah [link] [comments] 

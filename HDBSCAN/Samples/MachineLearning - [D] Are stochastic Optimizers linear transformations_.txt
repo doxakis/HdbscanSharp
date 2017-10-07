@@ -1,0 +1,2 @@
+[D] Are stochastic Optimizers linear transformations?
+Stochastic Optimizers in an NN setting (Gradient Descent, Adam etc). For example: If my Loss function is L(x) = a(x)+b(x) and i have an optimizer O(z), is this valid O(L(x))=O(a(x)+b(x))=O(a(x))+O(b(x)) (in both theory and practice)?  submitted by /u/LeanderKu [link] [comments] 

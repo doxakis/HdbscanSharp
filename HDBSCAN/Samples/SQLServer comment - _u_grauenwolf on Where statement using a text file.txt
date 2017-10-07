@@ -1,0 +1,2 @@
+/u/grauenwolf on Where statement using a text file
+That's pretty cool. I always forget about the OleDB drivers for CSV/Excel.   

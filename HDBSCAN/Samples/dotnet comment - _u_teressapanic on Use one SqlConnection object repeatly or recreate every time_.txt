@@ -1,0 +1,2 @@
+/u/teressapanic on Use one SqlConnection object repeatly or recreate every time?
+You may want to check out ReliableSqlConnection: https://msdn.microsoft.com/en-us/library/microsoft.practices.enterpriselibrary.windowsazure.transientfaulthandling.sqlazure.reliablesqlconnection(v=pandp.50).aspx   

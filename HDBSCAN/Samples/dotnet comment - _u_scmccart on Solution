@@ -1,0 +1,2 @@
+/u/scmccart on Solution-wide Nuget package handling in .NET SDK-based projects
+Also, check out Paket. It provides solution level package management on top of NuGet, along with tools to manage it all.   

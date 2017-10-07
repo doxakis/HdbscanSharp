@@ -1,0 +1,2 @@
+/u/cerebuspie on How could one go about testing/comparing cloud services like AWS, Azure, and Google Cloud?
+Pick a use case that you can operate in each of the environments, actually building and operating something will give you the insight. You may prefer gui over cli, containers over vms, simple or complex networking, automated tools or manual actions etc. Each provider has their own strengths and weaknesses, by trying them you can see which ones map to your own.   

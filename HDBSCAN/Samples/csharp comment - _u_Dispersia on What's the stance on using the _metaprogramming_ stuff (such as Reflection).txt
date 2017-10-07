@@ -1,0 +1,2 @@
+/u/Dispersia on What's the stance on using the "metaprogramming" stuff (such as Reflection)? When is it considered like dirty code? When is it not?
+Autofac is an IoC contrainer, it has absolutely nothing to do with what the OP is asking.   

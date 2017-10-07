@@ -1,0 +1,2 @@
+/u/vanderZwan on xorshift128+, xoroshiro128+ and xorshift1024* RNGs fail BigCrush test
+Thanks, added!   

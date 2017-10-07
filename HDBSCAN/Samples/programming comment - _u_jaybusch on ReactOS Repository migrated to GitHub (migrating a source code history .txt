@@ -1,0 +1,2 @@
+/u/jaybusch on ReactOS Repository migrated to GitHub (migrating a source code history of more than 20 years)
+Actually, you can run a few games in ReactOS, can't you? I've never installed to baremetal, so I don't know. When it's good enough to be bare metal and replace Windows 7 for my Windows games, I'll consider it as a daily OS rather than a funtime VM that I use to browse the internet.   

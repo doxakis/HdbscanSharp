@@ -1,0 +1,2 @@
+Possible to train on 3DS files?
+Is it possible to train CNN classifier using 3D images? Meaning.. if I have a 3D model, i'd like to train on various perspectives of the 3D image (from top, front, left, right). If possible, any tutorials ? If not, do I need to render out the 3D images onto 2D first and then train? (This seems wasteful)  submitted by /u/taewoo [link] [comments] 

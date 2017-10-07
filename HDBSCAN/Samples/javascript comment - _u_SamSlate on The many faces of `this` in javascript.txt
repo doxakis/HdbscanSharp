@@ -1,0 +1,2 @@
+/u/SamSlate on The many faces of `this` in javascript
+depends on your structure i guess.   

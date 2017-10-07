@@ -1,0 +1,2 @@
+Do/should neurons in a layer move away from each other during training?
+I'm playing around with Tensorflow Playground, and I'm getting these results: https://imgur.com/a/cDVuJ If there are several neurons in the same layer that are similar and we are still learning, does it make sense to re-initialize one of the neurons?  and training is slowing down, does it make sense to 'drop' one of the neurons?  Do/should learning algorithms try to diverge from neurons in the same layer?    submitted by /u/virivim [link] [comments] 

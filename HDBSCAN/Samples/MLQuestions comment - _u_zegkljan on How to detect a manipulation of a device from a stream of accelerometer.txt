@@ -1,0 +1,2 @@
+/u/zegkljan on How to detect a manipulation of a device from a stream of accelerometer and gyroscope data?
+Of course I cannot detect the final position but I want to detect the process of getting there.   

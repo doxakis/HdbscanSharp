@@ -1,0 +1,2 @@
+/u/cwg999 on Interpreted Programming Languages and Why Simpler Isn't Always Better
+As for your number example, I personally would import the data into a database and let it do the heavy lifting.  SELECT COUNT(*) as COUNT, NUMBER FROM NUMBERS GROUP BY NUMBER ORDER BY COUNT DESC    

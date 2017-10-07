@@ -1,0 +1,2 @@
+Amazing!, C# docs now use Monaco and Docker to let beginners learn C# in the browser.
+ submitted by /u/jit-coder [link] [comments]    

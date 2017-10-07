@@ -1,0 +1,2 @@
+/u/PicardTNG on template building blocks
+Looks like Microsoft is looking to simplify ARM Templates. These template building blocks seem to solve some of the same issues as Terraform.   

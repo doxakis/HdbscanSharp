@@ -1,0 +1,2 @@
+/u/leodicapricorn on In the exression of dz[1], why do we use element-wise multiplication operator ( * ) ?
+This is a good resource for finding derivatives in neural networks: http://web.stanford.edu/class/cs224n/lecture_notes/cs224n-2017-gradient-notes.pdf It shows the derivations of everything - including why there is a Hadamard product mixed in there with all the matrix multiplications.   

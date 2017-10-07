@@ -1,0 +1,2 @@
+/u/goosefraba190 on Advice for learning coding, currently working through freecodecamp beginner course what should I do next
+In my opinion, don't worry at all about graphics for you first game. Figure out how to use the text interface, and leverage that to make something you enjoy.   

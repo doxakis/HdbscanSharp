@@ -1,0 +1,2 @@
+How to make an infinite page that you can drag and pan around?
+Hi, I was wondering how I would go about making a page (that you can navigate by clicking and dragging the mouse) that is infinite. an example is https://www.desmos.com/calculator  submitted by /u/RevivedBear [link] [comments] 

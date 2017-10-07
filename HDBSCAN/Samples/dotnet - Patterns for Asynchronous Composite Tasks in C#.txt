@@ -1,0 +1,2 @@
+Patterns for Asynchronous Composite Tasks in C#
+submitted by /u/gigilabs [link] [comments] 

@@ -1,0 +1,2 @@
+/u/current_thread on The Beauty of the Go Programming Language
+Lol no generics   

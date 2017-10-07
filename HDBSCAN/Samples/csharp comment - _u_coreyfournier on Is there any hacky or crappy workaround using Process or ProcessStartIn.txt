@@ -1,0 +1,2 @@
+/u/coreyfournier on Is there any hacky or crappy workaround using Process or ProcessStartInfo that will let me determine if an external console process written in vc++ has thrown an exception?
+This is the other other option. Here is a similar question: https://stackoverflow.com/questions/11811856/attach-debugger-in-c-sharp-to-another-process   

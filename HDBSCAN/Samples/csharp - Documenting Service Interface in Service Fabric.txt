@@ -1,0 +1,2 @@
+Documenting Service Interface in Service Fabric
+Good Morning! I'm new to C#, so this may be a dumb question. We are getting started with using service fabric to stand up some new services. It seems pretty cool so far. We plan on using a Remoting Interface for other services to call. I'm using swashbuckle/swagger for the web apis. I'm not totally sure how to document these non-restful interfaces. What have you all done? Thanks!  submitted by /u/bmoregeo [link] [comments] 

@@ -1,0 +1,2 @@
+/u/sylvanaar on Benchmarks showing Electron apps are super slow and eat memory like there is no tomorrow - x-post from /r/programming
+It runs fast on my macbook, but it drains the batter fast, and gets too hot to keep in my lap sometimes.   

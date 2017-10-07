@@ -1,0 +1,2 @@
+/u/RNGod2512 on I keep getting this weird error and cannot find a fix for it at all. "Your rendering device has been lost!"
+The problem is with the recent AMD drivers, roll them back one version for now. I've had the exact same issue and it was even suggested in a blue post somewhere to do so. This is specific to AMD only.   

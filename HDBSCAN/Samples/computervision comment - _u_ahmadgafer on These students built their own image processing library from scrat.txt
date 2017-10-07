@@ -1,0 +1,2 @@
+/u/ahmadgafer on These students built their own image processing library from scratch
+There are three components in the software: 1- Flying object detection. 2- Trajectory estimation. 3- Indoor location system. We are working on a detailed report in English, I will share it soon. if you have a question about a specific detail I can help you.   

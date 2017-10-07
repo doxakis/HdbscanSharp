@@ -1,0 +1,2 @@
+What packages/modules/libraries have you been using?
+As the title says, I’m curious what you’re using! What are some interesting packages you have been testing out? Or some of your favorite packages from NPM or PyPI etc? Whatever it is, I want to hear about it.  submitted by /u/jacobcalvisrya [link] [comments] 

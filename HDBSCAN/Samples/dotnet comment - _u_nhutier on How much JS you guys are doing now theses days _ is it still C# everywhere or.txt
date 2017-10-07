@@ -1,0 +1,2 @@
+/u/nhutier on How much JS you guys are doing now theses days ? is it still C# everywhere or ?
+But the type safety is a gift from heaven, especially when working with juniors.   

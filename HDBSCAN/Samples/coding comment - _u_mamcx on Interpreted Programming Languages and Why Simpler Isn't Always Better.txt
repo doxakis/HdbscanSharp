@@ -1,0 +1,2 @@
+/u/mamcx on Interpreted Programming Languages and Why Simpler Isn't Always Better
+Everything at the end is interpreted. That is what the CPU do. The problem with python is not that. Is that python is too mutating/dynamic: https://speakerdeck.com/alex/why-python-ruby-and-javascript-are-slow   

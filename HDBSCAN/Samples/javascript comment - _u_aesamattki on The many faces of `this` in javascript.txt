@@ -1,0 +1,2 @@
+/u/aesamattki on The many faces of `this` in javascript
+Shorter syntax, less boilerplate code. They behave differently from normal functions in other ways, too.   

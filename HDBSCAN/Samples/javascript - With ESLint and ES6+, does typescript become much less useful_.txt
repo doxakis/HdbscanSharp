@@ -1,0 +1,2 @@
+With ESLint and ES6+, does typescript become much less useful?
+Strict types is the big one. Other than that what else is there? It seems like ES6+ and a hearty ESLint config will cover pretty much everything else. Is Typescript still worth using?  submitted by /u/obnkf [link] [comments] 

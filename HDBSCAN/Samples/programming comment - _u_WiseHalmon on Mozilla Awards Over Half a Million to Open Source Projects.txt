@@ -1,0 +1,2 @@
+/u/WiseHalmon on Mozilla Awards Over Half a Million to Open Source Projects
+I haven't had any issues as of late. I use webpack and source maps seem to work just as well as chrome.   

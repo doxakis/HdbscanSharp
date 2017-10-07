@@ -1,0 +1,2 @@
+/u/Hiant on NaiveBayes for classifying 3 types of texts
+What is the null hypothesis? Everyone is healthy?   

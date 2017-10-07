@@ -1,0 +1,2 @@
+/u/umilmi81 on Help with a bit of game code
+you would have to play with the numbers a bit to match what you are looking for, but you could simply generate a random number between zero and the number of levels you have, subtract the difficulty, and if your random number is at or below the current level, you spawn negative. Otherwise spawn positive.  int maxLevels = 30; int currentLevel = 10 int difficulty = 3; var r = new Random(DateTime.Now.Ticks).Next(0, maxLevels) - difficulty; bool spawnBadItem = (r < currentLevel) ? true : false;    

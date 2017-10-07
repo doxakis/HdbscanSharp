@@ -1,0 +1,2 @@
+How to display dependency tree in spacy using program?
+I can check dependency tree using displaCy : https://demos.explosion.ai/displacy/ But I want to display using program in spacy, is it possible? I can check individual components such as ROOT, nsub etc. from sentence using spacy, but i want to check complete dependency tree.  submitted by /u/rameshkjes [link] [comments] 

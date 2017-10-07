@@ -1,0 +1,2 @@
+How to download google material icons locally.
+I am using this CDN: https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons and i want to host these icons locally. how do i go about doing this?  submitted by /u/stumar [link] [comments] 

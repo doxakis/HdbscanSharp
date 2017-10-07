@@ -1,0 +1,2 @@
+/u/bigrodey77 on Come discuss your side projects! [October 2017]
+Currently writing a mini command line app to demonstrate the different ways to unit test and mock C# code. I'm using CommandLineParser but there's a super annoying way it handles what I'm doing and IMO kind of defeats the purpose of using that in the first place. I'm going to give this a shot. Thanks!!   

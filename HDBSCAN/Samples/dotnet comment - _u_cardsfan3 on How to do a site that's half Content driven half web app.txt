@@ -1,0 +1,2 @@
+/u/cardsfan3 on How to do a site that's half Content driven half web app
+This video does a good job explaining it. Basically looks like you're defining JSON structures and allowing a content manager to create and edit instances of them. Then you call into contentful's api to insert the content into web pages. https://www.youtube.com/watch?v=hK4mfxbcbpw&feature=youtu.be   

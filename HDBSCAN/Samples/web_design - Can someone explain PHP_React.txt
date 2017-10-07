@@ -1,0 +1,2 @@
+Can someone explain PHP/React
+I have an ipage domain and I can only use PHP/Perl/Python to write my backend. I want to run React and I want to build a database, but everything I've found involves using php to write forms and I don't know how to run the PHP scripts in my react components. I haven't had any real luck looking for tutorials or proper beginning materials. Any help is much appreciated.  submitted by /u/eXo5 [link] [comments] 

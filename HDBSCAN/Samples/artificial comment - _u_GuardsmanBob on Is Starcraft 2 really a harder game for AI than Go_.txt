@@ -1,0 +1,2 @@
+/u/GuardsmanBob on Is Starcraft 2 really a harder game for AI than Go?
+One of the hardest part of a real time game is not figuring out what action to take, but when to take it, a problem turn based games do not have. When AI can play Starcraft as well as humans with human restrictions (reaction time etc.) .. it can do very many things as well as humans, including driving cars.   

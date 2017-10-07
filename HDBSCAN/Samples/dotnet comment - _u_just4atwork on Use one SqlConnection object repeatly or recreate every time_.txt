@@ -1,0 +1,2 @@
+/u/just4atwork on Use one SqlConnection object repeatly or recreate every time?
+Not a down voter but, you don't want a singleton in the case on a SqlConnection. If you use the connection object properly and let the framework handle the pooling you will have many open connections to the database. Disposing the connection will not actually close the underlying connection, it will simply be returned to the pool of connections and reused. A singleton would create one connection to the database and could potentially cause a bottleneck.   

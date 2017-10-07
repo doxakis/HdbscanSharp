@@ -1,0 +1,2 @@
+Does the clarity of a person's face affect pedestrian detection?
+The title says it all mostly. However, I want to blur the faces due to privacy reasons. Are there any particular features that are robust to this?  submitted by /u/KarumeBladekin [link] [comments] 

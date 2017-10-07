@@ -1,0 +1,2 @@
+/u/devmarwen on Why JS desktop apps are slow on Ubuntu?
+My machine is fairly decent i5@3.3Ghz with 8gb RAM. Maybe a full IDE like Intellij Idea needs more than that but not a simpler text editor IMO.   

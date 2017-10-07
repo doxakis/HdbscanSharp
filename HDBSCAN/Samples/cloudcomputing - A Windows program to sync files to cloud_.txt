@@ -1,0 +1,2 @@
+A Windows program to sync files to cloud.
+I want to set up an application program that synchronizes files from a specified folder to a cloud service life OwnCloud. The OS is Windows 8. What (1) language, (2) APIs, (3) _____ will I need?  submitted by /u/AlphaGrad [link] [comments] 

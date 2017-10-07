@@ -1,0 +1,2 @@
+click() method detectable?
+Is it possible for the server to see a difference between me actually using my mouse/enter key and hitting the submit button of a form and JavaScript using the click() method?  submitted by /u/FunnyPocketBook [link] [comments] 

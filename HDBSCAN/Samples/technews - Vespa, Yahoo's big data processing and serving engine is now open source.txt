@@ -1,0 +1,2 @@
+Vespa, Yahoo's big data processing and serving engine is now open source
+ submitted by /u/Antrikshy [link] [comments]    

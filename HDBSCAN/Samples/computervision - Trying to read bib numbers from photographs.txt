@@ -1,0 +1,2 @@
+Trying to read bib numbers from photographs
+Hi, I'm trying to read bib numbers from photos like the ones in this collection - https://imgur.com/a/ABTtT I've tried Google Vision API's OCR abilities. It's good to a certain extent. Are there some alternate approaches to this? Can we do some pre-processing to the images to improve accuracy and stuff? Looking for some directions and thoughts so I can research better :)  submitted by /u/Steverob91 [link] [comments] 

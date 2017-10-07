@@ -1,0 +1,2 @@
+/u/Hoooooooar on Azure AD Domain Services or VM DC?
+The B series VM's will be out to the UK soon, and when you just need a little tiny DC you can get one for $15 now..   

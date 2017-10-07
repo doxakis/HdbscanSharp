@@ -1,0 +1,2 @@
+/u/Robby517 on The many faces of `this` in javascript
+This has nothing at all to do with 'whatever javascript feels like'. It has everything to do with execution context and how you manipulate that context. Sure you can call it a confusing concept and argue that it is a design error, but don't go and blame your lack of knowledge on supposed randomness. You claim to have a good understanding of the this keyword but I highly doubt it.   

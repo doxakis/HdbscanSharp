@@ -1,0 +1,2 @@
+/u/RaionTategami on How can a neural network be trained to identify that the input belongs to none of the trained labels?
+They cannot do this normally but here's a paper on one technique. https://arxiv.org/abs/1610.02136 It works by detecting that the network output is outside of the usually rage seen during training.   

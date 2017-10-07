@@ -1,0 +1,2 @@
+/u/cloudignitiondotnet on Azure B-Series as Domain Controller
+I think so. The CPU is likely only going to spike if you are actively logged into the GUI and making changes. Otherwise, it will idle. Keep in mind B series are only in preview, though.   

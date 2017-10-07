@@ -1,0 +1,2 @@
+/u/NavelBarricade on Oracle: "the use of open source software has been declining rapidly in the private sector"
+People are starting to take a look at Microsoft SQL server as an alternative because it now runs on Linux. I realize it isn’t open source but anything is better than Oracle. I can’t wait until Java gets fully open sourced. That’s another place that Oracle’s grin needs to be losened. With .NET being open source now people see it as a viable alternative if they haven’t already invested too much in Java.   

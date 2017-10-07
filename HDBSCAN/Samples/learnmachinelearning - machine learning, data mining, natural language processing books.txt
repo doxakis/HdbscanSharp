@@ -1,0 +1,2 @@
+machine learning, data mining, natural language processing books
+Hi, Im starting a university project where I have to do data mining on SE repository using nlp. Ive decided to do this using machine learning and preferably in python. I just wanted to know if anyone has had any good experiences with books which cover these topics from a somewhat beginner level and is more towards practical uses.  submitted by /u/dmnte [link] [comments] 

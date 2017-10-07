@@ -1,0 +1,2 @@
+/u/PurdueME06 on The Beauty of the Go Programming Language
+How is the ecosystem compared to Python's? It seems like a really interesting language. I'll probably pick it up sometime it's just hard to beat what you can get with pip.   

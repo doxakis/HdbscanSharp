@@ -1,0 +1,2 @@
+/u/LL_Bean on I have created a testability kata with excercises, showing how to convert any non-testable system to a testable one
+Oh well, points for admitting it I guess. You're annoyed at "intentionally" bad code, I'm annoyed by people being jerks for no reason.   

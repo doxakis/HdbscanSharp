@@ -1,0 +1,2 @@
+/u/cakeofzerg on Question on Document Frequency Thresholding
+r  Can you implement the algorithm from the paper yourself? Doesnt look too hard and then just try some different min max. I would try removing top 10% only, then bottom 10% only, then both, see how results move and get a feel for whats actually working.   

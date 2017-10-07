@@ -1,0 +1,2 @@
+/u/thunder185 on Welcome to /r/artificial!
+How critical are the GPU (NVDA/AMD) companies to AI? How many AI instances rely on those processors to run? For example, I think autonomous driving utilizes these but what else? Thank you.   

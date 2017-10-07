@@ -1,0 +1,2 @@
+Now your scala compiles to native byte code instead of java byte code.
+submitted by /u/Gnaneshkunal [link] [comments] 

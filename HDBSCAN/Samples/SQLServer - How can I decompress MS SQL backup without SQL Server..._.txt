@@ -1,0 +1,2 @@
+How can I decompress MS SQL backup without SQL Server...?
+So, I've ended up with many TBs of compressed SQL backups with SQL native compression. Sadly those files does not fit nicely on our deduplicated backup storage, but 'normal' backups do (I've run tests, over 10:1 savings vs 2:1 at best with DD ). So I am trying to find a way I can script decompression of old backup .bak files without properly restoring them to SQL Server. Any ideas and/or suggestions are welcomed :) EDIT: precised  submitted by /u/toffitomek [link] [comments] 

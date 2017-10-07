@@ -1,0 +1,2 @@
+IdentityServer4 Updated to .NET Core 2
+The guys were hard at work and have finally released it. https://github.com/IdentityServer/IdentityServer4/releases/tag/2.0.0  submitted by /u/odioalsoco [link] [comments] 

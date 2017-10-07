@@ -1,0 +1,2 @@
+Demo table partitioning in sql server 2014 step by step
+ submitted by /u/petter1245 [link] [comments]    

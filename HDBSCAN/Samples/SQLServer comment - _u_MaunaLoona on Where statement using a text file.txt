@@ -1,0 +1,2 @@
+/u/MaunaLoona on Where statement using a text file
+You can also use BULK INSERT to get the text file into a table, as long as the text file is properly formatted.   

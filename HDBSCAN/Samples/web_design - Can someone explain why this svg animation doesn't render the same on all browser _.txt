@@ -1,0 +1,2 @@
+Can someone explain why this svg animation doesn't render the same on all browser ?
+ submitted by /u/frennetixsc [link] [comments]    

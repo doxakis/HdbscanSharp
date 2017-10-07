@@ -1,0 +1,2 @@
+/u/if_else_do_while on Writing great commit messages for better code review
+Whenever we commit the code for a bug fix we also have the link to Jira bug. And Jira then reports that changes in svn that were done for the bug. If any new bug or issue happens due to the bug fix, the code that was changed can be easily found.   

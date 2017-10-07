@@ -1,0 +1,2 @@
+/u/Silamoth on Hey I need help with lists.
+The listDrinks array has been created, but none of the items within it have been initialized. You're trying to access a property of a variable that hasn't been initialized. Once you initialize all the Drinks in listDrinks, this should be able to work.   

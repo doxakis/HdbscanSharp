@@ -1,0 +1,2 @@
+/u/gwern on [R] Unsupervised Image-to-Image Translation Networks
+If you have some supervised samples, that might be enough to bootstrap: "Dual Learning for Machine Translation", He et al 2016.   

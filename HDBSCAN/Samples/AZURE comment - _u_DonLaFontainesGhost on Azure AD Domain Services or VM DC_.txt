@@ -1,0 +1,2 @@
+/u/DonLaFontainesGhost on Azure AD Domain Services or VM DC?
+I would do both. Then Azure AD can be your primary AD, easily accessible to the remote offices. But if there's an Azure outage, or if Microsoft decides Azure AD isn't bringing in enough revenue they deprecate it, you've got your on-premise DC running and available.   

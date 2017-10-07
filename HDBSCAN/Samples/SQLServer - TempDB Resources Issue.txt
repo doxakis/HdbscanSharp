@@ -1,0 +1,2 @@
+TempDB Resources Issue
+Unfortunately, this error happened on my laptop server at home and I don't have the exact wording of it while at work. While running a massive stored procedure and utilizing temp tables, I got an error that the TempDB ran out of resources. Is this something where I can point the mdf and ldf files to an external harddrive to fix or is there something inherent with the TempDB that I'm not utilizing correctly and need to fix by adjusting the SP?  submitted by /u/sounds_cat_fishy [link] [comments] 

@@ -1,0 +1,2 @@
+/u/Y33zma on Problems with first neural network
+Sorry, been on vacation a few days. The diagram is mostly for the math of how the matrices are manipulated. It can be generalized for any number of neurons and layers. My network has an input layer with 2 neurons, as well as a bias neuron. My hidden layer has 2 neurons with a bias neuron. My output layer has 1 neuron.   

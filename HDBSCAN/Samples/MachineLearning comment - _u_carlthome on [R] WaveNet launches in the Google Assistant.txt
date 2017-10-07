@@ -1,0 +1,2 @@
+/u/carlthome on [R] WaveNet launches in the Google Assistant
+So what changed to get the speedup?   

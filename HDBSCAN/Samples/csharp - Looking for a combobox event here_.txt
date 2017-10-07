@@ -1,0 +1,2 @@
+Looking for a combobox event here.
+I am looking for an event that acts just like combobox's selection changed but ignores typing into the combobox (isEditable typing). talking WPF-wise Thanks.  submitted by /u/technikfe [link] [comments] 

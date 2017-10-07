@@ -1,0 +1,2 @@
+/u/placidified on Generating Pixel Profile Pictures with Cellular Automata using Node.js and StdLib (x-post r/node)
+Reminds me of the following https://code.google.com/archive/p/pyinkblot/   

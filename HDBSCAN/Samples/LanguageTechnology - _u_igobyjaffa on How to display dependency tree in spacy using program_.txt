@@ -1,0 +1,2 @@
+/u/igobyjaffa on How to display dependency tree in spacy using program?
+you can use a dependency tree generator from tensorflow or corenlp.run, if alternatives are acceptable.   

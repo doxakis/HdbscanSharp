@@ -1,0 +1,2 @@
+/u/rinpiels on how much do Azure prices fluctuate
+US here. I haven't seen them ever go up on the services I use. Every now and then they'll adjust the price down, I assume to compete with AWS. Preview services are usually at a discount until general availability to entice people to try them.   

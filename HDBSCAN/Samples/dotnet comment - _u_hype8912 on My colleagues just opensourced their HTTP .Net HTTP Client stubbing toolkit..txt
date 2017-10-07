@@ -1,0 +1,2 @@
+/u/hype8912 on My colleagues just opensourced their HTTP .Net HTTP Client stubbing toolkit. A .NET Standard library for intercepting server-side HTTP dependencies.
+This looks very similar to what I did a couple of months ago using Castle's DynamicProxy. We wanted a very fast way for devs to be able to consume REST APIs if they were given the interface and the models.   

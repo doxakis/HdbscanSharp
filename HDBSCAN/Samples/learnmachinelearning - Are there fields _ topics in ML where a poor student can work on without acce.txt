@@ -1,0 +1,2 @@
+Are there fields / topics in ML where a poor student can work on without access to clusters and multiple GPUs?
+I am looking for a topic for my diploma / master thesis but I won't have access to powerful hardware. I assume that training for nlp or speech recognition doesn't require the same computational power as, say, image recognition. Is my assumption correct? Do you have any advice to give? Thanks in advance.  submitted by /u/q822903 [link] [comments] 

@@ -1,0 +1,2 @@
+How do you build a gallery website?
+Sorry if the tile is a bit misleading. The real question is: how do you build a fast and responsive site that will hold and showcase very large, HD photos (jpegs), without compromising on loading speed or image quality? How do, let's say, photographers, have hundreds of HD crisp photos on their sites without losing to loading speed or image quality?  submitted by /u/UknowmeimGui [link] [comments] 

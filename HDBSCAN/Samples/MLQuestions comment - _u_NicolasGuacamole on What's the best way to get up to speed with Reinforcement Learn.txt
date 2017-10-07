@@ -1,0 +1,2 @@
+/u/NicolasGuacamole on What's the best way to get up to speed with Reinforcement Learning?
+Read Sutton and Barto.   

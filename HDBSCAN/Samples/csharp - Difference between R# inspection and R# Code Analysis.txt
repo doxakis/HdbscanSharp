@@ -1,0 +1,2 @@
+Difference between R# inspection and R# Code Analysis
+In Visual Studio, when I Enable code Analysis in R# Code Inspection>Settings I get a tick in the corner when no errors. If I run Menu>Analyze> Run Code Analysis on Solution (ALT-F11) I get no errors, some warnings, etc. If I run Resharper>Inspect>Code Issues in Solution, I get different values. Any ideas what might be going on?  submitted by /u/neilhighley [link] [comments] 

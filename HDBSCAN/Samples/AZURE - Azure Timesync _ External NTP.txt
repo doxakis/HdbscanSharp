@@ -1,0 +1,2 @@
+Azure Timesync / External NTP
+i have a linux box running NTP connected to my External NTP server.. upon reboot, azure timesync seems to kick in and both timesources battle it out for which is the correct time.. how do i permanentely disable the azure timesync?  submitted by /u/supremecookeh [link] [comments] 

@@ -1,0 +1,2 @@
+Is there a place where I can find problem sets for basic NLP ?
+I am taking an NLP course in my college, and I would like to find some problem sources related to basic n-gram probability, smoothing, POS tagging, and some other intro-level NLP topics. Any kind of source would be appreciated. Thanks!  submitted by /u/czechrepublic [link] [comments] 

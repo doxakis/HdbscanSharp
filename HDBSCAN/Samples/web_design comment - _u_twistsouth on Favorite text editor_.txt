@@ -1,0 +1,2 @@
+/u/twistsouth on Favorite text editor?
+I tried it last year but wasn’t sold. I think it was missing a lot of the features I rely on in Coda 2. Coda is getting frustratingly slow these days though; so many memory leaks and updates are basically just minor bug fixes.   

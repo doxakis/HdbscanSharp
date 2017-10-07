@@ -1,0 +1,2 @@
+/u/LiverReich on How to detect a manipulation of a device from a stream of accelerometer and gyroscope data?
+You could try linear regression.   

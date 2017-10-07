@@ -1,0 +1,2 @@
+/u/leondz on A Random Walk Through EMNLP 2017
+Hey! Well, maybe it wouldn't be too long a trip for you next summer ;) Tim and I did exchange glances when a certain presentation expressed confusion about why Debian manuals were included in a certain dataset (I guess they hadn't read the paper, ...), it was pretty neat.   

@@ -1,0 +1,2 @@
+/u/lestreinz on Are there fields / topics in ML where a poor student can work on without access to clusters and multiple GPUs?
+There are many small-scale datasets to test your algorithms (e.g. MNIST, CIFAR-10, CIFAR-100). Most of the machine/deep learning frameworks have cpu-run option. You could also code using ConvNetJS library and run everything from your browser.   

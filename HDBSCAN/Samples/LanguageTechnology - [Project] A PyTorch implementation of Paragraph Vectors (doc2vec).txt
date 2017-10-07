@@ -1,0 +1,2 @@
+[Project] A PyTorch implementation of Paragraph Vectors (doc2vec)
+I'm implementing a library for training paragraph vector models as proposed by Q. V. Le et al. (Distributed Representations of Sentences and Documents). The code is available on GitHub: https://github.com/inejc/paragraph-vectors I would appreciate any kind of feedback. Contributions in any form are also more than welcome (I have already opened some issues regarding future work).  submitted by /u/inejc [link] [comments] 

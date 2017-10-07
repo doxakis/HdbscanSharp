@@ -1,0 +1,2 @@
+Is it possible to generate training data with green screen??
+I am just wondering that if we could take photo of people and automatically generate segmentation label (AKA. mask) with green screen. In this way, we can crop out the person and change the background for training image. BTW. What I am doing is to segment person from background with segmentation network.  submitted by /u/flyingmrwang [link] [comments] 

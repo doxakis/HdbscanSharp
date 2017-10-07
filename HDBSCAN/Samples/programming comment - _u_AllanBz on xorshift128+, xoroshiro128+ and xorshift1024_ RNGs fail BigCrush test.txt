@@ -1,0 +1,2 @@
+/u/AllanBz on xorshift128+, xoroshiro128+ and xorshift1024* RNGs fail BigCrush test
+I recall when O'Neill's paper was first submitted, Vigna had some derogatory and/or dismissive comments about her method in various comments on weblog posts discussing the PCG algorithm and the possibility of its adoption.   

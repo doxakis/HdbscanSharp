@@ -1,0 +1,2 @@
+Lessons from migrating a large codebase to React 16
+submitted by /u/b1naryth1ef [link] [comments] 

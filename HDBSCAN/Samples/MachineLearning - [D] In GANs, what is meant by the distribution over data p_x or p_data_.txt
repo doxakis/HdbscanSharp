@@ -1,0 +1,2 @@
+[D] In GANs, what is meant by the distribution over data p_x or p_data?
+I'm going through Goodfellow's original paper: https://arxiv.org/abs/1406.2661 I believe I have a fairly good understanding of what is going on but I'm having a hard time picturing what p_x or p_data actually is. Does G map z to the 256x256 space of images? Is the distribution they refer to the distribution over the pixel values of each image?  submitted by /u/Pavementos [link] [comments] 

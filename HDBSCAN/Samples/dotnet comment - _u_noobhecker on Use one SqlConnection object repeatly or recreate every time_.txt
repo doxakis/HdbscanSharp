@@ -1,0 +1,2 @@
+/u/noobhecker on Use one SqlConnection object repeatly or recreate every time?
+Whats with the downvote? Dependency injection is so mainstream nowadays.   

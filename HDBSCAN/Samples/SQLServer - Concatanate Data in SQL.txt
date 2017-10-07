@@ -1,0 +1,2 @@
+Concatanate Data in SQL
+Hi, I am new to SQL and am trying to learn how to write a script that will add "00" to the end of each entry that appears in a particular column. Essentially, I am trying to change entries that are numbers - for example, I want to change 35 to 3500. I have about 1000 different numbers that all need to be changed. In excel, I would just concatanate, but I am not confident in the correct way to do it using SQL. Can anyone help me? Thanks!  submitted by /u/abbie1119 [link] [comments] 

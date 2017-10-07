@@ -1,0 +1,2 @@
+Photorealistic rendering (with Python?)
+I want to render a 3d mesh (face) into an existing video and I want a high quality result (ray tracing?). What is the best way to accomplish that? Maybe it's my misunderstanding but game engines put the emphasis is on real time (which I don't care about). It is also preferable if a python wrapper exists. Thanks!  submitted by /u/qeVut7tguCpxKqqMPtWU [link] [comments] 

@@ -1,0 +1,2 @@
+[D] Global Average Pooling for a single class problem
+I've seen Global Average Pooling layers replacing FC layers in image recognition. The idea is that you have one output feature map for every class and then just average each and pass them through softmax. This means you only have one output feature map for a single class problem. Does this work equally well? Does anyone have any experience with this?  submitted by /u/sneezophile [link] [comments] 

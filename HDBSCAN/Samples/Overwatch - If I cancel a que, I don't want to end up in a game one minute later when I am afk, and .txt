@@ -1,0 +1,2 @@
+If I cancel a que, I don't want to end up in a game one minute later when I am afk, and then getting suspended from Competitive.
+Feels like this happen on a regulary basis, need to prevent this somehow, since if I cancel que, it's supposed to cancel it. Edit: So queue. ¿Qué? - But yes, the delay sucks.  submitted by /u/shouldkick [link] [comments] 

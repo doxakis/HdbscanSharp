@@ -1,0 +1,2 @@
+SQL Sequence vs Identity Column
+ submitted by /u/mrdenny [link] [comments]    

@@ -1,0 +1,2 @@
+/u/davis685 on Fast Multiclass Object Detection in Dlib 19.7
+I’m training it on kitti at the moment. So that will give a decent comparison. Although, the main benefit is that it works on smaller datasets. Dlib comes with an example that trains a face detector from just 4 images. Try that with Yolo or SSD :)   

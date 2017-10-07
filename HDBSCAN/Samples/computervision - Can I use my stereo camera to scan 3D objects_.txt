@@ -1,0 +1,2 @@
+Can I use my stereo camera to scan 3D objects?
+I have a USB device that has 2 optical capture cameras built into it, they are fixed at human eye distance apart. Are there any apps available you guys can recommend that will take advantage of this, or is basic photogrammetry my best option anyway?  submitted by /u/mrpmorris [link] [comments] 

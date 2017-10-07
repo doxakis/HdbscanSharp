@@ -1,0 +1,2 @@
+/u/am0x on How much JS you guys are doing now theses days ? is it still C# everywhere or ?
+WebAPIs with Vue frontend. Current team are all full stack. Run test driven development which is great...except for JS. JavaScript testing sucks and feels nearly useless.   

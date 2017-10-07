@@ -1,0 +1,2 @@
+/u/carlthome on How can a neural network be trained to identify that the input belongs to none of the trained labels?
+Raging neural networks?   

@@ -1,0 +1,2 @@
+/u/sharpchicity on Beautiful soup? justtext? dragnet? Not super happy with any of these. Maybe I'm using them wrong? Advice on the best way to reliably pull text from a large number of varied websites. Beginner ooking for advice from the veteran data miners.
+Never had an issue using beautiful soup unless it's Javascript. Share code and get some help debugging   

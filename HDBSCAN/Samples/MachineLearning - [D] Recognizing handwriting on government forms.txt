@@ -1,0 +1,2 @@
+[D] Recognizing handwriting on government forms
+How would I go about doing handwriting recognition and transcription on standardized government financial forms (e.g. W2s etc). Of course this is a step above MNIST, but is there some established model that takes care of handwritten words effectively. Alternatively, is there some API that could do this for me? (the Google vision API handles handwritten text rather poorly from what i have seen)  submitted by /u/johnathanjones1998 [link] [comments] 

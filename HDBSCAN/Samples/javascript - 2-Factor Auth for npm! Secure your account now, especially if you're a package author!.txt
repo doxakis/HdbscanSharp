@@ -1,0 +1,2 @@
+2-Factor Auth for npm! Secure your account now, especially if you're a package author!
+submitted by /u/aeflash [link] [comments] 

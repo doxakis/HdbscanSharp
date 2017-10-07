@@ -1,0 +1,2 @@
+/u/Rehd on Tool that shows efficiency of 2008 R2 DB/SQL configuration.
+I've used SQLSentry and DPA from Solarwinds, I think I still strongly prefer DPA but I haven't given SQLSentry NEARLY the same amount of hours. So I'll come around to it, I'm sure. I also have to upgrade us like 4-7 major versions on it... so... I bet they improved it from 2012 or something like that. Their plan evaluation tool is off the charts amazing though.   

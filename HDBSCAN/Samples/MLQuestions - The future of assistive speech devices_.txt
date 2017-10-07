@@ -1,0 +1,2 @@
+The future of assistive speech devices?
+Hi, I have speech problems, and use either a assistive device or Hand language (hand alphabet). I am very interested in IT, and have read much about ML. When I speak, with my assistive device, I type what I have to say, and it’s slow. Would it be possible that ML could learn how I use hand alphabet (or any other hand language) and then speak for me in the way I use my assistive device  submitted by /u/jonumand [link] [comments] 

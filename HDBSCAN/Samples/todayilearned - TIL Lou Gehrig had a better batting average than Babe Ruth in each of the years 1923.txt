@@ -1,0 +1,2 @@
+TIL Lou Gehrig had a better batting average than Babe Ruth in each of the years 1923-25, but Ruth had a better batting average than Gehrig over the 3 years combined. This is an example of a mathematical curiosity called Simpson’s Paradox.
+submitted by /u/bennetthaselton [link] [comments] 

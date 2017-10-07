@@ -1,0 +1,2 @@
+/u/slimos on A question about the SVD of an image.
+Suppose the image was n rows by m columns by 3 channels. Did you calculate the SVD of a 3n by m matrix, or did you calculate the SVD of a 3 by (n x m) matrix?  Its actually a gray scale image. So just n x m.   

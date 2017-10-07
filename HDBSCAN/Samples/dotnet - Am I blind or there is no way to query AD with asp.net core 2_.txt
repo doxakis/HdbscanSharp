@@ -1,0 +1,2 @@
+Am I blind or there is no way to query AD with asp.net core 2?
+I was making app today with asp.net core 2 and wanted to do a simple AD query like I have done in the past with asp.net 4.6 MVC and webforms but looks like there is no way to do this with Asp core 2.0? Am I missing something ? Should not this be included in the framework or at least a Nugget package from MS?  submitted by /u/chimichangaXL [link] [comments] 

@@ -1,0 +1,2 @@
+How to manually create test data?
+Say if I needed to create some test tables with some test data real quick as test data for a web application, how do I do that? Sql script?  submitted by /u/EyeContactScaresMe [link] [comments] 

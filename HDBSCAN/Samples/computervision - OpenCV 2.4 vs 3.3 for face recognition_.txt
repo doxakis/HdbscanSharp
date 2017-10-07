@@ -1,0 +1,2 @@
+OpenCV 2.4 vs 3.3 for face recognition?
+Currently I am using OpenCV 2.4 with C++ for a face recognition, is there any reason to switch over to 3.3?  submitted by /u/Medionol [link] [comments] 

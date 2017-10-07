@@ -1,0 +1,2 @@
+/u/dfabulich on Git Rebasing Public Branches Works Much Better Than You’d Think
+"Your merge commit"? What merge commit? The way Seekers do it, they just rebase, rebase, rebase, the whole time. In steps 1, 2, 3, and 4, there are no merge commits at all.   

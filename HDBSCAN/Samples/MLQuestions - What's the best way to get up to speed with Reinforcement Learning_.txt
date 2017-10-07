@@ -1,0 +1,2 @@
+What's the best way to get up to speed with Reinforcement Learning?
+I have a decent understanding of classical ML techniques and some DL techniques. From here, what's the fastest way to get a thorough knowledge of reinforcement learning? Thanks!  submitted by /u/pastaking [link] [comments] 

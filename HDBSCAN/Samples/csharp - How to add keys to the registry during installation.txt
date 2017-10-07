@@ -1,0 +1,2 @@
+How to add keys to the registry during installation
+I'm using an installer project to create the installation for my application. As part of the installation, I need to add some keys to the registry. I have a .reg file that contains the relevant keys. I can't figure out any way of configuring the installer to do anything other than copy files to install locations - how do I get it to actually run regedit and put the required keys into the registry? Thanks!  submitted by /u/LondonPilot [link] [comments] 

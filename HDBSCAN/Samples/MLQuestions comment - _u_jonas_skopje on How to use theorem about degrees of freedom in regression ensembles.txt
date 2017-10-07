@@ -1,0 +1,2 @@
+/u/jonas_skopje on How to use theorem about degrees of freedom in regression ensembles
+Thank you. However, my question is what is that matrix.   

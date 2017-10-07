@@ -1,0 +1,2 @@
+From the DarkSide
+I believe in the open web. Trying to get away from walled gardens. Decided I want to switch from iOS Development. And try make a simple web app -> dollartranscript! Fetches/Sends/Decodes Json pretty much what every web app does Responsive via Flexbox. No need for a grid based on my noob knowledge. Frequency chart made with SVG no external libraries Backend: Swift 3 | 4. PostgreSQL as datastore also providing statistical capabilities. Inline CSS FTW Any critique welcome.  submitted by /u/chabv [link] [comments] 

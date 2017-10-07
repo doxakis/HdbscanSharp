@@ -1,0 +1,2 @@
+/u/lost_in_life_34 on Where statement using a text file
+You can use openrowset or something like that if you had an excel file. I usually just import the data into a table send my where to that table   

@@ -1,0 +1,2 @@
+/u/kubelke on NaiveBayes for classifying 3 types of texts
+Thanks for the advice, this sounds really smart :D The main goal of this application is to calculate how long somebody was sick based on his twitter posts. I'm not sure what I'm gonna get, I'm not even sure how much this is possible, so I'm just hoping for any results :)   

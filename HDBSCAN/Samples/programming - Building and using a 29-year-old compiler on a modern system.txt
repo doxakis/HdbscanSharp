@@ -1,0 +1,2 @@
+Building and using a 29-year-old compiler on a modern system
+submitted by /u/mmaltsev [link] [comments] 

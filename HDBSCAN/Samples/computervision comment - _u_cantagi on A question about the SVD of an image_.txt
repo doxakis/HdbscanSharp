@@ -1,0 +1,2 @@
+/u/cantagi on A question about the SVD of an image.
+Suppose the image was n rows by m columns by 3 channels. Did you calculate the SVD of a 3n by m matrix, or did you calculate the SVD of a 3 by (n x m) matrix? In the first case, could it be because adjacent rows are usually correlated, as are adjacent columns? You could test this by taking the SVD of a random image. In the second case there can only be 3 nonzero singular values! (And no compression)   

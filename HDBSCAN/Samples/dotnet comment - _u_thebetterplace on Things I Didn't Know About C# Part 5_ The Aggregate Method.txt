@@ -1,0 +1,2 @@
+/u/thebetterplace on Things I Didn't Know About C# Part 5: The Aggregate Method
+More like 'Things I didn't know about LINQ'.   

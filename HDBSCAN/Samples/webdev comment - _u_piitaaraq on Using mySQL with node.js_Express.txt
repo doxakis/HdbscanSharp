@@ -1,0 +1,2 @@
+/u/piitaaraq on Using mySQL with node.js/Express
+Thanks. That's very informative. I was actually sitting just now trying to do a query with a left join and kept getting an error   

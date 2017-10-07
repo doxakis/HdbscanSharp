@@ -1,0 +1,2 @@
+/u/mspsysadm on VM Scale Set with S2S VPN on-prem connection / DHCP
+DHCP and server addressing is handled entirely by the Azure platform. Your Azure VMs will be set to DHCP, but they will receive the address associated to the NIC in the portal. That happens automatically and does not require anything on-premise.   

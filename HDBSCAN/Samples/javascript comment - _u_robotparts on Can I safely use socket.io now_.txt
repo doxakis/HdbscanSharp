@@ -1,0 +1,2 @@
+/u/robotparts on Can I safely use socket.io now?
+Sorry for the confusion. I'm not OP. I just suggested Elixir if absolute websocket performance per unit of hardware (ram/cpu/etc) was what he needs.   

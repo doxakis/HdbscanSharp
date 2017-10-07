@@ -1,0 +1,2 @@
+Messaging Patterns in Event Driven Microservice Architectures
+submitted by /u/fagnerbrack [link] [comments] 

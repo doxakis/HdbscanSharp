@@ -1,0 +1,2 @@
+/u/e_to_the_pi_i on where to learn bitwise javascript operations
+Bitwise operators are the same among pretty much all C-like languages. The concepts come down to basic binary arithmetic principles. Basically just learn binary.   

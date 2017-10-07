@@ -1,0 +1,2 @@
+/u/harsh183 on NaiveBayes for classifying 3 types of texts
+Yeah, well set a goal and some measurement of accuracy, precision, f1 etc. and keep experimenting around and see what works. And remember, it often ends up like this, https://xkcd.com/1838//   

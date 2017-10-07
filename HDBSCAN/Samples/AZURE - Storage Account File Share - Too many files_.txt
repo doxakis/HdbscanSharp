@@ -1,0 +1,2 @@
+Storage Account File Share - Too many files?
+Is there any indication if there is a limit to how many files you can realistically store in a folder on an Azure Storage Account File Share before you get performance issues? I have a folder with 10,000 files in it which has been mounted to a linux VM. Both in the same region. When I do an "ls" it just goes off into limbo whilst fetching the file list.  submitted by /u/orlinthir [link] [comments] 

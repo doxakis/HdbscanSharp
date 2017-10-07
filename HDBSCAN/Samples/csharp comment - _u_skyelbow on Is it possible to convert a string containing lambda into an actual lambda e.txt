@@ -1,0 +1,2 @@
+/u/skyelbow on Is it possible to convert a string containing lambda into an actual lambda expression?
+In my opinion, this is bad practice. A better way to accomplish this would be to use reflection.   

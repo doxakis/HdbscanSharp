@@ -1,0 +1,2 @@
+/u/run7b on Tracking the path and estimating the velocity of a circle in a video
+The camera moves a little at the end of the video, it's best if the camera is stationary. I used a window size of 15 for the optical flow parameters, and the tracking was successful without any manual input (other than manual input on the first frame to get the center of the bar). Results: https://streamable.com/si8hb   

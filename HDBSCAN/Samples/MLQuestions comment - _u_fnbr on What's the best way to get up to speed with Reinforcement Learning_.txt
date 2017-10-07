@@ -1,0 +1,2 @@
+/u/fnbr on What's the best way to get up to speed with Reinforcement Learning?
+I'm in a similar situation. I'm reading through Sutton and Barto's book, and I'm going to start working on several programming exercises soon. I've also been doing the standard "read paper, look up unfamiliar words" loop, and I've found that really helpful.   

@@ -1,0 +1,2 @@
+/u/luetm on I'm a junior C# & JS dev. I want to study asynchronous programming this weekend. Can you recommend me some sources?
+I'm sorry, this may come off as elitist. But it seems really lazy to me that your first step in deciding to learn is to ask others to prepare the material for you. There is a sea of goods learning material just one google search away. It's a well known and documented topic and I doubt this post is necessary.   

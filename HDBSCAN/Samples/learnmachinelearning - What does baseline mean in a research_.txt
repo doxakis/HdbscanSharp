@@ -1,0 +1,2 @@
+What does baseline mean in a research?
+I am not 100% sure about what baseline means in a research. For example, what does the following statement mean? "The only baseline we use for this subtask is a random classifier. It makes no assumption about the underlying class distribution, labelling each context as “pun” or “non-pun” with equal probability. On average, its recall and accuracy will therefore be 0.5, and its precision equal to the proportion of contexts containing puns." Please help!  submitted by /u/czechrepublic [link] [comments] 

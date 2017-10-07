@@ -1,0 +1,2 @@
+/u/haggy87 on Ethernet Diagram Help!
+Well I'm not gonna look for specific products.. But look for rack mounted switches. They pretty commonly supply 24 or 48 ports.. I would assume there is some course material you forgot to read, because if it's part of some course this is pretty basic stuff. If it's for a company: tell them you have no clue and hire someone who does.   

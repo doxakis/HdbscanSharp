@@ -1,0 +1,2 @@
+/u/dnesteruk on Say no to Electron! Building a fast, responsive desktop app using JavaFX
+Yes they do. But there is no reason to use Java for server-side anymore thanks to .NET Core.   

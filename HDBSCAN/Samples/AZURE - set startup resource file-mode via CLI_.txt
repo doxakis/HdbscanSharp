@@ -1,0 +1,2 @@
+set startup resource file-mode via CLI?
+Does anyone how a way to programmatically create a batch pool start task resource's linux file mode? There don't appear to be any options in the CLI to do so, and my attempts to use JSON have not worked either.  submitted by /u/gnieboer [link] [comments] 

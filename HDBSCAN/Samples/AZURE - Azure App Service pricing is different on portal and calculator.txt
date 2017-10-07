@@ -1,0 +1,2 @@
+Azure App Service pricing is different on portal and calculator
+If I check the price for my web app (B1), the portal shows me it costs about ~€27, but wherever I check it, it looks like it's ~€47. Why is that? Note: On the azure portal, on my "costs", I pay ~€27, and not ~€47.  submitted by /u/Arklur [link] [comments] 

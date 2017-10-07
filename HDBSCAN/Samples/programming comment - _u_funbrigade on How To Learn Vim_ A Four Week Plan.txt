@@ -1,0 +1,2 @@
+/u/funbrigade on How To Learn Vim: A Four Week Plan
+First off, I've been using vim for less than a year, so take this with a grain of two of salt. But, in my mind, learning vim is one of the best things I did to help my overall speed and productivity. That being said, I'm using vim bindings on existing editors like Visual Studio and VS Code, so maybe I'm a hack :)   

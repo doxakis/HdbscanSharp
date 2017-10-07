@@ -1,0 +1,2 @@
+/u/toffitomek on How can I decompress MS SQL backup without SQL Server...?
+Thanks for the comment and your input - I did stumble across one of them, but sadly I can't agree with them: firstly I get much better compression ratios with 7zip than SQL gives me, DataDomain I use deduplicates and compresses data and I can see 90%+ compression on SQL raw files this is disk-to-disk scenario and first stage is 'un-deduped' plus I am after long term storage, so restore/backup performance is not an issue    

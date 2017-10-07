@@ -1,0 +1,2 @@
+Pure mathematics worth learning for AI PhD?
+Aside from the standard undergrad math (Linear algebra,calculus,probability and stats, discrete math...). Are pure math subjects like real analysis,abstract algebra,topology... even useful for an AI researcher?  submitted by /u/stefanuus [link] [comments] 

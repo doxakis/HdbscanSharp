@@ -1,0 +1,2 @@
+Getting 3D Pose from a rectangle of known dimensions
+Sorry to sound naive, but does anybody have any experience getting 3D Pose from a rectangle of a known size using preferably one camera? I've done some research on inverse homology and have messed around with Vuforia's approach at this, which leads me to believe it is possible, but I was wondering where I could find the math and logical steps behind it. Thanks in advance  submitted by /u/Maxcr1 [link] [comments] 

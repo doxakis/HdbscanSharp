@@ -1,0 +1,2 @@
+/u/ESarey9 on Writing great commit messages for better code review
+I love this simple styleguide: https://udacity.github.io/git-styleguide/   

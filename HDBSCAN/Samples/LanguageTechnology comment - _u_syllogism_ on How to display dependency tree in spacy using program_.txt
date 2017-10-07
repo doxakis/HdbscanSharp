@@ -1,0 +1,2 @@
+/u/syllogism_ on How to display dependency tree in spacy using program?
+This is easy in spaCy 2: https://alpha.spacy.io/usage/visualizers The alpha is still being developed, so if you upgrade between versions of spacy-nightly you'll probably have to redownload data, and possibly update your code. But if you just keep using the same version, I think it works better than the 1.x branch already.   

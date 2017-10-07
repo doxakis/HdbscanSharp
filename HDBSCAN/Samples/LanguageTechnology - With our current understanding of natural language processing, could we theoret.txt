@@ -1,0 +1,2 @@
+With our current understanding of natural language processing, could we theoretically create a program that can read a wikipedia page and create a knowledge graph out of it (similar to wikidata)?
+submitted by /u/theology_ [link] [comments] 

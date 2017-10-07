@@ -1,0 +1,2 @@
+/u/alinroc on How can I decompress MS SQL backup without SQL Server...?
+How long do you keep these backups on the deduplicated storage? IOW, can you switch off backup compression today and have those compressed backups eventually roll off? But then you'd probably want to compress before sending to tape or whatever your archival storage is.   

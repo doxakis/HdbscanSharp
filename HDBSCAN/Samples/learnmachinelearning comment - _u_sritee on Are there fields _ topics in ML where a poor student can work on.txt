@@ -1,0 +1,2 @@
+/u/sritee on Are there fields / topics in ML where a poor student can work on without access to clusters and multiple GPUs?
+If you are willing to spend some money, AWS is a great option. You can get an hour of computation in a good GPU for as less as 30 cents sometimes.   

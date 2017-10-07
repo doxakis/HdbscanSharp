@@ -1,0 +1,2 @@
+Dissecting the local functions in C# 7
+ submitted by /u/GOPbIHbI4 [link] [comments]    

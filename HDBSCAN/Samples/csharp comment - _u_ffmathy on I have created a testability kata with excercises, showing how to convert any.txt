@@ -1,0 +1,2 @@
+/u/ffmathy on I have created a testability kata with excercises, showing how to convert any non-testable system to a testable one
+Exactly my point too. Statics are okay if it has no "object" dependencies, and does something simple (and understandable) that can still be tested without faking anything out.   

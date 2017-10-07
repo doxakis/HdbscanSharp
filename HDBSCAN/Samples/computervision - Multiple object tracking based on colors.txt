@@ -1,0 +1,2 @@
+Multiple object tracking based on colors
+I would like to track 3 objects at the same time with the same color. I know that I just have to find the first 3 contours (sorted by area) as I would normally do with 1 object. But after than, how can I "separate" the detected point so I get 3 tracks? What kind of algorithm should I use? So I would have 3 objects and I could see the tracked points separately.  submitted by /u/gabegabe6 [link] [comments] 

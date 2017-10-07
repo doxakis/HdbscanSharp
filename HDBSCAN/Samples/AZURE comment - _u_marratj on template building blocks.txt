@@ -1,0 +1,2 @@
+/u/marratj on template building blocks
+I'm just wondering why they are not just going full Terraform instead of those ' building blocks'. Especially after their announcement of the HashiCorp partnership earlier this year.   

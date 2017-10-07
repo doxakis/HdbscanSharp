@@ -1,0 +1,2 @@
+/u/yevbev on Question regarding camera calibration..
+Could you point to some papers or tutorials that cover this problem?   

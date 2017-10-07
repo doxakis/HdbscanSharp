@@ -1,0 +1,2 @@
+[D] can i train a model with NLP to label twitter comments with negitive or positive
+submitted by /u/MrAnfosh [link] [comments] 

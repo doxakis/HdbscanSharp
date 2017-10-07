@@ -1,0 +1,2 @@
+In the exression of dz[1], why do we use element-wise multiplication operator ( * ) ?
+ submitted by /u/promach [link] [comments]    

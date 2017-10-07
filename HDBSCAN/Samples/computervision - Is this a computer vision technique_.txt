@@ -1,0 +1,2 @@
+Is this a computer vision technique?
+1) For prefab parts, have a 3d model of the part like say a Mountain Dew can. 2) To determine if you're looking at this part, do traditional 2d CV, but match against different angles of looking at the 3d models in the database.  submitted by /u/goodnewsjimdotcom [link] [comments] 

@@ -1,0 +1,2 @@
+/u/Favitor on Advise on creating a personalised text box on website
+Shopify has plugins that let you do this. Plus once it's setup you don't need to worry about hosting etc.   

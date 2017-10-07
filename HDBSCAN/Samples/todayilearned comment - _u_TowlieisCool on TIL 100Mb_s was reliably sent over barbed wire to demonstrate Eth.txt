@@ -1,0 +1,2 @@
+/u/TowlieisCool on TIL 100Mb/s was reliably sent over barbed wire to demonstrate Ethernet robustness in a Broadcom showcase
+Absolutely. I work in the telecom industry, and while the initial cost can be anywhere from hundreds of thousands to millions, you could easily break even in a few years.   

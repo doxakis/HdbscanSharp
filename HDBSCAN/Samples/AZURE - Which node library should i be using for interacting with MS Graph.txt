@@ -1,0 +1,2 @@
+Which node library should i be using for interacting with MS Graph
+Hey there I'm trying to make an Alaxa skill that interacts with MS Graph, so far i've had little luck getting my standard Microsoft account to sign in, and looking through the documentation there seems to be multiple different node libraries for authenticating and calling the MS graph? Which one should i be using for authenticating and calling graph endpoints for standard accounts as well as work and school accounts? MSAL?  submitted by /u/jaredce [link] [comments] 

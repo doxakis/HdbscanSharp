@@ -1,0 +1,2 @@
+/u/Toby95 on How could one go about testing/comparing cloud services like AWS, Azure, and Google Cloud?
+That PerfKit looks interesting, although their getting started page seems a little confusing, I'm not too sure how exactly I would go about using it correctly. Have you had any experience with it?   

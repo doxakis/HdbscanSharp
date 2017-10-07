@@ -1,0 +1,2 @@
+/u/spmallick on High Dynamic Range (HDR) Imaging using OpenCV (C++/Python)
+Thanks. It really makes me happy when people find it useful.   

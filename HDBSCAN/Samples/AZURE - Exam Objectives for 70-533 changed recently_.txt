@@ -1,0 +1,2 @@
+Exam Objectives for 70-533 changed recently?
+I just noticed some changes to the objectives for exam 70-533 on Microsoft's page here For example: The "ARM Templates" group wasn't there before, nor was "Azure Operations" and "Azure Identities". Some of the individual bullets under the group headings are new too, such as Azure Container Services in VMs. Does anyone know when these changes were put in place? Is there a write-up or release from MS about them at all? Thanks!  submitted by /u/CBTBen [link] [comments] 

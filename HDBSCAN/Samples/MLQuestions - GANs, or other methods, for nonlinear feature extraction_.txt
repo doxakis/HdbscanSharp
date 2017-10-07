@@ -1,0 +1,2 @@
+GANs, or other methods, for nonlinear feature extraction?
+I'm interested in the problem of finding a set of nonlinear dimensions that do a good job of representing a dataset, for applications to interpretable supervised learning and survival analysis. I'm having trouble figuring out exactly what the state of the art is, and would be particularly interested in papers that make use of GANs for this class of problems. I'm quite interested in anything that is outperforming autoencoders. Thanks very much.  submitted by /u/IBA____IB [link] [comments] 

@@ -1,0 +1,2 @@
+Active Directory Support In Webapp
+I'm trying to implement active directory support in our webapp, however I don't want to use Azure if possible. We want to deploy the app on premises (or an azure vm that the client runs). If it turns out that hosting on azure to gain active directory support is much, much simpler, would we be forced to go a SaaS route rather than a product route?  submitted by /u/shaaph [link] [comments] 

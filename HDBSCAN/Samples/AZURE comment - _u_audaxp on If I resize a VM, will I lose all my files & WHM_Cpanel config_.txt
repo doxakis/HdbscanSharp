@@ -1,0 +1,2 @@
+/u/audaxp on If I resize a VM, will I lose all my files & WHM/Cpanel config?
+Nope. Data is not lost when resizing a VM.   

@@ -1,0 +1,2 @@
+/u/winzo on Writing great commit messages for better code review
+Commit messages should describe what changed, and optionally any meta information about why the change was made, if necessary. The reasoning for the particular implementation details, like in your example, belong in the code, in comments, where they'll be seen. If you're making small, logical commits, which I think is a generally accepted best practice, this should come naturally.   

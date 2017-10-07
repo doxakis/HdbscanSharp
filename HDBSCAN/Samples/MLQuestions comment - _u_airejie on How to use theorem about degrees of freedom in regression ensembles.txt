@@ -1,0 +1,2 @@
+/u/airejie on How to use theorem about degrees of freedom in regression ensembles
+The trace of a matrix is the sum of its diagonal coefficient. Take a look at this: https://en.wikipedia.org/wiki/Trace_(linear_algebra).   

@@ -1,0 +1,2 @@
+/u/georgeorgeorgeorge on how much do Azure prices fluctuate
+You also need to take into consideration that Azure is usually costed upon consumption. So a 31 day calendar month with have different cost to a 30 day calendar month! In February we get a lot of confusion.   

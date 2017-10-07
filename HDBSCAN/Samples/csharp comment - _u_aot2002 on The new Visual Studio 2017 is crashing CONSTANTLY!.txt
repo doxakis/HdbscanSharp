@@ -1,0 +1,2 @@
+/u/aot2002 on The new Visual Studio 2017 is crashing CONSTANTLY!
+I had IT at work setup a VDI with fresh windows 10 and I left VS 2017 enterprise open with no project even opened once. It keeps crashing and I haven't logged into the machine in 4 days. 16GB ram.... definitely something wrong with VS memory usage.   

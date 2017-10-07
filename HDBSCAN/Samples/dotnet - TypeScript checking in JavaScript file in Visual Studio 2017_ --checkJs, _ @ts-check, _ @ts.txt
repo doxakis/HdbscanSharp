@@ -1,0 +1,2 @@
+TypeScript checking in JavaScript file in Visual Studio 2017: --checkJs, // @ts-check, // @ts-nocheck, // @ts-ignore
+submitted by /u/kapilusit [link] [comments] 

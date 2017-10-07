@@ -1,0 +1,2 @@
+In OOP languages, do the number of fields and methods affect performance when a class constructor is called (even if no value is being assigned in the constructor)?
+For instance, at a lower level, do more memory needs to be allocated upon instantiation, thus impacting performance when creating a lot of instances in a tight loop?  submitted by /u/mickaelbneron [link] [comments] 

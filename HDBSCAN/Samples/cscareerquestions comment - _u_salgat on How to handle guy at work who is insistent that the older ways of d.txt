@@ -1,0 +1,2 @@
+/u/salgat on How to handle guy at work who is insistent that the older ways of developing are better than newer version?
+.NET supports binding Stored Procedure results to models, and if that's an issue you can parse the results directly as something like: resultReader["columnName"]. The idea is to use EF where it makes sense, not to always use it.   

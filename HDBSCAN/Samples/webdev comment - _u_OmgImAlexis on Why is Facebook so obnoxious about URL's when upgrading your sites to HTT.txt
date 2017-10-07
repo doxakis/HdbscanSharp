@@ -1,0 +1,2 @@
+/u/OmgImAlexis on Why is Facebook so obnoxious about URL's when upgrading your sites to HTTPS?
+There's a way to fix it using open graph tags or the open graph explorer. This or this should do it.   

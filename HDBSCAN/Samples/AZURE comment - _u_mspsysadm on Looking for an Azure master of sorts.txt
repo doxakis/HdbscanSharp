@@ -1,0 +1,2 @@
+/u/mspsysadm on Looking for an Azure master of sorts
+Besides Microsoft themselves, there are plenty of Microsoft partners with Azure experts. You may be best off working with one of them to get started.   

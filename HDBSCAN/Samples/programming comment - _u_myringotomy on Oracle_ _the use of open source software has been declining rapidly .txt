@@ -1,0 +1,2 @@
+/u/myringotomy on Oracle: "the use of open source software has been declining rapidly in the private sector"
+Agreed. Microsoft is moving a LOT of stuff to github, open-sourcing C#, Roslyn, .Net Core, etc. Oracle, on the other hand, sued Google because of an implementation of a Java interface.  Microsoft has a long way to go before they open source more code than Oracle.   

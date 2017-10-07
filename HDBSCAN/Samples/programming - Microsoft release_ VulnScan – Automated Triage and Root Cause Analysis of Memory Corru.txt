@@ -1,0 +1,2 @@
+Microsoft release: VulnScan – Automated Triage and Root Cause Analysis of Memory Corruption Issues
+submitted by /u/testfailure [link] [comments] 

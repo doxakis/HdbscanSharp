@@ -1,0 +1,2 @@
+/u/BradleyDonalbain on A Windows program to sync files to cloud.
+Then I'd start learning as much as you can about back end development, storage, and webservers, and how they all work together. I'm sorry I can't be more descriptive however you're asking a question that's broader than you think. Owncloud is open source, so I would look to them for inspiration. Here is their GitHub page: https://github.com/owncloud/core   

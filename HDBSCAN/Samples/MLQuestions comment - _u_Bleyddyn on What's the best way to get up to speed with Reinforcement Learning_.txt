@@ -1,0 +1,2 @@
+/u/Bleyddyn on What's the best way to get up to speed with Reinforcement Learning?
+This github repo has programming assignments along with solutions to go with Sutton/Barto book and also David Silver's lectures: https://github.com/dennybritz/reinforcement-learning   

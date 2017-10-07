@@ -1,0 +1,2 @@
+/u/ItsMeCaptainMurphy on Does SSIS bypass query optimizer that is used in SSMS?
+The only other thing I could think of is that if you do transformation operations in T-SQL versus doing them as transforms in SSIS, that could generate vastly different execution plans (as the SSIS transforms wouldn't be part of the SQL statement at all)....but that's kind of a "duh" thing. Sounds like whoever interviewed you didn't really know what they were talking about.   

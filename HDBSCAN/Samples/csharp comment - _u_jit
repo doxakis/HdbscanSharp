@@ -1,0 +1,2 @@
+/u/jit-coder on Amazing!, C# docs now use Monaco and Docker to let beginners learn C# in the browser.
+If you’re familiar with docker compose files and writable volumes this https://github.com/dotnet/docs/blob/master/docs/csharp/quick-starts/hello-world.yml Should give some insight.   

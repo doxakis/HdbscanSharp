@@ -1,0 +1,2 @@
+/u/captainAwesomePants on How could one go about testing/comparing cloud services like AWS, Azure, and Google Cloud?
+Nope, but I knew someone who liked it. It's a tool for rigorously exercising a wide variety of cloud offering across many different companies. Completely setting it up to work with Google, Amazon, Mesos, OpenStack, DigitalOcean, RackSpace etc is gonna be complicated. Maybe pick exactly one, like Google, and try evaluating it on just that?   

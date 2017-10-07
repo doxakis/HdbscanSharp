@@ -1,0 +1,2 @@
+Introducing AnyChart JS Charts 8.0.0. Highlights: modular system, custom JS builder, Node.js export server, 3D line chart, and more
+submitted by /u/andreykh [link] [comments] 

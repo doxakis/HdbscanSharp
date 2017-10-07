@@ -1,0 +1,2 @@
+/u/jhartwell on How to do a site that's half Content driven half web app
+How does Contentful differentiate itself from SharePoint with Office 360?   

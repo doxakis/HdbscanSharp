@@ -1,0 +1,2 @@
+/u/Liam2349 on How to add keys to the registry during installation
+I'm sure it's got some good functionality, but I've not seen any good tutorials on using it. Without tutorials, and without any good documentation, I don't think it's worth people's time to learn it. I can be doing other things.   
