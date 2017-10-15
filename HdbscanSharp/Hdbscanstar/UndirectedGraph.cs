@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HDBSCAN.Hdbscanstar
+namespace HdbscanSharp.Hdbscanstar
 {
 	/**
 	 * An undirected graph, with weights assigned to each edge.  Vertices in the graph are 0 indexed.

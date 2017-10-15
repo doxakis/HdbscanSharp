@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HDBSCAN.Hdbscanstar
+namespace HdbscanSharp.Hdbscanstar
 {
 	/**
 	 * An HDBSCAN* cluster, which will have a birth level, death level, stability, and constraint 

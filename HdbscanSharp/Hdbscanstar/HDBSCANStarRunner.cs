@@ -1,4 +1,4 @@
-﻿using HDBSCAN.Distance;
+﻿using HdbscanSharp.Distance;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -6,12 +6,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HDBSCAN.Hdbscanstar
+namespace HdbscanSharp.Hdbscanstar
 {
 	/**
 	 * Entry point for the HDBSCAN* algorithm.
 	 */
-	public class HDBSCANStarRunner
+	public class HdbscanStarRunner
 	{
 		private const string FILE_FLAG = "file=";
 		private const string CONSTRAINTS_FLAG = "constraints=";
@@ -40,17 +40,13 @@ namespace HDBSCAN.Hdbscanstar
 
 			//Parse input parameters from program arguments:
 			HDBSCANStarParameters parameters = CheckInputParameters(args);
-
-			Console.WriteLine("Running HDBSCAN* on " + parameters.inputFile + " with minPts=" + parameters.minPoints +
-					", minClSize=" + parameters.minClusterSize + ", constraints=" + parameters.constraintsFile +
-					", compact=" + parameters.compactHierarchy + ", dist_function=" + parameters.distanceFunction.GetName());
-
+			
 			//Read in input file:
 			double[][] dataSet = null;
 
 			try
 			{
-				dataSet = HDBSCANStar.ReadInDataSet(parameters.inputFile, ',');
+				dataSet = HdbscanStar.ReadInDataSet(parameters.inputFile, ',');
 			}
 			catch (IOException)
 			{
@@ -68,7 +64,7 @@ namespace HDBSCAN.Hdbscanstar
 			{
 				try
 				{
-					constraints = HDBSCANStar.ReadInConstraints(parameters.constraintsFile, ',');
+					constraints = HdbscanStar.ReadInConstraints(parameters.constraintsFile, ',');
 				}
 				catch (IOException)
 				{
@@ -80,12 +76,12 @@ namespace HDBSCAN.Hdbscanstar
 
 			//Compute core distances:
 			long startTime = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
-			double[] coreDistances = HDBSCANStar.CalculateCoreDistances(dataSet, parameters.minPoints, parameters.distanceFunction);
+			double[] coreDistances = HdbscanStar.CalculateCoreDistances(dataSet, parameters.minPoints, parameters.distanceFunction);
 			Console.WriteLine("Time to compute core distances (ms): " + (DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond - startTime));
 
 			//Calculate minimum spanning tree:
 			startTime = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
-			UndirectedGraph mst = HDBSCANStar.ConstructMST(dataSet, coreDistances, true, parameters.distanceFunction);
+			UndirectedGraph mst = HdbscanStar.ConstructMST(dataSet, coreDistances, true, parameters.distanceFunction);
 			mst.QuicksortByEdgeWeight();
 			Console.WriteLine("Time to calculate MST (ms): " + (DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond - startTime));
 			
@@ -101,7 +97,7 @@ namespace HDBSCAN.Hdbscanstar
 			try
 			{
 				startTime = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
-				clusters = HDBSCANStar.ComputeHierarchyAndClusterTree(mst, parameters.minClusterSize,
+				clusters = HdbscanStar.ComputeHierarchyAndClusterTree(mst, parameters.minClusterSize,
 						parameters.compactHierarchy, constraints, parameters.hierarchyFile,
 						parameters.clusterTreeFile, ',', pointNoiseLevels, pointLastClusters, parameters.visualizationFile);
 				Console.WriteLine("Time to compute hierarchy and cluster tree (ms): " + (DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond - startTime));
@@ -117,13 +113,13 @@ namespace HDBSCAN.Hdbscanstar
 			mst = null;
 			
 			//Propagate clusters:
-			bool infiniteStability = HDBSCANStar.PropagateTree(clusters);
+			bool infiniteStability = HdbscanStar.PropagateTree(clusters);
 			
 			//Compute final flat partitioning:
 			try
 			{
 				startTime = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
-				HDBSCANStar.FindProminentClusters(clusters, parameters.hierarchyFile, parameters.partitionFile,
+				int[] prominentClusters = HdbscanStar.FindProminentClusters(clusters, parameters.hierarchyFile, parameters.partitionFile,
 						',', numPoints, infiniteStability);
 				Console.WriteLine("Time to find flat result (ms): " + (DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond - startTime));
 			}
@@ -138,7 +134,7 @@ namespace HDBSCAN.Hdbscanstar
 			try
 			{
 				startTime = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
-				HDBSCANStar.CalculateOutlierScores(clusters, pointNoiseLevels, pointLastClusters,
+				HdbscanStar.CalculateOutlierScores(clusters, pointNoiseLevels, pointLastClusters,
 						coreDistances, parameters.outlierScoreFile, ',', infiniteStability);
 				Console.WriteLine("Time to compute outlier scores (ms): " + (DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond - startTime));
 			}

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HDBSCAN.Hdbscanstar
+namespace HdbscanSharp.Hdbscanstar
 {
 	/**
 	 * A clustering constraint (either a must-link or cannot-link constraint between two points).

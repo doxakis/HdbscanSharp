@@ -4,18 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
-using static HDBSCAN.Hdbscanstar.Constraint;
-using HDBSCAN.Distance;
-using HDBSCAN.Hdbscanstar;
-using HDBSCAN.Utils;
+using static HdbscanSharp.Hdbscanstar.Constraint;
+using HdbscanSharp.Distance;
+using HdbscanSharp.Hdbscanstar;
+using HdbscanSharp.Utils;
 using System.Globalization;
 
-namespace HDBSCAN.Hdbscanstar
+namespace HdbscanSharp.Hdbscanstar
 {
 	/**
 	 * Implementation of the HDBSCAN* algorithm, which is broken into several methods.
 	 */
-	public class HDBSCANStar
+	public class HdbscanStar
 	{
 		public const string WARNING_MESSAGE =
 			"----------------------------------------------- WARNING -----------------------------------------------\n" +

@@ -1,5 +1,5 @@
 ﻿using Accord.Statistics.Analysis;
-using HDBSCAN.Utils;
+using DocumentClusteringExample.Utils;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HDBSCAN
+namespace DocumentClusteringExample
 {
 	class Program
 	{
@@ -20,35 +20,13 @@ namespace HDBSCAN
 			var pathFiles = Directory.EnumerateFiles(projectDir + @"\Samples")
 				.ToList();
 
-			/*for (int i = 0; i < pathFiles.Count; i++)
-			{
-				if (Path.GetFileNameWithoutExtension(pathFiles[i]).Contains("_u_")
-					&&
-					!Path.GetFileNameWithoutExtension(pathFiles[i]).Contains("comment -"))
-				{
-					var parts = pathFiles[i].Split('-');
-
-					var newFileName = parts[0].TrimEnd() + " comment - " + parts[1].Trim();
-
-					try
-					{
-						File.Move(pathFiles[i], newFileName);
-					}
-					catch (Exception)
-					{
-					}
-					
-				}
-			}
-			return;*/
-
 			// Hyper parameters.
 			var minVectorElements = 20;
 			var freqMultiplyByVectorSum = false;
-			var freqMin = 10;
+			var freqMin = 50;
 			var minWordCount = 1;
 			var maxWordCount = 1;
-			var minGroupOfWordsLength = 6;
+			var minGroupOfWordsLength = 8;
 			var minWordLength = 1;
 			var firstWordMinLength = 1;
 			var lastWordMinLength = 1;
@@ -119,14 +97,13 @@ namespace HDBSCAN
 			Console.WriteLine("Reducing vector size with PCA");
 			Stopwatch stopwatch = new Stopwatch();
 			stopwatch.Start();
-			var vectorArray = vectors.ToArray();
 			PrincipalComponentAnalysis pca = new PrincipalComponentAnalysis();
 			pca.NumberOfOutputs = 3;
 			var trainingVector = vectors.ToArray();
 			Shuffle(trainingVector);
 			trainingVector = trainingVector.Take(300).ToArray();
 			var pcaResult = pca.Learn(trainingVector);
-			var reducedVectorsWithPCA = pcaResult.Transform(vectorArray);
+			var reducedVectorsWithPCA = pcaResult.Transform(vectors.ToArray());
 			stopwatch.Stop();
 			Console.WriteLine("PCA duration: " + stopwatch.Elapsed.ToString());
 
@@ -150,7 +127,7 @@ namespace HDBSCAN
 				"dist_function=cosine",
 			};
 			// Run HDBSCAN algo.
-			Hdbscanstar.HDBSCANStarRunner.Run(args);
+			HdbscanSharp.Hdbscanstar.HdbscanStarRunner.Run(args);
 			Console.WriteLine("HDBSCAN done.");
 
 			// Read results.
@@ -160,7 +137,7 @@ namespace HDBSCAN
 				.Select(m => int.Parse(m))
 				.ToArray();
 			int n = labels.Max();
-			
+
 			Console.WriteLine("\n\n");
 
 			int clusterId = 0;
@@ -204,8 +181,6 @@ namespace HDBSCAN
 			}
 
 			Console.WriteLine("Press any key to continue...");
-			Console.ReadLine();
-			Console.ReadLine();
 			Console.ReadLine();
 		}
 

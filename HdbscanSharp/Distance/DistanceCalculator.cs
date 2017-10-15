@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HDBSCAN.Distance
+namespace HdbscanSharp.Distance
 {
 	/**
 	 * An interface for classes which compute the distance between two points (where points are
@@ -20,6 +20,5 @@ namespace HDBSCAN.Distance
 		 * @return A double for the distance between the two points
 		 */
 		double ComputeDistance(double[] attributesOne, double[] attributesTwo);
-		string GetName();
 	}
 }

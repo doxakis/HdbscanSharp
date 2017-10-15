@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HDBSCAN.Distance
+namespace HdbscanSharp.Distance
 {
 	/**
 	* Computes cosine similarity between two points, d = 1 - ((X*Y) / (||X||*||Y||))
@@ -24,11 +24,6 @@ namespace HDBSCAN.Distance
 				magnitudeTwo += (attributesTwo[i] * attributesTwo[i]);
 			}
 			return 1 - (dotProduct / Math.Sqrt(magnitudeOne * magnitudeTwo));
-		}
-
-		public string GetName()
-		{
-			return "cosine";
 		}
 	}
 }

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentClusteringExample", "DocumentClusteringExample\DocumentClusteringExample.csproj", "{9DEBA0E7-53DA-4465-AE10-3213D16549C6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HdbscanSharp", "HdbscanSharp\HdbscanSharp.csproj", "{BBDC1AEE-02A4-43D9-B20B-C04025339002}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DEBA0E7-53DA-4465-AE10-3213D16549C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DEBA0E7-53DA-4465-AE10-3213D16549C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DEBA0E7-53DA-4465-AE10-3213D16549C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DEBA0E7-53DA-4465-AE10-3213D16549C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBDC1AEE-02A4-43D9-B20B-C04025339002}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBDC1AEE-02A4-43D9-B20B-C04025339002}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBDC1AEE-02A4-43D9-B20B-C04025339002}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBDC1AEE-02A4-43D9-B20B-C04025339002}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {753F4F98-DC81-4579-A448-318364EFAEE1}
+	EndGlobalSection
+EndGlobal
