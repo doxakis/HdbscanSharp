@@ -1,2 +1,0 @@
-PostgreSQL: PostgreSQL 10 Released
-submitted by /u/Tostino [link] [comments] 

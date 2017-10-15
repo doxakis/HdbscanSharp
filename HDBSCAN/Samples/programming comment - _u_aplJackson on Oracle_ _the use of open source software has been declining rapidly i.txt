@@ -1,2 +1,0 @@
-/u/aplJackson on Oracle: "the use of open source software has been declining rapidly in the private sector"
-All I mean is that the infrastructure is there with the TC4S gateway from Teamcenter. Obviously development to do on both sides as far as processing the information transferred. But the actual BOM transfer isn’t something I’ll have to develop.   

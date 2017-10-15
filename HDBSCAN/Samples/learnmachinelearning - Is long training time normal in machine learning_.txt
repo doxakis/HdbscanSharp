@@ -1,2 +1,0 @@
-Is long training time normal in machine learning?
-Hey guys/gals, I'm currently playing with Kaggle's digit recognizer which has the size of 42000x783, I'm trying to classify it with logistic regression, knn and naive bayes. Naive bayes runs pretty fast, but logistic regression and knn is painfully long. Is this a bad code problem? Edit: My code  submitted by /u/Purion [link] [comments] 

@@ -1,2 +1,0 @@
-/u/cykelpop on Move Footer to bottom? (see comments)
-I’d argue it is much easier to to using vh units. Have a wrapper for all your content being 100% of vh and the footer will be a normal div, no CSS trick needed.   

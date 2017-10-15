@@ -1,2 +1,0 @@
-/u/RealDankMemeEdgeLord on Architecture decission for a large web application.
-Why are you running into issues with backups and upgrades? Are you considering the move as a security related move to isolate the sensitive tables?   

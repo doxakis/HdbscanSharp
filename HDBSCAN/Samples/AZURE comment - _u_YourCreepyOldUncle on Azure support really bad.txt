@@ -1,2 +1,0 @@
-/u/YourCreepyOldUncle on Azure support really bad
-yep! You select the resourcegroup\resource, which is having the issues... "Hello sir, can you please tell me the subscription and resource you are having issues with" Dunno, how about all the shit i selected which tells you?   

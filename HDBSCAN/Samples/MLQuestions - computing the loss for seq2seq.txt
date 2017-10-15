@@ -1,2 +1,0 @@
-computing the loss for seq2seq
-How would one compute the loss for a minibatch on a seq2seq model? From what I understand, the loss would be the perplexity * 1/batch size. The perplexity, for a single example, is given by the equations on slide 45 of cs224d.  submitted by /u/yik_yak_paddy_wack [link] [comments] 

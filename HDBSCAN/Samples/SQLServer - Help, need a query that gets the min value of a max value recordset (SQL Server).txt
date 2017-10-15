@@ -1,2 +1,0 @@
-Help, need a query that gets the min value of a max value recordset (SQL Server)
-I have a table like this  id | a_id | stuff ------------------- 1 | 1 | lalala 2 | 1 | lalalala 3 | 1 | lalal 4 | 2 | lalalalallaa 5 | 3 | morelala 6 | 3 | evenmorelala  I need to get the max value of a_id and the min_value of id, which is row id 5 and a_id 3. If another row is to be inserted  7 | 4 | lalax10000  Then this is the row that will be returned.  submitted by /u/eggtart_prince [link] [comments] 

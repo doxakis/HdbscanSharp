@@ -1,2 +1,0 @@
-What is Inductive Logic Programming (ILP)
-I recently came across ILP on wikipedia. I tried to understand the topic but couldn't. Inductive Logic Programming  submitted by /u/parthsharma2 [link] [comments] 

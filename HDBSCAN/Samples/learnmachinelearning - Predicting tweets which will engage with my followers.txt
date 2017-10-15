@@ -1,2 +1,0 @@
-Predicting tweets which will engage with my followers
-Hello, So I'm writing a Twitter bot in Python and one feature it has is to post content from an RSS feed. What would be a good method to explore to predict which articles to post? I don't want to be too spammy and just post them all. I've got data from a few weeks of randomly posting which I could use to train, and the plan would be to train it periodically so it can learn as it goes. Any methods or pointers gratefully received!  submitted by /u/TapirMonkey [link] [comments] 

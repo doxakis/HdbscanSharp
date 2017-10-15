@@ -1,2 +1,0 @@
-/u/sneezophile on [D] Global Average Pooling for a single class problem
-I think you are right, they are equivalent. 1x1 conv basically multiplies each map with a factor. If you global pool after that, it should be the same as just multiplying the average in the FC layer   

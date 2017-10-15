@@ -1,2 +1,0 @@
-[R] Code and pretrained model available for emotion analysis (sarcasm, sentiment, insults etc.)
- submitted by /u/bfelbo [link] [comments]    

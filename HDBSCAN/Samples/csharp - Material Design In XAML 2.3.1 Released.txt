@@ -1,2 +1,0 @@
-Material Design In XAML 2.3.1 Released
-y'all,,, Version 2.3.1 has been pushed to nuget and features fancy new progress support for buttons, and plenty of fixes from the community. http://materialdesigninxaml.net/news Thanks for all your support as always! James  submitted by /u/ButchersBoy [link] [comments] 

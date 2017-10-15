@@ -1,2 +1,0 @@
-/u/SirSooth on I can't seem to pass a class into a method that has the base class as the argument
-While Cat and Dog inherit from Animal, and I can pass a Cat or a Dog instead of an Animal, it doesn’t mean I can pass a List to a method that accepts a List because within that method I could add a Dog to it when it is in fact a List.    Read on covariance and such and look into using IEnumerable instead which will work as you need.    

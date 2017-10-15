@@ -1,2 +1,0 @@
-Exporting a GObject C API from Rust code and using it from C, Python, JavaScript and others
-submitted by /u/malicious_turtle [link] [comments] 

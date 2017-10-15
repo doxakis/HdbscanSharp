@@ -1,2 +1,0 @@
-/u/karen_beers on Is "Cloud Computing" just applied distributed computing?
-In a sense, yes. But you are fair to argue that cloud computing is a subset of distributed computing   

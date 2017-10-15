@@ -1,2 +1,0 @@
-[Computer Vision] Estimation Camera Matrix P from 28 points of Correspondences.
-So as the title suggest I am trying to get a Camera Matrix P and its components K R c from 28 points. I want to implement without any toolbox or stuff like that. I know that I have to use this Equation but I am not sure how. Any help would be great!  submitted by /u/parkerPass [link] [comments] 

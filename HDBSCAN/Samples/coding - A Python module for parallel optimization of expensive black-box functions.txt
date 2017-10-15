@@ -1,2 +1,0 @@
-A Python module for parallel optimization of expensive black-box functions
-submitted by /u/paulknysh [link] [comments] 

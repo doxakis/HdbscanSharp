@@ -1,2 +1,0 @@
-Question about SVGs - Content Jumping
-I'm trying to use some SVGs from iconmonstr in my navbar. However, it looks like it takes time for the SVGs to load in. Because of this my there is some content jumping happening on my page that shifts the navbar and body. I tried setting a min-height, but it didn't do anything. Just wondering if anyone knows how to get rid of this content jumping. Thanks.  submitted by /u/TurqoiseTurtle [link] [comments] 

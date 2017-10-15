@@ -1,2 +1,0 @@
-/u/mgrier123 on How To Learn Vim: A Four Week Plan
-They also forget about "ZZ" too   

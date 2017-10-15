@@ -1,2 +1,0 @@
-/u/justalanm on Is long training time normal in machine learning?
-Absolutely, if you launch training on more cores you should see a large improvement on training time   

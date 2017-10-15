@@ -1,2 +1,0 @@
-Thinking of adding a fun&simple game to a website I'm developing as an easter egg but can't think of any good ideas. What are some good easter eggs you've seen?
-I think I can build a flappy bird type game, but I think I can do something more creative. I don't mind using open source / expanding some existing game, what are you good easter eggs you've seen? One idea I've had is to use some random user inputs as commands for a Twitch Plays Pokemon game, except one where the users play the game while using the website.  submitted by /u/Akabutz [link] [comments] 

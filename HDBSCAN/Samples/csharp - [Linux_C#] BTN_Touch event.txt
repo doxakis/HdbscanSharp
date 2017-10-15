@@ -1,2 +1,0 @@
-[Linux/C#] BTN_Touch event
-Hey, I'm currently working on something that needs Touch. However i'm having some issues since we switched Touchscreens. The older screen did send out BTN_Left when the screen was tapped, which was perfectly fine for WaveEngine and OpenTK. However the newer screen is sending out BTN_Touch, which is not recognized by WaveEngine nor OpenTK. Someone familiar with intercepting the BTN_Touch or polling it on system level or any knowledge on how to get the events working inside OpenTK?  submitted by /u/unspotibleshadow [link] [comments] 

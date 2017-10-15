@@ -1,2 +1,0 @@
-Data Modelling, SQL Server, and SSIS Interview help
-I need some help for interviews, what questions would you ask from Data Modelling, SQL Server, and SSIS if you were the Interviewer (real-world scenarios)? I am doing miserably in my last 3 interviews...  submitted by /u/biltw [link] [comments] 

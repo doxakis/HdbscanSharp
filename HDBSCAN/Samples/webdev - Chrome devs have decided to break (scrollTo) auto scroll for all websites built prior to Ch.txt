@@ -1,2 +1,0 @@
-Chrome devs have decided to break (scrollTo) auto scroll for all websites built prior to Chrome 61
- submitted by /u/KorgRue [link] [comments]    

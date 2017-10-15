@@ -1,2 +1,0 @@
-/u/WhitePeopleAreFunny on need help making a main screen for a game
-Yeah my bad, lines 1-13 is in jQuery which I will remove. I just want a canvas that will display a title and a button where I can press to then display the actual game canvas by using a onclick function. Doesn't have to be fancy just a simple text with an arial font.   

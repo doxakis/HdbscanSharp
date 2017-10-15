@@ -1,2 +1,0 @@
-/u/cryo on On exceptions
-Your functions return null because you're swallowing your exceptions. Don't do that. Just let them propagate. Then your "problems" with exceptions go away.  He's kinda getting to that further down. This seems to be the fundamental misunderstanding.  A typo, I bet. Relax man :p   

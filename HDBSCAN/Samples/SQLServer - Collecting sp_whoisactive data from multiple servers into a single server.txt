@@ -1,2 +1,0 @@
-Collecting sp_whoisactive data from multiple servers into a single server
- submitted by /u/stgioia [link] [comments]    

@@ -1,2 +1,0 @@
-Use Vue components in React, and React components in Vue
-submitted by /u/akxcv [link] [comments] 

@@ -1,2 +1,0 @@
-Demo In Memory OLTP
- submitted by /u/petter1245 [link] [comments]    

@@ -1,2 +1,0 @@
-/u/RaionTategami on loss vs iteration plot of a seq2seq model with a hidden size of 1
-Yeah this seems weird but I don't think I can help further without seeing code. I would bet on a bug though. What's the test loss like?   

@@ -1,2 +1,0 @@
-/u/ASI7296 on How do you “normalize” data?
-Normalisation typically refers to transformation of your data, so the values across different features / columns are in comparable ranges. The most common form - Standardisation involves transforming each feature of your data to have Mean = 0 and Std. Deviation = 1. Another form would be Range normalisation - transforming features to be withing a particular range, eg. Between 0 and 1.   

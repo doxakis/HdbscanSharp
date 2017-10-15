@@ -1,2 +1,0 @@
-Nocturne loses his ability to ignore unit collision when he buys Phantom Dancer
-*Note PD passive still works in range of a champion, but any other time he cannot ignore unit collision..  submitted by /u/BurningRice [link] [comments] 

@@ -1,2 +1,0 @@
-/u/SalizarMarxx on ReSharper seems hellbent that a bool is always false, not sure why
-This code makes me want to scream. You're making at least three passes over your data, before your logic even kicks in. There's no reason to segment the results based on a single Boolean filter like this. This case is simply splitting the work into two lists but still performs the work regardless. It's faster to iterate the results and do what ever logic is needed within a single iteration. If you absolutely have to segment the data, the use groupby instead.   

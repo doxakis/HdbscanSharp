@@ -1,2 +1,0 @@
-/u/otac0n on Use one SqlConnection object repeatly or recreate every time?
-It's actually a lot easier and cleaner to use using blocks around all of your DB resources. ADO.NET will handle the tricky work of pooling you connections and your code will be easier to read/change.   

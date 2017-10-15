@@ -1,2 +1,0 @@
-/u/mcosta on Fast JVM startup with JDK 9
-The question is: why would you want to run cgi in java? I mean, I understand why a node server wants to offload cpu intensive load to another process because does not wants to block the event loop. But java has real threads... so?   

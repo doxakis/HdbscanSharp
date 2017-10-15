@@ -1,2 +1,0 @@
-/u/Nebu on RapBot - Markov chain generating rap songs
-Maybe as a next step, keep track of the syllable count and then ensure the ends of each line rhyme using something like https://stackoverflow.com/questions/25714531/find-rhyme-using-nltk-in-python   

@@ -1,2 +1,0 @@
-/u/reg0 on Ethernet Diagram Help!
-Mobile fucked up my nice diagram -main router > floor router > 2 floor switches > end user in the end you want a tree with main router at root and end users as leaves   

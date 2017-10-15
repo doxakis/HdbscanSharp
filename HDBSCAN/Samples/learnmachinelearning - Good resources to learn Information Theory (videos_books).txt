@@ -1,2 +1,0 @@
-Good resources to learn Information Theory (videos/books)
-I'm working on topics related to generative models, in particular GANs and VAEs. While reading the literature for this, I'm having some difficulty understand the information theoretic concepts/heuristics used. Any pointers for good resources?  submitted by /u/kilgoretrout92 [link] [comments] 

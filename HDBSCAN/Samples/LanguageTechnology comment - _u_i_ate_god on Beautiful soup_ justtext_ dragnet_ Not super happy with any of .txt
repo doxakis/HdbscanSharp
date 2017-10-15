@@ -1,2 +1,0 @@
-/u/i_ate_god on Beautiful soup? justtext? dragnet? Not super happy with any of these. Maybe I'm using them wrong? Advice on the best way to reliably pull text from a large number of varied websites. Beginner ooking for advice from the veteran data miners.
-I wrote a project to crawl news sites in order to use their content for a personal nltk-based classification project (thus python) and felt https://github.com/grangier/python-goose did a great job.   

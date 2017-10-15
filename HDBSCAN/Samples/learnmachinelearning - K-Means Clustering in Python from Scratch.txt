@@ -1,2 +1,0 @@
-K-Means Clustering in Python from Scratch
- submitted by /u/mubumbz [link] [comments]    

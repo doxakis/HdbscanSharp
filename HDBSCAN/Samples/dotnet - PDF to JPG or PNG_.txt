@@ -1,2 +1,0 @@
-PDF to JPG or PNG?
-Hi! I fetch a PDF file from Blob Storage which works great if you want to download the file. What I would like to create here is a tool that shows the PDF file which I retrieve from blob storage or convert it to a "preview picture" of some sort so the user can preview the file on the page (without a pdf extension installed or downloading the file) and then either approve or reject the document. Any suggestions?  submitted by /u/supernalle1234 [link] [comments] 

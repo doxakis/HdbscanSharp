@@ -1,2 +1,0 @@
-/u/smorac on Rasa Core kicks up the context for chatbots
-And the link to the source on GitHub: https://github.com/RasaHQ/rasa_core   

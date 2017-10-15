@@ -1,2 +1,0 @@
-JavaScript Studio publicly available - The cloud service for finding runtime errors in JavaScript. Anyone can log in with their GitHub account and start using the free tier right away
-submitted by /u/magenta_placenta [link] [comments] 

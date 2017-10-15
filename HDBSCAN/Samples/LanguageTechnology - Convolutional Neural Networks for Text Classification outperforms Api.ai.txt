@@ -1,2 +1,0 @@
-Convolutional Neural Networks for Text Classification outperforms Api.ai
-submitted by /u/gfrison [link] [comments] 

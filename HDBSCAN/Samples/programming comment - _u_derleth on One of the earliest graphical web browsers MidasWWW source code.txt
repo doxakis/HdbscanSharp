@@ -1,2 +1,0 @@
-/u/derleth on One of the earliest graphical web browsers MidasWWW source code
-Sun and NeXT both thought it was fast enough for interactive applications in DPS and NeWS by the early 90's.  True, but they were targeting workstation-class hardware with what were (at least in the case of NeXT) black-and-white displays. Getting something similar working on an early Windows 95-class computer would have taken some real doing. (Not that workstations were magical, but they were generally faster than desktop machines of the same era. They were damn well more expensive.)   

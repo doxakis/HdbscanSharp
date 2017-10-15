@@ -1,2 +1,0 @@
-/u/sritee on loss vs iteration plot of a seq2seq model with a hidden size of 1
-Quick way to Check if it's a bug is just chat with it.   

@@ -1,2 +1,0 @@
-/u/brostachio on Category theory for programmers
-I'm at lesson 8.1 into bartosz's ct lecture playlist on youtube and I've found it to be quite gentle of an introduction. I have no background in mathematics really. I took calc some time in the previous decade. I'd be interested to hear what the pain points are.   

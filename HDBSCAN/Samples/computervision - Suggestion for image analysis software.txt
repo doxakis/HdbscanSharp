@@ -1,2 +1,0 @@
-Suggestion for image analysis software
-Hello, Hope this community can help me. I'm looking for a software that can analyze an image and rate it against a another image. For example, we provide an input image of a child's cursive handwriting and compare it to an image of perfect cursive and are able to quantify the level of deviation. Is something like this even possible? Any input is welcome. Thanks.  submitted by /u/emyers17 [link] [comments] 

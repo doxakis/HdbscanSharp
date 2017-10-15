@@ -1,2 +1,0 @@
-Two.js & three.js devs
-Hey r/JavaScript, My studio is working on a new portfolio site and we want to get creative with some interactive elements. We're looking for a dev that is design savvy with experience in using two.js and or three.js (or something comparable). anyone out there? Please send your portfolio!  submitted by /u/Black_Yoshi [link] [comments] 

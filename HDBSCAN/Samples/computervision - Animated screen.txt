@@ -1,2 +1,0 @@
-Animated screen
-Hello, I am having trouble keeping a bounding box focused because there is lots of glowing around the objects I am trying to detect on my screen any ideas how to deal with this? Thanks!  submitted by /u/opencvisfun [link] [comments] 

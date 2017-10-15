@@ -1,2 +1,0 @@
-/u/Meefims on JS Noob here. Would someone be able to help me implement some animations I have as an overlay?
-Try at /r/learnjavascript and with a more specific question as to what’s blocking you.   

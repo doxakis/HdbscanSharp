@@ -1,2 +1,0 @@
-/u/ArgNio on CNN for several images derived from microtomography. How to apply it?
-I have tried MLP using data derived from the images but couldnt get a better result than 70% - dividing the database into 3 classes. Using the images, I havent tried anything yet cause I have no idea how to use more than one image for each instance. (thanks for the interest!)   

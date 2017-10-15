@@ -1,2 +1,0 @@
-/u/TotesMessenger on [D] Question about continuous neural network policies (in RL)
-I'm a bot, bleep, bloop. Someone has linked to this thread from another place on reddit: [/r/reinforcementlearning] [D] Question about continuous neural network policies (in RL) • /r/MachineLearning  If you follow any of the above links, please respect the rules of reddit and don't vote in the other threads. (Info / Contact)    

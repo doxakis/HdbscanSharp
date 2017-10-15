@@ -1,2 +1,0 @@
-Azure VPN
-Since the Azure built in VPN gateway paired with Cisco firewalls seems to perform fairly poorly and drop too much packets, what have people had the best experience with?  submitted by /u/trippinnik [link] [comments] 

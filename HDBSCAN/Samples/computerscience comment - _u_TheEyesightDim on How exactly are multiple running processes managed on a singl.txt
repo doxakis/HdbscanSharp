@@ -1,2 +1,0 @@
-/u/TheEyesightDim on How exactly are multiple running processes managed on a single core, on an architectural level?
-Thank you for that redirection, there are a lot of good hits on the first page there.   

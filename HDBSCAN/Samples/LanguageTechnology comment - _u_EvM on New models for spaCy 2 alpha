@@ -1,2 +1,0 @@
-/u/EvM on New models for spaCy 2 alpha -- now near state-of-the-art (NER: 86.4 F on OntoNotes; parsing: 94.4 UAS on WSJ)
-Question: wouldn't it be a good idea to start using ISO-639-2 codes for all languages at this point? That would mean using 'eng' instead of 'en' for English. Or, alternatively, adding an alias so that people can keep using 'en' for English, but they could also opt for 'eng'.   

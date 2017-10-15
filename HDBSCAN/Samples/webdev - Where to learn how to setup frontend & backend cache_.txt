@@ -1,2 +1,0 @@
-Where to learn how to setup frontend & backend cache?
-Hi. I've always seen a lot of tutorials on learning language etc., but I cannot find any good ones covering caching from basics (as I don't even know exactly what happens when site is cached). Do you know any fine covering frontend cache and server-side cache? Especially if it's related to PHP/Laravel would be the best fit. What is Redis/Memcache and similar questions to these? Thank you in advance!  submitted by /u/thedraom [link] [comments] 

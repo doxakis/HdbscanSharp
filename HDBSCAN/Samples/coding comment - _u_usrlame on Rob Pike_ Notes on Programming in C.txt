@@ -1,2 +1,0 @@
-/u/usrlame on Rob Pike: Notes on Programming in C
-You leave Rob Pike alone ... totally different skill set /s   

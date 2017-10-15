@@ -1,2 +1,0 @@
-Azure Support Standard
-Is there any sort of associated response time SLA after initial contact? I've had a case that was started last week. We didn't hear much back from Microsoft on Friday and now I'm starting my afternoon on Monday... Doesn't seem like with Standard support there is any way via the dashboard or a # to call to kick the wheels on a ticket... Or is there something I'm missing?  submitted by /u/inzeos [link] [comments] 

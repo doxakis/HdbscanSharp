@@ -1,2 +1,0 @@
-/u/sovnade on Huge log file on db that was change to Simple Recocery Model.
-Shrinking an empty log file is a metadata operation. It's instant, more or less.   

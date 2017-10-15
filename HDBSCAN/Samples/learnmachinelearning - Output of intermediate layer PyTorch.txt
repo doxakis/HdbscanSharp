@@ -1,2 +1,0 @@
-Output of intermediate layer PyTorch
-Using Torch, the output of a specific layer during testing for example with one image could be retrieved by layer.output[x]. Is there any equivalent approach in PyTorch? I want to print the output of a convolutional layer using a pretrained model and a query image.  submitted by /u/lestreinz [link] [comments] 

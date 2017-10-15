@@ -1,2 +1,0 @@
-/u/wizang on With ESLint and ES6+, does typescript become much less useful?
-Typescript is much larger than the static typing alone. It opens up a ton of cool design patterns with it's additional language features. Also, the ammount the ide can help you goes way up too, and that for me is typescript biggest win. I see the benefits of the linter and es6 to be very different things (both of which you can use side by side with typescript).   

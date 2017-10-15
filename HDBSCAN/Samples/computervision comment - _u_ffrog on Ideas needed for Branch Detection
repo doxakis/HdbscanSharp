@@ -1,2 +1,0 @@
-/u/ffrog on Ideas needed for Branch Detection-Computer Vision
-So are you currently picking by hand? Is it really economical to do that? I don't really have a recommendation we simply detect the product we are looking for and label everything else as an object to be avoided using a CNN.   

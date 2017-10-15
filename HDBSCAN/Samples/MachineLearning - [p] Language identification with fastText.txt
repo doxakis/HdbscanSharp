@@ -1,2 +1,0 @@
-[p] Language identification with fastText
-submitted by /u/benfred [link] [comments] 

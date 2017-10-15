@@ -1,2 +1,0 @@
-Server tag is not well formed?
-Sorry, this is driving me nuts and I can't for the life of me figure it out. I'm sure it's something stupid, but if someone could help me figure out why I'm throw this error, I would forever be in your debt.  ' Width="100px" MaxLength="4"><%# Eval("PredictedDemand") %>    submitted by /u/DevOpsFailure [link] [comments] 

@@ -1,2 +1,0 @@
-Correlation between observed and predicted values
-Im applying a multiple linear regression on a dataset to predict stock prices. Although my RMSE is relativly high, I also got high correlation coefficient between my predicted and obersved prices. What can I gather from this? Maybe that my model is not precised but is able to give a good prediction whether the price is increasing or decreasing?  submitted by /u/juliocorte [link] [comments] 

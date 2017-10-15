@@ -1,2 +1,0 @@
-/u/Blazeix on Amazing!, C# docs now use Monaco and Docker to let beginners learn C# in the browser.
-Monaco is a code editor: https://github.com/Microsoft/monaco-editor ...sorry, couldn't resist :) But according to Scott Hanselman on Twitter, it's using containers on linux, which (probably?) means docker. That was when they were beta testing try.dot.net which looks like the same system that's powering the tutorial.   

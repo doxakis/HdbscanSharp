@@ -1,2 +1,0 @@
-/u/kiljacken on ReactOS Repository migrated to GitHub (migrating a source code history of more than 20 years)
-The actual reason is that the manager provides a virtual file system layer so mod files can be kept neatly separated in their own directory trees while providing the game a coherent looking single directory tree.   

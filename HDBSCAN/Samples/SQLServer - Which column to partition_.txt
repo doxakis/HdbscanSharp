@@ -1,2 +1,0 @@
-Which column to partition?
-What is the ideal column to partition on: FactOrders and FactOrderDetail tables? OrderDate or OrderNumber? And what should be the ideal ClusterIndex and NonClustered Index - what should be the order of index columns - (OrderDate, OrderNumber OR OrderNumber, OrderDate)? Most Queries run on OrderNumber criteria with several Dimension Key joins.  submitted by /u/Rajkumar99 [link] [comments] 

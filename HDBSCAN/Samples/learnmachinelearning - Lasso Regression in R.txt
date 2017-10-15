@@ -1,2 +1,0 @@
-Lasso Regression in R
-Hi, I am currently looking for recommendations on online courses to learn Lasso and Ridge Regression in R. I know about Experfy (where you can learn and get certified) as well as Coursera, but was wondering if anyone had any other recommendations for someone that was trying to learn from scratch.  submitted by /u/jkimbigdata [link] [comments] 

@@ -1,2 +1,0 @@
-/u/tonymonmaster on Secure a Web Api in ASP.NET Core
-I don't understand the sigh   

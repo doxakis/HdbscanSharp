@@ -1,2 +1,0 @@
-/u/xxkylexx on IdentityServer4 Updated to .NET Core 2
-Yay. Now we can update to ASP.NET Core 2.0   

@@ -1,2 +1,0 @@
-/u/EntroperZero on How much JS you guys are doing now theses days ? is it still C# everywhere or ?
-Same. But I call it Node.ts. :) Still using .NET for side projects.   

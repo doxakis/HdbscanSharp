@@ -1,2 +1,0 @@
-Temporal Normalization library: to detect the temporal phrase of given text, and normalize them according to TIMEX3 standard
-submitted by /u/danieljj [link] [comments] 

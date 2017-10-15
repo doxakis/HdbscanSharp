@@ -1,2 +1,0 @@
-/u/askacadthrowaway on Dealing with a gradient that's much larger for one parameter
-Ah I understand. I actually went ahead and tried it with just a learning rate vector (without dividing gradient by max norm), and the results were great! I got up to 0.85 AUC after ~500K updates, with no tuning of hyperparameters or learning rate schedules. That's comparable to/ better than the non-visual portion, and it converges in many fewer iterations to boot. So all in all, that worked exceptionally.   

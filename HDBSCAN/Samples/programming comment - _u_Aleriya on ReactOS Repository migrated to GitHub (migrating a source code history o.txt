@@ -1,2 +1,0 @@
-/u/Aleriya on ReactOS Repository migrated to GitHub (migrating a source code history of more than 20 years)
-Reminds me of the OS written in Scratch.   

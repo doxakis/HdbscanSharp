@@ -1,2 +1,0 @@
-/u/LoveOfProfit on Should I try to get a job in data analysis before moving into machine learning?
-Depends where you're switching from. Are you a software engineer? Probably not necessary if you can land a junior role. Something unrelated? Yeah DA might help.   

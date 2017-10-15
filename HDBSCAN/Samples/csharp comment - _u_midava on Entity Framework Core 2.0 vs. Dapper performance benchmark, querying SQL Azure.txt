@@ -1,2 +1,0 @@
-/u/midava on Entity Framework Core 2.0 vs. Dapper performance benchmark, querying SQL Azure tables
-Shouldn't you add .AsNotTracking() to the EF query to make it a fair comparison? In my experience tracking adds quite a bit of overhead and I have rarely had it enabled on a list of any kind.   

@@ -1,2 +1,0 @@
-Where statement using a text file
-Have a text file that contains names and I want to use a where statement that calls in the text file and uses that instead of copying and pasting names into a where statement Is that possible, have seen something on bulk insert  submitted by /u/MunchBytes [link] [comments] 

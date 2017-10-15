@@ -1,2 +1,0 @@
-How do achieve a fragmented/glitched text effect like this?
-This is what I'm talking about. I've tried doing it by myself with no success, and I can't find a resource on how to make it in css/javascript. Any1 have any idea? Where should I look? I'd like to animate the glitch process aswell.  submitted by /u/googleadoptme [link] [comments] 

@@ -1,2 +1,0 @@
-/u/blackHoleDetector on Are there fields / topics in ML where a poor student can work on without access to clusters and multiple GPUs?
-The neural network API, Keras, is both CPU and GPU compatible. You can train more complex models, including CNNs, with only a CPU, but it will require smaller batches of data and a longer amount of time to train. I have a Deep Learning with Keras playlist on YouTube here if you decide to go the Keras route and need a resource for getting started. @blkHoleDetector | YouTube   

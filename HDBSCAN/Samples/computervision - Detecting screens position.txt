@@ -1,2 +1,0 @@
-Detecting screens position
-I'm new to computer vision and I'm trying to detect these screws on this image: https://imgur.com/a/LZIYw I trying to use color detection but because of the colors of the background and the screws this is now working very well. What I basically need to do is use the tracking to find the position in x,y on the ''top view''... I've checked some tutorials but I'd like to know if there is something else besides using color that would be good in this case...  submitted by /u/zuliani19 [link] [comments] 

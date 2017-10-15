@@ -1,2 +1,0 @@
-Chapel 1.16: The Productive Parallel Programming is released!
-submitted by /u/marcoscleison [link] [comments] 

@@ -1,2 +1,0 @@
-/u/Rajkumar99 on Demo table partitioning in sql server 2014 step by step
-What is the ideal column to partition on: Orders and OrderDetail tables? OrderDate or OrderNumber? And what should be the ClusterIndex and NonClustered Index? Most Queries are based on OrderNumber criteria.   

@@ -1,2 +1,0 @@
-/u/aDutchofMuch on Recognise a person when face is obscured
-Look into the field of ReID Here is a paper of mine that has a bit of background in it. While it still uses faces, it also runs studies on whole bodies, too. http://ieeexplore.ieee.org/document/7791204/   

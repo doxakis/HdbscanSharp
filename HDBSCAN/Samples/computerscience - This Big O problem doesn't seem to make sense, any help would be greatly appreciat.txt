@@ -1,2 +1,0 @@
-This Big O problem doesn't seem to make sense, any help would be greatly appreciated.
-If f(n,m) = (n + 1)m, then f(n,m) = O(nm), for all m >= 1. How is (n + 1)m ever going to be bounded by this cnm?  submitted by /u/OperationCorporation [link] [comments] 

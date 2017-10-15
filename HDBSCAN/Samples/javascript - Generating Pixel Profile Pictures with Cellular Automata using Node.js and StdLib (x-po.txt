@@ -1,2 +1,0 @@
-Generating Pixel Profile Pictures with Cellular Automata using Node.js and StdLib (x-post r/node)
-submitted by /u/keithwhor [link] [comments] 

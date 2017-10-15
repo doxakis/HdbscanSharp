@@ -1,2 +1,0 @@
-/u/GenuineSnakeOil on Azure fell over for 7 hours in Europe because someone accidentally set off the fire extinguishers • The Register
-Azure has only just started moving to an AZ architecture so does not have AZ's like AWS. That is why the Azure architecture looks like traditional DR whereas AWS is HA.   

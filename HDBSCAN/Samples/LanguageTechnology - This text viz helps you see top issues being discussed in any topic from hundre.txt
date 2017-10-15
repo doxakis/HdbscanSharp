@@ -1,2 +1,0 @@
-This text viz helps you see top issues being discussed in any topic from hundreds of google news results!
-This has been created using force-directed graphs and Google News. It's updated ~ realtime. We created it because you can search Google Trends for hadoop, but you won't get results when you drill down into eg: manufacturing. See top issues being discussed in a topic of interest at senseihub.com! Here are a few more examples: * human capital * biohacking * exoskeleton  submitted by /u/iknowpeoplewhoknow [link] [comments] 

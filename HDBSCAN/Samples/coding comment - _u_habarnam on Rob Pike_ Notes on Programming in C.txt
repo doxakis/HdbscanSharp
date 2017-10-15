@@ -1,2 +1,0 @@
-/u/habarnam on Rob Pike: Notes on Programming in C
-I feel like most of these conventions can be seen in Go and it's standard library.   

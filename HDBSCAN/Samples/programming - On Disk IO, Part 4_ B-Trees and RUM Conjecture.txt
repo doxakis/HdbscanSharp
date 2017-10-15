@@ -1,2 +1,0 @@
-On Disk IO, Part 4: B-Trees and RUM Conjecture
-submitted by /u/ifesdjeen [link] [comments] 

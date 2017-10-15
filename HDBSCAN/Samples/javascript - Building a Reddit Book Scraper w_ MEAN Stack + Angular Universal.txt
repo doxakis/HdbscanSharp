@@ -1,2 +1,0 @@
-Building a Reddit Book Scraper w/ MEAN Stack + Angular Universal
-submitted by /u/jacobedawson [link] [comments] 

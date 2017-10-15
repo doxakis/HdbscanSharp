@@ -1,2 +1,0 @@
-/u/grauenwolf on Entity Framework Core 2.0 vs. Dapper performance benchmark, querying SQL Azure tables
-Thanks   

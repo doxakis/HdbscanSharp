@@ -1,2 +1,0 @@
-"Red Hat Buying Cloud Development Tools Vendor Codenvy": tool suite based on Eclipse Che joins RH's stable
-submitted by /u/claird [link] [comments] 

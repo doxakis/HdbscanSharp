@@ -1,2 +1,0 @@
-[P] Solving Atari games with Distributed Reinforcement Learning
- submitted by /u/pmigdal [link] [comments]    

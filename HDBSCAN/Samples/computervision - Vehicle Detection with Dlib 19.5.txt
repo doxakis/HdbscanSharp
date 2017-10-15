@@ -1,2 +1,0 @@
-Vehicle Detection with Dlib 19.5
- submitted by /u/davis685 [link] [comments]    

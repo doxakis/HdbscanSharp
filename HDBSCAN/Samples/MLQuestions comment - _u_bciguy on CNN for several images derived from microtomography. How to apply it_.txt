@@ -1,2 +1,0 @@
-/u/bciguy on CNN for several images derived from microtomography. How to apply it?
-if you have labels, have you tried simple classification methods yet? what kind of performance did you get?   

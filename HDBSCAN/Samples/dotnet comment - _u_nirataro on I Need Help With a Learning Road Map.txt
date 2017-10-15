@@ -1,2 +1,0 @@
-/u/nirataro on I Need Help With a Learning Road Map
-Since you have worked with node.js, .NET Core is very similar to Express. I highly recommend you to start on ASP.NET Core 2.0. The asp.net core documentation page is good. Also check out my ASP.NET Core samples https://github.com/dodyg/practical-aspnetcore/.   

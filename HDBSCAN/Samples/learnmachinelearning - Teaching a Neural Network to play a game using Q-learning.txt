@@ -1,2 +1,0 @@
-Teaching a Neural Network to play a game using Q-learning
- submitted by /u/theviking999 [link] [comments]    

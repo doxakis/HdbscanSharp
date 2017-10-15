@@ -1,2 +1,0 @@
-Pet identification using open Cv possible?
-How cool would it be if people could scan their pet from different angles, and put it in a cloud database. Then if it is lost, people could open up a PetID app on their phone, take a picture of it, the app would automatically determine which possible lost animal it is and contact the possible owners? If anyone wants to form a team for this, count me in.  submitted by /u/goodnewsjimdotcom [link] [comments] 

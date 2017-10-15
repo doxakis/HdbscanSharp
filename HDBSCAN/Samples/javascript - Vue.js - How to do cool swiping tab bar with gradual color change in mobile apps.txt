@@ -1,2 +1,0 @@
-Vue.js - How to do cool swiping tab bar with gradual color change in mobile apps
-submitted by /u/snavisf [link] [comments] 

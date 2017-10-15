@@ -1,2 +1,0 @@
-Spitfire -- An easy to use WebRTC library for .NET applications.
- submitted by /u/codeusasoft [link] [comments]    

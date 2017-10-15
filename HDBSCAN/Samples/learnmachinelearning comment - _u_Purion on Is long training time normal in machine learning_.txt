@@ -1,2 +1,0 @@
-/u/Purion on Is long training time normal in machine learning?
-Alright, thanks for the suggestion. Will the learning time reduce significantly if I use more core? My knn just now took 33 minutes to fit, it was a pain in the ass.   

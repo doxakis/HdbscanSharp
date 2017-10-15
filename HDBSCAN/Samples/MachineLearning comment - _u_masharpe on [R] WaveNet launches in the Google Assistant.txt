@@ -1,2 +1,0 @@
-/u/masharpe on [R] WaveNet launches in the Google Assistant
-I assume part of it would be caching during generation, as is done in https://github.com/tomlepaine/fast-wavenet.   

@@ -1,2 +1,0 @@
-/u/Toger on Is "Cloud Computing" just applied distributed computing?
-Cloud computing also means architectures that depend far less on super-reliable machines and replaces it with those that tolerate a greater amount of change / failure.   

@@ -1,2 +1,0 @@
-/u/jcrouzzo on Are there fields / topics in ML where a poor student can work on without access to clusters and multiple GPUs?
-Floydhub is a simple and cheap solution that allows you to train python tensorflow models in the cloud. It integrates nicely with their provided solution and gives you 100 hours gpu time to start free. Hours after the free trial are about 30 cents including access to I think an nvidia tesla k80 gpu if Im not mistaken. Its fully documented too. see floydhub.com and docs.floydhub.com   

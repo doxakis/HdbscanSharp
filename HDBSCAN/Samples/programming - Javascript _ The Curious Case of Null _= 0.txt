@@ -1,2 +1,0 @@
-Javascript : The Curious Case of Null >= 0
-submitted by /u/fagnerbrack [link] [comments] 

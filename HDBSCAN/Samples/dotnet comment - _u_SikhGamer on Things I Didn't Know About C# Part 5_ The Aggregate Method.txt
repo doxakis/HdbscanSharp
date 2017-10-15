@@ -1,2 +1,0 @@
-/u/SikhGamer on Things I Didn't Know About C# Part 5: The Aggregate Method
-The aggregate version is pretty nasty to read.   

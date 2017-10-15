@@ -1,2 +1,0 @@
-C# books?
-Hey guys , so i'm fairly new to C# , not new to programming. I've been learning Front End Web Dev and have been using Javascript, and im currently moving towards more backend and chose to learn .NET Core. Im wondering if any of you have a suggestion on any good books for learning, Im currently doing a few video tutorials for the fundamentals, fairly easy to pick up as i'm not entirely new to programming concepts. Most of the books I see on amazon are either old or are more focused on ASP.Net Thanks :)  submitted by /u/sergey140 [link] [comments] 

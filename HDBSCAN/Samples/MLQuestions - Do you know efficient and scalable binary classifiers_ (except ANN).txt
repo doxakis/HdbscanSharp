@@ -1,2 +1,0 @@
-Do you know efficient and scalable binary classifiers? (except ANN)
-Hello, As written in the title, I am looking for binary classifiers that can scale at least to tens of millions of points with little restriction on the number of features. I am already aware of the Scalable Gaussian Process Classification by Hensmann 15', but I am wondering if other techniques, non-based on Neural Networks, exist. Thanks for your suggestions! PS: If you are using such a method I am curious to know in what context and for what goal :D  submitted by /u/spiderpacman [link] [comments] 

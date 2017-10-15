@@ -1,2 +1,0 @@
-/u/akxcv on Use Vue components in React, and React components in Vue
-Actually, that's not true in this case :) I made the library because I needed it.   

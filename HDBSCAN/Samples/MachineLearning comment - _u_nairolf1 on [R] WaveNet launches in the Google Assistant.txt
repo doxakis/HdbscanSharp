@@ -1,2 +1,0 @@
-/u/nairolf1 on [R] WaveNet launches in the Google Assistant
-It was actually 0.02 seconds of audio in 1 second in the original paper, so the improvement is 3 orders of magnitude.   

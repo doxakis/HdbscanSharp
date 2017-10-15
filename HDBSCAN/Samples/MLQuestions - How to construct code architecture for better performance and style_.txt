@@ -1,2 +1,0 @@
-How to construct code architecture for better performance and style?
-These days, i'm refactoring good examples from tensorflow/models using python and tensorflow. I'm trying to find good code style, well organized, faster and looking good but I feel not that easy. How do you construct the code when constructing models using tensorflow? If you have some tips or examples, please share.  submitted by /u/kymkh0902 [link] [comments] 

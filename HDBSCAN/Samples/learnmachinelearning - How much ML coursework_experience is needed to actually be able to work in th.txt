@@ -1,2 +1,0 @@
-How much ML coursework/experience is needed to actually be able to work in the industry?
-I know most ML job postings typically require a phd, but I recall Andrew Ng mentioning in one of his earlier lectures (~week 3 ish) in his intro course that we had already acquired enough knowledge of ML to perform most of the tasks that are being done professionally in silicon valley today. I know that was a huge generalization but wanted to see what you guys think about how much experience it takes to really be qualified?  submitted by /u/kwazimoto44 [link] [comments] 

@@ -1,2 +1,0 @@
-The Hero selection tips should prefer 2 Healers
-Picking 1 Healer removes the yellow "No Healers" sign, but it should be replaced with "Few Healers" until another is picked. And "No Healers" should be red.  submitted by /u/dilsency [link] [comments] 

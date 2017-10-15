@@ -1,2 +1,0 @@
-If I resize a VM, will I lose all my files & WHM/Cpanel config?
-This is something Azure has never made clear anywhere. If I resize the VM to a bigger one, will my WHM/Cpanel & files be lost or will that be unaffected?  submitted by /u/thef1guy [link] [comments] 

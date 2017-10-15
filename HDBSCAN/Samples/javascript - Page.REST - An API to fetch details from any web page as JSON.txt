@@ -1,2 +1,0 @@
-Page.REST - An API to fetch details from any web page as JSON
-submitted by /u/laktek [link] [comments] 

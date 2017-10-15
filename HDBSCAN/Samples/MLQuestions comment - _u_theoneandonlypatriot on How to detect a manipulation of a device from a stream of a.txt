@@ -1,2 +1,0 @@
-/u/theoneandonlypatriot on How to detect a manipulation of a device from a stream of accelerometer and gyroscope data?
-You can't really detect when it is over someone's head with that information, but you can detect the orientation and speed with which it is moved..   

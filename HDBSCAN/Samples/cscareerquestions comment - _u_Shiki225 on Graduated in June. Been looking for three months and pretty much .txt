@@ -1,2 +1,0 @@
-/u/Shiki225 on Graduated in June. Been looking for three months and pretty much no response.
-Yep... working product shows a lot more than just saying it on the resume. In fact, recruiters don't even bother doing people's README.md set up to deploy their project. Recruiters don't have the time and sometimes knowledge to set up the environments. Having a live project or YouTube video make it easier for them to see what you have done.   

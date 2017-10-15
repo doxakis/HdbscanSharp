@@ -1,2 +1,0 @@
-LINQ-like functions in JavaScript with deferred execution
- submitted by /u/alexandertsvetkov [link] [comments]    

@@ -1,2 +1,0 @@
-/u/xkingpin on Use one SqlConnection object repeatly or recreate every time?
-I think it’s important to add: Connections that are not explicitly closed might not be added or returned to the pool. It is recommended to always close the connection when you are finished using it so the connection will be returned to the pool.   

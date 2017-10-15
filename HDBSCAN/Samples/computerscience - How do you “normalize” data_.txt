@@ -1,2 +1,0 @@
-How do you “normalize” data?
-I’m taking a computer organization course and I’m stumped on a homework question. The question has a data table with a Reference machine, an A machine, and a B machine. The table shows 3 benchmarks for all of the machines. Then it ask that I “present the results in a normalized form and provide benchmarks for machine A and B.” I don’t really know what steps to take to put them in normalized form. Any ideas?  submitted by /u/squid3piece [link] [comments] 

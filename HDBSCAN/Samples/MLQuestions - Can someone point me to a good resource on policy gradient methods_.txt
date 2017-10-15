@@ -1,2 +1,0 @@
-Can someone point me to a good resource on policy gradient methods?
-submitted by /u/spline_reticulator [link] [comments] 

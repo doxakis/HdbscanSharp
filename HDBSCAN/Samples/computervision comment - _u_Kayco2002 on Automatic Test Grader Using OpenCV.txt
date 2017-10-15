@@ -1,2 +1,0 @@
-/u/Kayco2002 on Automatic Test Grader Using OpenCV
-Wow, great work! I did something similar a few years back with OpenCV / grading, though never got the real-time video to work (I just had folks submit scanned in PDFs, plopped those into image files, and processed them). http://bubblecheck.reecemath.com/about I'm intending to do a full re-write of my site in Python (site's in PHP), make a mobile app, etc. Let me know if you'd want to collaborate on that.   

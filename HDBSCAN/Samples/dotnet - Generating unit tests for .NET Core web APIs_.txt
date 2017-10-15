@@ -1,2 +1,0 @@
-Generating unit tests for .NET Core web APIs?
-I'm looking for a tool that allows me to generate unit tests for my .NET Core Web APIs. I'm already using Swagger and i was curious if there's any tool available that generates something based on the metadata there.  submitted by /u/bbmario [link] [comments] 

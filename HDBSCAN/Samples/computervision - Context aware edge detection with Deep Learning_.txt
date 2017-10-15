@@ -1,2 +1,0 @@
-Context aware edge detection with Deep Learning?
-Anyone knows of such networks. For example, I want to cleanly segment the edges of these boxes ignoring all other 'noise'. Maybe one that can even take depth data. https://previews.123rf.com/images/scanrail/scanrail1303/scanrail130300033/18461842-Cargo-delivery-and-transportation-industry-concept-stacked-cardboard-boxes-on-wooden-shipping-pallet-Stock-Photo.jpg Of course, the data never looks this good, sometimes the boxes may be a bit dirty, or of different sizes.  submitted by /u/soulslicer0 [link] [comments] 

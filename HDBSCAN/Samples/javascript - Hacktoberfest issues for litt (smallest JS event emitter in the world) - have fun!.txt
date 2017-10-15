@@ -1,2 +1,0 @@
-Hacktoberfest issues for litt (smallest JS event emitter in the world) - have fun!
-submitted by /u/lost_file [link] [comments] 

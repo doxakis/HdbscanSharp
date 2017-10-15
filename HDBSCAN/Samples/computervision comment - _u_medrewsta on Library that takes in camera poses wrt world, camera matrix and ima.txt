@@ -1,2 +1,0 @@
-/u/medrewsta on Library that takes in camera poses wrt world, camera matrix and images to generate point cloud?
-http://docs.opencv.org/3.1.0/de/d7c/tutorial_table_of_content_sfm.html Check out opencv's structure from motion module. I am assuming you don't have depth data.   

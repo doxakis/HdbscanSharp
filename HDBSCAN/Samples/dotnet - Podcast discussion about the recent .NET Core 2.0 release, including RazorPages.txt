@@ -1,2 +1,0 @@
-Podcast discussion about the recent .NET Core 2.0 release, including RazorPages
-submitted by /u/szul [link] [comments] 

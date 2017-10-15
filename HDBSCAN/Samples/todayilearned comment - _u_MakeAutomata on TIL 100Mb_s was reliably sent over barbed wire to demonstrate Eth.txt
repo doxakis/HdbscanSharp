@@ -1,2 +1,0 @@
-/u/MakeAutomata on TIL 100Mb/s was reliably sent over barbed wire to demonstrate Ethernet robustness in a Broadcom showcase
-No need for a link, wires are made of copper, there are no special high def coppers.   

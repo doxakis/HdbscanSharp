@@ -1,2 +1,0 @@
-What's novel in Seq2SQL by Richard Socher?
-I read the paper by Socher et al. this morning. They used reinforcement learning to train Seq2SQL model. But I am confused about the difference with a bunch of previous work (this, this, and this) also using neural RL for semantic parsing. I am just wondering what's new in Socher's paper. Seems that supervised semantic parsing (this and this) are included in the references, but none of previous neural RL papers.  submitted by /u/RL4SP [link] [comments] 

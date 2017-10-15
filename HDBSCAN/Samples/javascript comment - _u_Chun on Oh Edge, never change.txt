@@ -1,2 +1,0 @@
-/u/Chun on Oh Edge, never change
-That's what I did with window.myframe. window.frames === window, so window.frames.myframe === window.myframe   

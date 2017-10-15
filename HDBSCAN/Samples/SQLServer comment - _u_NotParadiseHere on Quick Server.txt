@@ -1,2 +1,0 @@
-/u/NotParadiseHere on Quick Server
-Since you're on a Linux platform you could run SQL 2016 on it. I think there's a docker image available. You can insall FreeTDS to connect to it... but MSFT has their own command line tools for Linux - but it also is some flavor of TDS... once installed you can go command-line style like MySQL if you're a 'hardcore command-line user' :-) ... or you can download MSFT SQL Server Management Studio tool.   

@@ -1,2 +1,0 @@
-/u/lmcinnes on Optimal k in k-means
-You may want to consider clustering algorithms that don't require you to select the number of clusters apriori. HDBSCAN can be good for exploratory clustering, and hierarchical clustering can also help to get an understanding of the cluster structure of your data.   

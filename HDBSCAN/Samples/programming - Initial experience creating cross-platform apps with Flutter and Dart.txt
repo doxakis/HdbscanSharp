@@ -1,2 +1,0 @@
-Initial experience creating cross-platform apps with Flutter and Dart
-submitted by /u/inu-no-policemen [link] [comments] 

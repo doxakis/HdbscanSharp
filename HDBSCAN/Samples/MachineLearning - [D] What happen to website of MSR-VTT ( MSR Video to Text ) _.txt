@@ -1,2 +1,0 @@
-[D] What happen to website of MSR-VTT ( MSR Video to Text ) ?
-As title, I have tried to connect to the website to download corpus of translation from video to text several times. However, I get no response from the website, it doesn't show anything. Is the corpus for free or any constrain?  submitted by /u/vonMissesFisher [link] [comments] 

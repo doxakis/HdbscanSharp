@@ -1,2 +1,0 @@
-Checkbox moves down/up every time I click on it - only happens when I try to set its height
-Basically the title - I'm on Safari 10.1.2 and whenever I try to click these checkboxes, it shifts down, and then when I move my mouse it'll shift back up to its original position. Does anyone know why this happens?  submitted by /u/Granttank [link] [comments] 

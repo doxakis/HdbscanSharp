@@ -1,2 +1,0 @@
-How easily can a the pseudorandomness of random number generating functions be seen?
-Using fairly simple math and statistics. Would 1000 trials, 1000000 trials or more be needed to see significant results. Would looking at relative requencies of each number work or subsequences of a certain length? Do the methods of number generation vary greatly?  submitted by /u/Broship_Rajor [link] [comments] 

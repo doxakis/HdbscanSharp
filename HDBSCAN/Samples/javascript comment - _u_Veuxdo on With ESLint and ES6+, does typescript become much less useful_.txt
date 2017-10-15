@@ -1,2 +1,0 @@
-/u/Veuxdo on With ESLint and ES6+, does typescript become much less useful?
-What about it... I'm not following   

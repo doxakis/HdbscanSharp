@@ -1,2 +1,0 @@
-/u/devperez on Use one SqlConnection object repeatly or recreate every time?
-Doesn't have to be EF. That was just an example. It can be Dapper like /u/NecroBob recommended. Which still adds some overhead, but I personally believe the benefits outweigh the overhead.   

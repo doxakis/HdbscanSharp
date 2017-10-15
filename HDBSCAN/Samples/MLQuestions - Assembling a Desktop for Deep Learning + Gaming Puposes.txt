@@ -1,2 +1,0 @@
-Assembling a Desktop for Deep Learning + Gaming Puposes
-Hey guys, I want to setup a system which could cater to both the needs i.e. GPUs capable of scaling the deep learning training and also for gaming purposes (games like GTA 5, witcher, nier automata....) , I have zero knowledge of the hardware requirements for this kind of setup, hence need advice.  submitted by /u/kpskps [link] [comments] 

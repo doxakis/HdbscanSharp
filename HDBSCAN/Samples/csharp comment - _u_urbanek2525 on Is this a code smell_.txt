@@ -1,2 +1,0 @@
-/u/urbanek2525 on Is this a code smell?
-My guess is that your inner function is doing a transform from the type of parameter to the type for the function input. One thing that might make it better is to write an extension for the parameter type. Call the extension ToOtherType. Then you call becomes var thing = someFunction(parameter.toOtherType()); Transform functions are perfect as extensions. Just like ToString or Parse, extend your parameter type to own the transform. Same principle as a copy constructor or assignment operator.   

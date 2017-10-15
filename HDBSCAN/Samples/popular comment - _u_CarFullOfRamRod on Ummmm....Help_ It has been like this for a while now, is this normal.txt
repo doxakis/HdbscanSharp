@@ -1,2 +1,0 @@
-/u/CarFullOfRamRod on Ummmm....Help? It has been like this for a while now, is this normal?
-Looks like someone did a save and exit while at Temple of Broken Balance. The way I fixed the same issue is just exiting and restarting, but you might have to try force stop depending on if you use an iPhone or Android.   

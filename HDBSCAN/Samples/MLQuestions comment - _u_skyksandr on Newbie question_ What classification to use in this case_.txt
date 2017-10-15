@@ -1,2 +1,0 @@
-/u/skyksandr on Newbie question: What classification to use in this case?
-Thank you! SVM looks promising for this task. Paper mentioned above suggests use of Random Forest for almost exact same task so I'll give it a try as well.   

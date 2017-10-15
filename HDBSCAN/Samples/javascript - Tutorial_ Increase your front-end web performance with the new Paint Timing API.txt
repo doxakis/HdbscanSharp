@@ -1,2 +1,0 @@
-Tutorial: Increase your front-end web performance with the new Paint Timing API
-submitted by /u/sitepen [link] [comments] 

@@ -1,2 +1,0 @@
-/u/mdillenbeck on How exactly are multiple running processes managed on a single core, on an architectural level?
-Operating Systems: Three Easy Pieces is a good place to start. It is used for University of Wisconsin - Madison's OS course.   

@@ -1,2 +1,0 @@
-/u/nondifferentiable on "What would ResNet Do?" - What Hardware and threading was used by the ResNet-50 team that won the ImageNet competition in 2015?
-ResNet-50 takes about 2 weeks to train on a single NVIDIA TITAN X on ImageNet 2012 (the standard).   

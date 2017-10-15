@@ -1,2 +1,0 @@
-/u/_de1eted_ on Commercial use of open source libraries.
-My apologies for misunderstanding the question What I meant when I said op is the user is that op is the user of the library and not planning to be developer of it, notwithstanding his status as developer of an application using cv libraries he is still user of the library. As long he is not considering any modifications he is perfectly fine using a ABI without violating gpl.   

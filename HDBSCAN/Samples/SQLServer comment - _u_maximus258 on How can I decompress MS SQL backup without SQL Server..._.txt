@@ -1,2 +1,0 @@
-/u/maximus258 on How can I decompress MS SQL backup without SQL Server...?
-So your wanting to decompress them to re-compress the. Not just add crappy second compression on top to make them smaller.. It's not easy without restoring them first. I think redgate have some .bak conversion software that may do what you needing. Good luck... Let me know if you find a way.   

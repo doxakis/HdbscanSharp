@@ -1,2 +1,0 @@
-/u/myplacedk on On exceptions
-The problem is that Java is not expressive enough to do that right.  "Right" is subjective. It works for me, for what I use Java for. EDIT: In your code you are mixing stuff that doesn't mix well. That annoys me too.   

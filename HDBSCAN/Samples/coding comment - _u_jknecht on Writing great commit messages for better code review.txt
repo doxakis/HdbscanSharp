@@ -1,2 +1,0 @@
-/u/jknecht on Writing great commit messages for better code review
-Until you ditch your current change management system and the numbering scheme changes. Traceability is good, but it should not replace good comments Your commit log should read like a biography of the software.   

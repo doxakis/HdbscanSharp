@@ -1,2 +1,0 @@
-Monitoring sensor data in Oracle JET Mobile App over WebSocket (Part 1)
-submitted by /u/brunocborges [link] [comments] 

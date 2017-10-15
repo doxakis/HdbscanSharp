@@ -1,2 +1,0 @@
-Hosting and deploying ASP.NET Core apps with ZEIT Now
-submitted by /u/mking1024 [link] [comments] 

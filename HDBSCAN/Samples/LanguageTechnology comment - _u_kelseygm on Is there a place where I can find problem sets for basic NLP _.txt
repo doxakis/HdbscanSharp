@@ -1,2 +1,0 @@
-/u/kelseygm on Is there a place where I can find problem sets for basic NLP ?
-The NLP class at Georgia Tech has open problem sets covering a variety of topics. The solutions aren't posted but there are unit tests!   

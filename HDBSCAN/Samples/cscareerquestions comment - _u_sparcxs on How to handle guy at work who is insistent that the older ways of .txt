@@ -1,2 +1,0 @@
-/u/sparcxs on How to handle guy at work who is insistent that the older ways of developing are better than newer version?
-This, a million times this.I’m constantly floored at people who don’t understand that you const a SQL command and use bind variables for parameters. SQL is an insanely effective and efficient tool. There’s a reason why it, like UNIX is still around, because it works really really well at what it’s designed to do.   

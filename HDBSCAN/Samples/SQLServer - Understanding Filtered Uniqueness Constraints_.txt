@@ -1,2 +1,0 @@
-Understanding Filtered Uniqueness Constraints.
-I was asked to create a table with: personmonthcoverageID PRIMARY KEY, PersonID FOREIGN KEY to Person table, policyYear, MergeActionID TINYINT <- FILTERED UNIQUENESS CONSTRAINT --a person cannot have more than one row per year, but they can have more than one year. I don't quite follow what i am supposed to do there. from my research a filtered uniqueness constraint is actually called a filtered unique index? can anyone shed a little light on this?  submitted by /u/imadsil7 [link] [comments] 

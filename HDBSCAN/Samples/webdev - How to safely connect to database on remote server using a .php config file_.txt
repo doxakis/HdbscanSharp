@@ -1,2 +1,0 @@
-How to safely connect to database on remote server using a .php config file?
-Using localhost I connect to databases using a "dbconfig.php"-file:    I've never done this on a live server, but I can't imagine that it's perfectly safe to store the database username and password in plaintext even though it's a .php file. So how do I safely connect to the database? I'm using cPanel if that's relevant.  submitted by /u/MatsJ [link] [comments] 

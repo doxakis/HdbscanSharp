@@ -1,2 +1,0 @@
-FullPage for Visual Composer clogges my website when smooth scroll enabled and more.
-Hey, I was trying to get FullPage smooth scroll sections to work and the tooltip nav bar. I'm trying to use FullPage for Visual Composer plugin. Here is list of all of my plugins . I've did everything as in this video tutorial , but all it does is makes my website unable to be scrolled plus navbar doesnt show up. I'm using Sydney theme. I woud really appreciate some help. Thank you  submitted by /u/InceptionFTW [link] [comments] 

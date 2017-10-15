@@ -1,2 +1,0 @@
-[News] Introducing NNVM Compiler: A New Open End-to-End Compiler for AI Frameworks | Amazon Web Services
- submitted by /u/ydereky [link] [comments]    

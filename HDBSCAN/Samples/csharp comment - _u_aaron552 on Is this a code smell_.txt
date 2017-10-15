@@ -1,2 +1,0 @@
-/u/aaron552 on Is this a code smell?
-not to be confused with a "fluent" design pattern that is intended to be called that way. var burger = BuildBurger().ExtraPickles().NoMustard().Execute();  That's called the Builder Pattern IIRC.   

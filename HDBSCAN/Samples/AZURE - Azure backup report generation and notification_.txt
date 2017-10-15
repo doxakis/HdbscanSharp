@@ -1,2 +1,0 @@
-Azure backup report generation and notification.
-Is there any other way than Using PowerBi for reports and getting an email notification from Backup alerts pan in recovery vault credentials. How to setup alerts and event notification through Microsoft Flow??  submitted by /u/vk_shah [link] [comments] 

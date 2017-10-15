@@ -1,2 +1,0 @@
-xorshift128+, xoroshiro128+ and xorshift1024* RNGs fail BigCrush test
-submitted by /u/alexeyr [link] [comments] 

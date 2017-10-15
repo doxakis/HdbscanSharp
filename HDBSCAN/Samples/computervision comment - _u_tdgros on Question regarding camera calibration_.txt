@@ -1,2 +1,0 @@
-/u/tdgros on Question regarding camera calibration..
-You should start with projective geometry basics, an example of introduction, it can look boring at the start but it's super useful for all the problems you'll encounter later.   

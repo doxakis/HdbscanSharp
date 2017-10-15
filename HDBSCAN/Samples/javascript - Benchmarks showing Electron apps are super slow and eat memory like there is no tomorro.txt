@@ -1,2 +1,0 @@
-Benchmarks showing Electron apps are super slow and eat memory like there is no tomorrow - x-post from /r/programming
-submitted by /u/bluepandacode [link] [comments] 

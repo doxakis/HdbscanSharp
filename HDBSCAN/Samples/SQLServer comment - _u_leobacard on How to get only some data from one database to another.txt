@@ -1,2 +1,0 @@
-/u/leobacard on How to get only some data from one database to another
-There isn't enough information here IMO (as BMG states below). I would add the following; research the MERGE statement (INSERT, UPDATE, DELETE) OPENROWSET might be a one-time option to get data from test to production to operate on. For repeated / scheduled copies either SSIS or look into PowerShell and the BulkCopy method - both have their pros and cons. Redgate also has a DataCompare tool to help with migration of data.   

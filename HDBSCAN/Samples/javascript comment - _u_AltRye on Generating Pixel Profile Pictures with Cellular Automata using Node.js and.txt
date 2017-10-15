@@ -1,2 +1,0 @@
-/u/AltRye on Generating Pixel Profile Pictures with Cellular Automata using Node.js and StdLib (x-post r/node)
-Stephen Wolfram is that you?   

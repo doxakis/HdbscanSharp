@@ -1,2 +1,0 @@
-Clojurecademy: Learn Clojure Interactively
-submitted by /u/ertucetin [link] [comments] 

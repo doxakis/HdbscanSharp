@@ -1,2 +1,0 @@
-New models for spaCy 2 alpha -- now near state-of-the-art (NER: 86.4 F on OntoNotes; parsing: 94.4 UAS on WSJ)
-submitted by /u/syllogism_ [link] [comments] 

@@ -1,2 +1,0 @@
-How Syntactic Dependencies is useful in word alignment for textual similarity?
-I am reading research paper "Back to Basics for Monolingual Alignment: Exploiting Word Similarity and Contextual Evidence" , and author is performing syntactic dependencies, but I am unable to find reason how it is useful for alignment of words  submitted by /u/rameshkjes [link] [comments] 

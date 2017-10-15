@@ -1,2 +1,0 @@
-BrickyEditor jQuery plugin Update - a new approach to WYSIWYG text editing.
-BrickyEditor github Few month ago I announced my WYSIWIG plugin with predifined content blocks and recived few bugreports and ideas from redditors. Yesterday I pushed big update with UI improvments and new template system. I'll be happy to hear from you any feedback again! :) Online Demo GIF with demo  submitted by /u/cycwb [link] [comments] 

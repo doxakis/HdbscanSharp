@@ -1,2 +1,0 @@
-/u/selbstadt on Moving from a Software Engineering into Machine Learning
-Coursera courses spend more time on teaching the mathematical basics of ML...It definitely is not a coding class . Its more like teaching math of ML using matlab/octave. You are quite right. Edit: spelling mistakes   

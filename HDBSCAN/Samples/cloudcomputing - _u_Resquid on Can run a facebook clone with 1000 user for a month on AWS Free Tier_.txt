@@ -1,2 +1,0 @@
-/u/Resquid on Can run a facebook clone with 1000 user for a month on AWS Free Tier?
-wut   

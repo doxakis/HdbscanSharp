@@ -1,2 +1,0 @@
-What could be the reason that something works fine in w3schools tryIt editor, but not locally?
-It is the same file content in both: https://gist.github.com/anonymous/00414a12d4bc72c161ce05d72358db8e Locally, when opening the file in a browser, the blue arc is not drawn and the two icons are draggable. In tryIt, they are fixed to the map and the blue arc is drawn. What could be the reason?  submitted by /u/rafaelement [link] [comments] 

@@ -1,2 +1,0 @@
-/u/ievalapply on [R] WaveNet launches in the Google Assistant
-Wow this is crazy impressive. Especially the Japanese one, it's a very significant improvement (I speak it, kinda). Looks like we are really at the point where ML can be used to replace many older methods. I remember seeing somewhere where wave net was used to generate piano samples, unfortunately it took many hours to generate. I wonder if they have made progress in that area as well.   

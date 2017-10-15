@@ -1,2 +1,0 @@
-Question regarding camera calibration..
-I wish to estimate the width of an object in real world dimensions in millimeters or centimeters. The object will almost always be x meters (+-small uncertainty) away from the camera. So, when I actually do the calibration, should I capture the checkerboard pattern from various distances or this specific x distance for all images to fit the least square.  submitted by /u/unknown5493 [link] [comments] 

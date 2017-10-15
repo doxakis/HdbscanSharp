@@ -1,2 +1,0 @@
-/u/AGI_aint_happening on [Discussion][Meta]Clutter on this subreddit
-I think the question is whether we want to prioritize machine learning "enthusiasts" or actual practitioners. I'm sure all the blog posts are great for people learning ML the first time, but for people who have been around for a while it's pure noise. I agree more moderation is needed, otherwise actual researchers (like myself) are going to continue to check out, leaving behind a community filled with people learning about dropout and posting half-baked research ideas.   

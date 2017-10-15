@@ -1,2 +1,0 @@
-/u/maxou783 on Tracking the path and estimating the velocity of a circle in a video
-Seeing your videos I'd say you could simply point click on the center of the object you want to track and then perform optical flow tracking on this point. This can be easily achieved by getting the pixel coordinates of the center by clicking and then using the KLT algorithm from openCV to track it.   

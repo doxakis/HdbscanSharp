@@ -1,2 +1,0 @@
-/u/rotharius on On exceptions
-Why obfuscate logging information by introducing codes? You want all the context you can get when debugging bugs and errors!   

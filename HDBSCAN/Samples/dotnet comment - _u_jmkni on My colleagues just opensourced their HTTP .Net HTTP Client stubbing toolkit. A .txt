@@ -1,2 +1,0 @@
-/u/jmkni on My colleagues just opensourced their HTTP .Net HTTP Client stubbing toolkit. A .NET Standard library for intercepting server-side HTTP dependencies.
-Nice!   

@@ -1,2 +1,0 @@
-/u/klootas on How much JS you guys are doing now theses days ? is it still C# everywhere or ?
-I definitely see the trend as being more JS every year for all web dev regardless of whatever might be used on the server. No escaping the SPA world if the app calls for more client heavy stuff.. TypeScript is your friend though..   

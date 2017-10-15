@@ -1,2 +1,0 @@
-/u/hejj on My colleagues just opensourced their HTTP .Net HTTP Client stubbing toolkit. A .NET Standard library for intercepting server-side HTTP dependencies.
-Interesting library. I'm a fan of Flurl and I like how your fluent API, intentionally or not, somewhat mirrors theirs.   

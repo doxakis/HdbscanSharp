@@ -1,2 +1,0 @@
-/u/iinlane on Hey I need help with lists.
-Classes are reference types and initializing Drinks[3] array will create an array of null references. You'll need to instanciate array elements using new keyword. It would work as is if drink would be structure.   

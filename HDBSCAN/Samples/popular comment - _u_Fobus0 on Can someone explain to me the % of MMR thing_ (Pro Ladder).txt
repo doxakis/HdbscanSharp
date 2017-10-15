@@ -1,2 +1,0 @@
-/u/Fobus0 on Can someone explain to me the % of MMR thing? (Pro Ladder)
-As I understand it, it's the same principle as regular ladder, except it's separate for each faction. And they then add the four best factions together with an extra wrinkle: each 1% of the 100% of each faction MMR has to be unlocked by playing a match. So if you only played 50 games of Skelige, you will only get 50% of your MMR. So your final MMR is the SUM of your highest 4 factions' MMR.   

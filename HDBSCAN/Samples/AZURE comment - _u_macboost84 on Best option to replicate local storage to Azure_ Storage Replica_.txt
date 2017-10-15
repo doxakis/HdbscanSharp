@@ -1,2 +1,0 @@
-/u/macboost84 on Best option to replicate local storage to Azure? Storage Replica?
-If the share is files (word, excel, pdf, etc) use DFS-R, rsync, etc... If the share is for VMs then setup storage replica stretch cluster. Otherwise create a file share, map it to the server, and do a rsync or some sync utility. File share is slow though so just keep note of that. You also can’t set permissions on the local Windows server either obviously.   

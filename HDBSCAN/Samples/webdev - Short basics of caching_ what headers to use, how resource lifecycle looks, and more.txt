@@ -1,2 +1,0 @@
-Short basics of caching: what headers to use, how resource lifecycle looks, and more
- submitted by /u/iamakulov [link] [comments]    

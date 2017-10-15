@@ -1,2 +1,0 @@
-Help with picoCTF
-Hello, I’m 14 and I love CS, so I started picoCTF. I am trying to do Special Agent User, and when I analyze the packets I see that it’s Firefox 44.0. When I enter Firefox 44.0 or Firefox 44, it says the flag is incorrect. Could someone check it out for me and try to see what I’m doing wrong?  submitted by /u/j0rdancodes [link] [comments] 

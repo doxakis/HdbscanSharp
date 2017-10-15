@@ -1,2 +1,0 @@
-/u/cediddi on PostgreSQL: PostgreSQL 10 Released
-Because unlike mysql, postgresql is typesafe and also you can run python inside postgresql. Check plpython. It's great to have.   

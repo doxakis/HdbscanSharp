@@ -1,2 +1,0 @@
-/u/hubbabubbathrowaway on "Do the people who design your JavaScript framework actually use it? The answer for Angular 1 and 2 is no. This is really important."
-Still using it every day, even if only for the docs (compiling with Lazarus). My secret weapon at work.   

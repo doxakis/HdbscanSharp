@@ -1,2 +1,0 @@
-/u/yungtuxedomask on [P] Creative Applications of Deep Learning with TensorFlow Python package
-I've only had the opportunity to complete Course 1. Well worth it. Learning to work with Autoencoders in Session 3 was insightful. Session 4 and 5 were pretty mindblowning   

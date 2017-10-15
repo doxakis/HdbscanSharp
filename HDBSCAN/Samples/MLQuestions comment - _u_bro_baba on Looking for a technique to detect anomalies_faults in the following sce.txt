@@ -1,2 +1,0 @@
-/u/bro_baba on Looking for a technique to detect anomalies/faults in the following scenario.
-Hi, that's something I can try! I haven't heard of Gaussian blur, I will google it. Thanks. Just to add, I can probably try something without creating the contour/heat maps as well. They were useful in detecting the faults manually and may not be necessary now as the data can be analysed directly.   

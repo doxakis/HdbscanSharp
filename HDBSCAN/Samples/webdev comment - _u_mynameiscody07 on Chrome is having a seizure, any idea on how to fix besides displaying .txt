@@ -1,2 +1,0 @@
-/u/mynameiscody07 on Chrome is having a seizure, any idea on how to fix besides displaying scrollbar all the time?
-So not sure why its happening but it wouldn't be the width changing that would cause the vertical scrollbar to show, it would be the height is extending.   

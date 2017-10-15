@@ -1,2 +1,0 @@
-/u/tonymonmaster on Using Raygun Exception Logging With ASP.net Core
-Yeah man, this has got to be one the best and easiest error logging services ice ever used in .NET   

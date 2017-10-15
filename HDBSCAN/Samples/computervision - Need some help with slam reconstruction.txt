@@ -1,2 +1,0 @@
-Need some help with slam reconstruction
-Hello, I've been developing a SLAM(for now just VO) as a personal mania. I would like to hear some opinions on how to deal with the "floor-desk interpolation problem" you can see in the video. https://www.youtube.com/watch?v=FYqDOd4F6IU The main problem is that when we track the table edge, we get some part of the floor in the patch-tracking. Are there any existing solutions/approaches to this problem?  submitted by /u/smitherson [link] [comments] 

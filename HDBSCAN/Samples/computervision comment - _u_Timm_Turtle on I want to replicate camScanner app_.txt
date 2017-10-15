@@ -1,2 +1,0 @@
-/u/Timm_Turtle on I want to replicate camScanner app.
-I am interested in an simular ocr problem and you can try the Google vision API (https://cloud.google.com/vision/docs/ocr). It worked well in my scenario. But I am still trying to find a way to do OCR without the API, so let me know how you get along. I tried tesseract (https://github.com/tesseract-ocr/) but it performed poorly.   

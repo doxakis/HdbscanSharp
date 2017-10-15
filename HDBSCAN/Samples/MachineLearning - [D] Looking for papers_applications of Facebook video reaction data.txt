@@ -1,2 +1,0 @@
-[D] Looking for papers/applications of Facebook video reaction data
-This may exist already, or may not be possible; I am still a lurker to the ML world. Has anyone tried doing classification on video frames and user reaction types to see if they can make a prediction model for how a video makes you feel? Sorry, if this is a poorly worded/conveyed or noob question.  submitted by /u/stereoa [link] [comments] 

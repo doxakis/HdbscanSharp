@@ -1,2 +1,0 @@
-Is Azure backup needed for Data residing on SQL DB and VM with Managed Disk?
-Team, environment: Azure VM with managed disk (part of availability set) Azure SQL DB (geo replication) Issue: I`m confused when looking at the perfect use case for Azure backup when it comes to Data residing on SQL DB and VM with Managed Disk. Kindly provide expert view.  submitted by /u/solution1979 [link] [comments] 

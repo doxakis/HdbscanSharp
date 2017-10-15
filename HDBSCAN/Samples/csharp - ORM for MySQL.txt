@@ -1,2 +1,0 @@
-ORM for MySQL
-I'm looking for a free ORM or micro-ORM to use against an existing MySQL database. I have some unique constraints: Free Compatible with .NET Framework 4.5.2 Compatible with MySql.Data v6.8.7 Relatively easy enum mapping  Any suggestions from your recent experiences?  submitted by /u/parserrr [link] [comments] 

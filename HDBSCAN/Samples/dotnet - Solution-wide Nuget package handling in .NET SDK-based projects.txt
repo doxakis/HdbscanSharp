@@ -1,2 +1,0 @@
-Solution-wide Nuget package handling in .NET SDK-based projects
-submitted by /u/justintimecoder [link] [comments] 

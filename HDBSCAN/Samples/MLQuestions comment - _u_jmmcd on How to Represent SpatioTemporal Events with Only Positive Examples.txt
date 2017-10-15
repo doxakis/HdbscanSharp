@@ -1,2 +1,0 @@
-/u/jmmcd on How to Represent SpatioTemporal Events with Only Positive Examples
-Well, I think this particular example is a domain that has been studied a lot, and the underlying science (geology etc) is strongly relevant to the right representation of the problem, so you'll have to read the domain-specific literature. I think the time-series aspect is essential, so you might consider methods including ARIMA and RNNs. I don't really understand the "characteristics" of an earthquake data. How can you have have a Type field = 1 where y = 0?   

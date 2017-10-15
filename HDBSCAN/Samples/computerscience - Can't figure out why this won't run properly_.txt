@@ -1,2 +1,0 @@
-Can't figure out why this won't run properly?
-I am in my first semester as a CE student. We are currently using C++. I have been trying to figure this out but I just can't figure out why it won't execute properly. Here is the code: https://imgur.com/a/Hpz2M The loop will run but than when I press -1 to exit the loop it skips the if else statement?  submitted by /u/Brutal_Boost [link] [comments] 

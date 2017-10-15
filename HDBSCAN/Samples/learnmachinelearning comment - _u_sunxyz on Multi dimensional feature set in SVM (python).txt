@@ -1,2 +1,0 @@
-/u/sunxyz on Multi dimensional feature set in SVM (python)
-You can use Scikit learn.. will work with any number of features..   

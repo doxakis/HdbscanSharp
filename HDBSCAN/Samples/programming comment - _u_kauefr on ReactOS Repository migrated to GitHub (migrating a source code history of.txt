@@ -1,2 +1,0 @@
-/u/kauefr on ReactOS Repository migrated to GitHub (migrating a source code history of more than 20 years)
-Truth about folder names   

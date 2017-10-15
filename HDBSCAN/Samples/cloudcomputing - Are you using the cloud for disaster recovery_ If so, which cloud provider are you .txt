@@ -1,2 +1,0 @@
-Are you using the cloud for disaster recovery? If so, which cloud provider are you using, and what does your backup environment look like?
-Curious to see how you're using the cloud for disaster recovery.  submitted by /u/mikewchan [link] [comments] 

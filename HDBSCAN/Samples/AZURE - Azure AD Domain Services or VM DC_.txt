@@ -1,2 +1,0 @@
-Azure AD Domain Services or VM DC?
-Im putting together a quote for a client. They have 30 users across multiple sites so we are going to move them to an RDS Server on Azure. What i dont know if its better to use an Azure AD Domain Services or have another cheap VM running as a full domain controller? Azure ADDS is £83 a month and a cheap VM A1v2 is only £35 a month. Also they will be moving to Office365 shortly if that makes a difference. Any thoughts?  submitted by /u/freedomit [link] [comments] 

@@ -1,2 +1,0 @@
-Mapping latent space to inputs?
-If you used a variational autoencoder, or an autoencoder to map bags of words to a latent space to show word similarity, how do you actually generate words that are close together? So given the a VAE that was trained on these bags of words, let's say I want to find words close to "father", how do I use the network to do that?  submitted by /u/a394u30joi [link] [comments] 

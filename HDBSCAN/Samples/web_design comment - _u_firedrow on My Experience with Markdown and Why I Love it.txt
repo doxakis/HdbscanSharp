@@ -1,2 +1,0 @@
-/u/firedrow on My Experience with Markdown and Why I Love it
-I agree, but I needed a couple more features for my note taking and report writing. I use MultiMarkdown so I can add tables and meta tags (including CSS for keeping my reports looking the same), and it's wonderful. I added GhostWriter to my pCloud drive and now I have my favorite editor too.   

@@ -1,2 +1,0 @@
-/u/tinkertron5000 on Rob Pike: Notes on Programming in C
-Rob Pike: Use Go.   

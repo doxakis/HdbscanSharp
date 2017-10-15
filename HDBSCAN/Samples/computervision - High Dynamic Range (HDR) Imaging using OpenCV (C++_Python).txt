@@ -1,2 +1,0 @@
-High Dynamic Range (HDR) Imaging using OpenCV (C++/Python)
- submitted by /u/spmallick [link] [comments]    

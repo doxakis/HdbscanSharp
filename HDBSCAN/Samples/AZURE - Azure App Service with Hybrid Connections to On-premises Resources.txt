@@ -1,2 +1,0 @@
-Azure App Service with Hybrid Connections to On-premises Resources
- submitted by /u/Net-Runner [link] [comments]    

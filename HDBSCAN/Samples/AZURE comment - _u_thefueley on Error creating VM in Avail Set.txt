@@ -1,2 +1,0 @@
-/u/thefueley on Error creating VM in Avail Set
-This was exactly the fault. Thank you. I used $vm = Set-AzureRmVMOSDisk -VM $vm -Name $osDiskName -CreateOption FromImage -StorageAccountType $storageType Follow up question. Since I removed the -VhdUri parameter, the disk isn't in the storage container I thought it would be in. It's now only located in the Resource Groups area in the web console. Is this expected behavior?   

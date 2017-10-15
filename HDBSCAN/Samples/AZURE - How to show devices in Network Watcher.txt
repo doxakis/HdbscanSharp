@@ -1,2 +1,0 @@
-How to show devices in Network Watcher
-I have Network Watcher enabled and can test communications between hosts and all that jazz. However, my network topology only shows my VNet and Subnets but no hosts. How do I get the hosts to appear?  submitted by /u/macboost84 [link] [comments] 

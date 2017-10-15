@@ -1,2 +1,0 @@
-When to use which ML algorithms for computer vision?
-Is there a good set of guidelines or a flowchart that explains when to use which machine learning algorithms for computer vision problems?  submitted by /u/Morocco_Bama [link] [comments] 

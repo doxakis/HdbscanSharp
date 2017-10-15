@@ -1,2 +1,0 @@
-/u/cottonplucking on Ideas needed for Branch Detection-Computer Vision
-The thing with SLAM is, I don't know if I'll get the precision I need. I need a precision of 5mm, inaccuracies more than that would result in difficulties in the picking itself   

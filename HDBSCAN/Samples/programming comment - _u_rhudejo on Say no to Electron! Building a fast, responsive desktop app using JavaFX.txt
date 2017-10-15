@@ -1,2 +1,0 @@
-/u/rhudejo on Say no to Electron! Building a fast, responsive desktop app using JavaFX
-Their official site is no longer working. I guess its more than 6 months old which is end of life in JavaScript world?   

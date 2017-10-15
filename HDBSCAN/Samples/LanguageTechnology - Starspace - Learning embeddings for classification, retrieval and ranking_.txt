@@ -1,2 +1,0 @@
-Starspace - Learning embeddings for classification, retrieval and ranking.
-submitted by /u/2ndwoodsman [link] [comments] 

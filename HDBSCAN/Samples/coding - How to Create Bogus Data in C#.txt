@@ -1,2 +1,0 @@
-How to Create Bogus Data in C#
-submitted by /u/Cyph3r90 [link] [comments] 

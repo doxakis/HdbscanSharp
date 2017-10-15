@@ -1,2 +1,0 @@
-/u/c-smile on Say no to Electron! Building a fast, responsive desktop app using JavaFX
-Consider this  for( var element in $(*[note-state-observer]) ) element.onNoteStateChange(note);  It does the following: for each element having attribute "note-state-observer" calls onNoteStateChange() method. Where "*[note-state-observer]" is CSS selector. In SQL that would be something like this:  SELECT element FROM dom WHERE note-state-observer <> ""    

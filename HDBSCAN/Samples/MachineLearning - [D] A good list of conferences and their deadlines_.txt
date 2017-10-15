@@ -1,2 +1,0 @@
-[D] A good list of conferences and their deadlines?
-Hi r/machinelearning, Does anyone have a good list of high quality conferences and their schedules (deadlines and so on)? I've seen sites like this before for things like CV and security, but is there a more general one out there, or one for machine learning that filters out the noise? Thanks  submitted by /u/slap_bet [link] [comments] 

@@ -1,2 +1,0 @@
-/u/FaeLLe on Is "Cloud Computing" just applied distributed computing?
-No, suggest you look into automation differences between the two.   

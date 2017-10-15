@@ -1,2 +1,0 @@
-Duplicant or similar document detection
-I'm not sure if this is the place to be for this question, but i'll try it anyways. I want to create a tool that will compare documents in a large database against each other, looking for duplicates or near duplicates. The files may include images (JPG, PNG, ...) documents (PDF, word, ...). How would I go about doing this with something like Python? What would be the recommended steps to accomplish the desired outcome above? Thanks!  submitted by /u/sunfrost [link] [comments] 

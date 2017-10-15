@@ -1,2 +1,0 @@
-/u/gwern on [D] Is the performance of RL sensitive to architecture of feedforward NN?
-Bigger capacity models require more supervision and data to fit, and apparently very simple models are enough for good control in ALE and other RL environments, which is why everyone keeps using tiny NNs.   

@@ -1,2 +1,0 @@
-/u/nyxin on How to break into web dev and avoid web design?
-I just cant design something from scratch.  Very few developers can. A proficient frontend developer can implement someone else's design and tweak it to adapt for various screens. They'd be able to "speak" design and understand good design/ux from bad. They might not be able to produce it themselves, but if needed, would be able to create a quick interface that's useful.   

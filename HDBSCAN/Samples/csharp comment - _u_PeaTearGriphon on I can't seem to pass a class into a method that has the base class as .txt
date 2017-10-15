@@ -1,2 +1,0 @@
-/u/PeaTearGriphon on I can't seem to pass a class into a method that has the base class as the argument
-Perfect, that works. I understand the risks of doing this but in my case I won't ever be adding to this list only doing a sum of a property so I should be fine. thanks :-)   

@@ -1,2 +1,0 @@
-What is happening? Same query (pretty much) different execution plans. Why?
- submitted by /u/6nf [link] [comments]    

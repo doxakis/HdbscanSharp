@@ -1,2 +1,0 @@
-Announcing Deploy to Kubernetes, Native Deployment from Jenkins to ACS
- submitted by /u/dreadpiratewombat [link] [comments]    

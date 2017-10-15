@@ -1,2 +1,0 @@
-/u/Grisebarn on [D] Face detection vs body/pose recognition
-Check out "Realtime Multi-Person 2D Pose Estimation using Part Affinity Fields"! https://www.youtube.com/watch?v=pW6nZXeWlGM https://arxiv.org/abs/1611.08050   

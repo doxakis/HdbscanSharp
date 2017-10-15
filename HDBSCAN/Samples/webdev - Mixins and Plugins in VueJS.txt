@@ -1,2 +1,0 @@
-Mixins and Plugins in VueJS
- submitted by /u/dennythecoder [link] [comments]    

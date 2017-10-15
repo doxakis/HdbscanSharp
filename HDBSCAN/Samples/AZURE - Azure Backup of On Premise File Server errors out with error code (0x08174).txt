@@ -1,2 +1,0 @@
-Azure Backup of On Premise File Server errors out with error code (0x08174)
-Hi, While performing Azure backup of On Premise File Servers to Azure, we are getting below error; Error: Microsoft Azure Backup failed to access the shadow copy because of inadequate disk space on the volume. Retry the operation after increasing the free space available in the volume (0x08174) Can some one suggest anything on this?  submitted by /u/noblevarghese [link] [comments] 

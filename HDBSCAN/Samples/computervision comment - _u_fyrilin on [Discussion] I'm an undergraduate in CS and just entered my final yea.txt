@@ -1,2 +1,0 @@
-/u/fyrilin on [Discussion] I'm an undergraduate in CS and just entered my final year. I have an idea for a final year project in computer vision. I want to achieve a top grade in this but I'm afraid I don't have enough knowledge to do so. What do you recommend?
-This is entirely my opinion but I think the human tracking one is more senior-project level work. The under-the-hood concepts are more approachable in the time you have and general human tracking has some real-world applications.   

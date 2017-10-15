@@ -1,2 +1,0 @@
-/u/piersapants on How can a neural network be trained to identify that the input belongs to none of the trained labels?
-I agree with the probabilistic approach. If you're not outputting one hots but instead a softmax you'll have a probablitity of each class. You can indicate "No class" as no classification's probability being above a threshold (experimentally determined) An advantage of this is that as your classifier is better at determining what class it is in it will be better at determining "no class"   

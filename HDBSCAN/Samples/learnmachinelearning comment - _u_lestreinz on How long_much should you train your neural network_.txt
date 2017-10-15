@@ -1,2 +1,0 @@
-/u/lestreinz on How long/much should you train your neural network?
-Well GD takes smaller steps as it reaches a local optima, however a high learning rate could let you "bouncing" around it. That means that you will achieve a good generalization for your model but not the optimal one. That's why the learning rate is considered as the most important hyperparameter.   

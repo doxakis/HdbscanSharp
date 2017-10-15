@@ -1,2 +1,0 @@
-/u/viperx77 on Amazing!, C# docs now use Monaco and Docker to let beginners learn C# in the browser.
-Dots all connected. Scott is the man. Hopefully we will hear more about it like how they limited CPU time.   

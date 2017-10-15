@@ -1,2 +1,0 @@
-/u/FiveYearsAgoOnReddit on What is this style of Javascript coding/app called?
-How would you use it without new() — can you give an example?   

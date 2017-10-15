@@ -1,2 +1,0 @@
-/u/port53 on Google to let anyone add to Street View, starting with Insta360’s Pro camera
-I suppose they could make it so images are only used if provided by multiple sources, then they can average them out and the end result is only things that are fixed/identical in every contribution. That's how they make views of roads without cars and clouds.   

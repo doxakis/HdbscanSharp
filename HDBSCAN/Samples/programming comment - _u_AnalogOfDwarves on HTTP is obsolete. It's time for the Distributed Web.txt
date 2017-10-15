@@ -1,2 +1,0 @@
-/u/AnalogOfDwarves on HTTP is obsolete. It's time for the Distributed Web
-So you'd have a thing like a DNS server/torrent tracker that connects an identifier to the most recent authoritative source for that identifier? Sounds a bit like BTSync/Resilio Sync, so I can see that some people might find that useful.   

@@ -1,2 +1,0 @@
-/u/AgrippaDaYounger on Scientists built a strontium clock that is so precise, out of every 10 quintillion ticks only 3.5 would be out of sync – the first atomic clock ever to reach that level of precision, that could help test general relativity and hunt for gravitational waves, as reported in Science.
-If I recall correctly the accuracy of things like GPS are based on the accuracy of clocks, so how much more accurate is this than existing methods?   

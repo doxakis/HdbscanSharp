@@ -1,2 +1,0 @@
-Used .NET Core for a while? What are your thoughts about it?
-My team is considering a few tech stacks at the moment for web development (Elixir, Clojure, TypeScript+Node, and .NET Core). I'm interested in hearing from folks who have used .NET Core for a while. What has gone well? What hasn't? If you could start your project over, would you still use it on the back-end? If you've stopped using it for web development, what are you using instead?  submitted by /u/ferociousturtle [link] [comments] 

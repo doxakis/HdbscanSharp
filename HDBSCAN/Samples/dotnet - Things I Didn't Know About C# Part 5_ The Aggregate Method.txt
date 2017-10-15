@@ -1,2 +1,0 @@
-Things I Didn't Know About C# Part 5: The Aggregate Method
-submitted by /u/klootas [link] [comments] 

@@ -1,2 +1,0 @@
-/u/Dospunk on Mozilla Awards Over Half a Million to Open Source Projects
-Even then you can't execute JS. All my code is in the HTML file and it still won't run   

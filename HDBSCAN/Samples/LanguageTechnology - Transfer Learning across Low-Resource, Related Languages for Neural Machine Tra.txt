@@ -1,2 +1,0 @@
-Transfer Learning across Low-Resource, Related Languages for Neural Machine Translation
-submitted by /u/_murphys_law_ [link] [comments] 

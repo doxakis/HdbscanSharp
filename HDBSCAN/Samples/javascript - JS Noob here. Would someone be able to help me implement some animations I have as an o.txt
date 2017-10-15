@@ -1,2 +1,0 @@
-JS Noob here. Would someone be able to help me implement some animations I have as an overlay?
-I need to toggle certain elements off and other elements on as well as toggle an youtube embed when a button is clicked. Any help is appreciated! Thanks.  submitted by /u/grrr_lion [link] [comments] 

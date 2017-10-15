@@ -1,2 +1,0 @@
-/u/martinslot on Which ASP.NET technology to use?
-Please dont do webforms. Do it with MVC. Core or not core. But pick MVC.   

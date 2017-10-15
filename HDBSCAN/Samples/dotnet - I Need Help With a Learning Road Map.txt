@@ -1,2 +1,0 @@
-I Need Help With a Learning Road Map
-I need someone to tell me what versions of .net to learn and what is the best and most modern, i come from a javascript background (node.js and react.js ...) and i in school we are learning about ASP.NET web forms and it's so bad and old. But i want to give .NET a chance and learn something more modern. Can someone tell me where to start ?  submitted by /u/Hussien777 [link] [comments] 

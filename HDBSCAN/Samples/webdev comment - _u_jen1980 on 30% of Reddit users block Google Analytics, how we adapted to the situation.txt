@@ -1,2 +1,0 @@
-/u/jen1980 on 30% of Reddit users block Google Analytics, how we adapted to the situation
-Do you really think it needs to send the resolution, character set, color depth, language, Flash version, Java enabled, referer, etc. every time? For a page I looked at, it was over 600 bytes for just the URL for every single thing logged.   

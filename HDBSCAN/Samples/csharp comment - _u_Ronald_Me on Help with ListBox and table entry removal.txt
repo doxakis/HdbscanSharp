@@ -1,2 +1,0 @@
-/u/Ronald_Me on Help with ListBox and table entry removal
-Which DB provider are you using? For SQL Server you can use: "DELETE FROM YourTableName WHERE ID=" + variableWithIDValue If you are using SQL, I recommend to use parameters.   

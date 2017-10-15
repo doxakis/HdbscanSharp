@@ -1,2 +1,0 @@
-How do you derive Boolean expressions from a circuit.
-Hey everyone ii am currently in aDigital circuit class as i am comp sci major. This my question i am confused on how to derive a boolean expression from a circuit.Like i i know how to do a truth table and you can make them from that.Although my professor wants me to reverse so can someone try to explain what needs to be done in order do one. examples what i have done  submitted by /u/Lord_Ewok [link] [comments] 

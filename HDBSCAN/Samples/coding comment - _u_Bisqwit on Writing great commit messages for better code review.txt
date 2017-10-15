@@ -1,2 +1,0 @@
-/u/Bisqwit on Writing great commit messages for better code review
-git commit -a --amend -c HEAD   

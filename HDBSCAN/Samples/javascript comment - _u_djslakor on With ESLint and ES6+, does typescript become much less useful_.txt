@@ -1,2 +1,0 @@
-/u/djslakor on With ESLint and ES6+, does typescript become much less useful?
-Hell yes it's still worth using. It catches a ton of stuff ESLint doesn't. Our big ERP system is part TS part JS. I love how many little bugs TS catches for me. When using plain JS I have to be much more careful, even with ESLint.   

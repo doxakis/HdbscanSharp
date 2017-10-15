@@ -1,2 +1,0 @@
-/u/jjkrri on MigAz copy issue
-found the problem ... with MigAz you must create your destination storage account in advance, i did this before going the config and exportinghte powershell scripts and json files... When creating the Storage Account I attached it to an Existing VNet... somehow, the storage account inherited the ownership of the VNet's creator and that's what was causing errors. Once i created an SA without attaching it to the existing Vnet, everything started working correctly. Hope this helps someone else.... (ughh .. it should be Gotchasoft)   

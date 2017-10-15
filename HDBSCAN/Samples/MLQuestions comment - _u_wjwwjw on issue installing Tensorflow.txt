@@ -1,2 +1,0 @@
-/u/wjwwjw on issue installing Tensorflow
-About which command are you speaking exactly? No specific needs, just following thr tutoria   

@@ -1,2 +1,0 @@
-Writing great commit messages for better code review
-submitted by /u/felixclack [link] [comments] 

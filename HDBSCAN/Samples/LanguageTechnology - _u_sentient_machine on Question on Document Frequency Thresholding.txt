@@ -1,2 +1,0 @@
-/u/sentient_machine on Question on Document Frequency Thresholding
-I agree with you on that one. But I am still looking for ways to improve accuracy.   

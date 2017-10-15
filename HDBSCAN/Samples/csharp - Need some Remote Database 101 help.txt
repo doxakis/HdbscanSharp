@@ -1,2 +1,0 @@
-Need some Remote Database 101 help
-I am a novice to working with remote databases and I would like to experiment with one. I have no idea how to start however. What are the basic steps? Is there any kind of sandbox for experiments that doesn't involve buying an Azure or AWS tier?  submitted by /u/CrimsonCape [link] [comments] 

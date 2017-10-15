@@ -1,2 +1,0 @@
-/u/gimpwiz on NextRadio, NAB Dispute Apple Chip Claims. Say company’s iPhones are capable of FM reception
-It has been done on devices with wired antennas, but 1) the hardware has to take that into account during design and can't just be wired up later (well, not easily, not on a consumer product), and 2) there are no traditionally wired headphones on the 7, 8, and X models anyways; they go through the lightning port and that's way different as far as potential use as an antenna.   

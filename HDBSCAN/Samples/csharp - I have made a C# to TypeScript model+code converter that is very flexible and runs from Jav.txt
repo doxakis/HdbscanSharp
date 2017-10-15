@@ -1,2 +1,0 @@
-I have made a C# to TypeScript model+code converter that is very flexible and runs from JavaScript (so Gulp/Grunt)
- submitted by /u/ffmathy [link] [comments]    

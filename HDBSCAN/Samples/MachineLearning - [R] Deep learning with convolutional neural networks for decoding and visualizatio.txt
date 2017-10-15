@@ -1,2 +1,0 @@
-[R] Deep learning with convolutional neural networks for decoding and visualization of EEG pathology
-submitted by /u/robintibor [link] [comments] 

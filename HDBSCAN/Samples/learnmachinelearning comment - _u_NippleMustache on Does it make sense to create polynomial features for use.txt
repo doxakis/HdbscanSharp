@@ -1,2 +1,0 @@
-/u/NippleMustache on Does it make sense to create polynomial features for use in a neural net?
-Can you give an example of this? I think I have an idea of what this is but need an extra push.   

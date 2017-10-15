@@ -1,2 +1,0 @@
-/u/macboost84 on Azure backup report generation and notification.
-I have this setup and don’t get alerts for some reason. The test alerts came through and verified my spam filter isn’t catching it. Even on failure I don’t get any alerts.   

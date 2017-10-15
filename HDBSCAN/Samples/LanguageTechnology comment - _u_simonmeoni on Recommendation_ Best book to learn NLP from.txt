@@ -1,2 +1,0 @@
-/u/simonmeoni on Recommendation: Best book to learn NLP from
-I think you can already started to make this o'reilly book : http://victoria.lviv.ua/html/fl5/NaturalLanguageProcessingWithPython.pdf. I think that this is a good start to learn the problematic of NLP and it is a bit interactive :).   

@@ -1,2 +1,0 @@
-SQL Server 2017 on Windows Linux and Docker is now generally available
-submitted by /u/xxkylexx [link] [comments] 

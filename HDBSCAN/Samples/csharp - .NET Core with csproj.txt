@@ -1,2 +1,0 @@
-.NET Core with csproj
- submitted by /u/unquietwiki [link] [comments]    

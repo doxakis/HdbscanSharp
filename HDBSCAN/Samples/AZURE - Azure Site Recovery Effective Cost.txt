@@ -1,2 +1,0 @@
-Azure Site Recovery Effective Cost
-Hi all, Can someone help me get the effective cost for Azure SR? I have a couple of servers in Azure Europe and I want them backed up in another datacenter in Azure. Lets say I have 20 VMs with 1TB storage. How much would it cost me to replicate them every 30mins? Cheers  submitted by /u/NyxInc [link] [comments] 

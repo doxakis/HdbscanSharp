@@ -1,2 +1,0 @@
-/u/gopietz on When to use which ML algorithms for computer vision?
-I don't think you can go wrong by using CNNs for any type of CV problem.   

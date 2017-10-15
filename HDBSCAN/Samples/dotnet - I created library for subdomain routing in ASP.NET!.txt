@@ -1,2 +1,0 @@
-I created library for subdomain routing in ASP.NET!
-submitted by /u/mariuszkerl [link] [comments] 

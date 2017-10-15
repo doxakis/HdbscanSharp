@@ -1,2 +1,0 @@
-What's your favorite ORM for .NET Core?
-Or if you prefer, what ORM do you wish was in .NET Core?  submitted by /u/grauenwolf [link] [comments] 

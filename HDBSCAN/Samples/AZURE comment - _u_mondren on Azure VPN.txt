@@ -1,2 +1,0 @@
-/u/mondren on Azure VPN
-Hopefully the upcoming Azure Load Balancer changes will fix the HA issues with those FortiGates. ; )   

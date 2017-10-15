@@ -1,2 +1,0 @@
-/u/netcitizen on Azure fell over for 7 hours in Europe because someone accidentally set off the fire extinguishers • The Register
-The data copy will be there. But the SLA will be impacted if a data center or part of it goes down.   

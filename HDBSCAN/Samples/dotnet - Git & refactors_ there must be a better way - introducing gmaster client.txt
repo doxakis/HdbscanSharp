@@ -1,2 +1,0 @@
-Git & refactors: there must be a better way - introducing gmaster client
-submitted by /u/plasticscm [link] [comments] 

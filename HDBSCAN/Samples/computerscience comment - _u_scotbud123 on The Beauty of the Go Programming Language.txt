@@ -1,2 +1,0 @@
-/u/scotbud123 on The Beauty of the Go Programming Language
-I tried making some stuff in Go, but there was a lot that felt really un-intuitive, almost like they were trying to re-make the wheel for no reason. I did only spend a couple hours on it though, so maybe I just didn't give it a chance.   

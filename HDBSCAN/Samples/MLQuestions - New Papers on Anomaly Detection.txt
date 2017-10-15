@@ -1,2 +1,0 @@
-New Papers on Anomaly Detection
-Hello Guys, I seem to be totally out of the loop and I can't find any recent papers on Anomaly detection from the past year. Could you link me some papers in this area? So far what I have read is: -VAE(the original Kingma paper) -AE for anomaly detection -Wavenet(basic 1-D atrous convolution) -LSTM AEs Have there been developments in this field?  submitted by /u/yevbev [link] [comments] 

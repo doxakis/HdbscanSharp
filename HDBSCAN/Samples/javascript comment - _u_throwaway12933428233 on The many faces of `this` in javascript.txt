@@ -1,2 +1,0 @@
-/u/throwaway12933428233 on The many faces of `this` in javascript
-Defining things once on a prototype is more efficient than creating closures each time an object is created. Of course, 99% of the time this is a premature optimisation, but sometimes you need that slight boost.   

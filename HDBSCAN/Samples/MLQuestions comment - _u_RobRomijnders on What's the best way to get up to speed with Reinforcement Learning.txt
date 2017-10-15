@@ -1,2 +1,0 @@
-/u/RobRomijnders on What's the best way to get up to speed with Reinforcement Learning?
-Do you care about fundamental RL or just about the popular deep learning algo's in RL? For a solid and fundamental intro in RL, read Sutton and Barto For a good course on deep RL, take this one    

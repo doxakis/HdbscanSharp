@@ -1,2 +1,0 @@
-/u/tommyturntup on Would anyone be willing to try out this SSIS management software and give me some feedback?
-Dude....Awesome, would love to try it out but our deployment server is on 2012. Can it run the executor on packages deployed to 2012? I only see downloads for 2014 and 2016   

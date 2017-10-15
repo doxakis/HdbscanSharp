@@ -1,2 +1,0 @@
-/u/ikiris04 on Error creating VM in Avail Set
-I'm not sureof the intricacies, but when I did it all in ps it worked (for he most part). I had trouble creating a managed disk vm from a vhd but that's a different story.   

@@ -1,2 +1,0 @@
-Finding inter-procedural bugs at scale with Infer static analyzer
-submitted by /u/dons [link] [comments] 

@@ -1,2 +1,0 @@
-After the image is cropped, I cant request the new cropped image with fileReader
-Is there a solution? or have I done something wrong? https://pastebin.com/jNxtxC05  submitted by /u/TwistedFaiith [link] [comments] 

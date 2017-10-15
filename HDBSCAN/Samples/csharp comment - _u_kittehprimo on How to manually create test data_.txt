@@ -1,2 +1,0 @@
-/u/kittehprimo on How to manually create test data?
-if the web application is sitting in front of a sql database you can use powershell to automate generating insert statements, while its not what you would do in production it is a quick and dirty method for generating a lot of data without a lot of dev overhead.   

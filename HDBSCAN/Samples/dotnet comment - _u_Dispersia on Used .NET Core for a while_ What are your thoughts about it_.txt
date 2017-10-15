@@ -1,2 +1,0 @@
-/u/Dispersia on Used .NET Core for a while? What are your thoughts about it?
-I still find it to be fantastic. I enjoyed it in 1.0, and now that it's fully-featured, I don't have a reason not to use it. It's simple, incredibly fast, and gives the benefits of using C#. I have multiple projects that use it with Angular to deliver a superb end-user experience. Super easy to maintain and is one of the most supported frameworks out there, I don't see myself using anything else for a while.   

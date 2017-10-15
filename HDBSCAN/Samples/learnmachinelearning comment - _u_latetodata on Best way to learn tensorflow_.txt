@@ -1,2 +1,0 @@
-/u/latetodata on Best way to learn tensorflow?
-Jose Portilla just released a TensorFlow class on Udemy. He's really clear and easy to follow. https://www.udemy.com/complete-guide-to-tensorflow-for-deep-learning-with-python   

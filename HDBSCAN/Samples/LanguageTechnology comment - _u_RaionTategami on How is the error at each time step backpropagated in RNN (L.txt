@@ -1,2 +1,0 @@
-/u/RaionTategami on How is the error at each time step backpropagated in RNN (LSTMs, GRUs) encoder-decoder architecture for machine translation?
-You're asking a lot of questions which would be hard to answer adequately here quickly. Summing all the errors is not an approximation, the back-prob step would share out the blame appropriately as it went backwards. In accordance to how much error came form which step. And this is how all neural network architectures actually do it. I would suggest spending some time trying to understand back prob better.   

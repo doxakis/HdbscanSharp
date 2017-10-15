@@ -1,2 +1,0 @@
-/u/aaziz88 on Jobs library or system
-I've used hangfire in projects before and it's worked pretty well. I wasn't the person who set it up, but I don't remember it being anything complicated. You do need a persistent storage, though, iirc. Redis or SQL database works.   

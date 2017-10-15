@@ -1,2 +1,0 @@
-/u/hwrfefc on Plagiarism
-It was a basic code like payment service fee if its less than 500 then 10 bucks, if greater than 500 1% fee or 20 dollars which ever is higher, if it is greater than 5000 then 120 or 3% whichever is higher and if its more than that then 4% fee. (I think people will do the same like use if statements and math.max) I don't know if he's gonna edit it or not but any suggestion for me cause I don't want to get in trouble for 1st assignment. any help appreciated.   

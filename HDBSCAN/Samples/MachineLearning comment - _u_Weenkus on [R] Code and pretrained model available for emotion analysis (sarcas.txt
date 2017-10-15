@@ -1,2 +1,0 @@
-/u/Weenkus on [R] Code and pretrained model available for emotion analysis (sarcasm, sentiment, insults etc.)
-There is a script to download the weights.   

@@ -1,2 +1,0 @@
-/u/siblbombs on [News] Introducing NNVM Compiler: A New Open End-to-End Compiler for AI Frameworks | Amazon Web Services
-So it supports keras, does that mean it supports tensorflow? Is keras adding a new backend that isn't tensorflow even though it is now owned by google?   

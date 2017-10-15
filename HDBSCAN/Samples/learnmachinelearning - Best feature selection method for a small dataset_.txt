@@ -1,2 +1,0 @@
-Best feature selection method for a small dataset?
-I'm partial to wrapper methods, but I don't want to risk overfitting.  submitted by /u/_ahnomatopia_ [link] [comments] 

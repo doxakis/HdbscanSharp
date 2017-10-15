@@ -1,2 +1,0 @@
-Firefox or Chrome, which browser should I use for testing work and why?
-Sometime, testing website I work on Firefox is not enough. Chrome does not show some change, which works fine on Firefox. Text looks sharp on Chrome than FF. debugging comparatively easy with FF using Firebug. Chrome has cache issue too. So, little bit confused which browser should I take a s standard for testing my work.  submitted by /u/pratonredd [link] [comments] 

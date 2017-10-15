@@ -1,2 +1,0 @@
-/u/Toussant on Visual Studio Code September 2017
-Do you use the vim plugin for VS Code?   

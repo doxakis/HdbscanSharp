@@ -1,2 +1,0 @@
-[R] Why does batchnorm have any parameters at all?
-Can't the scaling and offset parameters in batch norm be absorbed in the weight matrices of the pre-activations? Has anyone found that the scaling and offset parameters extremely important when using batchnorm?  submitted by /u/rantana [link] [comments] 

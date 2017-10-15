@@ -1,2 +1,0 @@
-how much do Azure prices fluctuate
-The price for DS1 Standard is 52,70 EUR/Month, the month before it was 44 EUR/Month. The prices in euro are affected by the exchange rate, but how often does Azure change the base prices? What's your experience?  submitted by /u/basejumping [link] [comments] 

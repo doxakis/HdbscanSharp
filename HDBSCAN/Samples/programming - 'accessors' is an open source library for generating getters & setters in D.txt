@@ -1,2 +1,0 @@
-'accessors' is an open source library for generating getters & setters in D
-submitted by /u/aldacron [link] [comments] 

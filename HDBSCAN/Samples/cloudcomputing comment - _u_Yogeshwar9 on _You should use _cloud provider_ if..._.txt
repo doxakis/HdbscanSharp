@@ -1,2 +1,0 @@
-/u/Yogeshwar9 on "You should use <cloud provider> if..."
-Hi, There are many cloud services, like Iaas, Paas, NaaS, DBaaS.etc Ex. Vultur does not provide DbaaS so Vultur does not fit on your list if you want DBaaS service.   

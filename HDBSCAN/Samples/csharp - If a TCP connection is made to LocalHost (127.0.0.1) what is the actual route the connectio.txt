@@ -1,2 +1,0 @@
-If a TCP connection is made to LocalHost (127.0.0.1) what is the actual route the connection takes? At what level do the packets get sent directly to the receiving socket on the same box?
-submitted by /u/Javin007 [link] [comments] 

@@ -1,2 +1,0 @@
-/u/EvM on How Syntactic Dependencies is useful in word alignment for textual similarity?
-Suppose a single word in one sentence corresponds to a group of words in another sentence. How are you going to find out which words should be grouped together? Dependencies give you that grouping.   

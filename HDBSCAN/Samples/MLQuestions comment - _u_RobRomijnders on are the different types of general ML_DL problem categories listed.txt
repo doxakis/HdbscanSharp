@@ -1,2 +1,0 @@
-/u/RobRomijnders on are the different types of general ML/DL problem categories listed anywhere?[xpost /r/deeplearners]
-Supervised learning Regression Classification   Unsupervised learning Density estimation Clustering Generative modeling   Reinforcement learning Bandit problems Inverse RL normal RL      

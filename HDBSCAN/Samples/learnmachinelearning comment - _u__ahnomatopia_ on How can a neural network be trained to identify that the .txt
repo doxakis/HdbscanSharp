@@ -1,2 +1,0 @@
-/u/_ahnomatopia_ on How can a neural network be trained to identify that the input belongs to none of the trained labels?
-I'm not sure if a NN can be actually trained to do that, but I can think of a couple hacks to get there. If you train a NN to recognize 2 categories, and it tells you that something has a 50% chance of being one and a 50% chance of being the other, then you know it's probably neither. Or you could include a random noise label in your training. (maybe?)   

@@ -1,2 +1,0 @@
-Rust library for natural language recognition
-submitted by /u/greyblake [link] [comments] 

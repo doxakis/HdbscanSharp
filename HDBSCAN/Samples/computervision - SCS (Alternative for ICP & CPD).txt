@@ -1,2 +1,0 @@
-SCS (Alternative for ICP & CPD)
-Hey! In 3D image registration there are well known algorithms like ICP (Iterative Closest Point) and CPD (Coherent Point Drift) among others... But does anyone know an implementation of SCS (Sorting the Correspondence Space)? http://www.ros.hw.ac.uk/handle/10399/2647  submitted by /u/dernster [link] [comments] 

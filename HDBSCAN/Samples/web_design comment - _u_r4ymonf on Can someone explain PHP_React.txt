@@ -1,2 +1,0 @@
-/u/r4ymonf on Can someone explain PHP/React
-Hmm.. not really lol Check out Laracasts's PHP Practitioner course.   

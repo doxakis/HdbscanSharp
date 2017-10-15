@@ -1,2 +1,0 @@
-/u/VordeMan on Simple Questions Thread September 06, 2017
-You mean summed/averaged over a whole batch? Generally doesn't matter: The average of a set is a constant multiple times its sum, so for most optimization techniques it is irrelevant whether you include the constant or not. *if the batch size remains constant   

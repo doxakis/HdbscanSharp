@@ -1,2 +1,0 @@
-Defining a very simple bias initializer in tensorflow
-submitted by /u/hyperqube12 [link] [comments] 

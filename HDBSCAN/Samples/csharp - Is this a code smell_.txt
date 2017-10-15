@@ -1,2 +1,0 @@
-Is this a code smell?
-So we got into a debate during code review, is it a code smell to pass function as a parameter, like this: In c# var something = someFunction(someOtherFunction(parameter));  submitted by /u/curiousCat999 [link] [comments] 

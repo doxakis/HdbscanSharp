@@ -1,2 +1,0 @@
-/u/Earshot5098 on Is this a code smell?
-For those who may not be aware. The immediate window in Visual Studio helps dramatically with the debugging in this scenario.   

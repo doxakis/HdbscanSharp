@@ -1,2 +1,0 @@
-/u/Microshak on Writing great commit messages for better code review
-git commit -m ''   

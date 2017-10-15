@@ -1,2 +1,0 @@
-/u/6CB3B72218084004A0BC on [R] Code and pretrained model available for emotion analysis (sarcasm, sentiment, insults etc.)
-How about a lie detector? Even with bad accuracy, a lie detector would be awesome.   

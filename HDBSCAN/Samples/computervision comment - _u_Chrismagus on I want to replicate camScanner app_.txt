@@ -1,2 +1,0 @@
-/u/Chrismagus on I want to replicate camScanner app.
-A few moths ago I tried something similar to this, automatic align and ocr, for the first I use opencv and for the second I change the photo to black and white and then I used tesseract but isn't very fast for recognition and you need to select a zone in the image   

@@ -1,2 +1,0 @@
-Migrating from ASP.NET Core 1.1 to 2.0: Custom authentication
- submitted by /u/smatsson [link] [comments]    

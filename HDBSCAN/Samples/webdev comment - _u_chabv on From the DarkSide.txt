@@ -1,2 +1,0 @@
-/u/chabv on From the DarkSide
-not best practice....but seems to be working well for the React guys. Also found it easier to work with Vapor's syntax is beautiful. Too many changes. Next time I will use Kitura   

@@ -1,2 +1,0 @@
-/u/scunliffe on Oh Edge, never change
-use window.frames.myFrame   

@@ -1,2 +1,0 @@
-/u/_youtubot_ on "Do the people who design your JavaScript framework actually use it? The answer for Angular 1 and 2 is no. This is really important."
-Video linked by /u/yogthos: Title Channel Published Duration Likes Total Views   Interactive programming Flappy Bird in ClojureScript Bruce Hauman 2014-04-29 0:06:22 370+ (99%) 32,676    Interactive programming Flappy Bird in ClojureScript.  Info | /u/yogthos can delete | v2.0.0   

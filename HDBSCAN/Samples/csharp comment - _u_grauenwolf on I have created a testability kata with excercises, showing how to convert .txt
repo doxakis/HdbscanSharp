@@ -1,2 +1,0 @@
-/u/grauenwolf on I have created a testability kata with excercises, showing how to convert any non-testable system to a testable one
-Please stop writing such horribly bad code for you examples. Kata's are suppose to be practice for doing things the right way.   

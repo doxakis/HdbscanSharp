@@ -1,2 +1,0 @@
-/u/kjearns on [D] Is the performance of RL sensitive to architecture of feedforward NN?
-You'll be hard pressed to find a hyperparameter that RL is not sensitive to. It's super annoying.   

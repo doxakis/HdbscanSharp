@@ -1,2 +1,0 @@
-I'm trying to wrap my head around ASP .Net MVC coming from a Webforms background, any tutorial/book/article you guys recommend?
-I'm looking for something like a under-the-hood tutorial. I've already seem a few but they do not explain things outside the toolbox and how to use it. It would be great any info of how to start a change from Webforms to MVC. Any help is appreciated. Thanks!  submitted by /u/B3rN9 [link] [comments] 

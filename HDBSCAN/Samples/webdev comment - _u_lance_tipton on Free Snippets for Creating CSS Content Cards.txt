@@ -1,2 +1,0 @@
-/u/lance_tipton on Free Snippets for Creating CSS Content Cards
-You would need some JavaScript to do what your talking about. A simple forEach loop would do the trick. I would start by learning what an array is, then learn what an object is, then learn how to loop over an array of objects. Once you got that, it's just a matter of creating and array of your images and looping over it. Inside the loop, you would update the Dom with the image content. I hope that helps   

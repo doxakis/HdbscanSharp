@@ -1,2 +1,0 @@
-why parametrize dot products in neural networks (a paper specific question)
-submitted by /u/koormoosh [link] [comments] 

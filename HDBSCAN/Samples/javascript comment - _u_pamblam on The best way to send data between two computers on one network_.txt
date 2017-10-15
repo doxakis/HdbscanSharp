@@ -1,2 +1,0 @@
-/u/pamblam on The best way to send data between two computers on one network.
-obviously you have to encode the bits with java and send them over the html network using DOS   

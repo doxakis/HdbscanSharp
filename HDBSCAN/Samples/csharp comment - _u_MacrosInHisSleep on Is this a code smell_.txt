@@ -1,2 +1,0 @@
-/u/MacrosInHisSleep on Is this a code smell?
-Others said that would not be testable. So instead they want to apply rounding via a passed public function.  Making your methods public just for the purposes of testing just sounds wrong to me. Either you have code coverage for the private method through your public method, or in your case, maybe the rounding logic doesn't belong in the same class and your class would be more cohesive if it used a class who's job it is to do the rounding, which in turn can be tested independantly.   

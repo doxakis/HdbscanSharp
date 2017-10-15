@@ -1,2 +1,0 @@
-/u/Jestar342 on Writing great commit messages for better code review
->git commit -m "build fix" > build breaks. > blood boils   

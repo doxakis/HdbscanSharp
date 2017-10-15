@@ -1,2 +1,0 @@
-FrameNet parser in Java?
-Does anyone know of any good FrameNet parser written java?  submitted by /u/danieljj [link] [comments] 

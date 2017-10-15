@@ -1,2 +1,0 @@
-Say no to Electron! Building a fast, responsive desktop app using JavaFX
-submitted by /u/renatoathaydes [link] [comments] 

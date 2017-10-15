@@ -1,2 +1,0 @@
-/u/arbitrarycivilian on That's not our code
-I'm so tired of this "microservices allow encapsulation" dogma that seems to be all the hotness right now. Microservices are not necessary, or even sufficient, to write modular code. Besides that good article 👌   

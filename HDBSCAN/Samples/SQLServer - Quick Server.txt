@@ -1,2 +1,0 @@
-Quick Server
-The name is The_New_Eternet_Hero, call me Eter. Anyway, I am building a website and I need a quick sql server to store user data. Is there any sort of quick sql build I can make cause honestly I don't have the time to make the sql database and learn something new like that. I was planning on learning it like in a year but I need something quick right now. Any ideas?  submitted by /u/The_New_Eternet_Hero [link] [comments] 

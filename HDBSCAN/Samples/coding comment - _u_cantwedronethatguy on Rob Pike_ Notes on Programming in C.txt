@@ -1,2 +1,0 @@
-/u/cantwedronethatguy on Rob Pike: Notes on Programming in C
-Prof.Dr.Website   

@@ -1,2 +1,0 @@
-/u/jmmcd on Looking for a technique to detect anomalies/faults in the following scenario.
-Yeah, you don't need to make images, I mean you'll apply methods on the 2d arrays of data. Gaussian blur is image-processing terminology but same method applies to any 2d data.   

@@ -1,2 +1,0 @@
-/u/CptAmerica85 on IdentityServer4 Updated to .NET Core 2
-Yeah I just started the migration process, and there's shit all over the place that's angry with me.   

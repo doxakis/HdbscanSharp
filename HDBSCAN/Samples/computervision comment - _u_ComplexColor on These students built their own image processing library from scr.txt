@@ -1,2 +1,0 @@
-/u/ComplexColor on These students built their own image processing library from scratch
-Did they though? It seems they implemented the algorithms required for their particular application, without specifying the particular software platform used. The project is impressive, but It's far from what is stated in the title.   

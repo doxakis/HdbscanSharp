@@ -1,2 +1,0 @@
-Ideas on how to make Stock market chart that updates live?
-Hey guys - I was hoping to make a bar-chart with 7 or 8 different stocks that updates live, and re-arranges itself to always order itself from highest to lowest. Any thoughts on the best charting library to accomplish this? I was thinking maybe highcharts, but it doesn't appear to be that customizable.  submitted by /u/Bizkitgto [link] [comments] 

@@ -1,2 +1,0 @@
-/u/r-NBK on How can I decompress MS SQL backup without SQL Server...?
-I have never heard of a way to "remove" the compression on an existing backup - other than to restore that backup to a database and then backup the database again without the WITH COMPRESSION setting. I would also want to know why you want to do this. Depending on your set up, if you're backing up directly to an appliance or other network share, using native compression in SQL 2012 or newer is going to make your backup MUCH faster.   

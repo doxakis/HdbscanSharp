@@ -1,2 +1,0 @@
-/u/allinighshoe on Use one SqlConnection object repeatly or recreate every time?
-I wouldn't, you don't need one to run a single command. They have overhead that you don't need.   

@@ -1,2 +1,0 @@
-Unix Pipe Viewer (pv) utility in Node.js
-submitted by /u/roccomusolino [link] [comments] 

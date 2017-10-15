@@ -1,2 +1,0 @@
-/u/LucasThePatator on Library that takes in camera poses wrt world, camera matrix and images to generate point cloud?
-I'm pretty sure you can do that with OpenCV but I'm not sure what exactly you want to do. Do you have multiple cameras with which you generate the 3D position of image points ? Do you have a single camera (with depth data) ? If you describe what you want to do a little more precisely it would help us help you.   

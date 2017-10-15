@@ -1,2 +1,0 @@
-/u/filth_overload on Regex WYSIWYG tool you knew you needed! (by yours truly)
-I am. This tool is inspired and based of off* Regexr. This is just more dedicated to JavaScript ecosystem. * Regexly borrows tokenizers and highlighters from Regexr's codebase   

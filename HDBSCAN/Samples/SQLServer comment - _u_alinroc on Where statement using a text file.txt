@@ -1,2 +1,0 @@
-/u/alinroc on Where statement using a text file
-This is copypasta from a query I did importing from Excel, but if you have CSV it should be easy to adapt.  INSERT INTO #MyTable(Field1,Field2) SELECT [Field1],[Field2] FROM OPENROWSET('Microsoft.ACE.OLEDB.12.0', 'Excel 12.0;Database=Path_To_Excel_File.xlsx;' ,'SELECT * FROM [Sheet1$]');  Then JOIN #MyTable in your query instead of using WHERE.   

@@ -1,2 +1,0 @@
-EF Core .NET Command Line Tools vrs EF Migrations tools in ASP.net Core
-So I am working through this excellent Asp.net Core 2 book https://www.littleasp.net/book and finding that the EF Core .NET Command Line Tools don't work. So Update-Database works, but dotnet ef database update doesn't. Why are there two systems, and why doesn't one work? Cheers edit: I have added this to the csproj file.        submitted by /u/no1name [link] [comments] 

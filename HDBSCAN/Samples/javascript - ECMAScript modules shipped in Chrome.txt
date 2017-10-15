@@ -1,2 +1,0 @@
-ECMAScript modules shipped in Chrome
-submitted by /u/malyw [link] [comments] 

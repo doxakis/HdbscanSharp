@@ -1,2 +1,0 @@
-/u/ours on How much JS you guys are doing now theses days ? is it still C# everywhere or ?
-2017 used to freeze and crash but since one of the updates this summer it's all smooth sailing for me. That said I'm also spending more and more time in VS Code working with Vue.   

@@ -1,2 +1,0 @@
-/u/Quantus22 on Azure Site Recovery Effective Cost
-To add to the other comments. The delta syncs are usually small, you set the replication schedule, thus the size of the deltas are determined by the amount of changes and frequency. IIRC you can store machines ASR with no cost for protected instances for 30-days, and, assuming the machines are not live you should only incur charges associated with consumed storage (rather than compute/ram).   

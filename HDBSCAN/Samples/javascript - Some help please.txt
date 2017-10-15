@@ -1,2 +1,0 @@
-Some help please
-I'm making a game in html and javascript for fun, but I can't figure out why this isn't working, to my knowledge this should be fine right? HTML: Upgrade Javascript: document.getElementById("button1").onclick = "clickButton()"; The javascript code is being called, it's in a function with other things, and those are working just fine  submitted by /u/super_sydney [link] [comments] 

@@ -1,2 +1,0 @@
-/u/Gargantuon on Good resources to learn Information Theory (videos/books)
-As mentioned, Mackay's book and course are excellent. Chris Olah provides a nice intuitive introduction on his blog. The standard book for information theory in academia is Elements of Information Theory by Cover and Thomas. The first two chapters should give you a good grounding.   

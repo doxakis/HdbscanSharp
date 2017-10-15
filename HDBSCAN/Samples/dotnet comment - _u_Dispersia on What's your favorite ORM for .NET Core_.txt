@@ -1,2 +1,0 @@
-/u/Dispersia on What's your favorite ORM for .NET Core?
-And then you laugh back and slap them with a dictionary.   

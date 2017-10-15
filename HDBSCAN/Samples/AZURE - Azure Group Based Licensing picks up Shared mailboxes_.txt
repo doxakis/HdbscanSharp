@@ -1,2 +1,0 @@
-Azure Group Based Licensing picks up Shared mailboxes?
-Hi, I'm just curious if someone else has this issue. Since we're using group based licensing in Azure AD it will pick up a few shared mailboxes and add a license to them. Problem is, it's a F1 license so the shared mailbox becomes a 2gb box only. Has anyone else had this issue, and how did you resolve it?  submitted by /u/baswijdenesdotcom [link] [comments] 

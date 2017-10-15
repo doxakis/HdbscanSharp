@@ -1,2 +1,0 @@
-/u/m3g4p0p on Writing great commit messages for better code review
-Yep exactly, just the ticket number (or link) and a very short summary what changed... "add form" or "change button to blue" like in the article seems perfectly fine to me.   

@@ -1,2 +1,0 @@
-I have created a testability kata with excercises, showing how to convert any non-testable system to a testable one
- submitted by /u/ffmathy [link] [comments]    

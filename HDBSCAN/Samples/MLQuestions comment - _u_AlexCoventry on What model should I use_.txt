@@ -1,2 +1,0 @@
-/u/AlexCoventry on What model should I use?
-A better model is almost always going to lead to a weaker result than better data. In this case, relevant data is what food eaten when, in what amounts, rate at which that food tends to introduce sugar to the blood (glycemic index), and the time, duration, intensity and type of exercise. Once you have that data, a vector autoregressive model would be where I'd start. No harm experimenting with just the readings and the suggestions here, but don't expect good results. It's a complex system you're trying to predict!   

@@ -1,2 +1,0 @@
-/u/Psychoboy on What's your favorite ORM for .NET Core?
-I prefer Dapper myself as well. Very performant, simple to use, and setup. If you are familiar with SQL in general it makes life easy.   

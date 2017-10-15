@@ -1,2 +1,0 @@
-Is there any truly free VM hosting (small is ok) cloud providers out there?
-Something like a EC2 image ect ... 512 ram typa thing With persistent storage as in vm doesn't revert to base image, something small and usable to host a few files and small apps Linux, Windows whatever.. doesn't matter  submitted by /u/humanmeat [link] [comments] 

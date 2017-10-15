@@ -1,2 +1,0 @@
-/u/FuckMississippi on How can I decompress MS SQL backup without SQL Server...?
-But the 7z compression takes so much more time than having SQL do it natively. Almost orders of maginitude better.   

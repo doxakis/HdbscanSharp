@@ -1,2 +1,0 @@
-Building Angular Applications With Bazel
-submitted by /u/funJS [link] [comments] 

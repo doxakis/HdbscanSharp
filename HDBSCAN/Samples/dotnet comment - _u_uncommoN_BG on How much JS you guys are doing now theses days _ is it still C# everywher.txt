@@ -1,2 +1,0 @@
-/u/uncommoN_BG on How much JS you guys are doing now theses days ? is it still C# everywhere or ?
-Path Intellisense and TypeScript Hero save a lot of timer when coding with TypeScript. I highly recommend those.   

@@ -1,2 +1,0 @@
-/u/satanpenguin on How To Learn Vim: A Four Week Plan
-That's a good one. I also like the change inside command. For example, what if I'm in the middle of a parenthesized expression and want to replace its contents? Just type ci) and just type the new contents; no need to select the whole content or move to the beginning of the expression. It also works with other delimiters like braces, brackets, single quotes and even HTML tags (cit).   

@@ -1,2 +1,0 @@
-where to learn bitwise javascript operations
-Hi, I'd like to learn bitwise javascript, preferably with a video tutorial. See for instance this script : https://raw.githubusercontent.com/mlockette/RouterBruteForce/master/RSA_encryption_linksys.js I'm so confused with the bitwise stuff like this : x[len >> 5] |= 0x80 << ((len) % 32); x[(((len + 64) >>> 9) << 4) + 14] = len; Any good courses somewhere for that topic ? Thanks, Patrick  submitted by /u/trogne [link] [comments] 

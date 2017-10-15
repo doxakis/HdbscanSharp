@@ -1,2 +1,0 @@
-are the different types of general ML/DL problem categories listed anywhere?[xpost /r/deeplearners]
-if kaggle 'dogs vs. cats' is an 'image classification' problem, then what kind of problem is kaggle 'Titanic: Machine Learning from Disaster' problem? are the different types of general ML/DL problem categories like these listed anywhere?  submitted by /u/ezeeetm [link] [comments] 

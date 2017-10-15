@@ -1,2 +1,0 @@
-Any AWS Lambda-powered web stacks yet?
-I've started using AWS lambda and really like the idea of having a serverless API to deliver dynamic content. I wonder if there is any standard solution yet like LAMP or MEAN, but replacing the backend with Lambda. I haven't been able to find any frameworks yet. Perhaps it's not a good use case for Lambda anyway? Curious if anyone has thoughts or experience with it.  submitted by /u/BobbyDev [link] [comments] 

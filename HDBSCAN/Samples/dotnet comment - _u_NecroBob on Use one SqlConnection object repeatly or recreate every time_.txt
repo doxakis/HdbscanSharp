@@ -1,2 +1,0 @@
-/u/NecroBob on Use one SqlConnection object repeatly or recreate every time?
-Dapper keeps your SQL commands super simple. It doesn't involve near the configuration that EF does. It's really just a set of extensions to the IDbConnection interface that return .NET objects from SQL Commands, and is about as minimalist as you can get. I prefer rolling my own SQL, and fell in love with Dapper. I have nothing to do with the project, I just really like Dapper. :) EDIT: Revised C# to .NET. It probably works great in F#, too, I just haven't tried it.   

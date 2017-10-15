@@ -1,2 +1,0 @@
-/u/Reiinakano on [N] How to use Chainer for Theano users
-Could be his dislike of Facebook, although I'm not sure if that came before or after his "PyTorch hipster" comment.   

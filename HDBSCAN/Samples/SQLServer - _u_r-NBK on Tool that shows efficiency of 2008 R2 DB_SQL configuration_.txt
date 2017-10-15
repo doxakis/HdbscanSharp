@@ -1,2 +1,0 @@
-/u/r-NBK on Tool that shows efficiency of 2008 R2 DB/SQL configuration.
-I think MAP (Microsoft Assessment and Planning) Toolkit might fit your bill.   

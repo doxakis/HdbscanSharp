@@ -1,2 +1,0 @@
-My new favorite project settings
-true  true   The combination of these two has made my testing efforts so much easier. I've lost track of the number of tests that failed because of stupid binding errors.  submitted by /u/grauenwolf [link] [comments] 

@@ -1,2 +1,0 @@
-Combining generators and asynchronous iterators
-submitted by /u/malablaster [link] [comments] 

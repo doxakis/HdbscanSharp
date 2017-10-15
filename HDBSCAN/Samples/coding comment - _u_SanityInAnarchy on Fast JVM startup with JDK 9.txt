@@ -1,2 +1,0 @@
-/u/SanityInAnarchy on Fast JVM startup with JDK 9
-I would guess so. It looks like Lambda's security model doesn't rely on language-specific sandboxing, so even if their JVM doesn't support this, there's nothing stopping you from running your own.   

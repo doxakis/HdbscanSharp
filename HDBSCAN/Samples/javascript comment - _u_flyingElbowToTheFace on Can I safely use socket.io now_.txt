@@ -1,2 +1,0 @@
-/u/flyingElbowToTheFace on Can I safely use socket.io now?
-Close. MQTT is a protocol. https://mobilebit.wordpress.com/2013/05/03/rest-is-for-sleeping-mqtt-is-for-mobile/ Protobufs are an encoding/data exchange format. https://developers.google.com/protocol-buffers/ Re-reading your situation, I think either would be overkill. I’d stick with sockets if it were me.   

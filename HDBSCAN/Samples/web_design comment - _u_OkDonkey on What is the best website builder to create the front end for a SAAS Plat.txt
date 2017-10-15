@@ -1,2 +1,0 @@
-/u/OkDonkey on What is the best website builder to create the front end for a SAAS Platform?
-That will depend on the SAAS platform. Personally, I wouldn't use a website builder though. You may want to consider researching WordPress plugins for the SAAS platform. I'm guessing your skill set doesn't include any extensive code writing?   

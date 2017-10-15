@@ -1,2 +1,0 @@
-/u/vkeshish on These students built their own image processing library from scratch
-Nicely done! Would love to see more details regarding the software implementation.   

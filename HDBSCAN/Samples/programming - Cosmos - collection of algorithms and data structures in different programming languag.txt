@@ -1,2 +1,0 @@
-Cosmos - collection of algorithms and data structures in different programming languages
-submitted by /u/michalg82 [link] [comments] 

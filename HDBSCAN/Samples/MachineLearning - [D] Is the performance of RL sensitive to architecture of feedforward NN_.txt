@@ -1,2 +1,0 @@
-[D] Is the performance of RL sensitive to architecture of feedforward NN?
-As far as I know, most RL algorithms use a MLP/CNN of depth not more than 10 or a LSTM. Does deeper CNN such as Resnet not perform significantly better than CNN of depth 5? If depth isn't very important over the depth of 5 or so, is there any hyperparameter other than learning rate that generic RL algorithm is very sensitive to?  submitted by /u/HigherTopoi [link] [comments] 

@@ -1,2 +1,0 @@
-/u/itwasnome on Sorry for the noob question but what is the correct terminology for setting up a "contact us" form on the webpage and are there any free services that connect said form to my email?
-I don't know how much you know about php, but I used php's simple mail() function to set one up. This tutorial seems good -> http://tangledindesign.com/how-to-create-a-contact-form-using-html5-css3-and-php/ edit: I just re-read your post. If you don't have any server knowledge or knowledge of php, I guess a free service would be the way to go. I don't know any though, sorry.   

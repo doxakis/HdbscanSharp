@@ -1,2 +1,0 @@
-Hey Synaptics, Can You Please Stop Polling! Investigating wasted memory and CPU time
-submitted by /u/brucedawson [link] [comments] 

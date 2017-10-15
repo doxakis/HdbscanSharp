@@ -1,2 +1,0 @@
-/u/spinur1848 on Oracle: "the use of open source software has been declining rapidly in the private sector"
-Why would you want to spend your cognitive effort and support time on common components that don't actually differentiate your company or your products? Using well supported open source let's you focus on the stuff that only you can deliver.   

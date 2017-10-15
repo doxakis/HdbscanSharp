@@ -1,2 +1,0 @@
-/u/RaionTategami on What's the best way to get up to speed with Reinforcement Learning?
-Start with a very simple problem that can't be solved using classic gradient descent. For example solving a simple maze where you have 4 possible actions and 8 moves to get to the end. Then try to solve the problem using some RL techniques such as Q learning or policy gradients. The best way to learn is by doing. If you can't program it then you don't really fully understand it.   

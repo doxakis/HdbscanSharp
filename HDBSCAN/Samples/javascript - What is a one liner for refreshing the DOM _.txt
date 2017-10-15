@@ -1,2 +1,0 @@
-What is a one liner for refreshing the DOM ?
-submitted by /u/blizzwizz [link] [comments] 

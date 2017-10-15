@@ -1,2 +1,0 @@
-Help with Public Cloud Services
-Hi, My boss is having me come up with comparisons regarding the public cloud options of AWS, Ali, MS, and SAP to move our companies SaaS onto later. I am clueless in this field and have no idea where to start. What are some of the fundamental differences/breakdown between the options. Our software is written in java, not sure if that needs to be taken into consideration. Tech and Cost are the main points he wants me to look at. Thanks any help is greatly appreciated. I hope this is the right sub.  submitted by /u/Karma_Kills [link] [comments] 

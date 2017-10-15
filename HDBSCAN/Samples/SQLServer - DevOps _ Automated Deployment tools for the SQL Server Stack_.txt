@@ -1,2 +1,0 @@
-DevOps / Automated Deployment tools for the SQL Server Stack?
-I've been with a dev team that uses DevOps methodologies for most of our development work, but anything SQL stack (SSIS, SSRS, SSAS, etc.) has been out of that loop. Are there any tools out there that support (well) deployment automation of SQL Server objects, in particular SSIS? A better question: Any out there people would RECOMMEND? :)  submitted by /u/DisagreeableDad [link] [comments] 

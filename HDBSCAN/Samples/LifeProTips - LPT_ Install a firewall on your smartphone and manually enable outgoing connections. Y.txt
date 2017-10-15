@@ -1,2 +1,0 @@
-LPT: Install a firewall on your smartphone and manually enable outgoing connections. You'll notice many supposed local apps that shouldn't require internet access are attempting to connect to the internet
-submitted by /u/boredashellitsinsane [link] [comments] 

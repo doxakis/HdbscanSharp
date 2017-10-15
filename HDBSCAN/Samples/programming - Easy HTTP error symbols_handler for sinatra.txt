@@ -1,2 +1,0 @@
-Easy HTTP error symbols/handler for sinatra
-submitted by /u/IzumiSy [link] [comments] 

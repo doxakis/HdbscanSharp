@@ -1,2 +1,0 @@
-/u/186282_4 on If I resize a VM, will I lose all my files & WHM/Cpanel config?
-Anything on d: or /mnt is wiped during a resize. Everything else is right where you left it.   

@@ -1,2 +1,0 @@
-/u/jsled on An Illustrated Guide to SSH Tunnels
-solitum.net refused to connect.    

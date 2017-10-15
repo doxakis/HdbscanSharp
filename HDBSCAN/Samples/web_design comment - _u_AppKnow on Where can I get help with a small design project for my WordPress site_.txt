@@ -1,2 +1,0 @@
-/u/AppKnow on Where can I get help with a small design project for my WordPress site?
-I don't want to use a Facebook 'like' or a standard plugin. I'm going for a specific function. I can envision it in my head. How do I create it?   

@@ -1,2 +1,0 @@
-Does SQL Sever support GREATEST and LEAST, if not what is the common workaround?
- submitted by /u/EvanCarroll [link] [comments]    

@@ -1,2 +1,0 @@
-Anyway to make 12 million Post requests?
-So there’s a website i’m trying to scrape the data from, but i need to try all 12 million possibilities, i’ve tried to do that for several thousands post requests and the website is still running properly for me. Is there anyway to do it faster, since it took me 10 hrs to get 30k post requests. Thanks in advance  submitted by /u/kareemk9 [link] [comments] 

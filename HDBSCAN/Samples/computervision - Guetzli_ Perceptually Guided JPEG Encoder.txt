@@ -1,2 +1,0 @@
-Guetzli: Perceptually Guided JPEG Encoder
-submitted by /u/hkshin2 [link] [comments] 

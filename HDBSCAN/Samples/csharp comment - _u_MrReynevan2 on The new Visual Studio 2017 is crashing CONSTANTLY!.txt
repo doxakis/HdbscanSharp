@@ -1,2 +1,0 @@
-/u/MrReynevan2 on The new Visual Studio 2017 is crashing CONSTANTLY!
-In that case, would you mind providing a workaround for the original issue? Thank you!   

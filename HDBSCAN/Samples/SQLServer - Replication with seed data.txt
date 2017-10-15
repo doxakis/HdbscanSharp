@@ -1,2 +1,0 @@
-Replication with seed data
-I have a large (~4TB) database that I would like to start replicating.. We currently have the database backing up into SQL Safe. Is there any way to restore the DB from backup and then use that as seed data for replication? I've tried searching for the topic, but haven't found anything regarding seed data.  submitted by /u/njrover [link] [comments] 

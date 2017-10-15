@@ -1,2 +1,0 @@
-/u/robotikOctopus on ML hobbyist who Just finished Andrew Ng Stanford course on Machine Learning. Where to go from here?
-Take a look at https://www.reddit.com/r/MachineLearning/comments/5z8110/d_a_super_harsh_guide_to_machine_learning/   

@@ -1,2 +1,0 @@
-Can run a facebook clone with 1000 user for a month on AWS Free Tier?
-Just a hypothetical question I had while signing up for AWS just now. I am confused by the metrics (no prior experience) so I am trying to get an idea how capable the Free Tier is. Can it run a fb clone or a reddit or a twitter with 1000 users? If not why?  submitted by /u/sn10therealbatman [link] [comments] 

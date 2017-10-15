@@ -1,2 +1,0 @@
-How are Action Potentials involved in learning ?
-I have some understanding of how Action Potentials (spikes) are involved in activations, but how do they influence subsequent weight updates ? Why not a smooth gradual increase in activation ? Do thresholds inform the connection strengths/weight updates ? If so why do popular Machine Learning techniques (eg back propagation) whether supervised or unsupervised, typically use smooth sigmoid activations rather than relying on thresholds to inform weight updates ?  submitted by /u/tar_paulin [link] [comments] 

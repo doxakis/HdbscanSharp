@@ -1,2 +1,0 @@
-Is it recommended to have Azure Backup running on a seperate Azure Subscription?
-one of the security expert suggested to have the Azure Backup running in different Azure Subscription from the point of Administration. Therefore would like to know if its recommended.  submitted by /u/solution1979 [link] [comments] 

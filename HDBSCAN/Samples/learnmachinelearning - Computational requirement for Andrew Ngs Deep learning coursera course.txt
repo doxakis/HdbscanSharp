@@ -1,2 +1,0 @@
-Computational requirement for Andrew Ngs Deep learning coursera course
-I am thinking of enrolling for Andrew Ng's deep learning course from Coursera but I am not sure i will be able to submit the assignment using my laptop.My laptop is a 32 bit windows 7 machine with 2 GB of ram. I had completed Andrew Ng's ML course from Coursera using the same laptop. Please help  submitted by /u/jinudaniel [link] [comments] 

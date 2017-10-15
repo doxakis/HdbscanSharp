@@ -1,2 +1,0 @@
-Q: Are you using ASP.NET Identity?
-If not, why not? It feels OK for file>new project, but what do people use in real world?  submitted by /u/to_pe [link] [comments] 

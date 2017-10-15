@@ -1,2 +1,0 @@
-/u/softclone on Is Starcraft 2 really a harder game for AI than Go?
-perhaps not. it's inarguable that starcraft has more states than go it's not inarguable that starcraft has more decision/branch points whereas every state in go is meaningful and distinct, many states in starcraft are trivial or equivalent that being said, starcraft's state space is incredibly gigantic so it's really anyone's guess at this point as not as much resources have been thrown at the issue to cut away the the nearly equally gigantic state space of bad moves.   

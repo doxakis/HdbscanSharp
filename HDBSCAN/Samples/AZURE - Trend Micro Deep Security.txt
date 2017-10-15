@@ -1,2 +1,0 @@
-Trend Micro Deep Security
-Anybody have experience with implementing Trend Micro's Deep Security in Azure? Looking to place more security around our ecommerce platform which includes roughly 12 VMs along with other resources. Either I can implement various platforms and tools such as endpoint AV, IPS/IDS, SIEM, etc. or I can go with Trend Micro's "native" support. Feedback either way with experience?  submitted by /u/knawlejj [link] [comments] 

@@ -1,2 +1,0 @@
-Optimal k in k-means
-I have an unsupervised clustering problem where the optimal number of clusters is not well known a priori. It's probably known within a factor of 2 or so. I wonder if this paper is considered state-of-art for doing this? The approach seems sensible to me. Happy to hear any other ideas. http://papers.nips.cc/paper/2526-learning-the-k-in-k-means.pdf  submitted by /u/jintoku [link] [comments] 

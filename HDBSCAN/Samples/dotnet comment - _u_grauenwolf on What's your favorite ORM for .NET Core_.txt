@@ -1,2 +1,0 @@
-/u/grauenwolf on What's your favorite ORM for .NET Core?
-Many people consider one or more of these to be essential features of an ORM Create/update operations Mapping from objects back to the database Support for relationships between tables, expressed as relationships between objects Lazy loading SQL generation Saving changes in batches rather than one row at a time  If you said something like Dapper was an ORM in 2008, people would laugh at you.   

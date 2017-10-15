@@ -1,2 +1,0 @@
-/u/Blahblahcomputer on Cloud based project: Need help and suggestions!
-https://aws.amazon.com/elastictranscoder/ That might help you get started, look for reference architecture for that service.   

@@ -1,2 +1,0 @@
-/u/bobzilla on Hey I need help with lists.
-Yeah, what /u/Silamoth said.  Drinks[] listDrinks = new Drinks[3]; Drinks drink = new Drinks(); drink.Name = "Whiskey"; drink.Price = 25; listDrinks[0] = drink;    

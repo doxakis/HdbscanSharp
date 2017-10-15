@@ -1,2 +1,0 @@
-Jepsen: Hazelcast 3.8.3
-submitted by /u/aphyr_ [link] [comments] 

@@ -1,2 +1,0 @@
-Azure B-Series as Domain Controller
-Hi ! Looking into setting up a small VM as domain controller to replicate from on premises to Azure. The role of this VM would be AD replication, Azure AD Connect and having an off site domain controller. I suppose a small B-series VM would be enough for this? (ex. B2S, 2 cores, 4 GB ram and 64GB SSD disk, €32.05/month) That way we can spend more on other Azure services :-) Any suggestions/remarks are welcome..  submitted by /u/harkx [link] [comments] 

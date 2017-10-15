@@ -1,2 +1,0 @@
-/u/latetodata on Should I try to get a job in data analysis before moving into machine learning?
-Sorry for the lack of clarity. I'm studying ML through online resources (Udemy - Jose Portilla's Data Science Bootcamp, Just started Andrew Ng's Deep Learning classes, etc.), participating in Kaggle, listening to podcasts, and reading books.   

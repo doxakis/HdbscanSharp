@@ -1,2 +1,0 @@
-Help with installing GUI on Google Compute Engine
-Help with installing GUI on Google Compute Engine I've tried a couple different options from [ https://allenlu2007.wordpress.com/2017/07/02/google-cloud-platform-with-gui-desktop-and-vnc/ ] with no luck. Wondering if anyone has a better way ?  submitted by /u/18theta18 [link] [comments] 

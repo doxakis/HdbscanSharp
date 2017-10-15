@@ -1,2 +1,0 @@
-/u/solution1979 on Is it recommended to have Azure Backup running on a seperate Azure Subscription?
-This assumes you don't store credentials or keys in the primary tenant nor use the same information to access the secondary/backup tenant.  thanks for the information   

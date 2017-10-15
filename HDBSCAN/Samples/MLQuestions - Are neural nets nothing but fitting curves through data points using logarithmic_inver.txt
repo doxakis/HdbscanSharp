@@ -1,2 +1,0 @@
-Are neural nets nothing but fitting curves through data points using logarithmic/inverse trigonometric functions?
-Mid-level Newbie to neural nets, read through a couple of Coursera lessons on the topic and I can't shake off the intuition that it's just curve fitting with exponential/log functions. Am I incorrect?  submitted by /u/foreverharrypotter [link] [comments] 

@@ -1,2 +1,0 @@
-/u/mundada on How is the error at each time step backpropagated in RNN (LSTMs, GRUs) encoder-decoder architecture for machine translation?
-For the basic RNN encoder-decoder architecture, i guess summing errors till the last step (while decoding) is a good approximation. Have you read any good paper/blog/source code which have implemented this ? Also, how would we go if we were about to use attention mechanism in the architecture ? Here how frequently the parameters associated with attention would be updated ?   

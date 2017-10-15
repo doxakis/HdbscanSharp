@@ -1,2 +1,0 @@
-/u/brockvenom on How much JS you guys are doing now theses days ? is it still C# everywhere or ?
-I know that, but it's not just types they added. The syntax is slightly different, in fact TypeScript simplifies a lot of JS syntax. It doesn't feel like I'm writing JS anymore, it's a superset of JS. I can write elegant functions in TS, whereas writing those same functions in JS would bloat them with verbosity. I also think you completely missed this part: I write TypeScript, which, to me, makes writing JS a lot better.    

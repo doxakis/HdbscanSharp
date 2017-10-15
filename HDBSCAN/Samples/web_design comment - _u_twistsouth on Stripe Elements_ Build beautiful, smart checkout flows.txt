@@ -1,2 +1,0 @@
-/u/twistsouth on Stripe Elements: Build beautiful, smart checkout flows
-I think the main issue is that, disappointingly, accessibility in web design/development is still a confusing, inconsistent minefield. We really need better standards and better APIs to make it easier to implement them.   

@@ -1,2 +1,0 @@
-/u/raj_king on Serialization library for using Azure Table Storage with POCOs
-Not yet. If I do, I will let you know.   

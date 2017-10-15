@@ -1,2 +1,0 @@
-Don't Most Databases Have Foreign Key Constraints?
- submitted by /u/piotr79 [link] [comments]    

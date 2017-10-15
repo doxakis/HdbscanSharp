@@ -1,2 +1,0 @@
-/u/vermes22 on How to detect a manipulation of a device from a stream of accelerometer and gyroscope data?
-I have zero understanding or experience in dealing with accelerometer, however, this looks like a textbook case for PCA. Now, I am deliberately guessing that the most important part of knowing if it was raised above the head as opposed to, say, moved to the left is determining g, the gravity acceleration at all times and all positions. But again, I have no idea what I am talking about, just answered to give some seed ideas.   

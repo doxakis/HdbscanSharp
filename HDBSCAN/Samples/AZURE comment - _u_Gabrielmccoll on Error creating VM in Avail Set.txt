@@ -1,2 +1,0 @@
-/u/Gabrielmccoll on Error creating VM in Avail Set
-Had the same error today haha. Yes it is. They are managed disks so you don't get much sight of them. #abstraction . Be careful of fact you can't use azure site recovery with managed disk vms   

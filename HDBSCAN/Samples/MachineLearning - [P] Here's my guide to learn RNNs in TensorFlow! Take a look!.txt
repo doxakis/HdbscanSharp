@@ -1,2 +1,0 @@
-[P] Here's my guide to learn RNNs in TensorFlow! Take a look!
- submitted by /u/CarbonFire [link] [comments]    

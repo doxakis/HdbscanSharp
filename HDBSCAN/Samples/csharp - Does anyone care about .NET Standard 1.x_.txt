@@ -1,2 +1,0 @@
-Does anyone care about .NET Standard 1.x?
-Or do expect to do everything with just .NET Standard 2.0?  submitted by /u/grauenwolf [link] [comments] 

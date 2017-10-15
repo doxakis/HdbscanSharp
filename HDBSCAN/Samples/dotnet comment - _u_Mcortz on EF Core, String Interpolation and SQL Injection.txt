@@ -1,2 +1,0 @@
-/u/Mcortz on EF Core, String Interpolation and SQL Injection
-Of cause you shouldn't do that, you also wouldn't do "Select * from Blogs WHERE Author= " + "John Smith"   

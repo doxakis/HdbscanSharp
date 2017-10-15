@@ -1,2 +1,0 @@
-/u/solution1979 on Is Azure backup needed for Data residing on SQL DB and VM with Managed Disk?
-Is it recommend to have the backup stored on a seperate Azure Subscription? Also, i`m not clear if it make sense to backup data running on Azure SQL DB (as its a Dbaas and Microsoft is anyway taking backup) please provide expert view.   

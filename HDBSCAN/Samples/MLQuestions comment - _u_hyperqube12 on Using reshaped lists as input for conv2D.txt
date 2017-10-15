@@ -1,2 +1,0 @@
-/u/hyperqube12 on Using reshaped lists as input for conv2D
-First, the input to conv2d is [batch_size, height, width, channels]. You need to stack all the lists you have, along the 0th dimenstion (using tf.stack(tensor, axis=0)), then reshape the remainder into a 2d matrix. So far you have a batch of matrices. It still is not enough. You need to use tf.expand_dims(tensor, axis=3) to get a fake channel dimension. Now the conv2d should accept it.   

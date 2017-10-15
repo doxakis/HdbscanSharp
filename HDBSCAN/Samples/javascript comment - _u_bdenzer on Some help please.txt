@@ -1,2 +1,0 @@
-/u/bdenzer on Some help please
-Upgrade  document.getElementById('myButton').addEventListener('click', function() { clickButton(); });    

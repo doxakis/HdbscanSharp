@@ -1,2 +1,0 @@
-/u/thundergolfer on Rule of thumb on minimum number of training examples for text classification?
-Hmm, I don't have a referenced answer for you, but I'll throw out a couple of numbers I've experienced. On a binary classification task I've been able to get ~85% accuracy with a dataset with 6000 examples, but the same task with a Neural Network I read demands at least 30,000. I'd be interested in someone knowing whether more classification bins is a guarantor of bigger dataset requirements.   

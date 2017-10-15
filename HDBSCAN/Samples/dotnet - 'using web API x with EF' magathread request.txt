@@ -1,2 +1,0 @@
-'using web API x with EF' magathread request
-I've seen a ton of stuff on here in the last few months that can be summed up with talking about .NET Core with web API, and entity framework. I may be privileged in these areas that I pretty much live those technologies everyday and maybe that's why it bothers me. But to be honest I'd like to see some newer/fresher content beyond someone's blog on the happy case architecture/scenario.  submitted by /u/tonymonmaster [link] [comments] 

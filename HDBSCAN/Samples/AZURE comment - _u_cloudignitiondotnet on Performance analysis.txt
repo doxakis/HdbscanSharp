@@ -1,2 +1,0 @@
-/u/cloudignitiondotnet on Performance analysis
-You can use Azure Monitor to do monitoring of any perf mon counter and also some host level stuff. You can also do alerting from Azure Monitor to let you know when metrics get outside of what you want as a norm.   

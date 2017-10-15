@@ -1,2 +1,0 @@
-/u/Canthros on Is this a code smell?
-Not as long as your functions have appropriately meaningful names.   

@@ -1,2 +1,0 @@
-Help with understanding the half-space fill function
-I'm trying to fill multiple triangles, so i found a link where they show and somewhat explain how the half-space function works but i dont really understand what it does. The link is here. I get that it checks 3 lines in a triangle and checks if its positive or negative and so on, but i dont really know what the equations does, or where the function starts to fill the triangles. Im really want to understand how this function work instead of just copy pasting it.  submitted by /u/Darkbinder [link] [comments] 

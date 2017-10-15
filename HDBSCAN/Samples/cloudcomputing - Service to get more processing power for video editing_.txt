@@ -1,2 +1,0 @@
-Service to get more processing power for video editing?
-I want to automate some video proposals I make where I use Sony Vegas to join a custom intro to a longer, standardized proposal. This takes a while on my current computer already and if I write a Python script to knock out a bunch of them at once I won't be able to use my computer. First thought was to buy a Windows VPS. This is an option, but lower tier plans tend to be pretty weak in terms of hardware specs. Is there a better cloud option available?  submitted by /u/seands [link] [comments] 

@@ -1,2 +1,0 @@
-Doubt about IdentityServer 4
-We are getting started with ASP net core for a web API, and while reviewing ASP.NET identity we came across IdentityServer 4. Since it's mostly a proof of concept project and at the same time we're planning to present it as our solution for an university assignment, we were wondering if we should use IdS4 and what would it offer us in the long run? Thanks in advanced!!  submitted by /u/Ramarivera [link] [comments] 

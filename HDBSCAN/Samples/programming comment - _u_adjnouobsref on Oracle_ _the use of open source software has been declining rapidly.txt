@@ -1,2 +1,0 @@
-/u/adjnouobsref on Oracle: "the use of open source software has been declining rapidly in the private sector"
-And of course they're primarily marketing to managers, not "in the trenches" programmers/admins, so the managers (who work in enterprise) will have a natural bias towards something labelled "enterprise"   

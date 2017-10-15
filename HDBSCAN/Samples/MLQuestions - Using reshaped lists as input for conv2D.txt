@@ -1,2 +1,0 @@
-Using reshaped lists as input for conv2D
-I have a list of data looking like data = [(0.1,0.53,0.3333).... ] that i saved in a file with pickle. each file is a different training example and the label is saved in another file of the same type. I'd like to load all of these files into tensorflow and just reshape them for direct use by conv2D. My goal being to avoid having to convert them to pngs which would round up the numbers and hence loose precision  submitted by /u/Moon_ire [link] [comments] 

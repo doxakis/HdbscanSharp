@@ -1,2 +1,0 @@
-/u/dzdrazil on "Do the people who design your JavaScript framework actually use it? The answer for Angular 1 and 2 is no. This is really important."
-As someone with the same experience as the post you're replying to, I have the exact opposite preference. Angular+ts is like developing with one hand tied behind my back compared to react (with or without ts). YMMV, favor your own personal experience over what other people on the internet tell you to think.   

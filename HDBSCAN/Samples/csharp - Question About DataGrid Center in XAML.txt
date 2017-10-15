@@ -1,2 +1,0 @@
-Question About DataGrid Center in XAML
-Below is my XAML for a datagrid. Currently every column is centered, but I need the last column to be left. How can I just set the horizontal alignment of 1 column and it's text? Google has failed me. :(                                                submitted by /u/slashback115 [link] [comments] 

@@ -1,2 +1,0 @@
-/u/Lucrums on Which column to partition?
-That’s true but I wouldn’t expect many partitioning questions on homework assignments otherwise I wouldn’t have provided any kind of answer at all.   

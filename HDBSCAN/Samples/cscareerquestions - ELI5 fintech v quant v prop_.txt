@@ -1,2 +1,0 @@
-ELI5 fintech v quant v prop?
-Before I did any research I grouped companies like Jane Street, Goldman Sachs, Two Sigma, DE Shaw, Bloomberg, Renaissance Tech, Citadel, etc together as "finance," but I'm starting to realize that some of these companies do very different work. Can someone explain what parts you can divide the finance CS world and the job market into and what each entails? Thanks a lot.  submitted by /u/testing-bpbo [link] [comments] 

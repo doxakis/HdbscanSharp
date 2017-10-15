@@ -1,2 +1,0 @@
-/u/Giometrix on Serialization library for using Azure Table Storage with POCOs
-Thanks! Is your implementation on github? I've gotten some good ideas by looking at other implementations :)   

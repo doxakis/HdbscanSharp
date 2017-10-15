@@ -1,2 +1,0 @@
-Entity Framework Core 2.0 vs. Dapper performance benchmark, querying SQL Azure tables
- submitted by /u/grauenwolf [link] [comments]    

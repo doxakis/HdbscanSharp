@@ -1,2 +1,0 @@
-[D] In the Searching with policy and value networks section of the AlphaGo paper why do they compute moves using the supervised learning network instead of the reinforcement learning network?
-In the definition of u(s, a) they seem to compute moves using the supervised learning network p_sigma. Why don't they used the reinforcement learning network p_rho?  submitted by /u/spline_reticulator [link] [comments] 

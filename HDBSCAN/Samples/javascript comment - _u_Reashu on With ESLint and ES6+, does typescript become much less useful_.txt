@@ -1,2 +1,0 @@
-/u/Reashu on With ESLint and ES6+, does typescript become much less useful?
-Not if you weren't using it for the types. But in that case, there were already better options.   

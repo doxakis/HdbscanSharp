@@ -1,2 +1,0 @@
-/u/PurdueME06 on What can I do to set myself apart from the rest?
-A $5/mo digital ocean instance with your own Git server (Gogs), etc is trivial to setup.   

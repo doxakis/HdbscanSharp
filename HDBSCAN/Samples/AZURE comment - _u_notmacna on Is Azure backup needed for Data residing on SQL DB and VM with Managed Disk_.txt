@@ -1,2 +1,0 @@
-/u/notmacna on Is Azure backup needed for Data residing on SQL DB and VM with Managed Disk?
-Is it recommend to have the backup stored on a seperate Azure Subscription?  I don't think so, but that's really up to you. backup data running on Azure SQL DB  Right, I thought you meant SQL running on a virtual machine. My mistake.   

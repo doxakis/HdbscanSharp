@@ -1,2 +1,0 @@
-/u/Trojann2 on Azure Site Recovery Effective Cost
-Once the main data is replicated it will just be the differences that will be transferred. Should not cost too much after that.   
