@@ -1,0 +1,2 @@
+I've been in the industry for a little over 2 years now, and still struggle with recursion and dynamic programming
+It seems like recursion and DP are skills that you never really learn on the job. I have never been able to approach these recursive problems on leetcode without really struggling with them, even basic permutations and combinations. Does anyone have any good resources that can really help visualize and understand these concepts a little better?  submitted by /u/poop_villain [link] [comments] 

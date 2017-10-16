@@ -1,0 +1,2 @@
+I have some Web-Developer interviews coming up. What is the best way I can prepare for them?
+I have one in 2 days and another in 9. For both, the standard HTML/CSS/JavaScript is a requirement and the other PHP and SQL an asset. I'm just a little rusty on my PHP and SQL. What is the best way to proceed? Aside from practicing and prepping how to answer questions. Should I build something simple and full-stack get some practice before I go in?  submitted by /u/DjangoZero [link] [comments] 

@@ -1,0 +1,2 @@
+Tech Dev Guide - interview questions and premade projects by the big G
+not sure if I'm not allowed to make link submissions or if I'm just dumb and can't find it, but here goes: Google Tech Dev Guide heard about this recently at a google info session, but they completely revamped their tech dev guide and added some neat curriculua for some SWE self learning  submitted by /u/csc_q [link] [comments] 

@@ -1,0 +1,2 @@
+dataset of faces and their heritage
+Hey folks, I would like to develop an ai that matches pictures of faces with their heritage. It's for a school project. Sorry for posting out in the green, but does anyone know of such a database (pictures and labels)?  submitted by /u/machiavellismus [link] [comments] 

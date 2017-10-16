@@ -1,0 +1,2 @@
+Amazing source about how to become a Machine Learning Enginner
+Digging out the internet, a friend of mine sent me this link and I think would be great to share with you. Is focused to teach ML for Software Engineers, and seems to me that is a perfect starting point to some of you, as for is for me. Link: https://github.com/ZuzooVn/machine-learning-for-software-engineers  submitted by /u/kephiroth [link] [comments] 

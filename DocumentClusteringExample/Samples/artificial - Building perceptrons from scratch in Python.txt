@@ -1,0 +1,2 @@
+Building perceptrons from scratch in Python
+ submitted by /u/deepideas [link] [comments]    

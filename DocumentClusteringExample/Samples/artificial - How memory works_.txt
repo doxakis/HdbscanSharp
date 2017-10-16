@@ -1,0 +1,2 @@
+How memory works?
+I want to make an AI bot for maybe a simple platformer. Each time it progresses it gets rewarded, but if it makes a mistake and fails the task it would be teleported back to the beginning. How do I make it so that the bot remembers what it had done wrong and what it had done correctly and so avoid the mistakes and continue doing what is correct?  submitted by /u/Xertik [link] [comments] 
