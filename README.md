@@ -39,12 +39,12 @@ var reducedVectorsWithPCA = pcaResult.Transform(vectors.ToArray());
 As of now, the HDBSCAN algorithm works. But, it needs some works to make it awesome.
 
 - [ ] Respect C# convention
-- [ ] Remove intermediate generated files
-- [ ] Expose an easy way to specify which parameters to use
-- [ ] Return a Result Object with Outliers score and Clusters
-- [ ] Examples
-  - [ ] Iris flower data set (with pearson correlation)
-  - [X] Reddit articles/comments classification based on text (with Cosine Similarity and Principal Component Analysis to reduce the vector length)
+- [X] Remove intermediate generated files
+- [X] Expose an easy way to specify which parameters to use
+- [X] Return a Result Object with Outliers score and Clusters
+- [X] Examples
+  - [X] Iris flower data set
+  - [X] Document Clustering: Reddit articles classification based on text (with Principal Component Analysis to reduce the vector length)
 - [ ] Nuget package
 
 # Copyright and license
