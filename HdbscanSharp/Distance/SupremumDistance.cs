@@ -22,10 +22,5 @@ namespace HdbscanSharp.Distance
 			}
 			return distance;
 		}
-
-		public string GetName()
-		{
-			return "supremum";
-		}
 	}
 }

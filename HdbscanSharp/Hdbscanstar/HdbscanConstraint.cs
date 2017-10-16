@@ -9,21 +9,11 @@ namespace HdbscanSharp.Hdbscanstar
 	/**
 	 * A clustering constraint (either a must-link or cannot-link constraint between two points).
 	 */
-	public class Constraint
+	public class HdbscanConstraint
 	{
-		private CONSTRAINT_TYPE type;
+		private HdbscanConstraintType type;
 		private int pointA;
 		private int pointB;
-
-		public const string MUST_LINK_TAG = "ml";
-		public const string CANNOT_LINK_TAG = "cl";
-
-		public enum CONSTRAINT_TYPE
-		{
-			NONE,
-			MUST_LINK,
-			CANNOT_LINK
-		}
 
 		/**
 		 * Creates a new constraint.
@@ -31,7 +21,7 @@ namespace HdbscanSharp.Hdbscanstar
 		 * @param pointB The second point involved in the constraint
 		 * @param type The CONSTRAINT_TYPE of the constraint
 		 */
-		public Constraint(int pointA, int pointB, CONSTRAINT_TYPE type)
+		public HdbscanConstraint(int pointA, int pointB, HdbscanConstraintType type)
 		{
 			this.pointA = pointA;
 			this.pointB = pointB;
@@ -48,7 +38,7 @@ namespace HdbscanSharp.Hdbscanstar
 			return this.pointB;
 		}
 		
-		public CONSTRAINT_TYPE GetConstraintType()
+		public HdbscanConstraintType GetConstraintType()
 		{
 			return this.type;
 		}

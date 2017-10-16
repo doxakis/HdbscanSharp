@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
-using static HdbscanSharp.Hdbscanstar.Constraint;
 using HdbscanSharp.Distance;
 using HdbscanSharp.Hdbscanstar;
 using HdbscanSharp.Utils;
@@ -12,121 +11,8 @@ using System.Globalization;
 
 namespace HdbscanSharp.Hdbscanstar
 {
-	/**
-	 * Implementation of the HDBSCAN* algorithm, which is broken into several methods.
-	 */
-	public class HdbscanStar
+	public class HdbscanAlgorithm
 	{
-		public const string WARNING_MESSAGE =
-			"----------------------------------------------- WARNING -----------------------------------------------\n" +
-			"With your current settings, the K-NN density estimate is discontinuous as it is not well-defined\n" +
-			"(infinite) for some data objects, either due to replicates in the data (not a set) or due to numerical\n" +
-			"roundings. This does not affect the construction of the density-based clustering hierarchy, but\n" +
-			"it affects the computation of cluster stability by means of relative excess of mass. For this reason,\n" +
-			"the post-processing routine to extract a flat partition containing the most stable clusters may\n" +
-			"produce unexpected results. It may be advisable to increase the value of MinPts and/or M_clSize.\n" +
-			"-------------------------------------------------------------------------------------------------------";
-
-		/**
-		 * Reads in the input data set from the file given, assuming the delimiter separates attributes
-		 * for each data point, and each point is given on a separate line.  Error messages are printed
-		 * if any part of the input is improperly formatted.
-		 * @param fileName The path to the input file
-		 * @param delimiter A regular expression that separates the attributes of each point
-		 * @return A double[][] where index [i][j] indicates the jth attribute of data point i
-		 * @throws IOException If any errors occur opening or reading from the file
-		 */
-		public static double[][] ReadInDataSet(string fileName, char delimiter)
-		{
-			string[] lines = File.ReadAllLines(fileName);
-			List<double[]> dataSet = new List<double[]>();
-			int numAttributes = -1;
-			int lineIndex = 0;
-
-			foreach (var line in lines)
-			{
-				if (string.IsNullOrWhiteSpace(line))
-				{
-					continue;
-				}
-
-				lineIndex++;
-				string[] lineContents = line.Split(delimiter);
-
-				if (numAttributes == -1)
-					numAttributes = lineContents.Length;
-				else if (lineContents.Length != numAttributes)
-					Console.WriteLine("Line " + lineIndex + " of data set has incorrect number of attributes.");
-
-				double[] attributes = new double[numAttributes];
-				for (int i = 0; i < numAttributes; i++)
-				{
-					try
-					{
-						//If an exception occurs, the attribute will remain 0:
-						attributes[i] = double.Parse(lineContents[i], CultureInfo.InvariantCulture);
-					}
-					catch (FormatException)
-					{
-						Console.WriteLine("Illegal value on line " + lineIndex + " of data set: " + lineContents[i]);
-					}
-				}
-				dataSet.Add(attributes);
-			}
-
-			double[][] finalDataSet = new double[dataSet.Count][];
-			for (int i = 0; i < dataSet.Count; i++)
-			{
-				finalDataSet[i] = dataSet[i];
-			}
-			return finalDataSet;
-		}
-
-		/**
-		 * Reads in constraints from the file given, assuming the delimiter separates the points involved
-		 * in the constraint and the type of the constraint, and each constraint is given on a separate 
-		 * line.  Error messages are printed if any part of the input is improperly formatted.
-		 * @param fileName The path to the input file
-		 * @param delimiter A regular expression that separates the points and type of each constraint
-		 * @return An List of Constraints
-		 * @throws IOException If any errors occur opening or reading from the file
-		 */
-		public static List<Constraint> ReadInConstraints(string fileName, char delimiter)
-		{
-			string[] lines = File.ReadAllLines(fileName);
-			List<Constraint> constraints = new List<Constraint>();
-			int lineIndex = 0;
-
-			foreach (var line in lines)
-			{
-				lineIndex++;
-				string[] lineContents = line.Split(delimiter);
-				if (lineContents.Length != 3)
-					Console.WriteLine("Line " + lineIndex + " of constraints has incorrect number of elements.");
-
-				try
-				{
-					int pointA = int.Parse(lineContents[0]);
-					int pointB = int.Parse(lineContents[1]);
-					CONSTRAINT_TYPE type = CONSTRAINT_TYPE.NONE;
-
-					if (lineContents[2].Equals(Constraint.MUST_LINK_TAG))
-						type = CONSTRAINT_TYPE.MUST_LINK;
-					else if (lineContents[2].Equals(Constraint.CANNOT_LINK_TAG))
-						type = CONSTRAINT_TYPE.CANNOT_LINK;
-					else
-						throw new FormatException();
-
-					constraints.Add(new Constraint(pointA, pointB, type));
-				}
-				catch (FormatException)
-				{
-					Console.WriteLine("Illegal value on line " + lineIndex + " of data set: " + line);
-				}
-			}
-			return constraints;
-		}
-
 		/**
 		 * Calculates the core distances for each point in the data set, given some value for k.
 		 * @param dataSet A double[][] where index [i][j] indicates the jth attribute of data point i
@@ -312,16 +198,12 @@ namespace HdbscanSharp.Hdbscanstar
 			UndirectedGraph mst,
 			int minClusterSize,
 			bool compactHierarchy,
-			List<Constraint> constraints,
-			string hierarchyOutputFile,
-			string treeOutputFile,
+			List<HdbscanConstraint> constraints,
+			StringBuilder hierarchyWriter,
 			char delimiter,
 			double[] pointNoiseLevels,
-			int[] pointLastClusters,
-			string visualizationOutputFile)
+			int[] pointLastClusters)
 		{
-			StringBuilder hierarchyWriter = new StringBuilder();
-			StringBuilder treeWriter = new StringBuilder();
 			long hierarchyCharsWritten = 0;
 			int lineCount = 0; //Indicates the number of lines written into hierarchyFile.
 
@@ -561,54 +443,6 @@ namespace HdbscanSharp.Hdbscanstar
 			}
 			hierarchyWriter.Append(0 + "\n");
 			lineCount++;
-
-			//Write out the cluster tree:
-			foreach (Cluster cluster in clusters)
-			{
-				if (cluster == null)
-					continue;
-				treeWriter.Append(cluster.GetLabel() + "" + delimiter);
-				treeWriter.Append(cluster.GetBirthLevel().ToString(CultureInfo.InvariantCulture) + "" + delimiter);
-				treeWriter.Append(cluster.GetDeathLevel().ToString(CultureInfo.InvariantCulture) + "" + delimiter);
-				treeWriter.Append(cluster.GetStability().ToString(CultureInfo.InvariantCulture) + "" + delimiter);
-
-				if (constraints != null)
-				{
-					treeWriter.Append((0.5 * cluster.GetNumConstraintsSatisfied() / constraints.Count).ToString(CultureInfo.InvariantCulture) + "" + delimiter);
-					treeWriter.Append((0.5 * cluster.GetPropagatedNumConstraintsSatisfied() / constraints.Count).ToString(CultureInfo.InvariantCulture) + "" + delimiter);
-				}
-				else
-				{
-					treeWriter.Append(0 + "" + delimiter);
-					treeWriter.Append(0 + "" + delimiter);
-				}
-				treeWriter.Append(cluster.GetFileOffset() + "" + delimiter);
-				if (cluster.GetParent() != null)
-					treeWriter.Append(cluster.GetParent().GetLabel() + "\n");
-				else
-					treeWriter.Append(0 + "\n");
-			}
-
-			/*Author: Fernando S. de Aguiar Neto
-			 *  Generating .vis File
-			 */
-			string outt = "";
-
-			if (!compactHierarchy)
-			{
-				outt = "1\n";
-			}
-			else
-			{
-				outt = "0\n";
-			}
-			outt = outt + "" + lineCount;
-
-			File.WriteAllText(visualizationOutputFile, outt);
-			/*End Author Fernando S. de Aguiar Neto*/
-
-			File.WriteAllText(hierarchyOutputFile, hierarchyWriter.ToString());
-			File.WriteAllText(treeOutputFile, treeWriter.ToString());
 			return clusters;
 		}
 
@@ -675,9 +509,6 @@ namespace HdbscanSharp.Hdbscanstar
 				}
 			}
 
-			//if (infiniteStability)
-			//	Console.WriteLine(WARNING_MESSAGE);
-
 			return infiniteStability;
 		}
 
@@ -696,16 +527,14 @@ namespace HdbscanSharp.Hdbscanstar
 		 */
 		public static int[] FindProminentClusters(
 			List<Cluster> clusters,
-			string hierarchyFile,
-			string flatOutputFile,
+			StringBuilder hierarchyWriter,
 			char delimiter,
-			int numPoints,
-			bool infiniteStability)
+			int numPoints)
 		{
 			//Take the list of propagated clusters from the root cluster:
 			List<Cluster> solution = clusters[1].GetPropagatedDescendants();
 
-			var reader = File.ReadAllText(hierarchyFile);
+			var reader = hierarchyWriter.ToString();
 			int[] flatPartitioning = new int[numPoints];
 
 			//Store all the file offsets at which to find the birth points for the flat clustering:
@@ -769,21 +598,6 @@ namespace HdbscanSharp.Hdbscanstar
 						flatPartitioning[i - 1] = label;
 				}
 			}
-
-			//Output the flat clustering result:
-			StringBuilder writer = new StringBuilder();
-			//if (infiniteStability)
-			//	writer.Append(WARNING_MESSAGE + "\n");
-
-			for (int i = 0; i < flatPartitioning.Length - 1; i++)
-			{
-				writer.Append(flatPartitioning[i] + "" + delimiter);
-			}
-
-			writer.Append(flatPartitioning[flatPartitioning.Length - 1] + "\n");
-
-			File.WriteAllText(flatOutputFile, writer.ToString());
-
 			return flatPartitioning;
 		}
 
@@ -804,10 +618,7 @@ namespace HdbscanSharp.Hdbscanstar
 			List<Cluster> clusters,
 			double[] pointNoiseLevels,
 			int[] pointLastClusters,
-			double[] coreDistances,
-			string outlierScoresOutputFile,
-			char delimiter,
-			bool infiniteStability)
+			double[] coreDistances)
 		{
 			int numPoints = pointNoiseLevels.Length;
 			List<OutlierScore> outlierScores = new List<OutlierScore>(numPoints);
@@ -827,19 +638,6 @@ namespace HdbscanSharp.Hdbscanstar
 
 			//Sort the outlier scores:
 			outlierScores.Sort();
-
-			//Output the outlier scores:
-			StringBuilder writer = new StringBuilder();
-
-			//if (infiniteStability)
-			//	writer.Append(WARNING_MESSAGE + "\n");
-
-			foreach (OutlierScore outlierScore in outlierScores)
-			{
-				writer.Append(outlierScore.GetScore() + "" + delimiter + "" + outlierScore.GetId() + "\n");
-			}
-
-			File.WriteAllText(outlierScoresOutputFile, writer.ToString());
 
 			return outlierScores;
 		}
@@ -888,7 +686,7 @@ namespace HdbscanSharp.Hdbscanstar
 		private static void CalculateNumConstraintsSatisfied(
 			SortedSet<int> newClusterLabels,
 			List<Cluster> clusters,
-			List<Constraint> constraints,
+			List<HdbscanConstraint> constraints,
 			int[] clusterLabels)
 		{
 			if (constraints == null)
@@ -903,17 +701,17 @@ namespace HdbscanSharp.Hdbscanstar
 					parents.Add(parent);
 			}
 
-			foreach (Constraint constraint in constraints)
+			foreach (HdbscanConstraint constraint in constraints)
 			{
 				int labelA = clusterLabels[constraint.GetPointA()];
 				int labelB = clusterLabels[constraint.GetPointB()];
 
-				if (constraint.GetConstraintType() == CONSTRAINT_TYPE.MUST_LINK && labelA == labelB)
+				if (constraint.GetConstraintType() == HdbscanConstraintType.MustLink && labelA == labelB)
 				{
 					if (newClusterLabels.Contains(labelA))
 						clusters[labelA].AddConstraintsSatisfied(2);
 				}
-				else if (constraint.GetConstraintType() == CONSTRAINT_TYPE.CANNOT_LINK && (labelA != labelB || labelA == 0))
+				else if (constraint.GetConstraintType() == HdbscanConstraintType.CannotLink && (labelA != labelB || labelA == 0))
 				{
 					if (labelA != 0 && newClusterLabels.Contains(labelA))
 						clusters[labelA].AddConstraintsSatisfied(1);

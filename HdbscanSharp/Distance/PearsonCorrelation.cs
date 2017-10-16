@@ -33,10 +33,5 @@ namespace HdbscanSharp.Distance
 			}
 			return (1 - (covariance / Math.Sqrt(standardDeviationOne * standardDeviationTwo)));
 		}
-
-		public string GetName()
-		{
-			return "pearson";
-		}
 	}
 }

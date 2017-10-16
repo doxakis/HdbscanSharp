@@ -12,9 +12,9 @@ namespace DocumentClusteringExample.Utils
 		public int MinWordCount { get; set; }
 		public int MaxWordCount { get; set; }
 		public string[] BadPatternList { get; set; }
-		public bool FreqMultiplyByVectorSum { get; set; }
 		public ValueStrategy Strategy { get; set; }
 		public int MinVectorElements { get; set; }
+		public bool ReplaceMissingValueWithRandomValue { get; set; }
 	}
 	
 	public enum ValueStrategy
@@ -112,18 +112,14 @@ namespace DocumentClusteringExample.Utils
 				}
 			}
 			
-			if (option.FreqMultiplyByVectorSum)
+			if (option.ReplaceMissingValueWithRandomValue)
 			{
-				double sum = vector.Sum();
-				if (sum == 0)
-				{
-					sum = 1;
-				}
+				Random r = new Random();
 				for (int i = 0; i < vector.Length; i++)
 				{
-					if (vector[i] != 0)
+					if (vector[i] == 0)
 					{
-						vector[i] = vector[i] * sum;
+						vector[i] = r.Next(1000, 10000);
 					}
 				}
 			}

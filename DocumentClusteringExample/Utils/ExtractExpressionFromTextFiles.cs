@@ -18,6 +18,7 @@ namespace DocumentClusteringExample.Utils
 		public int LastWordMinLength { get; set; }
 		public int MaxExpressionComposition { get; set; }
 		public string[] BadPatternList { get; set; }
+		public string[] BadWords { get; set; }
 	}
 
 	public class ExtractExpressionFromTextFiles
@@ -66,6 +67,12 @@ namespace DocumentClusteringExample.Utils
 							}
 
 							var key = groupOfWords.Trim();
+
+							if (option.BadWords.Contains(key))
+							{
+								continue;
+							}
+
 							if (freq.ContainsKey(key))
 							{
 								freq[key] = freq[key] + 1;

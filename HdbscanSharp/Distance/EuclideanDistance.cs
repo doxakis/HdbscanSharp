@@ -20,10 +20,5 @@ namespace HdbscanSharp.Distance
 			}
 			return Math.Sqrt(distance);
 		}
-
-		public string GetName()
-		{
-			return "euclidean";
-		}
 	}
 }

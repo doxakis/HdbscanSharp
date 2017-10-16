@@ -1,5 +1,7 @@
 ﻿using Accord.Statistics.Analysis;
 using DocumentClusteringExample.Utils;
+using HdbscanSharp.Distance;
+using HdbscanSharp.Runner;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -17,20 +19,26 @@ namespace DocumentClusteringExample
 		{
 			// Specify which files to use.
 			var projectDir = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
-			var pathFiles = Directory.EnumerateFiles(projectDir + @"\Samples")
-				.ToList();
+			var pathFiles = Directory.EnumerateFiles(projectDir + @"\Samples").ToList();
 
 			// Hyper parameters.
-			var minVectorElements = 20;
-			var freqMultiplyByVectorSum = false;
-			var freqMin = 50;
+			
+			// This option prevent overfitting on missing words.
+			var replaceMissingValueWithRandomValue = true;
+
+			var strategy = ValueStrategy.Presence;
+			var minVectorElements = 5;
+			var freqMin = 5;
 			var minWordCount = 1;
 			var maxWordCount = 1;
-			var minGroupOfWordsLength = 8;
+			var minGroupOfWordsLength = 3;
 			var minWordLength = 1;
 			var firstWordMinLength = 1;
 			var lastWordMinLength = 1;
-			var maxComposition = 50;
+			var maxComposition = 20;
+			var badWords = File.ReadLines("stop-words-english.txt")
+				.Where(m => !string.IsNullOrWhiteSpace(m))
+				.ToArray();
 			var badPatternList = new string[]
 			{
 			};
@@ -41,6 +49,7 @@ namespace DocumentClusteringExample
 				new ExtractExpressionFromTextFilesOption
 				{
 					BadPatternList = badPatternList,
+					BadWords = badWords,
 					FirstWordMinLength = firstWordMinLength,
 					LastWordMinLength = lastWordMinLength,
 					MaxExpressionComposition = maxComposition,
@@ -59,8 +68,8 @@ namespace DocumentClusteringExample
 				BadPatternList = badPatternList,
 				MaxWordCount = maxWordCount,
 				MinWordCount = minWordCount,
-				FreqMultiplyByVectorSum = freqMultiplyByVectorSum,
-				Strategy = ValueStrategy.PositionInText
+				Strategy = strategy,
+				ReplaceMissingValueWithRandomValue = replaceMissingValueWithRandomValue
 			};
 			List<Tuple<string, double[]>> filesToVector = new List<Tuple<string, double[]>>();
 			foreach (var pathFile in pathFiles)
@@ -101,41 +110,27 @@ namespace DocumentClusteringExample
 			pca.NumberOfOutputs = 3;
 			var trainingVector = vectors.ToArray();
 			Shuffle(trainingVector);
-			trainingVector = trainingVector.Take(300).ToArray();
+			trainingVector = trainingVector.Take(600).ToArray();
 			var pcaResult = pca.Learn(trainingVector);
 			var reducedVectorsWithPCA = pcaResult.Transform(vectors.ToArray());
 			stopwatch.Stop();
 			Console.WriteLine("PCA duration: " + stopwatch.Elapsed.ToString());
 
-			// Write vectors on temporary files for HDBSCAN algo.
-			StringBuilder vectorsToCsv = new StringBuilder();
-			foreach (var vector in reducedVectorsWithPCA)
-			{
-				vectorsToCsv.Append(string.Join(",",
-					vector.Select(m => m.ToString(CultureInfo.InvariantCulture))));
-				vectorsToCsv.Append("\n");
-			}
-			File.WriteAllText("vectors.csv", vectorsToCsv.ToString());
-
-			// HDBSCAN parameters.
-			Console.WriteLine("HDBSCAN starting...");
-			args = new string[] {
-				"file=vectors.csv",
-				"minPts=40",
-				"minClSize=40",
-				"compact=true",
-				"dist_function=cosine",
-			};
 			// Run HDBSCAN algo.
-			HdbscanSharp.Hdbscanstar.HdbscanStarRunner.Run(args);
+			Console.WriteLine("HDBSCAN starting...");
+
+			var result = HdbscanRunner.Run(new HdbscanParameters
+			{
+				DataSet = reducedVectorsWithPCA,
+				MinPoints = 10,
+				MinClusterSize = 10,
+				DistanceFunction = new PearsonCorrelation()
+			});
+			
 			Console.WriteLine("HDBSCAN done.");
 
 			// Read results.
-			var line = File.ReadAllText("vectors_partition.csv");
-			var labels = line
-				.Split(',')
-				.Select(m => int.Parse(m))
-				.ToArray();
+			var labels = result.Labels;
 			int n = labels.Max();
 
 			Console.WriteLine("\n\n");
