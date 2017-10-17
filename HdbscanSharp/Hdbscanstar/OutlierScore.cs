@@ -13,9 +13,10 @@ namespace HdbscanSharp.Hdbscanstar
 	/// </summary>
 	public class OutlierScore : IComparable<OutlierScore> {
 
-		private double score;
-		private double coreDistance;
-		private int id;
+		private double CoreDistance;
+
+		public double Score { get; set; }
+		public int Id { get; set; }
 
 		/// <summary>
 		/// Creates a new OutlierScore for a given point.
@@ -25,36 +26,26 @@ namespace HdbscanSharp.Hdbscanstar
 		/// <param name="id">The id (index) of the point</param>
 		public OutlierScore(double score, double coreDistance, int id)
 		{
-			this.score = score;
-			this.coreDistance = coreDistance;
-			this.id = id;
+			this.Score = score;
+			this.CoreDistance = coreDistance;
+			this.Id = id;
 		}
 
 		public int CompareTo(OutlierScore other)
 		{
-			if (this.score > other.score)
+			if (this.Score > other.Score)
 				return 1;
-			else if (this.score < other.score)
+			else if (this.Score < other.Score)
 				return -1;
 			else
 			{
-				if (this.coreDistance > other.coreDistance)
+				if (this.CoreDistance > other.CoreDistance)
 					return 1;
-				else if (this.coreDistance < other.coreDistance)
+				else if (this.CoreDistance < other.CoreDistance)
 					return -1;
 				else
-					return this.id - other.id;
+					return this.Id - other.Id;
 			}
-		}
-
-		public double GetScore()
-		{
-			return this.score;
-		}
-
-		public int GetId()
-		{
-			return this.id;
 		}
 	}
 }

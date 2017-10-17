@@ -8,30 +8,30 @@ namespace HdbscanSharp.Utils
 {
 	public class BitSet
 	{
-		private bool[] bits = new bool[0];
+		private bool[] Bits = new bool[0];
 		
 		public bool Get(int pos)
 		{
-			if (pos >= bits.Length)
+			if (pos >= Bits.Length)
 			{
 				return false;
 			}
-			return bits[pos];
+			return Bits[pos];
 		}
 		
 		public void Set(int pos)
 		{
 			Ensure(pos);
-			bits[pos] = true;
+			Bits[pos] = true;
 		}
 		
 		private void Ensure(int pos)
 		{
-			if (pos >= bits.Length)
+			if (pos >= Bits.Length)
 			{
 				bool[] nd = new bool[pos + 64];
-				Array.Copy(bits, 0, nd, 0, bits.Length);
-				bits = nd;
+				Array.Copy(Bits, 0, nd, 0, Bits.Length);
+				Bits = nd;
 			}
 		}
 	}

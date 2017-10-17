@@ -12,20 +12,20 @@ namespace HdbscanSharp.Hdbscanstar
 	/// </summary>
 	public class Cluster
 	{
-		private int label;
-		private double birthLevel;
-		private double deathLevel;
-		private int numPoints;
-		private long fileOffset;    //First level where points with this cluster's label appear
-		private double stability;
-		private double propagatedStability;
-		private double propagatedLowestChildDeathLevel;
-		private int numConstraintsSatisfied;
-		private int propagatedNumConstraintsSatisfied;
-		private SortedSet<int> virtualChildCluster;
-		private Cluster parent;
-		private bool hasChildren;
-		public List<Cluster> propagatedDescendants;
+		private int Label;
+		private double BirthLevel;
+		private double DeathLevel;
+		private int NumPoints;
+		private long FileOffset;    //First level where points with this cluster's label appear
+		private double Stability;
+		private double PropagatedStability;
+		private double PropagatedLowestChildDeathLevel;
+		private int NumConstraintsSatisfied;
+		private int PropagatedNumConstraintsSatisfied;
+		private SortedSet<int> VirtualChildCluster;
+		private Cluster Parent;
+		private bool ClusterHasChildren;
+		public List<Cluster> PropagatedDescendants;
 
 		/// <summary>
 		/// Creates a new Cluster.
@@ -36,22 +36,22 @@ namespace HdbscanSharp.Hdbscanstar
 		/// <param name="numPoints">The initial number of points in this cluster</param>
 		public Cluster(int label, Cluster parent, double birthLevel, int numPoints)
 		{
-			this.label = label;
-			this.birthLevel = birthLevel;
-			this.deathLevel = 0;
-			this.numPoints = numPoints;
-			this.fileOffset = 0;
-			this.stability = 0;
-			this.propagatedStability = 0;
-			this.propagatedLowestChildDeathLevel = Double.MaxValue;
-			this.numConstraintsSatisfied = 0;
-			this.propagatedNumConstraintsSatisfied = 0;
-			this.virtualChildCluster = new SortedSet<int>();
-			this.parent = parent;
-			if (this.parent != null)
-				this.parent.hasChildren = true;
-			this.hasChildren = false;
-			this.propagatedDescendants = new List<Cluster>(1);
+			this.Label = label;
+			this.BirthLevel = birthLevel;
+			this.DeathLevel = 0;
+			this.NumPoints = numPoints;
+			this.FileOffset = 0;
+			this.Stability = 0;
+			this.PropagatedStability = 0;
+			this.PropagatedLowestChildDeathLevel = Double.MaxValue;
+			this.NumConstraintsSatisfied = 0;
+			this.PropagatedNumConstraintsSatisfied = 0;
+			this.VirtualChildCluster = new SortedSet<int>();
+			this.Parent = parent;
+			if (this.Parent != null)
+				this.Parent.ClusterHasChildren = true;
+			this.ClusterHasChildren = false;
+			this.PropagatedDescendants = new List<Cluster>(1);
 		}
 
 		/// <summary>
@@ -63,12 +63,12 @@ namespace HdbscanSharp.Hdbscanstar
 		/// <param name="level">The MST edge level at which to remove these points</param>
 		public void DetachPoints(int numPoints, double level)
 		{
-			this.numPoints -= numPoints;
-			this.stability += (numPoints * (1 / level - 1 / this.birthLevel));
+			this.NumPoints -= numPoints;
+			this.Stability += (numPoints * (1 / level - 1 / this.BirthLevel));
 
-			if (this.numPoints == 0)
-				this.deathLevel = level;
-			else if (this.numPoints < 0)
+			if (this.NumPoints == 0)
+				this.DeathLevel = level;
+			else if (this.NumPoints < 0)
 				throw new InvalidOperationException("Cluster cannot have less than 0 points.");
 		}
 
@@ -81,47 +81,47 @@ namespace HdbscanSharp.Hdbscanstar
 		/// </summary>
 		public void Propagate()
 		{
-			if (this.parent != null)
+			if (this.Parent != null)
 			{
 				//Propagate lowest death level of any descendants:
-				if (this.propagatedLowestChildDeathLevel == Double.MaxValue)
-					this.propagatedLowestChildDeathLevel = this.deathLevel;
-				if (this.propagatedLowestChildDeathLevel < this.parent.propagatedLowestChildDeathLevel)
-					this.parent.propagatedLowestChildDeathLevel = this.propagatedLowestChildDeathLevel;
+				if (this.PropagatedLowestChildDeathLevel == Double.MaxValue)
+					this.PropagatedLowestChildDeathLevel = this.DeathLevel;
+				if (this.PropagatedLowestChildDeathLevel < this.Parent.PropagatedLowestChildDeathLevel)
+					this.Parent.PropagatedLowestChildDeathLevel = this.PropagatedLowestChildDeathLevel;
 				
 				//If this cluster has no children, it must propagate itself:
-				if (!this.hasChildren)
+				if (!this.ClusterHasChildren)
 				{
-					this.parent.propagatedNumConstraintsSatisfied += this.numConstraintsSatisfied;
-					this.parent.propagatedStability += this.stability;
-					this.parent.propagatedDescendants.Add(this);
+					this.Parent.PropagatedNumConstraintsSatisfied += this.NumConstraintsSatisfied;
+					this.Parent.PropagatedStability += this.Stability;
+					this.Parent.PropagatedDescendants.Add(this);
 				}
-				else if (this.numConstraintsSatisfied > this.propagatedNumConstraintsSatisfied)
+				else if (this.NumConstraintsSatisfied > this.PropagatedNumConstraintsSatisfied)
 				{
-					this.parent.propagatedNumConstraintsSatisfied += this.numConstraintsSatisfied;
-					this.parent.propagatedStability += this.stability;
-					this.parent.propagatedDescendants.Add(this);
+					this.Parent.PropagatedNumConstraintsSatisfied += this.NumConstraintsSatisfied;
+					this.Parent.PropagatedStability += this.Stability;
+					this.Parent.PropagatedDescendants.Add(this);
 				}
-				else if (this.numConstraintsSatisfied < this.propagatedNumConstraintsSatisfied)
+				else if (this.NumConstraintsSatisfied < this.PropagatedNumConstraintsSatisfied)
 				{
-					this.parent.propagatedNumConstraintsSatisfied += this.propagatedNumConstraintsSatisfied;
-					this.parent.propagatedStability += this.propagatedStability;
-					this.parent.propagatedDescendants.AddRange(this.propagatedDescendants);
+					this.Parent.PropagatedNumConstraintsSatisfied += this.PropagatedNumConstraintsSatisfied;
+					this.Parent.PropagatedStability += this.PropagatedStability;
+					this.Parent.PropagatedDescendants.AddRange(this.PropagatedDescendants);
 				}
-				else if (this.numConstraintsSatisfied == this.propagatedNumConstraintsSatisfied)
+				else if (this.NumConstraintsSatisfied == this.PropagatedNumConstraintsSatisfied)
 				{
 					//Chose the parent over descendants if there is a tie in stability:
-					if (this.stability >= this.propagatedStability)
+					if (this.Stability >= this.PropagatedStability)
 					{
-						this.parent.propagatedNumConstraintsSatisfied += this.numConstraintsSatisfied;
-						this.parent.propagatedStability += this.stability;
-						this.parent.propagatedDescendants.Add(this);
+						this.Parent.PropagatedNumConstraintsSatisfied += this.NumConstraintsSatisfied;
+						this.Parent.PropagatedStability += this.Stability;
+						this.Parent.PropagatedDescendants.Add(this);
 					}
 					else
 					{
-						this.parent.propagatedNumConstraintsSatisfied += this.propagatedNumConstraintsSatisfied;
-						this.parent.propagatedStability += this.propagatedStability;
-						this.parent.propagatedDescendants.AddRange(this.propagatedDescendants);
+						this.Parent.PropagatedNumConstraintsSatisfied += this.PropagatedNumConstraintsSatisfied;
+						this.Parent.PropagatedStability += this.PropagatedStability;
+						this.Parent.PropagatedDescendants.AddRange(this.PropagatedDescendants);
 					}
 				}
 			}
@@ -131,23 +131,23 @@ namespace HdbscanSharp.Hdbscanstar
 		{
 			foreach (var point in points)
 			{
-				this.virtualChildCluster.Add(point);
+				this.VirtualChildCluster.Add(point);
 			}
 		}
 
 		public bool VirtualChildClusterContaintsPoint(int point)
 		{
-			return this.virtualChildCluster.Contains(point);
+			return this.VirtualChildCluster.Contains(point);
 		}
 
 		public void AddVirtualChildConstraintsSatisfied(int numConstraints)
 		{
-			this.propagatedNumConstraintsSatisfied += numConstraints;
+			this.PropagatedNumConstraintsSatisfied += numConstraints;
 		}
 
 		public void AddConstraintsSatisfied(int numConstraints)
 		{
-			this.numConstraintsSatisfied += numConstraints;
+			this.NumConstraintsSatisfied += numConstraints;
 		}
 
 		/// <summary>
@@ -156,67 +156,67 @@ namespace HdbscanSharp.Hdbscanstar
 		/// </summary>
 		public void ReleaseVirtualChildCluster()
 		{
-			this.virtualChildCluster = null;
+			this.VirtualChildCluster = null;
 		}
 
 		public int GetLabel()
 		{
-			return this.label;
+			return this.Label;
 		}
 
 		public Cluster GetParent()
 		{
-			return this.parent;
+			return this.Parent;
 		}
 
 		public double GetBirthLevel()
 		{
-			return this.birthLevel;
+			return this.BirthLevel;
 		}
 
 		public double GetDeathLevel()
 		{
-			return this.deathLevel;
+			return this.DeathLevel;
 		}
 
 		public long GetFileOffset()
 		{
-			return this.fileOffset;
+			return this.FileOffset;
 		}
 
 		public void SetFileOffset(long offset)
 		{
-			this.fileOffset = offset;
+			this.FileOffset = offset;
 		}
 
 		public double GetStability()
 		{
-			return this.stability;
+			return this.Stability;
 		}
 
 		public double GetPropagatedLowestChildDeathLevel()
 		{
-			return this.propagatedLowestChildDeathLevel;
+			return this.PropagatedLowestChildDeathLevel;
 		}
 
 		public int GetNumConstraintsSatisfied()
 		{
-			return this.numConstraintsSatisfied;
+			return this.NumConstraintsSatisfied;
 		}
 
 		public int GetPropagatedNumConstraintsSatisfied()
 		{
-			return this.propagatedNumConstraintsSatisfied;
+			return this.PropagatedNumConstraintsSatisfied;
 		}
 
 		public List<Cluster> GetPropagatedDescendants()
 		{
-			return this.propagatedDescendants;
+			return this.PropagatedDescendants;
 		}
 
 		public bool HasChildren()
 		{
-			return this.hasChildren;
+			return this.ClusterHasChildren;
 		}
 	}
 }
