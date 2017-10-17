@@ -16,12 +16,14 @@ namespace HdbscanSharp.Runner
 		public static HdbscanResult Run(HdbscanParameters parameters)
 		{
 			int numPoints = parameters.DataSet.Length;
-			
+
+			// Compute core distances
 			double[] coreDistances = HdbscanAlgorithm.CalculateCoreDistances(
 				parameters.DataSet,
 				parameters.MinPoints,
 				parameters.DistanceFunction);
 
+			// Calculate minimum spanning tree
 			UndirectedGraph mst = HdbscanAlgorithm.ConstructMST(
 				parameters.DataSet,
 				coreDistances,
@@ -35,6 +37,7 @@ namespace HdbscanSharp.Runner
 			StringBuilder hierarchyWriter = new StringBuilder();
 			char delimiter = ',';
 
+			// Compute hierarchy and cluster tree
 			List<Cluster> clusters = HdbscanAlgorithm.ComputeHierarchyAndClusterTree(
 				mst,
 				parameters.MinClusterSize,
@@ -45,13 +48,17 @@ namespace HdbscanSharp.Runner
 				pointNoiseLevels,
 				pointLastClusters);
 
+			// Propagate clusters
 			bool infiniteStability = HdbscanAlgorithm.PropagateTree(clusters);
+
+			// Compute final flat partitioning
 			int[] prominentClusters = HdbscanAlgorithm.FindProminentClusters(
 				clusters,
 				hierarchyWriter,
 				delimiter,
 				numPoints);
 
+			// Compute outlier scores for each point
 			List<OutlierScore> scores = HdbscanAlgorithm.CalculateOutlierScores(
 				clusters,
 				pointNoiseLevels,

@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace HdbscanSharp.Hdbscanstar
 {
-	/**
-	 * A clustering constraint (either a must-link or cannot-link constraint between two points).
-	 */
+	/// <summary>
+	/// A clustering constraint (either a must-link or cannot-link constraint between two points).
+	/// </summary>
 	public class HdbscanConstraint
 	{
 		private HdbscanConstraintType type;
 		private int pointA;
 		private int pointB;
 
-		/**
-		 * Creates a new constraint.
-		 * @param pointA The first point involved in the constraint
-		 * @param pointB The second point involved in the constraint
-		 * @param type The CONSTRAINT_TYPE of the constraint
-		 */
+		/// <summary>
+		/// Creates a new constraint.
+		/// </summary>
+		/// <param name="pointA">The first point involved in the constraint</param>
+		/// <param name="pointB">The second point involved in the constraint</param>
+		/// <param name="type">The constraint type</param>
 		public HdbscanConstraint(int pointA, int pointB, HdbscanConstraintType type)
 		{
 			this.pointA = pointA;

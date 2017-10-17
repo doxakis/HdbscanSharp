@@ -6,65 +6,66 @@ using System.Threading.Tasks;
 
 namespace HdbscanSharp.Hdbscanstar
 {
-	/**
-	 * An undirected graph, with weights assigned to each edge.  Vertices in the graph are 0 indexed.
-	 */
+	/// <summary>
+	/// An undirected graph, with weights assigned to each edge.
+	/// Vertices in the graph are 0 indexed.
+	/// </summary>
 	public class UndirectedGraph
 	{
-		private int numVertices;
-		private int[] verticesA;
-		private int[] verticesB;
-		private double[] edgeWeights;
-		private List<int>[] edges;     //Each Object in this array in an List<int>
+		private int NumVertices;
+		private int[] VerticesA;
+		private int[] VerticesB;
+		private double[] EdgeWeights;
+		private List<int>[] Edges;
 
-		/**
-		 * Constructs a new UndirectedGraph, including creating an edge list for each vertex from the 
-		 * vertex arrays.  For an index i, verticesA[i] and verticesB[i] share an edge with weight
-		 * edgeWeights[i].
-		 * @param numVertices The number of vertices in the graph (indexed 0 to numVertices-1)
-		 * @param verticesA An array of vertices corresponding to the array of edges
-		 * @param verticesB An array of vertices corresponding to the array of edges
-		 * @param edgeWeights An array of edges corresponding to the arrays of vertices
-		 */
+		/// <summary>
+		/// Constructs a new UndirectedGraph, including creating an edge list for each vertex from the 
+		/// vertex arrays.  For an index i, verticesA[i] and verticesB[i] share an edge with weight
+		/// edgeWeights[i].
+		/// </summary>
+		/// <param name="numVertices">The number of vertices in the graph (indexed 0 to numVertices-1)</param>
+		/// <param name="verticesA">An array of vertices corresponding to the array of edges</param>
+		/// <param name="verticesB">An array of vertices corresponding to the array of edges</param>
+		/// <param name="edgeWeights">An array of edges corresponding to the arrays of vertices</param>
 		public UndirectedGraph(int numVertices, int[] verticesA, int[] verticesB, double[] edgeWeights)
 		{
-			this.numVertices = numVertices;
-			this.verticesA = verticesA;
-			this.verticesB = verticesB;
-			this.edgeWeights = edgeWeights;
-			this.edges = new List<int>[numVertices];
+			this.NumVertices = numVertices;
+			this.VerticesA = verticesA;
+			this.VerticesB = verticesB;
+			this.EdgeWeights = edgeWeights;
+			this.Edges = new List<int>[numVertices];
 
-			for (int i = 0; i < this.edges.Length; i++)
+			for (int i = 0; i < this.Edges.Length; i++)
 			{
-				this.edges[i] = new List<int>(1 + edgeWeights.Length / numVertices);
+				this.Edges[i] = new List<int>(1 + edgeWeights.Length / numVertices);
 			}
 
 			for (int i = 0; i < edgeWeights.Length; i++)
 			{
-				int vertexOne = this.verticesA[i];
-				int vertexTwo = this.verticesB[i];
+				int vertexOne = this.VerticesA[i];
+				int vertexTwo = this.VerticesB[i];
 
-				this.edges[vertexOne].Add(vertexTwo);
+				this.Edges[vertexOne].Add(vertexTwo);
 
 				if (vertexOne != vertexTwo)
-					this.edges[vertexTwo].Add(vertexOne);
+					this.Edges[vertexTwo].Add(vertexOne);
 			}
 		}
 
-		/**
-		 * Quicksorts the graph by edge weight in descending order.  This quicksort implementation is 
-		 * iterative and in-place.
-		 */
+		/// <summary>
+		/// Quicksorts the graph by edge weight in descending order.
+		/// This quicksort implementation is iterative and in-place.
+		/// </summary>
 		public void QuicksortByEdgeWeight()
 		{
-			if (this.edgeWeights.Length <= 1)
+			if (this.EdgeWeights.Length <= 1)
 				return;
 
-			int[] startIndexStack = new int[this.edgeWeights.Length / 2];
-			int[] endIndexStack = new int[this.edgeWeights.Length / 2];
+			int[] startIndexStack = new int[this.EdgeWeights.Length / 2];
+			int[] endIndexStack = new int[this.EdgeWeights.Length / 2];
 
 			startIndexStack[0] = 0;
-			endIndexStack[0] = this.edgeWeights.Length - 1;
+			endIndexStack[0] = this.EdgeWeights.Length - 1;
 
 			int stackTop = 0;
 
@@ -93,11 +94,11 @@ namespace HdbscanSharp.Hdbscanstar
 			}
 		}
 
-		/**
-		 * Quicksorts the graph in the interval [startIndex, endIndex] by edge weight.
-		 * @param startIndex The lowest index to be included in the sort
-		 * @param endIndex The highest index to be included in the sort
-		 */
+		/// <summary>
+		/// Quicksorts the graph in the interval [startIndex, endIndex] by edge weight.
+		/// </summary>
+		/// <param name="startIndex">The lowest index to be included in the sort</param>
+		/// <param name="endIndex">The highest index to be included in the sort</param>
 		private void Quicksort(int startIndex, int endIndex)
 		{
 			if (startIndex < endIndex)
@@ -109,21 +110,21 @@ namespace HdbscanSharp.Hdbscanstar
 			}
 		}
 
-		/**
-		 * Returns a pivot index by finding the median of edge weights between the startIndex, endIndex,
-		 * and middle.
-		 * @param startIndex The lowest index from which the pivot index should come
-		 * @param endIndex The highest index from which the pivot index should come
-		 * @return A pivot index
-		 */
+		/// <summary>
+		/// Returns a pivot index by finding the median of edge weights between the startIndex, endIndex,
+		/// and middle.
+		/// </summary>
+		/// <param name="startIndex">The lowest index from which the pivot index should come</param>
+		/// <param name="endIndex">The highest index from which the pivot index should come</param>
+		/// <returns>A pivot index</returns>
 		private int SelectPivotIndex(int startIndex, int endIndex)
 		{
 			if (startIndex - endIndex <= 1)
 				return startIndex;
 
-			double first = this.edgeWeights[startIndex];
-			double middle = this.edgeWeights[startIndex + (endIndex - startIndex) / 2];
-			double last = this.edgeWeights[endIndex];
+			double first = this.EdgeWeights[startIndex];
+			double middle = this.EdgeWeights[startIndex + (endIndex - startIndex) / 2];
+			double last = this.EdgeWeights[endIndex];
 
 			if (first <= middle)
 			{
@@ -145,21 +146,21 @@ namespace HdbscanSharp.Hdbscanstar
 			}
 		}
 
-		/**
-		 * Partitions the array in the interval [startIndex, endIndex] around the value at pivotIndex.
-		 * @param startIndex The lowest index to  partition
-		 * @param endIndex The highest index to partition
-		 * @param pivotIndex The index of the edge weight to partition around
-		 * @return The index position of the pivot edge weight after the partition
-		 */
+		/// <summary>
+		/// Partitions the array in the interval [startIndex, endIndex] around the value at pivotIndex.
+		/// </summary>
+		/// <param name="startIndex">The lowest index to  partition</param>
+		/// <param name="endIndex">The highest index to partition</param>
+		/// <param name="pivotIndex">The index of the edge weight to partition around</param>
+		/// <returns>The index position of the pivot edge weight after the partition</returns>
 		private int Partition(int startIndex, int endIndex, int pivotIndex)
 		{
-			double pivotValue = this.edgeWeights[pivotIndex];
+			double pivotValue = this.EdgeWeights[pivotIndex];
 			this.SwapEdges(pivotIndex, endIndex);
 			int lowIndex = startIndex;
 			for (int i = startIndex; i < endIndex; i++)
 			{
-				if (this.edgeWeights[i] < pivotValue)
+				if (this.EdgeWeights[i] < pivotValue)
 				{
 					this.SwapEdges(i, lowIndex);
 					lowIndex++;
@@ -169,55 +170,55 @@ namespace HdbscanSharp.Hdbscanstar
 			return lowIndex;
 		}
 
-		/**
-		 * Swaps the vertices and edge weights between two index locations in the graph.
-		 * @param indexOne The first index location
-		 * @param indexTwo The second index location
-		 */
+		/// <summary>
+		/// Swaps the vertices and edge weights between two index locations in the graph.
+		/// </summary>
+		/// <param name="indexOne">The first index location</param>
+		/// <param name="indexTwo">The second index location</param>
 		private void SwapEdges(int indexOne, int indexTwo)
 		{
 			if (indexOne == indexTwo)
 				return;
 
-			int tempVertexA = this.verticesA[indexOne];
-			int tempVertexB = this.verticesB[indexOne];
-			double tempEdgeDistance = this.edgeWeights[indexOne];
-			this.verticesA[indexOne] = this.verticesA[indexTwo];
-			this.verticesB[indexOne] = this.verticesB[indexTwo];
-			this.edgeWeights[indexOne] = this.edgeWeights[indexTwo];
-			this.verticesA[indexTwo] = tempVertexA;
-			this.verticesB[indexTwo] = tempVertexB;
-			this.edgeWeights[indexTwo] = tempEdgeDistance;
+			int tempVertexA = this.VerticesA[indexOne];
+			int tempVertexB = this.VerticesB[indexOne];
+			double tempEdgeDistance = this.EdgeWeights[indexOne];
+			this.VerticesA[indexOne] = this.VerticesA[indexTwo];
+			this.VerticesB[indexOne] = this.VerticesB[indexTwo];
+			this.EdgeWeights[indexOne] = this.EdgeWeights[indexTwo];
+			this.VerticesA[indexTwo] = tempVertexA;
+			this.VerticesB[indexTwo] = tempVertexB;
+			this.EdgeWeights[indexTwo] = tempEdgeDistance;
 		}
 
 		public int GetNumVertices()
 		{
-			return this.numVertices;
+			return this.NumVertices;
 		}
 
 		public int GetNumEdges()
 		{
-			return this.edgeWeights.Length;
+			return this.EdgeWeights.Length;
 		}
 
 		public int GetFirstVertexAtIndex(int index)
 		{
-			return this.verticesA[index];
+			return this.VerticesA[index];
 		}
 
 		public int GetSecondVertexAtIndex(int index)
 		{
-			return this.verticesB[index];
+			return this.VerticesB[index];
 		}
 
 		public double GetEdgeWeightAtIndex(int index)
 		{
-			return this.edgeWeights[index];
+			return this.EdgeWeights[index];
 		}
 
 		public List<int> GetEdgeListForVertex(int vertex)
 		{
-			return this.edges[vertex];
+			return this.Edges[vertex];
 		}
 	}
 }

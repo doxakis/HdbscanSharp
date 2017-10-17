@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace HdbscanSharp.Distance
 {
-	/**
-	 * Computes the euclidean distance between two points, d = sqrt((x1-y1)^2 + (x2-y2)^2 + ... + (xn-yn)^2).
-	 */
+	/// <summary>
+	/// Computes the euclidean distance between two points, d = sqrt((x1-y1)^2 + (x2-y2)^2 + ... + (xn-yn)^2).
+	/// </summary>
 	public class EuclideanDistance : IDistanceCalculator
 	{
 		public double ComputeDistance(double[] attributesOne, double[] attributesTwo)

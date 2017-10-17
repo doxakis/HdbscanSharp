@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace HdbscanSharp.Distance
 {
-	/**
-	 * Computes the supremum distance between two points, d = max[(x1-y1), (x2-y2), ... ,(xn-yn)].
-	 */
+	/// <summary>
+	/// Computes the supremum distance between two points, d = max[(x1-y1), (x2-y2), ... ,(xn-yn)].
+	/// </summary>
 	public class SupremumDistance : IDistanceCalculator
 	{
 		public double ComputeDistance(double[] attributesOne, double[] attributesTwo)

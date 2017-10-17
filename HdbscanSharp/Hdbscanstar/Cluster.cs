@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace HdbscanSharp.Hdbscanstar
 {
-	/**
-	 * An HDBSCAN* cluster, which will have a birth level, death level, stability, and constraint 
-	 * satisfaction once fully constructed.
-	 */
+	/// <summary>
+	/// An HDBSCAN* cluster, which will have a birth level, death level, stability, and constraint 
+	/// satisfaction once fully constructed.
+	/// </summary>
 	public class Cluster
 	{
 		private int label;
@@ -27,13 +27,13 @@ namespace HdbscanSharp.Hdbscanstar
 		private bool hasChildren;
 		public List<Cluster> propagatedDescendants;
 
-		/**
-		 * Creates a new Cluster.
-		 * @param label The cluster label, which should be globally unique
-		 * @param parent The cluster which split to create this cluster
-		 * @param birthLevel The MST edge level at which this cluster first appeared
-		 * @param numPoints The initial number of points in this cluster
-		 */
+		/// <summary>
+		/// Creates a new Cluster.
+		/// </summary>
+		/// <param name="label">The cluster label, which should be globally unique</param>
+		/// <param name="parent">The cluster which split to create this cluster</param>
+		/// <param name="birthLevel">The MST edge level at which this cluster first appeared</param>
+		/// <param name="numPoints">The initial number of points in this cluster</param>
 		public Cluster(int label, Cluster parent, double birthLevel, int numPoints)
 		{
 			this.label = label;
@@ -54,13 +54,13 @@ namespace HdbscanSharp.Hdbscanstar
 			this.propagatedDescendants = new List<Cluster>(1);
 		}
 
-		/**
-		 * Removes the specified number of points from this cluster at the given edge level, which will
-		 * update the stability of this cluster and potentially cause cluster death.  If cluster death
-		 * occurs, the number of constraints satisfied by the virtual child cluster will also be calculated.
-		 * @param numPoints The number of points to remove from the cluster
-		 * @param level The MST edge level at which to remove these points
-		 */
+		/// <summary>
+		/// Removes the specified number of points from this cluster at the given edge level, which will
+		/// update the stability of this cluster and potentially cause cluster death.  If cluster death
+		/// occurs, the number of constraints satisfied by the virtual child cluster will also be calculated.
+		/// </summary>
+		/// <param name="numPoints">The number of points to remove from the cluster</param>
+		/// <param name="level">The MST edge level at which to remove these points</param>
 		public void DetachPoints(int numPoints, double level)
 		{
 			this.numPoints -= numPoints;
@@ -72,13 +72,13 @@ namespace HdbscanSharp.Hdbscanstar
 				throw new InvalidOperationException("Cluster cannot have less than 0 points.");
 		}
 
-		/**
-		 * This cluster will propagate itself to its parent if its number of satisfied constraints is
-		 * higher than the number of propagated constraints.  Otherwise, this cluster propagates its
-		 * propagated descendants.  In the case of ties, stability is examined.
-		 * Additionally, this cluster propagates the lowest death level of any of its descendants to its
-		 * parent.
-		 */
+		/// <summary>
+		/// This cluster will propagate itself to its parent if its number of satisfied constraints is
+		/// higher than the number of propagated constraints.  Otherwise, this cluster propagates its
+		/// propagated descendants.  In the case of ties, stability is examined.
+		/// Additionally, this cluster propagates the lowest death level of any of its descendants to its
+		/// parent.
+		/// </summary>
 		public void Propagate()
 		{
 			if (this.parent != null)
@@ -150,10 +150,10 @@ namespace HdbscanSharp.Hdbscanstar
 			this.numConstraintsSatisfied += numConstraints;
 		}
 
-		/**
-		 * Sets the virtual child cluster to null, thereby saving memory.  Only call this method after computing the
-		 * number of constraints satisfied by the virtual child cluster.
-		 */
+		/// <summary>
+		/// Sets the virtual child cluster to null, thereby saving memory.  Only call this method after computing the
+		/// number of constraints satisfied by the virtual child cluster.
+		/// </summary>
 		public void ReleaseVirtualChildCluster()
 		{
 			this.virtualChildCluster = null;

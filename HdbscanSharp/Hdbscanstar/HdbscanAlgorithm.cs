@@ -13,13 +13,13 @@ namespace HdbscanSharp.Hdbscanstar
 {
 	public class HdbscanAlgorithm
 	{
-		/**
-		 * Calculates the core distances for each point in the data set, given some value for k.
-		 * @param dataSet A double[][] where index [i][j] indicates the jth attribute of data point i
-		 * @param k Each point's core distance will be it's distance to the kth nearest neighbor
-		 * @param distanceFunction A DistanceCalculator to compute distances between points
-		 * @return An array of core distances
-		 */
+		/// <summary>
+		/// Calculates the core distances for each point in the data set, given some value for k.
+		/// </summary>
+		/// <param name="dataSet">A double[][] where index [i][j] indicates the jth attribute of data point i</param>
+		/// <param name="k">Each point's core distance will be it's distance to the kth nearest neighbor</param>
+		/// <param name="distanceFunction">A DistanceCalculator to compute distances between points</param>
+		/// <returns> An array of core distances</returns>
 		public static double[] CalculateCoreDistances(
 			double[][] dataSet,
 			int k,
@@ -74,15 +74,15 @@ namespace HdbscanSharp.Hdbscanstar
 			return coreDistances;
 		}
 
-		/**
-		 * Constructs the minimum spanning tree of mutual reachability distances for the data set, given
-		 * the core distances for each point.
-		 * @param dataSet A double[][] where index [i][j] indicates the jth attribute of data point i
-		 * @param coreDistances An array of core distances for each data point
-		 * @param selfEdges If each point should have an edge to itself with weight equal to core distance
-		 * @param distanceFunction A DistanceCalculator to compute distances between points
-		 * @return An MST for the data set using the mutual reachability distances
-		 */
+		/// <summary>
+		/// Constructs the minimum spanning tree of mutual reachability distances for the data set, given
+		/// the core distances for each point.
+		/// </summary>
+		/// <param name="dataSet">A double[][] where index [i][j] indicates the jth attribute of data point i</param>
+		/// <param name="coreDistances">An array of core distances for each data point</param>
+		/// <param name="selfEdges">If each point should have an edge to itself with weight equal to core distance</param>
+		/// <param name="distanceFunction">A DistanceCalculator to compute distances between points</param>
+		/// <returns> An MST for the data set using the mutual reachability distances</returns>
 		public static UndirectedGraph ConstructMST(
 			double[][] dataSet,
 			double[] coreDistances,
@@ -176,24 +176,21 @@ namespace HdbscanSharp.Hdbscanstar
 			return new UndirectedGraph(dataSet.Length, nearestMRDNeighbors, otherVertexIndices, nearestMRDDistances);
 		}
 
-		/**
-		 * Computes the hierarchy and cluster tree from the minimum spanning tree, writing both to file, 
-		 * and returns the cluster tree.  Additionally, the level at which each point becomes noise is
-		 * computed.  Note that the minimum spanning tree may also have self edges (meaning it is not
-		 * a true MST).
-		 * @param mst A minimum spanning tree which has been sorted by edge weight in descending order
-		 * @param minClusterSize The minimum number of points which a cluster needs to be a valid cluster
-		 * @param compactHierarchy Indicates if hierarchy should include all levels or only levels at 
-		 * which clusters first appear
-		 * @param constraints An optional List of Constraints to calculate cluster constraint satisfaction
-		 * @param hierarchyOutputFile The path to the hierarchy output file
-		 * @param treeOutputFile The path to the cluster tree output file
-		 * @param delimiter The delimiter to be used while writing both files
-		 * @param pointNoiseLevels A double[] to be filled with the levels at which each point becomes noise
-		 * @param pointLastClusters An int[] to be filled with the last label each point had before becoming noise
-		 * @return The cluster tree
-		 * @throws IOException If any errors occur opening or writing to the files
-		 */
+		/// <summary>
+		/// Computes the hierarchy and cluster tree from the minimum spanning tree, writing both to file, 
+		/// and returns the cluster tree.  Additionally, the level at which each point becomes noise is
+		/// computed.  Note that the minimum spanning tree may also have self edges (meaning it is not
+		/// a true MST).
+		/// </summary>
+		/// <param name="mst">A minimum spanning tree which has been sorted by edge weight in descending order</param>
+		/// <param name="minClusterSize">The minimum number of points which a cluster needs to be a valid cluster</param>
+		/// <param name="compactHierarchy">Indicates if hierarchy should include all levels or only levels at which clusters first appear</param>
+		/// <param name="constraints">An optional List of Constraints to calculate cluster constraint satisfaction</param>
+		/// <param name="hierarchyWriter">The hierarchy output</param>
+		/// <param name="delimiter">The delimiter to be used while writing both files</param>
+		/// <param name="pointNoiseLevels">A double[] to be filled with the levels at which each point becomes noise</param>
+		/// <param name="pointLastClusters">An int[] to be filled with the last label each point had before becoming noise</param>
+		/// <returns>The cluster tree</returns>
 		public static List<Cluster> ComputeHierarchyAndClusterTree(
 			UndirectedGraph mst,
 			int minClusterSize,
@@ -446,13 +443,13 @@ namespace HdbscanSharp.Hdbscanstar
 			return clusters;
 		}
 
-		/**
-		 * Propagates constraint satisfaction, stability, and lowest child death level from each child
-		 * cluster to each parent cluster in the tree.  This method must be called before calling
-		 * findProminentClusters() or calculateOutlierScores().
-		 * @param clusters A list of Clusters forming a cluster tree
-		 * @return true if there are any clusters with infinite stability, false otherwise
-		 */
+		/// <summary>
+		/// Propagates constraint satisfaction, stability, and lowest child death level from each child
+		/// cluster to each parent cluster in the tree.  This method must be called before calling
+		/// findProminentClusters() or calculateOutlierScores().
+		/// </summary>
+		/// <param name="clusters">A list of Clusters forming a cluster tree</param>
+		/// <returns>true if there are any clusters with infinite stability, false otherwise</returns>
 		public static bool PropagateTree(List<Cluster> clusters)
 		{
 			List<KeyValuePair<int, Cluster>> clustersToExamine = new List<KeyValuePair<int, Cluster>>();
@@ -512,19 +509,15 @@ namespace HdbscanSharp.Hdbscanstar
 			return infiniteStability;
 		}
 
-		/**
-		 * Produces a flat clustering result using constraint satisfaction and cluster stability, and 
-		 * returns an array of labels.  propagateTree() must be called before calling this method.
-		 * @param clusters A list of Clusters forming a cluster tree which has already been propagated
-		 * @param hierarchyFile The path to the hierarchy input file
-		 * @param flatOutputFile The path to the flat clustering output file
-		 * @param delimiter The delimiter for both files
-		 * @param numPoints The number of points in the original data set
-		 * @param infiniteStability true if there are any clusters with infinite stability, false otherwise
-		 * @return An array of labels for the flat clustering result
-		 * @throws IOException If any errors occur opening, reading, or writing to the files
-		 * @throws NumberFormatException If illegal number values are found in the hierarchyFile
-		 */
+		/// <summary>
+		/// Produces a flat clustering result using constraint satisfaction and cluster stability, and 
+		/// returns an array of labels.  propagateTree() must be called before calling this method.
+		/// </summary>
+		/// <param name="clusters">A list of Clusters forming a cluster tree which has already been propagated</param>
+		/// <param name="hierarchyWriter">The hierarchy content</param>
+		/// <param name="delimiter">The delimiter for both files</param>
+		/// <param name="numPoints">The number of points in the original data set</param>
+		/// <returns>An array of labels for the flat clustering result</returns>
 		public static int[] FindProminentClusters(
 			List<Cluster> clusters,
 			StringBuilder hierarchyWriter,
@@ -601,19 +594,15 @@ namespace HdbscanSharp.Hdbscanstar
 			return flatPartitioning;
 		}
 
-		/**
-		 * Produces the outlier score for each point in the data set, and returns a sorted list of outlier
-		 * scores.  propagateTree() must be called before calling this method.
-		 * @param clusters A list of Clusters forming a cluster tree which has already been propagated
-		 * @param pointNoiseLevels A double[] with the levels at which each point became noise
-		 * @param pointLastClusters An int[] with the last label each point had before becoming noise
-		 * @param coreDistances An array of core distances for each data point
-		 * @param outlierScoresOutputFile The path to the outlier scores output file
-		 * @param delimiter The delimiter for the output file
-		 * @param infiniteStability true if there are any clusters with infinite stability, false otherwise
-		 * @return An List of OutlierScores, sorted in descending order
-		 * @throws IOException If any errors occur opening or writing to the output file
-		 */
+		/// <summary>
+		/// Produces the outlier score for each point in the data set, and returns a sorted list of outlier
+		/// scores.  propagateTree() must be called before calling this method.
+		/// </summary>
+		/// <param name="clusters">A list of Clusters forming a cluster tree which has already been propagated</param>
+		/// <param name="pointNoiseLevels">A double[] with the levels at which each point became noise</param>
+		/// <param name="pointLastClusters">An int[] with the last label each point had before becoming noise</param>
+		/// <param name="coreDistances">An array of core distances for each data point</param>
+		/// <returns>An List of OutlierScores, sorted in descending order</returns>
 		public static List<OutlierScore> CalculateOutlierScores(
 			List<Cluster> clusters,
 			double[] pointNoiseLevels,
@@ -642,16 +631,16 @@ namespace HdbscanSharp.Hdbscanstar
 			return outlierScores;
 		}
 
-		/**
-		 * Removes the set of points from their parent Cluster, and creates a new Cluster, provided the
-		 * clusterId is not 0 (noise).
-		 * @param points The set of points to be in the new Cluster
-		 * @param clusterLabels An array of cluster labels, which will be modified
-		 * @param parentCluster The parent Cluster of the new Cluster being created
-		 * @param clusterLabel The label of the new Cluster 
-		 * @param edgeWeight The edge weight at which to remove the points from their previous Cluster
-		 * @return The new Cluster, or null if the clusterId was 0
-		 */
+		/// <summary>
+		/// Removes the set of points from their parent Cluster, and creates a new Cluster, provided the
+		/// clusterId is not 0 (noise).
+		/// </summary>
+		/// <param name="points">The set of points to be in the new Cluster</param>
+		/// <param name="clusterLabels">An array of cluster labels, which will be modified</param>
+		/// <param name="parentCluster">The parent Cluster of the new Cluster being created</param>
+		/// <param name="clusterLabel">The label of the new Cluster </param>
+		/// <param name="edgeWeight">The edge weight at which to remove the points from their previous Cluster</param>
+		/// <returns>The new Cluster, or null if the clusterId was 0</returns>
 		private static Cluster CreateNewCluster(
 			SortedSet<int> points,
 			int[] clusterLabels,
@@ -675,14 +664,14 @@ namespace HdbscanSharp.Hdbscanstar
 			}
 		}
 
-		/**
-		 * Calculates the number of constraints satisfied by the new clusters and virtual children of the
-		 * parents of the new clusters.
-		 * @param newClusterLabels Labels of new clusters
-		 * @param clusters An List of clusters
-		 * @param constraints An List of constraints
-		 * @param clusterLabels an array of current cluster labels for points
-		 */
+		/// <summary>
+		/// Calculates the number of constraints satisfied by the new clusters and virtual children of the
+		/// parents of the new clusters.
+		/// </summary>
+		/// <param name="newClusterLabels">Labels of new clusters</param>
+		/// <param name="clusters">An List of clusters</param>
+		/// <param name="constraints">An List of constraints</param>
+		/// <param name="clusterLabels">An array of current cluster labels for points</param>
 		private static void CalculateNumConstraintsSatisfied(
 			SortedSet<int> newClusterLabels,
 			List<Cluster> clusters,

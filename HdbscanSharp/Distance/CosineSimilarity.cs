@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace HdbscanSharp.Distance
 {
-	/**
-	* Computes cosine similarity between two points, d = 1 - ((X*Y) / (||X||*||Y||))
-	*/
+	/// <summary>
+	/// Computes cosine similarity between two points, d = 1 - ((X*Y) / (||X||*||Y||))
+	/// </summary>
 	public class CosineSimilarity : IDistanceCalculator
 	{
 		public double ComputeDistance(double[] attributesOne, double[] attributesTwo)

@@ -6,23 +6,23 @@ using System.Threading.Tasks;
 
 namespace HdbscanSharp.Hdbscanstar
 {
-	/**
-	 * Simple storage class that keeps the outlier score, core distance, and id (index) for a single point.
-	 * OutlierScores are sorted in ascending order by outlier score, with core distances used to break
-	 * outlier score ties, and ids used to break core distance ties.
-	 */
+	/// <summary>
+	/// Simple storage class that keeps the outlier score, core distance, and id (index) for a single point.
+	/// OutlierScores are sorted in ascending order by outlier score, with core distances used to break
+	/// outlier score ties, and ids used to break core distance ties.
+	/// </summary>
 	public class OutlierScore : IComparable<OutlierScore> {
 
 		private double score;
 		private double coreDistance;
 		private int id;
 
-		/**
-		 * Creates a new OutlierScore for a given point.
-		 * @param score The outlier score of the point
-		 * @param coreDistance The point's core distance
-		 * @param id The id (index) of the point
-		 */
+		/// <summary>
+		/// Creates a new OutlierScore for a given point.
+		/// </summary>
+		/// <param name="score">The outlier score of the point</param>
+		/// <param name="coreDistance">The point's core distance</param>
+		/// <param name="id">The id (index) of the point</param>
 		public OutlierScore(double score, double coreDistance, int id)
 		{
 			this.score = score;

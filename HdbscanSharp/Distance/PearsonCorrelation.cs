@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace HdbscanSharp.Distance
 {
-	/**
-	 * Computes the euclidean distance between two points, d = 1 - (cov(X,Y) / (std_dev(X) * std_dev(Y)))
-	 */
+	/// <summary>
+	/// Computes the euclidean distance between two points, d = 1 - (cov(X,Y) / (std_dev(X) * std_dev(Y)))
+	/// </summary>
 	public class PearsonCorrelation : IDistanceCalculator
 	{
 		public double ComputeDistance(double[] attributesOne, double[] attributesTwo)
