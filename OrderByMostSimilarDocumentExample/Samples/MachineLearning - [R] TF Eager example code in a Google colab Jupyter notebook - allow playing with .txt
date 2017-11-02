@@ -1,0 +1,2 @@
+[R] TF Eager example code in a Google colab Jupyter notebook - allow playing with TF Eager directly in your browser
+ submitted by /u/thntk [link] [comments]    

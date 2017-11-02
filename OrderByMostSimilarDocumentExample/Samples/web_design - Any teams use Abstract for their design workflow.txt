@@ -1,0 +1,2 @@
+Any teams use Abstract for their design workflow
+Was curious if there's anyone here in a team (or solo) using https://uxdesign.cc/in-search-for-the-perfect-workflow-version-control-for-sketch-powered-by-git-9f584ed6d167. Ran into it today while trying to find some tooling to improve workflow between the design team, developers & product owners in our company. Curious if anyone has feedback. P.S. their website www.goabstract.com  submitted by /u/cynicalreason [link] [comments] 

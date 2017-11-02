@@ -1,0 +1,2 @@
+[R] Google quietly releases TensorFlow Eager mode
+ submitted by /u/downtownslim [link] [comments]    

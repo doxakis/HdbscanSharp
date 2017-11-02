@@ -1,0 +1,2 @@
+Architecture for a Web App with long-running workflow process
+I am working on a project proposal for a web app that will process data given to it by users from UI. But the processing is not immediate and has to go through pre-defined workflow steps before result can be shown to the user on UI. I searched for similar architecture and articles but could find any concrete resources. Please share some suggestions or resources that shows how such a system can be architected on .NET platform. E.g. using Hangfire or Windows Service.  submitted by /u/nummer31 [link] [comments] 

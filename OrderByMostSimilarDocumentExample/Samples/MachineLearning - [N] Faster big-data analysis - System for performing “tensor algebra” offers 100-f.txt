@@ -1,0 +1,2 @@
+[N] Faster big-data analysis - System for performing “tensor algebra” offers 100-fold speedups over previous software packages.
+ submitted by /u/MCPtz [link] [comments]    

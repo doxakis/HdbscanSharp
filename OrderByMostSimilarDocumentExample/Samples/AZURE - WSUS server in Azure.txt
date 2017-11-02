@@ -1,0 +1,2 @@
+WSUS server in Azure
+Is there any disadvantages of running a WSUS server in Azure for VMS in Azure to pull updates from?  submitted by /u/slaymenero5 [link] [comments] 

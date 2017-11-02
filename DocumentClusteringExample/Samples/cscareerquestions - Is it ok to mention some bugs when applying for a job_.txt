@@ -1,0 +1,2 @@
+Is it ok to mention some bugs when applying for a job?
+I'm working on online application here for a web dev job and the parser that reads my uploaded resume isn't working correctly. I also noticed some pretty major problems on the company's homepage when I resized the window. Would it be ok to mention these little things that I picked up on in my cover letter? I could do it in a PS or even expand into a little detail with a few lines of code to fix it. How would that be received do you think?  submitted by /u/br1ck3d [link] [comments] 

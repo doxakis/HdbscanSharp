@@ -1,0 +1,2 @@
+Good papers/resources on human body or skeletal kinematic models?
+I wish to implement my own hand or body tracker, but I'm a bit clueless as to how to implement the kinematic chain or the joint constraints. Any good resource, or code in python/matlab/c++ to help me figure this out?  submitted by /u/soulslicer0 [link] [comments] 

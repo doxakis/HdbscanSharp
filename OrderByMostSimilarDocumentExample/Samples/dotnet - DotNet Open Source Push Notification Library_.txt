@@ -1,0 +1,2 @@
+DotNet Open Source Push Notification Library?
+I'd like to integrate push notifications in one of our services. Is there an open source active push notification library that works on the server side for dotnet? Everything I have found seems to be dead or hasn't been worked on in over a year. At the moment, I only need APNS but eventually I'll need Android as well.  submitted by /u/uponone [link] [comments] 

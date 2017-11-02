@@ -1,0 +1,2 @@
+What's new in SQL Server Management Studio 17.3; Import Flat File wizard and XEvent Profiler
+ submitted by /u/EngAhmadYaseen [link] [comments]    

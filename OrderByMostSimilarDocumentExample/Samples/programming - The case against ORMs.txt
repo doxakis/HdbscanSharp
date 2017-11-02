@@ -1,0 +1,2 @@
+The case against ORMs
+submitted by /u/alexkorban [link] [comments] 

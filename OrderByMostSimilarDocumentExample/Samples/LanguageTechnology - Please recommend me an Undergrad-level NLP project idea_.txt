@@ -1,0 +1,2 @@
+Please recommend me an Undergrad-level NLP project idea.
+I need to read and describe a few (2-3) NLP papers on a particular task, implement an NLP system for this task and describe it in a written report. Is there anything that sounds interesting and doable?  submitted by /u/czechrepublic [link] [comments] 

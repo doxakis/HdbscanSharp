@@ -1,0 +1,2 @@
+Syncing AD in one directory to another
+Hello all, just like the title suggests, is it possible to sync/copy Active directory from one directory to another? Thanks  submitted by /u/azurequest [link] [comments] 

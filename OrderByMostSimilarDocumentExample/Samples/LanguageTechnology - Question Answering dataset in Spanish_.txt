@@ -1,0 +1,2 @@
+Question Answering dataset in Spanish?
+Is anyone aware of a Question Answering dataset in Spanish? Ideally multiple-choice test. I am NOT looking for language test (e.g. choose the right verb), but something like science test, elementary-school test, etc.  submitted by /u/danieljj [link] [comments] 

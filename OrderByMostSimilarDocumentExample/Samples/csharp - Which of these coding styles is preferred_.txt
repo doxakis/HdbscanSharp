@@ -1,0 +1,2 @@
+Which of these coding styles is preferred?
+Bar foo = new Bar(); foo = Request.CreateBar(x, y, z);  OR Bar foo = Request.CreateBar(x, y, z);  Thanks.  submitted by /u/SaneSiamese [link] [comments] 

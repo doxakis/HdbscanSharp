@@ -1,0 +1,2 @@
+Board Game AI
+Which neural network type (i.e. Perceptron/Convolutional/...) would be most suitable for a board game ai?  submitted by /u/The_Droide [link] [comments] 

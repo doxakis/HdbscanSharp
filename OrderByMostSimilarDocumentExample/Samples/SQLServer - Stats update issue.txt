@@ -1,0 +1,2 @@
+Stats update issue
+This statistic update topic is killing me/my server performance. Why is minor change in data volume on the tables like even 1%-5% spoils the entire stats go stale, spoiling the execution plan and queries performance so badly?  submitted by /u/Rajkumar99 [link] [comments] 

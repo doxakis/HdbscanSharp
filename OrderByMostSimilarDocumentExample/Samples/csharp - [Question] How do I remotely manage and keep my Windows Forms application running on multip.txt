@@ -1,0 +1,2 @@
+[Question] How do I remotely manage and keep my Windows Forms application running on multiple machines?
+I'm writing some software that's going to end up running on Windows 7 machines on public transit vehicles. I want to be able to remotely install the software, update it when necessary, and keep it running if it crashes. Do you guys have any recommendations? I believe there are many options for this but I'm not too familiar with doing this on Windows.  submitted by /u/butt_cookies [link] [comments] 

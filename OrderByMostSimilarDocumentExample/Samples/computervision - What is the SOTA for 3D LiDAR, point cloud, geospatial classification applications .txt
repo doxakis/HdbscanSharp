@@ -1,0 +1,2 @@
+What is the SOTA for 3D LiDAR, point cloud, geospatial classification applications ?
+I have been struggling to find recent models that show good results in classification of 3D point clouds, especially ones on geo-spatial XYZRGB data. What are some recent models that have been showing promise in the area ? I have been looking at Pointnet and MVCNN, but most models seem to be specifically targeted towards object detection and classification of 3D models at close range. Thank you.  submitted by /u/Screye [link] [comments] 

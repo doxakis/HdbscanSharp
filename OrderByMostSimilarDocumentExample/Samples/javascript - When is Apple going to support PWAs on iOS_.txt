@@ -1,0 +1,2 @@
+When is Apple going to support PWAs on iOS?
+Is it safe to create PWAs today to be used on iOS? Why don't Apple think about how much the reduced experience of PWAs (comparing to Android's one) will make iPhone (iOS) look stupid comparing to Android phones?  submitted by /u/Indu_Pillai [link] [comments] 

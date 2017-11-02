@@ -1,0 +1,2 @@
+Why do many tracking or alignment works use Lie group instead of Affine and Homography to parameterize motion?
+In face alignment or object tracking, what is the superiority of Lie group compared with other geometric transformation such as Affine and Homography?  submitted by /u/scotty20172017 [link] [comments] 

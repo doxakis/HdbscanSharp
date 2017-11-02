@@ -1,0 +1,2 @@
+Any equivalents of Udacity's AI nanodegree, only cheaper (aka free)?
+Here's Udacity's course. Just like the course, I'm looking for something focused on DFS, BFS, sudoku solving -- that sort of thing. Not tensorflow tutorials, or anything that uses high level libraries.  submitted by /u/starstruck_21 [link] [comments] 

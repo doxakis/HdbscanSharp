@@ -1,0 +1,2 @@
+dotnet.exe terminated with error code -2147450749 (0x80008083).
+Does anyone know what this means? I'm trying to download, compile and execute a git project called "SabberStone", yet this error keeps coming up and I can't find any documentation or support to help me understand what's happening.  submitted by /u/MatteoGrilli [link] [comments] 

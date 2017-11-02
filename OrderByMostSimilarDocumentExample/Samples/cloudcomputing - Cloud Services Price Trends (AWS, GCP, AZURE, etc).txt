@@ -1,0 +1,2 @@
+Cloud Services Price Trends (AWS, GCP, AZURE, etc)
+I'm searching for an up to date study (don't know if this is what I should call it) on how the prices of cloud services (computing, storage) will change, hopefully decrease, in the near future. Does anyone know of something like this? Thank you.  submitted by /u/OstarionDsouls [link] [comments] 

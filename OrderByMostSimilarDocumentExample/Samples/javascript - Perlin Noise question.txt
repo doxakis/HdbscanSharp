@@ -1,0 +1,2 @@
+Perlin Noise question
+I'm trying to make something like this in p5js. I want to create the pillars using Perlin Noise. I'd like to write them out using beginShape() and endShape() so that I can move them around. How would I go about doing this?  submitted by /u/Recnid [link] [comments] 

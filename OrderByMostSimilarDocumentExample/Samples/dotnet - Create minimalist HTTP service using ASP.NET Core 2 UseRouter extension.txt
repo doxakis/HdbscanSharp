@@ -1,0 +1,2 @@
+Create minimalist HTTP service using ASP.NET Core 2 UseRouter extension
+submitted by /u/nirataro [link] [comments] 

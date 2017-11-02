@@ -1,0 +1,2 @@
+How is the discriminator in a GAN prevented from just outputting 0.5 immediately?
+In a GAN, the discriminator is known to have converged when it just guesses randomly as to whether an image is real or fake with probability 0.5 because it can't tell the reals apart from the fakes anymore. But if this is true, then how do we know that the discriminator won't immediately just start outputting 0.5 from the start?  submitted by /u/rasen58 [link] [comments] 

@@ -1,0 +1,2 @@
+Data classes for Java
+submitted by /u/lukaseder [link] [comments] 

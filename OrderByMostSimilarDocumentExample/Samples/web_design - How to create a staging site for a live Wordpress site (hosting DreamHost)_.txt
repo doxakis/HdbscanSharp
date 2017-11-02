@@ -1,0 +1,2 @@
+How to create a staging site for a live Wordpress site (hosting DreamHost)?
+Hello I just got hired for a project and was wondering if anyone knew how to create a staging environment with DreamHost so that I can leave the current live site up while designing and implementing new theme - and then when all is done - switch over to little or no downtime on the site. Any articles/tips would be greatly appreciated! Thanks! Sorry if this is a noob question.  submitted by /u/jdschra23 [link] [comments] 

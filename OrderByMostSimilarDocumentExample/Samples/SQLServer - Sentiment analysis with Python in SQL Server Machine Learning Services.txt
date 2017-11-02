@@ -1,0 +1,2 @@
+Sentiment analysis with Python in SQL Server Machine Learning Services
+submitted by /u/sqljoker [link] [comments] 

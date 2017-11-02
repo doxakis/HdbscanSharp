@@ -1,0 +1,2 @@
+Access last footer using EPPlus
+I created an Excel sheet with EPPlus and used  worksheet.HeaderFooter.FirstHeader  to print a title text in the header of the very first page. Now I want to print something in the footer of the very last page. How do I access that? The only things I can find are  HeaderFooter.FirstFooter HeaderFooter.OddFooter  But the number of pages changes with every document. So these only work for 1 or 2 pages respectively. Any way to do this?  submitted by /u/VeryConfusedOne [link] [comments] 

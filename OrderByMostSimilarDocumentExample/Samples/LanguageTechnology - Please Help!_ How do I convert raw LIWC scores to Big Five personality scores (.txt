@@ -1,0 +1,2 @@
+Please Help!: How do I convert raw LIWC scores to Big Five personality scores (OCEAN)?
+I'm new to NLP and I bought a license for LIWC, but I can't figure out how to convert my scores to something that makes sense. I've read so many articles that talk about using it to get Big Five (OCEAN) scores, but none of them mention how you mix them together to calculate the scores. Does anyone know? Thanks  submitted by /u/jcheng90 [link] [comments] 

@@ -1,0 +1,2 @@
+Help with adapting code from multi-class classification to binary classification
+Hi, I have found some code for a 2-layer multi-class classification (it's from the cs231n assignment), but I want to adapt it to a single neuron in the output for binary classification instead of multiple neurons with softmax. Anyone who can help?  submitted by /u/j0ddm [link] [comments] 

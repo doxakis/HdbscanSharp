@@ -1,0 +1,2 @@
+What is the best way to start learning about the geometric aspects of computer vision like camera calibration and reconstruction? I know nothing about these subjects.
+I need something beginner friendly but i prefer something rigorous and well structured.  submitted by /u/RandomGaussian [link] [comments] 

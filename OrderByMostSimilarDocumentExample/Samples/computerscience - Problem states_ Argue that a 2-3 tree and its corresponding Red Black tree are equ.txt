@@ -1,0 +1,2 @@
+Problem states: Argue that a 2-3 tree and its corresponding Red Black tree are equivalent for search operations.
+But when I look at an example 2-3 tree and its corresponding Red Black tree, I see that for certain algorithms (order of comparisons), there are differing number of comparisons in each tree when searching for the same key. What type of answer is my professor wanting for this problem? (He hasn't responded to my email)  submitted by /u/teeyoovee [link] [comments] 

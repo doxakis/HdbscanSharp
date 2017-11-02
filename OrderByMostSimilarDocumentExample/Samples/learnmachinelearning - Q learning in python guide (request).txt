@@ -1,0 +1,2 @@
+Q learning in python guide (request)
+Im looking for a guide to implementing q learning (ideally in python with a neural net). I would like something fairly simple in the examples (like a card game) that doesn't really on some form of video game (aka no openai gym). I want these type of examples as I find they are easier to edit and learn from.  submitted by /u/45MonkeysInASuit [link] [comments] 

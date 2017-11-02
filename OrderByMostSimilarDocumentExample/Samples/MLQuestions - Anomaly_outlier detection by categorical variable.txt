@@ -1,0 +1,2 @@
+Anomaly/outlier detection by categorical variable
+I'm trying to solve a classification problem with mostly numerical features. Doing outlier/anomaly detection for the observations themselves is not a problem, but the observations are also grouped by categorical variables and I'd like to identify "outlier-y" groups as well. I've tried to compare average mahalanobis distances between the groups but that's probably incorrect. Do you have any pointers on methods/r packages et cetera that could be useful?  submitted by /u/Nerdloaf [link] [comments] 

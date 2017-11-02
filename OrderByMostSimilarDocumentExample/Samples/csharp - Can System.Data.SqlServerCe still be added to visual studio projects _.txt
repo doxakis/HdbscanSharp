@@ -1,0 +1,2 @@
+Can System.Data.SqlServerCe still be added to visual studio projects ?
+I have downloaded SQL server compact and tried adding the .dll by going tools, choose items, then browse but no matter what I do I can't get the errors to go away ! Can anyone offer some advice please ?  submitted by /u/kpopLiebhaber [link] [comments] 

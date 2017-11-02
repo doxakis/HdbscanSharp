@@ -1,0 +1,2 @@
+Modernize existing .NET apps with Windows Containers and Azure
+submitted by /u/rschiefer [link] [comments] 

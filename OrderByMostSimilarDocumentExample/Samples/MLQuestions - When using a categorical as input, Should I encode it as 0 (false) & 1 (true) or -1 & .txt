@@ -1,0 +1,2 @@
+When using a categorical as input, Should I encode it as 0 (false) & 1 (true) or -1 & 1?
+I feel that if I encode it as 0 & 1 the negative case won't be used for calculations, especially with methods that use gradients  submitted by /u/FellowOfHorses [link] [comments] 

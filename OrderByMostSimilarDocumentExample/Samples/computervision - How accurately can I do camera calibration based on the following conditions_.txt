@@ -1,0 +1,2 @@
+How accurately can I do camera calibration based on the following conditions?
+For a 6000x4800 (in general form nxm size) resolution camera with f/x focal length factor (x- factor), what is the least possible measurement that I could make with each pixel. As in how many millimeters would each pixel correspond to? I wish to know the mathematical procedure and equations to estimate this particular value.  submitted by /u/unknown5493 [link] [comments] 

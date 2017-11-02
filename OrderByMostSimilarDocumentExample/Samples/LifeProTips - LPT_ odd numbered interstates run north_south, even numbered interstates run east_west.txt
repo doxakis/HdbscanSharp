@@ -1,0 +1,2 @@
+LPT: odd numbered interstates run north/south, even numbered interstates run east/west.
+Credit to u/ricodued Auxiliary interstates split off from main interstates and have three digit numbers (e.g. I-405) and do not obey the north/south-east/west rule of main interstates. If the first digit is odd, it is a "spur" route and does not return to the main interstate. If the first digit is even, it is a "loop" route and will return to its parent interstate. https://en.wikipedia.org/wiki/Interstate_Highway_System#Numbering_system  submitted by /u/Drobones [link] [comments] 

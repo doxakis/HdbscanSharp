@@ -1,0 +1,2 @@
+[R] A Bayesian Perspective on Generalization and Stochastic Gradient Descent <- identifying an optimum batch size which maximizes the test set accuracy.
+submitted by /u/downtownslim [link] [comments] 

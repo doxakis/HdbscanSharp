@@ -1,0 +1,2 @@
+LOAD DATA LOCAL IN FILE (sql server)
+Does MSSQL support this mysql command? Does the database have to exist on the same machine or can I load to a remote sql server csv that's on my own machine -Yes I do know about bcp..  submitted by /u/pretenddev [link] [comments] 

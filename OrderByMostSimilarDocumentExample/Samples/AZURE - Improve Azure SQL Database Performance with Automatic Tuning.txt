@@ -1,0 +1,2 @@
+Improve Azure SQL Database Performance with Automatic Tuning
+ submitted by /u/-SPOF [link] [comments]    

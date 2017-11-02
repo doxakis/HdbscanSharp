@@ -1,0 +1,2 @@
+24h challenge for developers
+Hi, Almost a Year ago i have changed job: from .NET(and some pytjon) to PHP(and some golang). Right now I wanted to remember how to code in dotnet and have done a private 24H hackaton. What I was able to accomplish is here: https://github.com/bartoszgolek/NFlags Think, it is a good oportunity to increase amount of useful tools/libraries in any technology stack. If anyone is interested in such challange please post jour results in comments.  submitted by /u/bartoszgolek [link] [comments] 

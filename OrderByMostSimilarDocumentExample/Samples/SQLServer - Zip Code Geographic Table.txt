@@ -1,0 +1,2 @@
+Zip Code Geographic Table
+Does anyone have a good resource to a free dump of a geographic table that's pretty up to date? We've acquired SAP Business Objects and I noticed that v 4.2 has a geographic charting option in Web Intelligence. I would prefer to link our sales, by zip code, to a nice conformed geo table, as ours only has zip and not city and state. Any advice is greatly appreciated!  submitted by /u/MrDarcy87 [link] [comments] 

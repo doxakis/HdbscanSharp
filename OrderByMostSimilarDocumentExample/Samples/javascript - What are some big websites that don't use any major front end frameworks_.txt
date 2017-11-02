@@ -1,0 +1,2 @@
+What are some big websites that don't use any major front end frameworks?
+I want to see what they're doing, living so daringly outside our little bubble. Let's say the ones that aren't using stuff like React/Angular/Vue etc. and let's say "big" = something that's well known to most.  submitted by /u/ulterior-motives [link] [comments] 

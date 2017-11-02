@@ -1,0 +1,2 @@
+Video Classification using Tensorflow
+Is there any good tutorial or code with good documentation on how to make video classification where each video have different number of frame?  submitted by /u/Erlandd [link] [comments] 

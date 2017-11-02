@@ -1,0 +1,2 @@
+Send email in a secure manner using WebApp
+Hey, guys, I have a web app that I want to send an email to someone, as someone (doesn't need an actual mailbox). I've read SendGrid is pretty good. I have Office 365 so was thinking of keeping it simple and using just trying to use the Office 365 SMTP. Has anyone done this before, I'm interested how is the authenticated is handled from both Office 365 (to allow) and Azure in a secure way.  submitted by /u/ChevronX [link] [comments] 

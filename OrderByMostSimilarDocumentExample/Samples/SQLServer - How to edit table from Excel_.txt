@@ -1,0 +1,2 @@
+How to edit table from Excel?
+Hi there, At my last office, my boss would regularly edit database tables from Excel. I know how to connect, however I can't seem to edit it. What's the proper way to connect and edit tables? And what permissions do I need? Thanks!  submitted by /u/yoelbenyossef [link] [comments] 

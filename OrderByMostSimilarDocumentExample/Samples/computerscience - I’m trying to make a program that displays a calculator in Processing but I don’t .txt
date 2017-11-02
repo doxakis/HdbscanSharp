@@ -1,0 +1,2 @@
+I’m trying to make a program that displays a calculator in Processing but I don’t know where to start of what to do, help?
+submitted by /u/saltypretzel785 [link] [comments] 

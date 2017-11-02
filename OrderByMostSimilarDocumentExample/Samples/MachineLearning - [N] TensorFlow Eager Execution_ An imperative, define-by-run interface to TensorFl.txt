@@ -1,0 +1,2 @@
+[N] TensorFlow Eager Execution: An imperative, define-by-run interface to TensorFlow
+ submitted by /u/wickesbrain [link] [comments]    
