@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HdbscanSharp", "HdbscanShar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IrisDatasetExample", "IrisDatasetExample\IrisDatasetExample.csproj", "{54DF6220-94C6-4348-B02A-10CFCC9BF1D6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderByMostSimilarDocumentExample", "OrderByMostSimilarDocumentExample\OrderByMostSimilarDocumentExample.csproj", "{50505188-008B-4446-9462-09A24DDD0AA8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{54DF6220-94C6-4348-B02A-10CFCC9BF1D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54DF6220-94C6-4348-B02A-10CFCC9BF1D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54DF6220-94C6-4348-B02A-10CFCC9BF1D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50505188-008B-4446-9462-09A24DDD0AA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50505188-008B-4446-9462-09A24DDD0AA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50505188-008B-4446-9462-09A24DDD0AA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50505188-008B-4446-9462-09A24DDD0AA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

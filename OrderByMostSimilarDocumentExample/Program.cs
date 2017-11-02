@@ -1,46 +1,44 @@
-﻿using Accord.Statistics.Analysis;
+﻿using DocumentClusteringExample;
 using DocumentClusteringExample.Utils;
 using HdbscanSharp.Distance;
-using HdbscanSharp.Hdbscanstar;
-using HdbscanSharp.Runner;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DocumentClusteringExample
+namespace OrderByMostSimilarDocumentExample
 {
-	class Program
+	public class FileAndVector
+	{
+		public string Path { get; set; }
+		public double[] Vector { get; set; }
+	}
+
+	public class Program
 	{
 		static void Main(string[] args)
 		{
 			// Specify which files to use.
 			var projectDir = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
-			var pathFiles = Directory.EnumerateFiles(projectDir + @"\DocumentClusteringExample\Samples").ToList();
+			var pathFiles = Directory.EnumerateFiles(projectDir + @"\OrderByMostSimilarDocumentExample\Samples").ToList();
 
 			// Hyper parameters.
-			
+
 			// This option prevent overfitting on missing words.
 			var replaceMissingValueWithRandomValue = false;
-
-			var usePCA = false;
-			var numberOfOutputPCA = 100;
-			var distanceFunction = new PearsonCorrelation();
-
-			var strategy = ValueStrategy.PositionInText;
-			var minVectorElements = 5;
+			
+			var strategy = ValueStrategy.Presence;
+			var minVectorElements = 25;
 			var freqMin = 5;
 			var minWordCount = 1;
-			var maxWordCount = 1;
-			var minGroupOfWordsLength = 3;
+			var maxWordCount = 3;
+			var minGroupOfWordsLength = 1;
 			var minWordLength = 1;
 			var firstWordMinLength = 1;
 			var lastWordMinLength = 1;
-			var maxComposition = 20;
+			var maxComposition = 50;
 			var badWords = File.ReadLines(projectDir + @"\DocumentClusteringExample\stop-words-english.txt")
 				.Where(m => !string.IsNullOrWhiteSpace(m))
 				.ToArray();
@@ -107,93 +105,47 @@ namespace DocumentClusteringExample
 			}
 			Console.WriteLine("vectors count (after removing non-representative vectors): " + vectors.Count);
 
-			// Reduce the vector size with PCA.
-			if (usePCA)
+			var listFileAndVector = new List<FileAndVector>();
+			for (int i = 0; i < vectors.Count; i++)
 			{
-				Console.WriteLine("Reducing vector size with PCA");
-				Stopwatch stopwatch = new Stopwatch();
-				stopwatch.Start();
-				PrincipalComponentAnalysis pca = new PrincipalComponentAnalysis();
-				pca.NumberOfOutputs = numberOfOutputPCA;
-				var trainingVector = vectors.ToArray();
-				Shuffle(trainingVector);
-				trainingVector = trainingVector.Take(600).ToArray();
-				var pcaResult = pca.Learn(trainingVector);
-				var reducedVectorsWithPCA = pcaResult.Transform(vectors.ToArray());
-				stopwatch.Stop();
-				Console.WriteLine("PCA duration: " + stopwatch.Elapsed.ToString());
-
-				vectors = reducedVectorsWithPCA.ToList();
+				var path = pathFiles[i];
+				var vector = vectors[i];
+				listFileAndVector.Add(new FileAndVector { Path = path, Vector = vector });
 			}
-			
 
-			// Run HDBSCAN algo.
-			Console.WriteLine("HDBSCAN starting...");
+			var distanceFunc = new CustomDistance();
 
-			var contraintsList = new List<HdbscanConstraint>();
-			if (usePCA)
+			Shuffle(listFileAndVector);
+
+			for (int i = 0; i < listFileAndVector.Count; i++)
 			{
-				for (int i = 1; i < numberOfOutputPCA; i++)
+				var element = listFileAndVector[i];
+				var orderedList = listFileAndVector.OrderByDescending(m => distanceFunc.ComputeDistance(element.Vector, m.Vector));
+
+				var pathA = Path.GetFileNameWithoutExtension(element.Path);
+				pathA = string.Join("", pathA.Take(70));
+				var catA = pathA.Split('-')[0].Trim();
+
+				int countSameCat = 0;
+
+				Console.WriteLine("\n\n\n# " + pathA + "\n");
+				foreach (var item in orderedList.Skip(1).Take(5))
 				{
-					contraintsList.Add(new HdbscanConstraint(i - 1, i, HdbscanConstraintType.CannotLink));
-				}
-			}
-			
-			var result = HdbscanRunner.Run(new HdbscanParameters
-			{
-				DataSet = vectors.ToArray(),
-				MinPoints = 5,
-				MinClusterSize = 5,
-				DistanceFunction = distanceFunction,
-				Constraints = contraintsList
-			});
-			
-			Console.WriteLine("HDBSCAN done.");
+					var pathB = Path.GetFileNameWithoutExtension(item.Path);
+					pathB = string.Join("", pathB.Take(70));
+					var catB = pathB.Split('-')[0].Trim();
 
-			// Read results.
-			var labels = result.Labels;
-			int n = labels.Max();
+					double score = distanceFunc.ComputeDistance(element.Vector, item.Vector);
 
-			Console.WriteLine("\n\n");
-
-			int clusterId = 0;
-			for (int iCluster = 1; iCluster <= n; iCluster++)
-			{
-				Dictionary<string, int> categories = new Dictionary<string, int>();
-				bool anyFound = false;
-				for (int i = 0; i < labels.Length; i++)
-				{
-					if (labels[i] == iCluster)
+					if (catA == catB)
 					{
-						var fileName = Path.GetFileNameWithoutExtension(pathFiles[i]);
-						var category = fileName.Split('-')[0].Trim();
-
-						if (categories.ContainsKey(category))
-						{
-							var count = categories[category];
-							categories.Remove(category);
-							categories.Add(category, count + 1);
-						}
-						else
-						{
-							categories.Add(category, 1);
-						}
-
-						anyFound = true;
+						countSameCat++;
 					}
-				}
-				if (anyFound)
-				{
-					clusterId++;
-					Console.WriteLine("Cluster #" + clusterId);
 
-					Console.WriteLine();
-					foreach (var category in categories)
-					{
-						Console.WriteLine(category.Key + ": " + category.Value);
-					}
-					Console.ReadLine();
+					Console.WriteLine(" - " + pathB + " " + string.Format("{0:#.##}", score));
 				}
+				Console.WriteLine("\nSame category: " + countSameCat);
+				Console.ReadLine();
 			}
 
 			Console.WriteLine("Press any key to continue...");
