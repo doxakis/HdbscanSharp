@@ -392,18 +392,20 @@ namespace HdbscanSharp.Hdbscanstar
 				//Write out the current level of the hierarchy:
 				if (!compactHierarchy || nextLevelSignificant || newClusters.Any())
 				{
+					var nfi = new NumberFormatInfo();
+					nfi.NumberDecimalSeparator = ".";
 					int outputLength = 0;
-					string output = currentEdgeWeight + "" + delimiter;
+					string output = currentEdgeWeight.ToString(nfi) + delimiter;
 					hierarchyWriter.Append(output);
 					outputLength += output.Length;
 
 					for (int i = 0; i < previousClusterLabels.Length - 1; i++)
 					{
-						output = previousClusterLabels[i] + "" + delimiter;
+						output = previousClusterLabels[i].ToString(nfi) + delimiter;
 						hierarchyWriter.Append(output);
 						outputLength += output.Length;
 					}
-					output = previousClusterLabels[previousClusterLabels.Length - 1] + "\n";
+					output = previousClusterLabels[previousClusterLabels.Length - 1].ToString(nfi) + "\n";
 					hierarchyWriter.Append(output);
 					outputLength += output.Length;
 					lineCount++;
