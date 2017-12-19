@@ -392,7 +392,7 @@ namespace HdbscanSharp.Hdbscanstar
 				//Write out the current level of the hierarchy:
 				if (!compactHierarchy || nextLevelSignificant || newClusters.Any())
 				{
-					nfi = new NumberFormatInfo();
+					var nfi = new NumberFormatInfo();
 					nfi.NumberDecimalSeparator = ".";
 					int outputLength = 0;
 					string output = currentEdgeWeight.ToString(nfi) + delimiter;
