@@ -3,7 +3,7 @@
 		<Title>HDBSCAN implementation</Title>
 		<Description>HDBSCAN is a clustering algorithm developed by Campello, Moulavi, and Sander. It extends DBSCAN by converting it into a hierarchical clustering algorithm, and then using a technique to extract a flat clustering based in the stability of clusters.</Description>
 		<AssemblyTitle>HdbscanSharp</AssemblyTitle>
-		<VersionPrefix>1.0.1</VersionPrefix>
+		<VersionPrefix>1.0.9</VersionPrefix>
 		<AssemblyName>HdbscanSharp</AssemblyName>
 		<TargetFrameworks>net45;netcoreapp2.0</TargetFrameworks>
 		<PackageId>HdbscanSharp</PackageId>
