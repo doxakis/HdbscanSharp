@@ -31,7 +31,7 @@ namespace HdbscanSharp.Distance
 				standardDeviationOne += ((attributesOne[i] - meanOne) * (attributesOne[i] - meanOne));
 				standardDeviationTwo += ((attributesTwo[i] - meanTwo) * (attributesTwo[i] - meanTwo));
 			}
-			return (1 - (covariance / Math.Sqrt(standardDeviationOne * standardDeviationTwo)));
+			return Math.Max(0, 1 - (covariance / Math.Sqrt(standardDeviationOne * standardDeviationTwo)));
 		}
 	}
 }

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IrisDatasetExample", "IrisD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderByMostSimilarDocumentExample", "OrderByMostSimilarDocumentExample\OrderByMostSimilarDocumentExample.csproj", "{50505188-008B-4446-9462-09A24DDD0AA8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{49248E97-C7DE-4E8D-BC9B-A5E3B0078AD5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{50505188-008B-4446-9462-09A24DDD0AA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50505188-008B-4446-9462-09A24DDD0AA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50505188-008B-4446-9462-09A24DDD0AA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49248E97-C7DE-4E8D-BC9B-A5E3B0078AD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49248E97-C7DE-4E8D-BC9B-A5E3B0078AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49248E97-C7DE-4E8D-BC9B-A5E3B0078AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49248E97-C7DE-4E8D-BC9B-A5E3B0078AD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

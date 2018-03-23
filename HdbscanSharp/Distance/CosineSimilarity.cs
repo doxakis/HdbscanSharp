@@ -23,7 +23,7 @@ namespace HdbscanSharp.Distance
 				magnitudeOne += (attributesOne[i] * attributesOne[i]);
 				magnitudeTwo += (attributesTwo[i] * attributesTwo[i]);
 			}
-			return 1 - (dotProduct / Math.Sqrt(magnitudeOne * magnitudeTwo));
+			return Math.Max(0, 1 - (dotProduct / Math.Sqrt(magnitudeOne * magnitudeTwo)));
 		}
 	}
 }
