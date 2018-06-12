@@ -31,16 +31,16 @@ namespace DocumentClusteringExample
 			var numberOfOutputPCA = 100;
 			var distanceFunction = new PearsonCorrelation();
 
-			var strategy = ValueStrategy.PositionInText;
-			var minVectorElements = 5;
-			var freqMin = 5;
+			var strategy = ValueStrategy.Freq;
+			var minVectorElements = 2;
+			var freqMin = 2;
 			var minWordCount = 1;
-			var maxWordCount = 1;
+			var maxWordCount = 3;
 			var minGroupOfWordsLength = 3;
 			var minWordLength = 1;
 			var firstWordMinLength = 1;
 			var lastWordMinLength = 1;
-			var maxComposition = 20;
+			var maxComposition = int.MaxValue;
 			var badWords = File.ReadLines(projectDir + @"\DocumentClusteringExample\stop-words-english.txt")
 				.Where(m => !string.IsNullOrWhiteSpace(m))
 				.ToArray();
@@ -138,17 +138,19 @@ namespace DocumentClusteringExample
 					contraintsList.Add(new HdbscanConstraint(i - 1, i, HdbscanConstraintType.CannotLink));
 				}
 			}
-			
+
+            var watch = Stopwatch.StartNew();
 			var result = HdbscanRunner.Run(new HdbscanParameters
 			{
 				DataSet = vectors.ToArray(),
 				MinPoints = 5,
 				MinClusterSize = 5,
 				DistanceFunction = distanceFunction,
-				Constraints = contraintsList
+				Constraints = contraintsList,
+                UseMultipleThread = true
 			});
-			
-			Console.WriteLine("HDBSCAN done.");
+            watch.Stop();
+			Console.WriteLine("HDBSCAN done " + watch.Elapsed);
 
 			// Read results.
 			var labels = result.Labels;
