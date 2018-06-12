@@ -10,8 +10,9 @@ namespace HdbscanSharp.Runner
 {
 	public class HdbscanParameters
     {
-		public double[][] Distances { get; set; }
+        public bool UseMultipleThread { get; set; }
 
+        public double[][] Distances { get; set; }
 		public double[][] DataSet { get; set; }
 		public IDistanceCalculator DistanceFunction { get; set; }
 

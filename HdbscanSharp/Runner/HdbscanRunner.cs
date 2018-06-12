@@ -26,17 +26,41 @@ namespace HdbscanSharp.Runner
                     distances[i] = new double[numPoints];
                 }
 
-                for (int i = 0; i < numPoints; i++)
+                if (parameters.UseMultipleThread)
                 {
-                    for (int j = 0; j < i; j++)
+                    int size = numPoints * numPoints;
+                    var option = new ParallelOptions {
+                        MaxDegreeOfParallelism = Environment.ProcessorCount
+                    };
+                    Parallel.For(0, size, option, index =>
                     {
-                        double distance = parameters.DistanceFunction.ComputeDistance(
-                            parameters.DataSet[i],
-                            parameters.DataSet[j]);
-                        distances[i][j] = distance;
-                        distances[j][i] = distance;
+                        int i = index % numPoints;
+                        int j = index / numPoints;
+                        if (i < j)
+                        {
+                            double distance = parameters.DistanceFunction.ComputeDistance(
+                                    parameters.DataSet[i],
+                                    parameters.DataSet[j]);
+                            distances[i][j] = distance;
+                            distances[j][i] = distance;
+                        }
+                    });
+                }
+                else
+                {
+                    for (int i = 0; i < numPoints; i++)
+                    {
+                        for (int j = 0; j < i; j++)
+                        {
+                            double distance = parameters.DistanceFunction.ComputeDistance(
+                                parameters.DataSet[i],
+                                parameters.DataSet[j]);
+                            distances[i][j] = distance;
+                            distances[j][i] = distance;
+                        }
                     }
                 }
+
                 parameters.Distances = distances;
             }
             
