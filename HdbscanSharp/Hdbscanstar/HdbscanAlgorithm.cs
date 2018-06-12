@@ -13,31 +13,29 @@ namespace HdbscanSharp.Hdbscanstar
 {
 	public class HdbscanAlgorithm
 	{
-		/// <summary>
-		/// Calculates the core distances for each point in the data set, given some value for k.
-		/// </summary>
-		/// <param name="dataSet">A double[][] where index [i][j] indicates the jth attribute of data point i</param>
-		/// <param name="k">Each point's core distance will be it's distance to the kth nearest neighbor</param>
-		/// <param name="distanceFunction">A DistanceCalculator to compute distances between points</param>
-		/// <returns> An array of core distances</returns>
-		public static double[] CalculateCoreDistances(
-			double[][] dataSet,
-			int k,
-			IDistanceCalculator distanceFunction)
+        /// <summary>
+        /// Calculates the core distances for each point in the data set, given some value for k.
+        /// </summary>
+        /// <param name="distances">A double[][] where index [i][j] indicates the jth attribute of data point i</param>
+        /// <param name="k">Each point's core distance will be it's distance to the kth nearest neighbor</param>
+        /// <returns> An array of core distances</returns>
+        public static double[] CalculateCoreDistances(
+			double[][] distances,
+			int k)
 		{
 			int numNeighbors = k - 1;
-			double[] coreDistances = new double[dataSet.Length];
+			double[] coreDistances = new double[distances.Length];
 
 			if (k == 1)
 			{
-				for (int point = 0; point < dataSet.Length; point++)
+				for (int point = 0; point < distances.Length; point++)
 				{
 					coreDistances[point] = 0;
 				}
 				return coreDistances;
 			}
 
-			for (int point = 0; point < dataSet.Length; point++)
+			for (int point = 0; point < distances.Length; point++)
 			{
 				double[] kNNDistances = new double[numNeighbors];   //Sorted nearest distances found so far
 				for (int i = 0; i < numNeighbors; i++)
@@ -45,13 +43,13 @@ namespace HdbscanSharp.Hdbscanstar
 					kNNDistances[i] = double.MaxValue;
 				}
 
-				for (int neighbor = 0; neighbor < dataSet.Length; neighbor++)
+				for (int neighbor = 0; neighbor < distances.Length; neighbor++)
 				{
 					if (point == neighbor)
 						continue;
 
-					double distance = distanceFunction.ComputeDistance(dataSet[point], dataSet[neighbor]);
-
+                    double distance = distances[point][neighbor];
+                    
 					//Check at which position in the nearest distances the current distance would fit:
 					int neighborIndex = numNeighbors;
 					while (neighborIndex >= 1 && distance < kNNDistances[neighborIndex - 1])
@@ -74,50 +72,48 @@ namespace HdbscanSharp.Hdbscanstar
 			return coreDistances;
 		}
 
-		/// <summary>
-		/// Constructs the minimum spanning tree of mutual reachability distances for the data set, given
-		/// the core distances for each point.
-		/// </summary>
-		/// <param name="dataSet">A double[][] where index [i][j] indicates the jth attribute of data point i</param>
-		/// <param name="coreDistances">An array of core distances for each data point</param>
-		/// <param name="selfEdges">If each point should have an edge to itself with weight equal to core distance</param>
-		/// <param name="distanceFunction">A DistanceCalculator to compute distances between points</param>
-		/// <returns> An MST for the data set using the mutual reachability distances</returns>
-		public static UndirectedGraph ConstructMST(
-			double[][] dataSet,
+        /// <summary>
+        /// Constructs the minimum spanning tree of mutual reachability distances for the data set, given
+        /// the core distances for each point.
+        /// </summary>
+        /// <param name="distances">A double[][] where index [i][j] indicates the jth attribute of data point i</param>
+        /// <param name="coreDistances">An array of core distances for each data point</param>
+        /// <param name="selfEdges">If each point should have an edge to itself with weight equal to core distance</param>
+        /// <returns> An MST for the data set using the mutual reachability distances</returns>
+        public static UndirectedGraph ConstructMST(
+			double[][] distances,
 			double[] coreDistances,
-			bool selfEdges,
-			IDistanceCalculator distanceFunction)
+			bool selfEdges)
 		{
 			int selfEdgeCapacity = 0;
 			if (selfEdges)
-				selfEdgeCapacity = dataSet.Length;
+				selfEdgeCapacity = distances.Length;
 
 			//One bit is set (true) for each attached point, or unset (false) for unattached points:
 			BitSet attachedPoints = new BitSet();
 
 			//Each point has a current neighbor point in the tree, and a current nearest distance:
-			int[] nearestMRDNeighbors = new int[dataSet.Length - 1 + selfEdgeCapacity];
-			double[] nearestMRDDistances = new double[dataSet.Length - 1 + selfEdgeCapacity];
+			int[] nearestMRDNeighbors = new int[distances.Length - 1 + selfEdgeCapacity];
+			double[] nearestMRDDistances = new double[distances.Length - 1 + selfEdgeCapacity];
 
-			for (int i = 0; i < dataSet.Length - 1; i++)
+			for (int i = 0; i < distances.Length - 1; i++)
 			{
 				nearestMRDDistances[i] = double.MaxValue;
 			}
 
 			//The MST is expanded starting with the last point in the data set:
-			int currentPoint = dataSet.Length - 1;
+			int currentPoint = distances.Length - 1;
 			int numAttachedPoints = 1;
-			attachedPoints.Set(dataSet.Length - 1);
+			attachedPoints.Set(distances.Length - 1);
 
 			//Continue attaching points to the MST until all points are attached:
-			while (numAttachedPoints < dataSet.Length)
+			while (numAttachedPoints < distances.Length)
 			{
 				int nearestMRDPoint = -1;
 				double nearestMRDDistance = double.MaxValue;
 
 				//Iterate through all unattached points, updating distances using the current point:
-				for (int neighbor = 0; neighbor < dataSet.Length; neighbor++)
+				for (int neighbor = 0; neighbor < distances.Length; neighbor++)
 				{
 					if (currentPoint == neighbor)
 						continue;
@@ -125,7 +121,7 @@ namespace HdbscanSharp.Hdbscanstar
 					if (attachedPoints.Get(neighbor) == true)
 						continue;
 
-					double distance = distanceFunction.ComputeDistance(dataSet[currentPoint], dataSet[neighbor]);
+                    double distance = distances[currentPoint][neighbor];
 					double mutualReachabiltiyDistance = distance;
 
 					if (coreDistances[currentPoint] > mutualReachabiltiyDistance)
@@ -155,8 +151,8 @@ namespace HdbscanSharp.Hdbscanstar
 			}
 
 			//Create an array for vertices in the tree that each point attached to:
-			int[] otherVertexIndices = new int[dataSet.Length - 1 + selfEdgeCapacity];
-			for (int i = 0; i < dataSet.Length - 1; i++)
+			int[] otherVertexIndices = new int[distances.Length - 1 + selfEdgeCapacity];
+			for (int i = 0; i < distances.Length - 1; i++)
 			{
 				otherVertexIndices[i] = i;
 			}
@@ -164,16 +160,16 @@ namespace HdbscanSharp.Hdbscanstar
 			//If necessary, attach self edges:
 			if (selfEdges)
 			{
-				for (int i = dataSet.Length - 1; i < dataSet.Length * 2 - 1; i++)
+				for (int i = distances.Length - 1; i < distances.Length * 2 - 1; i++)
 				{
-					int vertex = i - (dataSet.Length - 1);
+					int vertex = i - (distances.Length - 1);
 					nearestMRDNeighbors[i] = vertex;
 					otherVertexIndices[i] = vertex;
 					nearestMRDDistances[i] = coreDistances[vertex];
 				}
 			}
 
-			return new UndirectedGraph(dataSet.Length, nearestMRDNeighbors, otherVertexIndices, nearestMRDDistances);
+			return new UndirectedGraph(distances.Length, nearestMRDNeighbors, otherVertexIndices, nearestMRDDistances);
 		}
 
 		/// <summary>

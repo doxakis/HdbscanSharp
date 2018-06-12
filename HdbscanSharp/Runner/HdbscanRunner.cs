@@ -17,18 +17,39 @@ namespace HdbscanSharp.Runner
 		{
 			int numPoints = parameters.DataSet.Length;
 
+            if (parameters.Distances == null)
+            {
+                // Precompute distances.
+                double[][] distances = new double[numPoints][];
+                for (int i = 0; i < distances.Length; i++)
+                {
+                    distances[i] = new double[numPoints];
+                }
+
+                for (int i = 0; i < numPoints; i++)
+                {
+                    for (int j = 0; j < numPoints; j++)
+                    {
+                        double distance = parameters.DistanceFunction.ComputeDistance(
+                            parameters.DataSet[i],
+                            parameters.DataSet[j]);
+                        distances[i][j] = distance;
+                        distances[j][i] = distance;
+                    }
+                }
+                parameters.Distances = distances;
+            }
+            
 			// Compute core distances
 			double[] coreDistances = HdbscanAlgorithm.CalculateCoreDistances(
-				parameters.DataSet,
-				parameters.MinPoints,
-				parameters.DistanceFunction);
+				parameters.Distances,
+				parameters.MinPoints);
 
 			// Calculate minimum spanning tree
 			UndirectedGraph mst = HdbscanAlgorithm.ConstructMST(
-				parameters.DataSet,
+				parameters.Distances,
 				coreDistances,
-				true,
-				parameters.DistanceFunction);
+				true);
 			mst.QuicksortByEdgeWeight();
 
 			double[] pointNoiseLevels = new double[numPoints];
