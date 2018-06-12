@@ -28,7 +28,7 @@ namespace HdbscanSharp.Runner
 
                 for (int i = 0; i < numPoints; i++)
                 {
-                    for (int j = 0; j < numPoints; j++)
+                    for (int j = 0; j < i; j++)
                     {
                         double distance = parameters.DistanceFunction.ComputeDistance(
                             parameters.DataSet[i],
