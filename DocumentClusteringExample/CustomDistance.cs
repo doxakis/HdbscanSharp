@@ -19,7 +19,7 @@ namespace DocumentClusteringExample
 			{
 				if (attributesOne[i] > 0)
 				{
-					numA = attributesOne[i];
+					numA += attributesOne[i];
 				}
 
 				if (attributesTwo[i] > 0)
