@@ -11,6 +11,7 @@ namespace HdbscanSharp.Runner
 	public class HdbscanParameters
     {
         public bool UseMultipleThread { get; set; }
+        public int MaxDegreeOfParallelism { get; set; }
 
         public double[][] Distances { get; set; }
 		public double[][] DataSet { get; set; }

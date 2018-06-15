@@ -15,7 +15,9 @@ namespace HdbscanSharp.Runner
 	{
 		public static HdbscanResult Run(HdbscanParameters parameters)
 		{
-			int numPoints = parameters.DataSet.Length;
+			int numPoints = parameters.DataSet != null
+                ? parameters.DataSet.Length
+                : parameters.Distances.Length;
 
             if (parameters.Distances == null)
             {
@@ -29,9 +31,17 @@ namespace HdbscanSharp.Runner
                 if (parameters.UseMultipleThread)
                 {
                     int size = numPoints * numPoints;
+                    
+                    var maxDegreeOfParallelism = parameters.MaxDegreeOfParallelism;
+                    if (maxDegreeOfParallelism == 0)
+                    {
+                        // Not specified. Use all threads.
+                        maxDegreeOfParallelism = Environment.ProcessorCount;
+                    }
                     var option = new ParallelOptions {
-                        MaxDegreeOfParallelism = Environment.ProcessorCount
+                        MaxDegreeOfParallelism = Math.Max(1, maxDegreeOfParallelism)
                     };
+                    
                     Parallel.For(0, size, option, index =>
                     {
                         int i = index % numPoints;
