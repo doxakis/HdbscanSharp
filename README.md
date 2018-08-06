@@ -58,6 +58,10 @@ var result = HdbscanRunner.Run(new HdbscanParameters
 
 # Improve speed
 
+You have many options.
+
+## Reduce the dimensions
+
 In order to speed up the overall process if you have a lot of vectors with high dimensions, I suggest to do a Principal Component Analysis.
 The Accord.NET Framework provide a great implementation. (http://accord-framework.net/)
 
@@ -76,6 +80,52 @@ trainingVectors = trainingVectors.Take(300).ToArray();
 var pcaResult = pca.Learn(trainingVectors);
 var reducedVectorsWithPCA = pcaResult.Transform(vectors.ToArray());
 ```
+
+## Precompute the distance between each element
+
+You can provide the distance matrix. Let's consider you have N elements in the dataset. The distance matrix would be N x N elements. You may consider to cache the result.
+
+```
+double[][] distances;
+
+// compute distances
+
+var result = HdbscanRunner.Run(new HdbscanParameters
+{
+  Distances = distances,
+  MinPoints = 25,
+  MinClusterSize = 25,
+  DistanceFunction = new CosineSimilarity() // See HdbscanSharp/Distance folder for more distance function
+});
+```
+
+## Use multiple thread
+
+By default, it doesn't use multiple thread. You must specify `UseMultipleThread = true`. Optionally, you can limit the number of thread with the option `MaxDegreeOfParallelism`. When you activate `UseMultipleThread`, it will use by default all thread (`Environment.ProcessorCount`).
+
+## GPU acceleration
+
+Note: I assume you have a Nvidia graphic card.
+
+We suggest to use ILGPU (http://www.ilgpu.net/) (dotnet core support)
+
+Be aware that there is a cost time to communicate with the GPU. So you need lot of data to benefits. The memory can be limited depending on the use case and the GPU used. You may need to split your dataset, do batch process and combine the result.
+
+First, you would write the kernel function and implement the distance function. (see folder: HdbscanSharp/Distance)
+
+Steps:
+
+- Prepare the dataset in the right format
+- Use the CUDA accelerator
+- Create a Context with the accelerator
+- Load kernel function (JIT compilation take about 1 sec and occur only on the first call)
+- Allocate memory on GPU (dataset and distance matrix) and keep a reference.
+- Copy dataset on GPU memory
+- Call the kernel function
+- On the accelerator context call `Synchronize()`
+- Get the distance matrix with `GetAsArray()` on the reference you use previously to assign memory on GPU
+- Prepare the matrix in the right format
+- You would provide the distances matrix to Hdbscan (option: Distances)
 
 # Copyright and license
 Code released under the MIT license.
