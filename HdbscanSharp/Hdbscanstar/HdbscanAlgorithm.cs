@@ -450,7 +450,7 @@ namespace HdbscanSharp.Hdbscanstar
 		/// <returns>true if there are any clusters with infinite stability, false otherwise</returns>
 		public static bool PropagateTree(List<Cluster> clusters)
 		{
-			List<KeyValuePair<int, Cluster>> clustersToExamine = new List<KeyValuePair<int, Cluster>>();
+			SortedDictionary<int, Cluster> clustersToExamine = new SortedDictionary<int, Cluster>();
 			BitSet addedToExaminationList = new BitSet();
 			bool infiniteStability = false;
 
@@ -459,26 +459,19 @@ namespace HdbscanSharp.Hdbscanstar
 			{
 				if (cluster != null && !cluster.HasChildren())
 				{
-					KeyValuePair<int, Cluster>? item = clustersToExamine
-						.Where(m => m.Key == cluster.GetLabel())
-						.FirstOrDefault();
-					if (item != null)
-					{
-						clustersToExamine.Remove(item.Value);
-					}
-					clustersToExamine.Add(new KeyValuePair<int, Cluster>(cluster.GetLabel(), cluster));
-					addedToExaminationList.Set(cluster.GetLabel());
+					int label = cluster.GetLabel();
+					clustersToExamine.Remove(label);
+					clustersToExamine.Add(label, cluster);
+					addedToExaminationList.Set(label);
 				}
 			}
 
 			//Iterate through every cluster, propagating stability from children to parents:
 			while (clustersToExamine.Any())
 			{
-				var currentKeyValue = clustersToExamine
-					.OrderBy(m => m.Key)
-					.Last();
+				var currentKeyValue = clustersToExamine.Last();
 				Cluster currentCluster = currentKeyValue.Value;
-				clustersToExamine.Remove(currentKeyValue);
+				clustersToExamine.Remove(currentKeyValue.Key);
 
 				currentCluster.Propagate();
 
@@ -488,18 +481,13 @@ namespace HdbscanSharp.Hdbscanstar
 				if (currentCluster.GetParent() != null)
 				{
 					Cluster parent = currentCluster.GetParent();
+					int label = parent.GetLabel();
 
-					if (!addedToExaminationList.Get(parent.GetLabel()))
+					if (!addedToExaminationList.Get(label))
 					{
-						KeyValuePair<int, Cluster>? item = clustersToExamine
-							.Where(m => m.Key == parent.GetLabel())
-							.FirstOrDefault();
-						if (item != null)
-						{
-							clustersToExamine.Remove(item.Value);
-						}
-						clustersToExamine.Add(new KeyValuePair<int, Cluster>(parent.GetLabel(), parent));
-						addedToExaminationList.Set(parent.GetLabel());
+						clustersToExamine.Remove(label);
+						clustersToExamine.Add(label, parent);
+						addedToExaminationList.Set(label);
 					}
 				}
 			}
@@ -529,7 +517,7 @@ namespace HdbscanSharp.Hdbscanstar
 			int[] flatPartitioning = new int[numPoints];
 
 			//Store all the file offsets at which to find the birth points for the flat clustering:
-			List<KeyValuePair<long, List<int>>> significantFileOffsets = new List<KeyValuePair<long, List<int>>>();
+			SortedDictionary<long, List<int>> significantFileOffsets = new SortedDictionary<long, List<int>>();
 
 			foreach (Cluster cluster in solution)
 			{
@@ -542,14 +530,9 @@ namespace HdbscanSharp.Hdbscanstar
 				{
 					clusterList = new List<int>();
 
-					KeyValuePair<long, List<int>>? item = significantFileOffsets
-						.Where(m => m.Key == cluster.GetFileOffset())
-						.FirstOrDefault();
-					if (item != null)
-					{
-						significantFileOffsets.Remove(item.Value);
-					}
-					significantFileOffsets.Add(new KeyValuePair<long, List<int>>(cluster.GetFileOffset(), clusterList));
+					long fileOffset = cluster.GetFileOffset();
+					significantFileOffsets.Remove(fileOffset);
+					significantFileOffsets.Add(fileOffset, clusterList);
 				}
 				clusterList.Add(cluster.GetLabel());
 			}
@@ -557,16 +540,14 @@ namespace HdbscanSharp.Hdbscanstar
 			//Go through the hierarchy file, setting labels for the flat clustering:
 			while (significantFileOffsets.Any())
 			{
-				KeyValuePair<long, List<int>> entry = significantFileOffsets
-						.OrderBy(m => m.Key)
-						.FirstOrDefault();
-				significantFileOffsets.Remove(entry);
+				var entry = significantFileOffsets.First();
+				significantFileOffsets.Remove(entry.Key);
 
 				List<int> clusterList = entry.Value;
 				long offset = entry.Key;
 
 				int skip = (int)offset;
-				int iSkip = skip;
+				int iSkip = skip; 
 				int length = 1;
 				while (iSkip < reader.Length)
 				{
