@@ -11,9 +11,9 @@ namespace HdbscanSharp.Hdbscanstar
 	/// </summary>
 	public class HdbscanConstraint
 	{
-		private HdbscanConstraintType ConstraintType;
-		private int PointA;
-		private int PointB;
+		private readonly HdbscanConstraintType _constraintType;
+		private readonly int _pointA;
+		private readonly int _pointB;
 
 		/// <summary>
 		/// Creates a new constraint.
@@ -23,24 +23,24 @@ namespace HdbscanSharp.Hdbscanstar
 		/// <param name="type">The constraint type</param>
 		public HdbscanConstraint(int pointA, int pointB, HdbscanConstraintType type)
 		{
-			this.PointA = pointA;
-			this.PointB = pointB;
-			this.ConstraintType = type;
+			_pointA = pointA;
+			_pointB = pointB;
+			_constraintType = type;
 		}
 
 		public int GetPointA()
 		{
-			return this.PointA;
+			return _pointA;
 		}
 
 		public int GetPointB()
 		{
-			return this.PointB;
+			return _pointB;
 		}
 		
 		public HdbscanConstraintType GetConstraintType()
 		{
-			return this.ConstraintType;
+			return _constraintType;
 		}
 	}
 }

@@ -14,9 +14,9 @@ namespace HdbscanSharp.Distance
 		public double ComputeDistance(double[] attributesOne, double[] attributesTwo)
 		{
 			double distance = 0;
-			for (int i = 0; i < attributesOne.Length && i < attributesTwo.Length; i++)
+			for (var i = 0; i < attributesOne.Length && i < attributesTwo.Length; i++)
 			{
-				double difference = Math.Abs(attributesOne[i] - attributesTwo[i]);
+				var difference = Math.Abs(attributesOne[i] - attributesTwo[i]);
 				if (difference > distance)
 					distance = difference;
 			}

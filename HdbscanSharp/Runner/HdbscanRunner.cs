@@ -15,22 +15,22 @@ namespace HdbscanSharp.Runner
 	{
 		public static HdbscanResult Run(HdbscanParameters parameters)
 		{
-			int numPoints = parameters.DataSet != null
+			var numPoints = parameters.DataSet != null
                 ? parameters.DataSet.Length
                 : parameters.Distances.Length;
 
             if (parameters.Distances == null)
             {
                 // Precompute distances.
-                double[][] distances = new double[numPoints][];
-                for (int i = 0; i < distances.Length; i++)
+                var distances = new double[numPoints][];
+                for (var i = 0; i < distances.Length; i++)
                 {
                     distances[i] = new double[numPoints];
                 }
 
                 if (parameters.UseMultipleThread)
                 {
-                    int size = numPoints * numPoints;
+                    var size = numPoints * numPoints;
                     
                     var maxDegreeOfParallelism = parameters.MaxDegreeOfParallelism;
                     if (maxDegreeOfParallelism == 0)
@@ -44,11 +44,11 @@ namespace HdbscanSharp.Runner
                     
                     Parallel.For(0, size, option, index =>
                     {
-                        int i = index % numPoints;
-                        int j = index / numPoints;
+                        var i = index % numPoints;
+                        var j = index / numPoints;
                         if (i < j)
                         {
-                            double distance = parameters.DistanceFunction.ComputeDistance(
+                            var distance = parameters.DistanceFunction.ComputeDistance(
                                     parameters.DataSet[i],
                                     parameters.DataSet[j]);
                             distances[i][j] = distance;
@@ -58,11 +58,11 @@ namespace HdbscanSharp.Runner
                 }
                 else
                 {
-                    for (int i = 0; i < numPoints; i++)
+                    for (var i = 0; i < numPoints; i++)
                     {
-                        for (int j = 0; j < i; j++)
+                        for (var j = 0; j < i; j++)
                         {
-                            double distance = parameters.DistanceFunction.ComputeDistance(
+                            var distance = parameters.DistanceFunction.ComputeDistance(
                                 parameters.DataSet[i],
                                 parameters.DataSet[j]);
                             distances[i][j] = distance;
@@ -75,25 +75,25 @@ namespace HdbscanSharp.Runner
             }
             
 			// Compute core distances
-			double[] coreDistances = HdbscanAlgorithm.CalculateCoreDistances(
+			var coreDistances = HdbscanAlgorithm.CalculateCoreDistances(
 				parameters.Distances,
 				parameters.MinPoints);
 
 			// Calculate minimum spanning tree
-			UndirectedGraph mst = HdbscanAlgorithm.ConstructMST(
+			var mst = HdbscanAlgorithm.ConstructMst(
 				parameters.Distances,
 				coreDistances,
 				true);
 			mst.QuicksortByEdgeWeight();
 
-			double[] pointNoiseLevels = new double[numPoints];
-			int[] pointLastClusters = new int[numPoints];
+			var pointNoiseLevels = new double[numPoints];
+			var pointLastClusters = new int[numPoints];
 
-			StringBuilder hierarchyWriter = new StringBuilder();
-			char delimiter = ',';
+			var hierarchyWriter = new StringBuilder();
+			var delimiter = ',';
 
 			// Compute hierarchy and cluster tree
-			List<Cluster> clusters = HdbscanAlgorithm.ComputeHierarchyAndClusterTree(
+			var clusters = HdbscanAlgorithm.ComputeHierarchyAndClusterTree(
 				mst,
 				parameters.MinClusterSize,
 				true,
@@ -104,17 +104,17 @@ namespace HdbscanSharp.Runner
 				pointLastClusters);
 
 			// Propagate clusters
-			bool infiniteStability = HdbscanAlgorithm.PropagateTree(clusters);
+			var infiniteStability = HdbscanAlgorithm.PropagateTree(clusters);
 
 			// Compute final flat partitioning
-			int[] prominentClusters = HdbscanAlgorithm.FindProminentClusters(
+			var prominentClusters = HdbscanAlgorithm.FindProminentClusters(
 				clusters,
 				hierarchyWriter,
 				delimiter,
 				numPoints);
 
 			// Compute outlier scores for each point
-			List<OutlierScore> scores = HdbscanAlgorithm.CalculateOutlierScores(
+			var scores = HdbscanAlgorithm.CalculateOutlierScores(
 				clusters,
 				pointNoiseLevels,
 				pointLastClusters,

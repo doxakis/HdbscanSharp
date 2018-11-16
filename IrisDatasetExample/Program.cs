@@ -25,10 +25,10 @@ namespace IrisDatasetExample
 				DistanceFunction = new CosineSimilarity()
 			});
 
-			for (int specie = 1; specie <= 3; specie++)
+			for (var specie = 1; specie <= 3; specie++)
 			{
-				int offset = (specie - 1) * 50;
-				int size = 50;
+				var offset = (specie - 1) * 50;
+				const int size = 50;
 
 				Console.Write("Specie #" + specie + " ");
 
@@ -49,22 +49,13 @@ namespace IrisDatasetExample
 			string fileName,
 			int numberOfValues)
 		{
-			List<double[]> myDataSet = new List<double[]>();
-
 			var lines = File.ReadLines(fileName)
 				.Skip(1) /* Skip header. */;
 
-			foreach (var line in lines)
-			{
-				var values = line.Split(',')
-					.Take(numberOfValues)
-					.Select(m => double.Parse(m, CultureInfo.InvariantCulture))
-					.ToArray();
-				
-				myDataSet.Add(values);
-			}
-
-			return myDataSet.ToArray();
+			return lines.Select(line => line.Split(',')
+				.Take(numberOfValues)
+				.Select(m => double.Parse(m, CultureInfo.InvariantCulture))
+				.ToArray()).ToArray();
 		}
 	}
 }

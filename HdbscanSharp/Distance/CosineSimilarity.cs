@@ -17,7 +17,7 @@ namespace HdbscanSharp.Distance
 			double magnitudeOne = 0;
 			double magnitudeTwo = 0;
 
-			for (int i = 0; i < attributesOne.Length && i < attributesTwo.Length; i++)
+			for (var i = 0; i < attributesOne.Length && i < attributesTwo.Length; i++)
 			{
 				dotProduct += (attributesOne[i] * attributesTwo[i]);
 				magnitudeOne += (attributesOne[i] * attributesOne[i]);

@@ -23,35 +23,35 @@ namespace HdbscanSharp.Hdbscanstar
 			double[][] distances,
 			int k)
 		{
-			int numNeighbors = k - 1;
-			double[] coreDistances = new double[distances.Length];
+			var numNeighbors = k - 1;
+			var coreDistances = new double[distances.Length];
 
 			if (k == 1)
 			{
-				for (int point = 0; point < distances.Length; point++)
+				for (var point = 0; point < distances.Length; point++)
 				{
 					coreDistances[point] = 0;
 				}
 				return coreDistances;
 			}
 
-			for (int point = 0; point < distances.Length; point++)
+			for (var point = 0; point < distances.Length; point++)
 			{
-				double[] kNNDistances = new double[numNeighbors];   //Sorted nearest distances found so far
-				for (int i = 0; i < numNeighbors; i++)
+				var kNNDistances = new double[numNeighbors];   //Sorted nearest distances found so far
+				for (var i = 0; i < numNeighbors; i++)
 				{
 					kNNDistances[i] = double.MaxValue;
 				}
 
-				for (int neighbor = 0; neighbor < distances.Length; neighbor++)
+				for (var neighbor = 0; neighbor < distances.Length; neighbor++)
 				{
 					if (point == neighbor)
 						continue;
 
-                    double distance = distances[point][neighbor];
+                    var distance = distances[point][neighbor];
                     
 					//Check at which position in the nearest distances the current distance would fit:
-					int neighborIndex = numNeighbors;
+					var neighborIndex = numNeighbors;
 					while (neighborIndex >= 1 && distance < kNNDistances[neighborIndex - 1])
 					{
 						neighborIndex--;
@@ -60,7 +60,7 @@ namespace HdbscanSharp.Hdbscanstar
 					//Shift elements in the array to make room for the current distance:
 					if (neighborIndex < numNeighbors)
 					{
-						for (int shiftIndex = numNeighbors - 1; shiftIndex > neighborIndex; shiftIndex--)
+						for (var shiftIndex = numNeighbors - 1; shiftIndex > neighborIndex; shiftIndex--)
 						{
 							kNNDistances[shiftIndex] = kNNDistances[shiftIndex - 1];
 						}
@@ -80,40 +80,40 @@ namespace HdbscanSharp.Hdbscanstar
         /// <param name="coreDistances">An array of core distances for each data point</param>
         /// <param name="selfEdges">If each point should have an edge to itself with weight equal to core distance</param>
         /// <returns> An MST for the data set using the mutual reachability distances</returns>
-        public static UndirectedGraph ConstructMST(
+        public static UndirectedGraph ConstructMst(
 			double[][] distances,
 			double[] coreDistances,
 			bool selfEdges)
 		{
-			int selfEdgeCapacity = 0;
+			var selfEdgeCapacity = 0;
 			if (selfEdges)
 				selfEdgeCapacity = distances.Length;
 
 			//One bit is set (true) for each attached point, or unset (false) for unattached points:
-			BitSet attachedPoints = new BitSet();
+			var attachedPoints = new BitSet();
 
 			//Each point has a current neighbor point in the tree, and a current nearest distance:
-			int[] nearestMRDNeighbors = new int[distances.Length - 1 + selfEdgeCapacity];
-			double[] nearestMRDDistances = new double[distances.Length - 1 + selfEdgeCapacity];
+			var nearestMRDNeighbors = new int[distances.Length - 1 + selfEdgeCapacity];
+			var nearestMRDDistances = new double[distances.Length - 1 + selfEdgeCapacity];
 
-			for (int i = 0; i < distances.Length - 1; i++)
+			for (var i = 0; i < distances.Length - 1; i++)
 			{
 				nearestMRDDistances[i] = double.MaxValue;
 			}
 
 			//The MST is expanded starting with the last point in the data set:
-			int currentPoint = distances.Length - 1;
-			int numAttachedPoints = 1;
+			var currentPoint = distances.Length - 1;
+			var numAttachedPoints = 1;
 			attachedPoints.Set(distances.Length - 1);
 
 			//Continue attaching points to the MST until all points are attached:
 			while (numAttachedPoints < distances.Length)
 			{
-				int nearestMRDPoint = -1;
-				double nearestMRDDistance = double.MaxValue;
+				var nearestMRDPoint = -1;
+				var nearestMRDDistance = double.MaxValue;
 
 				//Iterate through all unattached points, updating distances using the current point:
-				for (int neighbor = 0; neighbor < distances.Length; neighbor++)
+				for (var neighbor = 0; neighbor < distances.Length; neighbor++)
 				{
 					if (currentPoint == neighbor)
 						continue;
@@ -121,8 +121,8 @@ namespace HdbscanSharp.Hdbscanstar
 					if (attachedPoints.Get(neighbor) == true)
 						continue;
 
-                    double distance = distances[currentPoint][neighbor];
-					double mutualReachabiltiyDistance = distance;
+                    var distance = distances[currentPoint][neighbor];
+					var mutualReachabiltiyDistance = distance;
 
 					if (coreDistances[currentPoint] > mutualReachabiltiyDistance)
 						mutualReachabiltiyDistance = coreDistances[currentPoint];
@@ -151,8 +151,8 @@ namespace HdbscanSharp.Hdbscanstar
 			}
 
 			//Create an array for vertices in the tree that each point attached to:
-			int[] otherVertexIndices = new int[distances.Length - 1 + selfEdgeCapacity];
-			for (int i = 0; i < distances.Length - 1; i++)
+			var otherVertexIndices = new int[distances.Length - 1 + selfEdgeCapacity];
+			for (var i = 0; i < distances.Length - 1; i++)
 			{
 				otherVertexIndices[i] = i;
 			}
@@ -160,9 +160,9 @@ namespace HdbscanSharp.Hdbscanstar
 			//If necessary, attach self edges:
 			if (selfEdges)
 			{
-				for (int i = distances.Length - 1; i < distances.Length * 2 - 1; i++)
+				for (var i = distances.Length - 1; i < distances.Length * 2 - 1; i++)
 				{
-					int vertex = i - (distances.Length - 1);
+					var vertex = i - (distances.Length - 1);
 					nearestMRDNeighbors[i] = vertex;
 					otherVertexIndices[i] = vertex;
 					nearestMRDDistances[i] = coreDistances[vertex];
@@ -198,30 +198,29 @@ namespace HdbscanSharp.Hdbscanstar
 			int[] pointLastClusters)
 		{
 			long hierarchyCharsWritten = 0;
-			int lineCount = 0; //Indicates the number of lines written into hierarchyFile.
 
 			//The current edge being removed from the MST:
-			int currentEdgeIndex = mst.GetNumEdges() - 1;
-			int nextClusterLabel = 2;
-			bool nextLevelSignificant = true;
+			var currentEdgeIndex = mst.GetNumEdges() - 1;
+			var nextClusterLabel = 2;
+			var nextLevelSignificant = true;
 
 			//The previous and current cluster numbers of each point in the data set:
-			int[] previousClusterLabels = new int[mst.GetNumVertices()];
-			int[] currentClusterLabels = new int[mst.GetNumVertices()];
+			var previousClusterLabels = new int[mst.GetNumVertices()];
+			var currentClusterLabels = new int[mst.GetNumVertices()];
 
-			for (int i = 0; i < currentClusterLabels.Length; i++)
+			for (var i = 0; i < currentClusterLabels.Length; i++)
 			{
 				currentClusterLabels[i] = 1;
 				previousClusterLabels[i] = 1;
 			}
 
 			//A list of clusters in the cluster tree, with the 0th cluster (noise) null:
-			List<Cluster> clusters = new List<Cluster>();
+			var clusters = new List<Cluster>();
 			clusters.Add(null);
-			clusters.Add(new Cluster(1, null, Double.NaN, mst.GetNumVertices()));
+			clusters.Add(new Cluster(1, null, double.NaN, mst.GetNumVertices()));
 
 			//Calculate number of constraints satisfied for cluster 1:
-			SortedSet<int> clusterOne = new SortedSet<int>();
+			var clusterOne = new SortedSet<int>();
 			clusterOne.Add(1);
 			CalculateNumConstraintsSatisfied(
 				clusterOne,
@@ -230,19 +229,19 @@ namespace HdbscanSharp.Hdbscanstar
 				currentClusterLabels);
 
 			//Sets for the clusters and vertices that are affected by the edge(s) being removed:
-			SortedSet<int> affectedClusterLabels = new SortedSet<int>();
-			SortedSet<int> affectedVertices = new SortedSet<int>();
+			var affectedClusterLabels = new SortedSet<int>();
+			var affectedVertices = new SortedSet<int>();
 
 			while (currentEdgeIndex >= 0)
 			{
-				double currentEdgeWeight = mst.GetEdgeWeightAtIndex(currentEdgeIndex);
-				List<Cluster> newClusters = new List<Cluster>();
+				var currentEdgeWeight = mst.GetEdgeWeightAtIndex(currentEdgeIndex);
+				var newClusters = new List<Cluster>();
 
 				//Remove all edges tied with the current edge weight, and store relevant clusters and vertices:
 				while (currentEdgeIndex >= 0 && mst.GetEdgeWeightAtIndex(currentEdgeIndex) == currentEdgeWeight)
 				{
-					int firstVertex = mst.GetFirstVertexAtIndex(currentEdgeIndex);
-					int secondVertex = mst.GetSecondVertexAtIndex(currentEdgeIndex);
+					var firstVertex = mst.GetFirstVertexAtIndex(currentEdgeIndex);
+					var secondVertex = mst.GetSecondVertexAtIndex(currentEdgeIndex);
 					mst.GetEdgeListForVertex(firstVertex).Remove(secondVertex);
 					mst.GetEdgeListForVertex(secondVertex).Remove(firstVertex);
 
@@ -263,10 +262,10 @@ namespace HdbscanSharp.Hdbscanstar
 				//Check each cluster affected for a possible split:
 				while (affectedClusterLabels.Any())
 				{
-					int examinedClusterLabel = affectedClusterLabels.Last();
+					var examinedClusterLabel = affectedClusterLabels.Last();
 					affectedClusterLabels.Remove(examinedClusterLabel);
 
-					SortedSet<int> examinedVertices = new SortedSet<int>();
+					var examinedVertices = new SortedSet<int>();
 
 					//Get all affected vertices that are members of the cluster currently being examined:
 					foreach (var vertex in affectedVertices.ToList())
@@ -280,7 +279,7 @@ namespace HdbscanSharp.Hdbscanstar
 
 					SortedSet<int> firstChildCluster = null;
 					LinkedList<int> unexploredFirstChildClusterPoints = null;
-					int numChildClusters = 0;
+					var numChildClusters = 0;
 
 					/*
 					 * Check if the cluster has split or shrunk by exploring the graph from each affected
@@ -292,11 +291,11 @@ namespace HdbscanSharp.Hdbscanstar
 					 */
 					while (examinedVertices.Any())
 					{
-						SortedSet<int> constructingSubCluster = new SortedSet<int>();
-						LinkedList<int> unexploredSubClusterPoints = new LinkedList<int>();
-						bool anyEdges = false;
-						bool incrementedChildCount = false;
-						int rootVertex = examinedVertices.Last();
+						var constructingSubCluster = new SortedSet<int>();
+						var unexploredSubClusterPoints = new LinkedList<int>();
+						var anyEdges = false;
+						var incrementedChildCount = false;
+						var rootVertex = examinedVertices.Last();
 						constructingSubCluster.Add(rootVertex);
 						unexploredSubClusterPoints.AddLast(rootVertex);
 						examinedVertices.Remove(rootVertex);
@@ -304,10 +303,10 @@ namespace HdbscanSharp.Hdbscanstar
 						//Explore this potential child cluster as long as there are unexplored points:
 						while (unexploredSubClusterPoints.Any())
 						{
-							int vertexToExplore = unexploredSubClusterPoints.First();
+							var vertexToExplore = unexploredSubClusterPoints.First();
 							unexploredSubClusterPoints.RemoveFirst();
 
-							foreach (int neighbor in mst.GetEdgeListForVertex(vertexToExplore))
+							foreach (var neighbor in mst.GetEdgeListForVertex(vertexToExplore))
 							{
 								anyEdges = true;
 								if (constructingSubCluster.Add(neighbor))
@@ -337,13 +336,13 @@ namespace HdbscanSharp.Hdbscanstar
 						if (numChildClusters >= 2 && constructingSubCluster.Count >= minClusterSize && anyEdges)
 						{
 							//Check this child cluster is not equal to the unexplored first child cluster:
-							int firstChildClusterMember = firstChildCluster.Last();
+							var firstChildClusterMember = firstChildCluster.Last();
 							if (constructingSubCluster.Contains(firstChildClusterMember))
 								numChildClusters--;
 							//Otherwise, create a new cluster:
 							else
 							{
-								Cluster newCluster = CreateNewCluster(constructingSubCluster, currentClusterLabels,
+								var newCluster = CreateNewCluster(constructingSubCluster, currentClusterLabels,
 										clusters[examinedClusterLabel], nextClusterLabel, currentEdgeWeight);
 								newClusters.Add(newCluster);
 								clusters.Add(newCluster);
@@ -356,7 +355,7 @@ namespace HdbscanSharp.Hdbscanstar
 							CreateNewCluster(constructingSubCluster, currentClusterLabels,
 									clusters[examinedClusterLabel], 0, currentEdgeWeight);
 
-							foreach (int point in constructingSubCluster)
+							foreach (var point in constructingSubCluster)
 							{
 								pointNoiseLevels[point] = currentEdgeWeight;
 								pointLastClusters[point] = examinedClusterLabel;
@@ -369,15 +368,15 @@ namespace HdbscanSharp.Hdbscanstar
 					{
 						while (unexploredFirstChildClusterPoints.Any())
 						{
-							int vertexToExplore = unexploredFirstChildClusterPoints.First();
+							var vertexToExplore = unexploredFirstChildClusterPoints.First();
 							unexploredFirstChildClusterPoints.RemoveFirst();
-							foreach (int neighbor in mst.GetEdgeListForVertex(vertexToExplore))
+							foreach (var neighbor in mst.GetEdgeListForVertex(vertexToExplore))
 							{
 								if (firstChildCluster.Add(neighbor))
 									unexploredFirstChildClusterPoints.AddLast(neighbor);
 							}
 						}
-						Cluster newCluster = CreateNewCluster(firstChildCluster, currentClusterLabels,
+						var newCluster = CreateNewCluster(firstChildCluster, currentClusterLabels,
 								clusters[examinedClusterLabel], nextClusterLabel, currentEdgeWeight);
 						newClusters.Add(newCluster);
 						clusters.Add(newCluster);
@@ -390,12 +389,12 @@ namespace HdbscanSharp.Hdbscanstar
 				{
 					var nfi = new NumberFormatInfo();
 					nfi.NumberDecimalSeparator = ".";
-					int outputLength = 0;
-					string output = currentEdgeWeight.ToString(nfi) + delimiter;
+					var outputLength = 0;
+					var output = currentEdgeWeight.ToString(nfi) + delimiter;
 					hierarchyWriter.Append(output);
 					outputLength += output.Length;
 
-					for (int i = 0; i < previousClusterLabels.Length - 1; i++)
+					for (var i = 0; i < previousClusterLabels.Length - 1; i++)
 					{
 						output = previousClusterLabels[i].ToString(nfi) + delimiter;
 						hierarchyWriter.Append(output);
@@ -404,13 +403,12 @@ namespace HdbscanSharp.Hdbscanstar
 					output = previousClusterLabels[previousClusterLabels.Length - 1].ToString(nfi) + "\n";
 					hierarchyWriter.Append(output);
 					outputLength += output.Length;
-					lineCount++;
 					hierarchyCharsWritten += outputLength;
 				}
 
 				//Assign file offsets and calculate the number of constraints satisfied:
-				SortedSet<int> newClusterLabels = new SortedSet<int>();
-				foreach (Cluster newCluster in newClusters)
+				var newClusterLabels = new SortedSet<int>();
+				foreach (var newCluster in newClusters)
 				{
 					newCluster.SetFileOffset(hierarchyCharsWritten);
 					newClusterLabels.Add(newCluster.GetLabel());
@@ -419,7 +417,7 @@ namespace HdbscanSharp.Hdbscanstar
 				if (newClusterLabels.Any())
 					CalculateNumConstraintsSatisfied(newClusterLabels, clusters, constraints, currentClusterLabels);
 
-				for (int i = 0; i < previousClusterLabels.Length; i++)
+				for (var i = 0; i < previousClusterLabels.Length; i++)
 				{
 					previousClusterLabels[i] = currentClusterLabels[i];
 				}
@@ -432,12 +430,11 @@ namespace HdbscanSharp.Hdbscanstar
 
 			//Write out the final level of the hierarchy (all points noise):
 			hierarchyWriter.Append(0 + "" + delimiter);
-			for (int i = 0; i < previousClusterLabels.Length - 1; i++)
+			for (var i = 0; i < previousClusterLabels.Length - 1; i++)
 			{
 				hierarchyWriter.Append(0 + "" + delimiter);
 			}
 			hierarchyWriter.Append(0 + "\n");
-			lineCount++;
 			return clusters;
 		}
 
@@ -450,16 +447,16 @@ namespace HdbscanSharp.Hdbscanstar
 		/// <returns>true if there are any clusters with infinite stability, false otherwise</returns>
 		public static bool PropagateTree(List<Cluster> clusters)
 		{
-			SortedDictionary<int, Cluster> clustersToExamine = new SortedDictionary<int, Cluster>();
-			BitSet addedToExaminationList = new BitSet();
-			bool infiniteStability = false;
+			var clustersToExamine = new SortedDictionary<int, Cluster>();
+			var addedToExaminationList = new BitSet();
+			var infiniteStability = false;
 
 			//Find all leaf clusters in the cluster tree:
-			foreach (Cluster cluster in clusters)
+			foreach (var cluster in clusters)
 			{
 				if (cluster != null && !cluster.HasChildren())
 				{
-					int label = cluster.GetLabel();
+					var label = cluster.GetLabel();
 					clustersToExamine.Remove(label);
 					clustersToExamine.Add(label, cluster);
 					addedToExaminationList.Set(label);
@@ -470,18 +467,18 @@ namespace HdbscanSharp.Hdbscanstar
 			while (clustersToExamine.Any())
 			{
 				var currentKeyValue = clustersToExamine.Last();
-				Cluster currentCluster = currentKeyValue.Value;
+				var currentCluster = currentKeyValue.Value;
 				clustersToExamine.Remove(currentKeyValue.Key);
 
 				currentCluster.Propagate();
 
-				if (currentCluster.GetStability() == Double.PositiveInfinity)
+				if (currentCluster.GetStability() == double.PositiveInfinity)
 					infiniteStability = true;
 
 				if (currentCluster.GetParent() != null)
 				{
-					Cluster parent = currentCluster.GetParent();
-					int label = parent.GetLabel();
+					var parent = currentCluster.GetParent();
+					var label = parent.GetLabel();
 
 					if (!addedToExaminationList.Get(label))
 					{
@@ -511,17 +508,17 @@ namespace HdbscanSharp.Hdbscanstar
 			int numPoints)
 		{
 			//Take the list of propagated clusters from the root cluster:
-			List<Cluster> solution = clusters[1].GetPropagatedDescendants();
+			var solution = clusters[1].GetPropagatedDescendants();
 
 			var reader = hierarchyWriter.ToString();
-			int[] flatPartitioning = new int[numPoints];
+			var flatPartitioning = new int[numPoints];
 
 			//Store all the file offsets at which to find the birth points for the flat clustering:
-			SortedDictionary<long, List<int>> significantFileOffsets = new SortedDictionary<long, List<int>>();
+			var significantFileOffsets = new SortedDictionary<long, List<int>>();
 
-			foreach (Cluster cluster in solution)
+			foreach (var cluster in solution)
 			{
-				List<int> clusterList = significantFileOffsets
+				var clusterList = significantFileOffsets
 					.Where(m => m.Key == cluster.GetFileOffset())
 					.Select(m => m.Value)
 					.FirstOrDefault();
@@ -530,7 +527,7 @@ namespace HdbscanSharp.Hdbscanstar
 				{
 					clusterList = new List<int>();
 
-					long fileOffset = cluster.GetFileOffset();
+					var fileOffset = cluster.GetFileOffset();
 					significantFileOffsets.Remove(fileOffset);
 					significantFileOffsets.Add(fileOffset, clusterList);
 				}
@@ -543,15 +540,15 @@ namespace HdbscanSharp.Hdbscanstar
 				var entry = significantFileOffsets.First();
 				significantFileOffsets.Remove(entry.Key);
 
-				List<int> clusterList = entry.Value;
-				long offset = entry.Key;
+				var clusterList = entry.Value;
+				var offset = entry.Key;
 
-				int skip = (int)offset;
-				int iSkip = skip; 
-				int length = 1;
+				var skip = (int)offset;
+				var iSkip = skip; 
+				var length = 1;
 				while (iSkip < reader.Length)
 				{
-					char c = reader[iSkip];
+					var c = reader[iSkip];
 					if (c == '\n')
 					{
 						break;
@@ -560,12 +557,12 @@ namespace HdbscanSharp.Hdbscanstar
 					length++;
 				}
 				
-				string line = reader.Substring(skip, length);
-				string[] lineContents = line.Split(delimiter);
+				var line = reader.Substring(skip, length);
+				var lineContents = line.Split(delimiter);
 
-				for (int i = 1; i < lineContents.Length; i++)
+				for (var i = 1; i < lineContents.Length; i++)
 				{
-					int label = int.Parse(lineContents[i]);
+					var label = int.Parse(lineContents[i]);
 					if (clusterList.Contains(label))
 						flatPartitioning[i - 1] = label;
 				}
@@ -588,18 +585,18 @@ namespace HdbscanSharp.Hdbscanstar
 			int[] pointLastClusters,
 			double[] coreDistances)
 		{
-			int numPoints = pointNoiseLevels.Length;
-			List<OutlierScore> outlierScores = new List<OutlierScore>(numPoints);
+			var numPoints = pointNoiseLevels.Length;
+			var outlierScores = new List<OutlierScore>(numPoints);
 
 			//Iterate through each point, calculating its outlier score:
-			for (int i = 0; i < numPoints; i++)
+			for (var i = 0; i < numPoints; i++)
 			{
-				double epsilon_max = clusters[pointLastClusters[i]].GetPropagatedLowestChildDeathLevel();
-				double epsilon = pointNoiseLevels[i];
+				var epsilonMax = clusters[pointLastClusters[i]].GetPropagatedLowestChildDeathLevel();
+				var epsilon = pointNoiseLevels[i];
 				double score = 0;
 
 				if (epsilon != 0)
-					score = 1 - (epsilon_max / epsilon);
+					score = 1 - (epsilonMax / epsilon);
 
 				outlierScores.Add(new OutlierScore(score, coreDistances[i], i));
 			}
@@ -627,7 +624,7 @@ namespace HdbscanSharp.Hdbscanstar
 			int clusterLabel,
 			double edgeWeight)
 		{
-			foreach (int point in points)
+			foreach (var point in points)
 			{
 				clusterLabels[point] = clusterLabel;
 			}
@@ -636,11 +633,9 @@ namespace HdbscanSharp.Hdbscanstar
 
 			if (clusterLabel != 0)
 				return new Cluster(clusterLabel, parentCluster, edgeWeight, points.Count);
-			else
-			{
-				parentCluster.AddPointsToVirtualChildCluster(points);
-				return null;
-			}
+			
+			parentCluster.AddPointsToVirtualChildCluster(points);
+			return null;
 		}
 
 		/// <summary>
@@ -660,19 +655,19 @@ namespace HdbscanSharp.Hdbscanstar
 			if (constraints == null)
 				return;
 
-			List<Cluster> parents = new List<Cluster>();
+			var parents = new List<Cluster>();
 
-			foreach (int label in newClusterLabels)
+			foreach (var label in newClusterLabels)
 			{
-				Cluster parent = clusters[label].GetParent();
+				var parent = clusters[label].GetParent();
 				if (parent != null && !parents.Contains(parent))
 					parents.Add(parent);
 			}
 
-			foreach (HdbscanConstraint constraint in constraints)
+			foreach (var constraint in constraints)
 			{
-				int labelA = clusterLabels[constraint.GetPointA()];
-				int labelB = clusterLabels[constraint.GetPointB()];
+				var labelA = clusterLabels[constraint.GetPointA()];
+				var labelB = clusterLabels[constraint.GetPointB()];
 
 				if (constraint.GetConstraintType() == HdbscanConstraintType.MustLink && labelA == labelB)
 				{
@@ -687,9 +682,9 @@ namespace HdbscanSharp.Hdbscanstar
 						clusters[labelB].AddConstraintsSatisfied(1);
 					if (labelA == 0)
 					{
-						foreach (Cluster parent in parents)
+						foreach (var parent in parents)
 						{
-							if (parent.VirtualChildClusterContaintsPoint(constraint.GetPointA()))
+							if (parent.VirtualChildClusterConstraintsPoint(constraint.GetPointA()))
 							{
 								parent.AddVirtualChildConstraintsSatisfied(1);
 								break;
@@ -698,9 +693,9 @@ namespace HdbscanSharp.Hdbscanstar
 					}
 					if (labelB == 0)
 					{
-						foreach (Cluster parent in parents)
+						foreach (var parent in parents)
 						{
-							if (parent.VirtualChildClusterContaintsPoint(constraint.GetPointB()))
+							if (parent.VirtualChildClusterConstraintsPoint(constraint.GetPointB()))
 							{
 								parent.AddVirtualChildConstraintsSatisfied(1);
 								break;
@@ -710,7 +705,7 @@ namespace HdbscanSharp.Hdbscanstar
 				}
 			}
 
-			foreach (Cluster parent in parents)
+			foreach (var parent in parents)
 			{
 				parent.ReleaseVirtualChildCluster();
 			}
