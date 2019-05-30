@@ -10,7 +10,7 @@ HDBSCAN is a clustering algorithm developed by Campello, Moulavi, and Sander. It
 > From: https://github.com/scikit-learn-contrib/hdbscan
 
 # Supported framework
-- .NET Core 2.0
+- .NET Standard 2.0
 - .NET Framework 4.5
 
 # Install from Nuget
