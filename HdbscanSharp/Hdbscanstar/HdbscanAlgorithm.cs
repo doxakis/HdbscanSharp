@@ -182,8 +182,7 @@ namespace HdbscanSharp.Hdbscanstar
 		/// <param name="minClusterSize">The minimum number of points which a cluster needs to be a valid cluster</param>
 		/// <param name="compactHierarchy">Indicates if hierarchy should include all levels or only levels at which clusters first appear</param>
 		/// <param name="constraints">An optional List of Constraints to calculate cluster constraint satisfaction</param>
-		/// <param name="hierarchyWriter">The hierarchy output</param>
-		/// <param name="delimiter">The delimiter to be used while writing both files</param>
+		/// <param name="hierarchy">The hierarchy output</param>
 		/// <param name="pointNoiseLevels">A double[] to be filled with the levels at which each point becomes noise</param>
 		/// <param name="pointLastClusters">An int[] to be filled with the last label each point had before becoming noise</param>
 		/// <returns>The cluster tree</returns>
@@ -192,12 +191,11 @@ namespace HdbscanSharp.Hdbscanstar
 			int minClusterSize,
 			bool compactHierarchy,
 			List<HdbscanConstraint> constraints,
-			StringBuilder hierarchyWriter,
-			char delimiter,
+			List<int[]> hierarchy,
 			double[] pointNoiseLevels,
 			int[] pointLastClusters)
 		{
-			long hierarchyCharsWritten = 0;
+			int hierarchyPosition = 0;
 
 			//The current edge being removed from the MST:
 			var currentEdgeIndex = mst.GetNumEdges() - 1;
@@ -387,30 +385,18 @@ namespace HdbscanSharp.Hdbscanstar
 				//Write out the current level of the hierarchy:
 				if (!compactHierarchy || nextLevelSignificant || newClusters.Any())
 				{
-					var nfi = new NumberFormatInfo();
-					nfi.NumberDecimalSeparator = ".";
-					var outputLength = 0;
-					var output = currentEdgeWeight.ToString(nfi) + delimiter;
-					hierarchyWriter.Append(output);
-					outputLength += output.Length;
-
-					for (var i = 0; i < previousClusterLabels.Length - 1; i++)
-					{
-						output = previousClusterLabels[i].ToString(nfi) + delimiter;
-						hierarchyWriter.Append(output);
-						outputLength += output.Length;
-					}
-					output = previousClusterLabels[previousClusterLabels.Length - 1].ToString(nfi) + "\n";
-					hierarchyWriter.Append(output);
-					outputLength += output.Length;
-					hierarchyCharsWritten += outputLength;
+					int[] lineContents = new int[previousClusterLabels.Length];
+					for (var i = 0; i < previousClusterLabels.Length; i++)
+						lineContents[i] = previousClusterLabels[i];
+					hierarchy.Add(lineContents);
+					hierarchyPosition++;
 				}
 
 				//Assign file offsets and calculate the number of constraints satisfied:
 				var newClusterLabels = new SortedSet<int>();
 				foreach (var newCluster in newClusters)
 				{
-					newCluster.SetFileOffset(hierarchyCharsWritten);
+					newCluster.SetHierarchyPosition(hierarchyPosition);
 					newClusterLabels.Add(newCluster.GetLabel());
 				}
 
@@ -429,12 +415,13 @@ namespace HdbscanSharp.Hdbscanstar
 			}
 
 			//Write out the final level of the hierarchy (all points noise):
-			hierarchyWriter.Append(0 + "" + delimiter);
-			for (var i = 0; i < previousClusterLabels.Length - 1; i++)
 			{
-				hierarchyWriter.Append(0 + "" + delimiter);
+				int[] lineContents = new int[previousClusterLabels.Length + 1];
+				for (var i = 0; i < previousClusterLabels.Length; i++)
+					lineContents[i] = 0;
+				hierarchy.Add(lineContents);
 			}
-			hierarchyWriter.Append(0 + "\n");
+			
 			return clusters;
 		}
 
@@ -497,29 +484,27 @@ namespace HdbscanSharp.Hdbscanstar
 		/// returns an array of labels.  propagateTree() must be called before calling this method.
 		/// </summary>
 		/// <param name="clusters">A list of Clusters forming a cluster tree which has already been propagated</param>
-		/// <param name="hierarchyWriter">The hierarchy content</param>
-		/// <param name="delimiter">The delimiter for both files</param>
+		/// <param name="hierarchy">The hierarchy content</param>
 		/// <param name="numPoints">The number of points in the original data set</param>
 		/// <returns>An array of labels for the flat clustering result</returns>
 		public static int[] FindProminentClusters(
 			List<Cluster> clusters,
-			StringBuilder hierarchyWriter,
-			char delimiter,
+			List<int[]> hierarchy,
 			int numPoints)
 		{
 			//Take the list of propagated clusters from the root cluster:
 			var solution = clusters[1].GetPropagatedDescendants();
 
-			var reader = hierarchyWriter.ToString();
 			var flatPartitioning = new int[numPoints];
 
-			//Store all the file offsets at which to find the birth points for the flat clustering:
-			var significantFileOffsets = new SortedDictionary<long, List<int>>();
+			//Store all the hierarchy positions at which to find the birth points for the flat clustering:
+			var significantHierarchyPositions = new SortedDictionary<int, List<int>>();
 
 			foreach (var cluster in solution)
 			{
-				var clusterList = significantFileOffsets
-					.Where(m => m.Key == cluster.GetFileOffset())
+				var hierarchyPosition = cluster.GetHierarchyPosition();
+				var clusterList = significantHierarchyPositions
+					.Where(m => m.Key == hierarchyPosition)
 					.Select(m => m.Value)
 					.FirstOrDefault();
 
@@ -527,44 +512,27 @@ namespace HdbscanSharp.Hdbscanstar
 				{
 					clusterList = new List<int>();
 
-					var fileOffset = cluster.GetFileOffset();
-					significantFileOffsets.Remove(fileOffset);
-					significantFileOffsets.Add(fileOffset, clusterList);
+					significantHierarchyPositions.Remove(hierarchyPosition);
+					significantHierarchyPositions.Add(hierarchyPosition, clusterList);
 				}
 				clusterList.Add(cluster.GetLabel());
 			}
 
 			//Go through the hierarchy file, setting labels for the flat clustering:
-			while (significantFileOffsets.Any())
+			while (significantHierarchyPositions.Any())
 			{
-				var entry = significantFileOffsets.First();
-				significantFileOffsets.Remove(entry.Key);
+				var entry = significantHierarchyPositions.First();
+				significantHierarchyPositions.Remove(entry.Key);
 
 				var clusterList = entry.Value;
-				var offset = entry.Key;
-
-				var skip = (int)offset;
-				var iSkip = skip; 
-				var length = 1;
-				while (iSkip < reader.Length)
-				{
-					var c = reader[iSkip];
-					if (c == '\n')
-					{
-						break;
-					}
-					iSkip++;
-					length++;
-				}
+				var hierarchyPosition = entry.Key;
+				var lineContents = hierarchy[hierarchyPosition];
 				
-				var line = reader.Substring(skip, length);
-				var lineContents = line.Split(delimiter);
-
-				for (var i = 1; i < lineContents.Length; i++)
+				for (var i = 0; i < lineContents.Length; i++)
 				{
-					var label = int.Parse(lineContents[i]);
+					var label = lineContents[i];
 					if (clusterList.Contains(label))
-						flatPartitioning[i - 1] = label;
+						flatPartitioning[i] = label;
 				}
 			}
 			return flatPartitioning;

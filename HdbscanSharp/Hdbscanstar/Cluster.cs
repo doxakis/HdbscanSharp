@@ -16,7 +16,7 @@ namespace HdbscanSharp.Hdbscanstar
 		private readonly double _birthLevel;
 		private double _deathLevel;
 		private int _numPoints;
-		private long _fileOffset;    //First level where points with this cluster's label appear
+		private int _hierarchyPosition;    //First level where points with this cluster's label appear
 		private double _stability;
 		private double _propagatedStability;
 		private double _propagatedLowestChildDeathLevel;
@@ -40,7 +40,7 @@ namespace HdbscanSharp.Hdbscanstar
 			_birthLevel = birthLevel;
 			_deathLevel = 0;
 			_numPoints = numPoints;
-			_fileOffset = 0;
+			_hierarchyPosition = 0;
 			_stability = 0;
 			_propagatedStability = 0;
 			_propagatedLowestChildDeathLevel = double.MaxValue;
@@ -169,14 +169,14 @@ namespace HdbscanSharp.Hdbscanstar
 			return _parent;
 		}
 
-		public long GetFileOffset()
+		public int GetHierarchyPosition()
 		{
-			return _fileOffset;
+			return _hierarchyPosition;
 		}
 
-		public void SetFileOffset(long offset)
+		public void SetHierarchyPosition(int position)
 		{
-			_fileOffset = offset;
+			_hierarchyPosition = position;
 		}
 
 		public double GetStability()

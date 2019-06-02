@@ -89,8 +89,7 @@ namespace HdbscanSharp.Runner
 			var pointNoiseLevels = new double[numPoints];
 			var pointLastClusters = new int[numPoints];
 
-			var hierarchyWriter = new StringBuilder();
-			var delimiter = ',';
+			var hierarchy = new List<int[]>();
 
 			// Compute hierarchy and cluster tree
 			var clusters = HdbscanAlgorithm.ComputeHierarchyAndClusterTree(
@@ -98,8 +97,7 @@ namespace HdbscanSharp.Runner
 				parameters.MinClusterSize,
 				true,
 				parameters.Constraints,
-				hierarchyWriter,
-				delimiter,
+				hierarchy,
 				pointNoiseLevels,
 				pointLastClusters);
 
@@ -109,8 +107,7 @@ namespace HdbscanSharp.Runner
 			// Compute final flat partitioning
 			var prominentClusters = HdbscanAlgorithm.FindProminentClusters(
 				clusters,
-				hierarchyWriter,
-				delimiter,
+				hierarchy,
 				numPoints);
 
 			// Compute outlier scores for each point
