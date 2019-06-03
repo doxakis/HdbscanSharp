@@ -180,7 +180,6 @@ namespace HdbscanSharp.Hdbscanstar
 		/// </summary>
 		/// <param name="mst">A minimum spanning tree which has been sorted by edge weight in descending order</param>
 		/// <param name="minClusterSize">The minimum number of points which a cluster needs to be a valid cluster</param>
-		/// <param name="compactHierarchy">Indicates if hierarchy should include all levels or only levels at which clusters first appear</param>
 		/// <param name="constraints">An optional List of Constraints to calculate cluster constraint satisfaction</param>
 		/// <param name="hierarchy">The hierarchy output</param>
 		/// <param name="pointNoiseLevels">A double[] to be filled with the levels at which each point becomes noise</param>
@@ -189,7 +188,6 @@ namespace HdbscanSharp.Hdbscanstar
 		public static List<Cluster> ComputeHierarchyAndClusterTree(
 			UndirectedGraph mst,
 			int minClusterSize,
-			bool compactHierarchy,
 			List<HdbscanConstraint> constraints,
 			List<int[]> hierarchy,
 			double[] pointNoiseLevels,
@@ -383,7 +381,7 @@ namespace HdbscanSharp.Hdbscanstar
 				}
 
 				//Write out the current level of the hierarchy:
-				if (!compactHierarchy || nextLevelSignificant || newClusters.Any())
+				if (nextLevelSignificant || newClusters.Any())
 				{
 					int[] lineContents = new int[previousClusterLabels.Length];
 					for (var i = 0; i < previousClusterLabels.Length; i++)

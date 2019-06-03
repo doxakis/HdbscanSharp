@@ -95,7 +95,6 @@ namespace HdbscanSharp.Runner
 			var clusters = HdbscanAlgorithm.ComputeHierarchyAndClusterTree(
 				mst,
 				parameters.MinClusterSize,
-				true,
 				parameters.Constraints,
 				hierarchy,
 				pointNoiseLevels,
