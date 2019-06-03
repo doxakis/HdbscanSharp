@@ -503,19 +503,10 @@ namespace HdbscanSharp.Hdbscanstar
 			foreach (var cluster in solution)
 			{
 				var hierarchyPosition = cluster.GetHierarchyPosition();
-				var clusterList = significantHierarchyPositions
-					.Where(m => m.Key == hierarchyPosition)
-					.Select(m => m.Value)
-					.FirstOrDefault();
-
-				if (clusterList == null)
-				{
-					clusterList = new List<int>();
-
-					significantHierarchyPositions.Remove(hierarchyPosition);
-					significantHierarchyPositions.Add(hierarchyPosition, clusterList);
-				}
-				clusterList.Add(cluster.GetLabel());
+				if (significantHierarchyPositions.ContainsKey(hierarchyPosition))
+					significantHierarchyPositions[hierarchyPosition].Add(cluster.GetLabel());
+				else
+					significantHierarchyPositions[hierarchyPosition] = new List<int> { cluster.GetLabel() };
 			}
 
 			//Go through the hierarchy file, setting labels for the flat clustering:
