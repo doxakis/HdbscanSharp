@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HdbscanSharp.Hdbscanstar
+﻿namespace HdbscanSharp.Hdbscanstar
 {
 	/// <summary>
 	/// A clustering constraint (either a must-link or cannot-link constraint between two points).

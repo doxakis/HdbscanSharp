@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HdbscanSharp.Distance
+﻿namespace HdbscanSharp.Distance
 {
 	/// <summary>
 	/// An interface for classes which compute the distance between two points (where points are
