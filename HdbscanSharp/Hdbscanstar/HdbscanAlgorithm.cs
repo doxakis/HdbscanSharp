@@ -387,8 +387,8 @@ namespace HdbscanSharp.Hdbscanstar
 				var newClusterLabels = new SortedSet<int>();
 				foreach (var newCluster in newClusters)
 				{
-					newCluster.SetHierarchyPosition(hierarchyPosition);
-					newClusterLabels.Add(newCluster.GetLabel());
+					newCluster.HierarchyPosition = hierarchyPosition;
+					newClusterLabels.Add(newCluster.Label);
 				}
 
 				if (newClusterLabels.Any())
@@ -432,9 +432,9 @@ namespace HdbscanSharp.Hdbscanstar
 			//Find all leaf clusters in the cluster tree:
 			foreach (var cluster in clusters)
 			{
-				if (cluster != null && !cluster.HasChildren())
+				if (cluster != null && !cluster.HasChildren)
 				{
-					var label = cluster.GetLabel();
+					var label = cluster.Label;
 					clustersToExamine.Remove(label);
 					clustersToExamine.Add(label, cluster);
 					addedToExaminationList.Set(label);
@@ -450,13 +450,13 @@ namespace HdbscanSharp.Hdbscanstar
 
 				currentCluster.Propagate();
 
-				if (currentCluster.GetStability() == double.PositiveInfinity)
+				if (currentCluster.Stability == double.PositiveInfinity)
 					infiniteStability = true;
 
-				if (currentCluster.GetParent() != null)
+				if (currentCluster.Parent != null)
 				{
-					var parent = currentCluster.GetParent();
-					var label = parent.GetLabel();
+					var parent = currentCluster.Parent;
+					var label = parent.Label;
 
 					if (!addedToExaminationList.Get(label))
 					{
@@ -484,7 +484,7 @@ namespace HdbscanSharp.Hdbscanstar
 			int numPoints)
 		{
 			//Take the list of propagated clusters from the root cluster:
-			var solution = clusters[1].GetPropagatedDescendants();
+			var solution = clusters[1].PropagatedDescendants;
 
 			var flatPartitioning = new int[numPoints];
 
@@ -493,11 +493,11 @@ namespace HdbscanSharp.Hdbscanstar
 
 			foreach (var cluster in solution)
 			{
-				var hierarchyPosition = cluster.GetHierarchyPosition();
+				var hierarchyPosition = cluster.HierarchyPosition;
 				if (significantHierarchyPositions.ContainsKey(hierarchyPosition))
-					significantHierarchyPositions[hierarchyPosition].Add(cluster.GetLabel());
+					significantHierarchyPositions[hierarchyPosition].Add(cluster.Label);
 				else
-					significantHierarchyPositions[hierarchyPosition] = new List<int> { cluster.GetLabel() };
+					significantHierarchyPositions[hierarchyPosition] = new List<int> { cluster.Label };
 			}
 
 			//Go through the hierarchy file, setting labels for the flat clustering:
@@ -541,7 +541,7 @@ namespace HdbscanSharp.Hdbscanstar
 			//Iterate through each point, calculating its outlier score:
 			for (var i = 0; i < numPoints; i++)
 			{
-				var epsilonMax = clusters[pointLastClusters[i]].GetPropagatedLowestChildDeathLevel();
+				var epsilonMax = clusters[pointLastClusters[i]].PropagatedLowestChildDeathLevel;
 				var epsilon = pointNoiseLevels[i];
 				double score = 0;
 
@@ -609,7 +609,7 @@ namespace HdbscanSharp.Hdbscanstar
 
 			foreach (var label in newClusterLabels)
 			{
-				var parent = clusters[label].GetParent();
+				var parent = clusters[label].Parent;
 				if (parent != null && !parents.Contains(parent))
 					parents.Add(parent);
 			}

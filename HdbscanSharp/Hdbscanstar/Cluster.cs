@@ -9,20 +9,21 @@ namespace HdbscanSharp.Hdbscanstar
 	/// </summary>
 	public class Cluster
 	{
-		private readonly int _label;
 		private readonly double _birthLevel;
 		private double _deathLevel;
 		private int _numPoints;
-		private int _hierarchyPosition;    //First level where points with this cluster's label appear
-		private double _stability;
 		private double _propagatedStability;
-		private double _propagatedLowestChildDeathLevel;
 		private int _numConstraintsSatisfied;
 		private int _propagatedNumConstraintsSatisfied;
 		private SortedSet<int> _virtualChildCluster;
-		private readonly Cluster _parent;
-		private bool _clusterHasChildren;
-		private readonly List<Cluster> _propagatedDescendants;
+
+		public List<Cluster> PropagatedDescendants { get; }
+		public double PropagatedLowestChildDeathLevel { get; internal set; }
+		public Cluster Parent { get; }
+		public double Stability { get; internal set; }
+		public bool HasChildren { get; internal set; }
+		public int Label { get; }
+		public int HierarchyPosition { get; set; }    //First level where points with this cluster's label appear
 
 		/// <summary>
 		/// Creates a new Cluster.
@@ -33,22 +34,23 @@ namespace HdbscanSharp.Hdbscanstar
 		/// <param name="numPoints">The initial number of points in this cluster</param>
 		public Cluster(int label, Cluster parent, double birthLevel, int numPoints)
 		{
-			_label = label;
 			_birthLevel = birthLevel;
 			_deathLevel = 0;
 			_numPoints = numPoints;
-			_hierarchyPosition = 0;
-			_stability = 0;
 			_propagatedStability = 0;
-			_propagatedLowestChildDeathLevel = double.MaxValue;
 			_numConstraintsSatisfied = 0;
 			_propagatedNumConstraintsSatisfied = 0;
 			_virtualChildCluster = new SortedSet<int>();
-			_parent = parent;
-			if (_parent != null)
-				_parent._clusterHasChildren = true;
-			_clusterHasChildren = false;
-			_propagatedDescendants = new List<Cluster>(1);
+
+			Label = label;
+			HierarchyPosition = 0;
+			Stability = 0;
+			PropagatedLowestChildDeathLevel = double.MaxValue;
+			Parent = parent;
+			if (Parent != null)
+				Parent.HasChildren = true;
+			HasChildren = false;
+			PropagatedDescendants = new List<Cluster>(1);
 		}
 
 		/// <summary>
@@ -61,7 +63,7 @@ namespace HdbscanSharp.Hdbscanstar
 		public void DetachPoints(int numPoints, double level)
 		{
 			_numPoints -= numPoints;
-			_stability += (numPoints * (1 / level - 1 / _birthLevel));
+			Stability += (numPoints * (1 / level - 1 / _birthLevel));
 
 			if (_numPoints == 0)
 				_deathLevel = level;
@@ -78,47 +80,47 @@ namespace HdbscanSharp.Hdbscanstar
 		/// </summary>
 		public void Propagate()
 		{
-			if (_parent != null)
+			if (Parent != null)
 			{
 				//Propagate lowest death level of any descendants:
-				if (_propagatedLowestChildDeathLevel == double.MaxValue)
-					_propagatedLowestChildDeathLevel = _deathLevel;
-				if (_propagatedLowestChildDeathLevel < _parent._propagatedLowestChildDeathLevel)
-					_parent._propagatedLowestChildDeathLevel = _propagatedLowestChildDeathLevel;
+				if (PropagatedLowestChildDeathLevel == double.MaxValue)
+					PropagatedLowestChildDeathLevel = _deathLevel;
+				if (PropagatedLowestChildDeathLevel < Parent.PropagatedLowestChildDeathLevel)
+					Parent.PropagatedLowestChildDeathLevel = PropagatedLowestChildDeathLevel;
 				
 				//If this cluster has no children, it must propagate itself:
-				if (!_clusterHasChildren)
+				if (!HasChildren)
 				{
-					_parent._propagatedNumConstraintsSatisfied += _numConstraintsSatisfied;
-					_parent._propagatedStability += _stability;
-					_parent._propagatedDescendants.Add(this);
+					Parent._propagatedNumConstraintsSatisfied += _numConstraintsSatisfied;
+					Parent._propagatedStability += Stability;
+					Parent.PropagatedDescendants.Add(this);
 				}
 				else if (_numConstraintsSatisfied > _propagatedNumConstraintsSatisfied)
 				{
-					_parent._propagatedNumConstraintsSatisfied += _numConstraintsSatisfied;
-					_parent._propagatedStability += _stability;
-					_parent._propagatedDescendants.Add(this);
+					Parent._propagatedNumConstraintsSatisfied += _numConstraintsSatisfied;
+					Parent._propagatedStability += Stability;
+					Parent.PropagatedDescendants.Add(this);
 				}
 				else if (_numConstraintsSatisfied < _propagatedNumConstraintsSatisfied)
 				{
-					_parent._propagatedNumConstraintsSatisfied += _propagatedNumConstraintsSatisfied;
-					_parent._propagatedStability += _propagatedStability;
-					_parent._propagatedDescendants.AddRange(_propagatedDescendants);
+					Parent._propagatedNumConstraintsSatisfied += _propagatedNumConstraintsSatisfied;
+					Parent._propagatedStability += _propagatedStability;
+					Parent.PropagatedDescendants.AddRange(PropagatedDescendants);
 				}
 				else if (_numConstraintsSatisfied == _propagatedNumConstraintsSatisfied)
 				{
 					//Chose the parent over descendants if there is a tie in stability:
-					if (_stability >= _propagatedStability)
+					if (Stability >= _propagatedStability)
 					{
-						_parent._propagatedNumConstraintsSatisfied += _numConstraintsSatisfied;
-						_parent._propagatedStability += _stability;
-						_parent._propagatedDescendants.Add(this);
+						Parent._propagatedNumConstraintsSatisfied += _numConstraintsSatisfied;
+						Parent._propagatedStability += Stability;
+						Parent.PropagatedDescendants.Add(this);
 					}
 					else
 					{
-						_parent._propagatedNumConstraintsSatisfied += _propagatedNumConstraintsSatisfied;
-						_parent._propagatedStability += _propagatedStability;
-						_parent._propagatedDescendants.AddRange(_propagatedDescendants);
+						Parent._propagatedNumConstraintsSatisfied += _propagatedNumConstraintsSatisfied;
+						Parent._propagatedStability += _propagatedStability;
+						Parent.PropagatedDescendants.AddRange(PropagatedDescendants);
 					}
 				}
 			}
@@ -154,46 +156,6 @@ namespace HdbscanSharp.Hdbscanstar
 		public void ReleaseVirtualChildCluster()
 		{
 			_virtualChildCluster = null;
-		}
-
-		public int GetLabel()
-		{
-			return _label;
-		}
-
-		public Cluster GetParent()
-		{
-			return _parent;
-		}
-
-		public int GetHierarchyPosition()
-		{
-			return _hierarchyPosition;
-		}
-
-		public void SetHierarchyPosition(int position)
-		{
-			_hierarchyPosition = position;
-		}
-
-		public double GetStability()
-		{
-			return _stability;
-		}
-
-		public double GetPropagatedLowestChildDeathLevel()
-		{
-			return _propagatedLowestChildDeathLevel;
-		}
-
-		public IEnumerable<Cluster> GetPropagatedDescendants()
-		{
-			return _propagatedDescendants;
-		}
-
-		public bool HasChildren()
-		{
-			return _clusterHasChildren;
 		}
 	}
 }
