@@ -13,5 +13,8 @@
 		<PackageLicenseUrl>https://github.com/doxakis/HdbscanSharp/blob/master/LICENSE</PackageLicenseUrl>
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/doxakis/HdbscanSharp</RepositoryUrl>
+		<SignAssembly>true</SignAssembly>
+		<DelaySign>false</DelaySign>
+		<AssemblyOriginatorKeyFile>HdbscanSharp.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 </Project>
