@@ -18,7 +18,7 @@ namespace Tests
 			var b = new double[] { 19.99, 19.99, 19.99, 19.990000000000002, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
 			var distFunc = new PearsonCorrelation();
-			var distance = distFunc.ComputeDistance(a, b);
+			var distance = distFunc.ComputeDistance(0, 1, a, b);
 			if (distance < 0)
 			{
 				Assert.Fail("Distance must be positive.");
@@ -48,7 +48,7 @@ namespace Tests
 			dataset.Add(e);
 			dataset.Add(f);
 			
-			var result = HdbscanRunner.Run(new HdbscanParameters
+			var result = HdbscanRunner.Run(new HdbscanParameters<double[]>
 			{
 				DataSet = dataset.ToArray(),
 				MinPoints = 2,

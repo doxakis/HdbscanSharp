@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using HdbscanSharp.Utils;
 
@@ -6,29 +7,31 @@ namespace HdbscanSharp.Hdbscanstar
 {
 	public class HdbscanAlgorithm
 	{
-        /// <summary>
-        /// Calculates the core distances for each point in the data set, given some value for k.
-        /// </summary>
-        /// <param name="distances">A double[][] where index [i][j] indicates the jth attribute of data point i</param>
-        /// <param name="k">Each point's core distance will be it's distance to the kth nearest neighbor</param>
-        /// <returns> An array of core distances</returns>
-        public static double[] CalculateCoreDistances(
-			double[][] distances,
+		/// <summary>
+		/// Calculates the core distances for each point in the data set, given some value for k.
+		/// </summary>
+		/// <param name="distances">The function to get the distance</param>
+		/// <param name="numPoints">The number of elements in dataset</param>
+		/// <param name="k">Each point's core distance will be it's distance to the kth nearest neighbor</param>
+		/// <returns> An array of core distances</returns>
+		public static double[] CalculateCoreDistances(
+			Func<int, int, double> distances,
+			int numPoints,
 			int k)
 		{
 			var numNeighbors = k - 1;
-			var coreDistances = new double[distances.Length];
+			var coreDistances = new double[numPoints];
 
 			if (k == 1)
 			{
-				for (var point = 0; point < distances.Length; point++)
+				for (var point = 0; point < numPoints; point++)
 				{
 					coreDistances[point] = 0;
 				}
 				return coreDistances;
 			}
 
-			for (var point = 0; point < distances.Length; point++)
+			for (var point = 0; point < numPoints; point++)
 			{
 				var kNNDistances = new double[numNeighbors];   //Sorted nearest distances found so far
 				for (var i = 0; i < numNeighbors; i++)
@@ -36,12 +39,12 @@ namespace HdbscanSharp.Hdbscanstar
 					kNNDistances[i] = double.MaxValue;
 				}
 
-				for (var neighbor = 0; neighbor < distances.Length; neighbor++)
+				for (var neighbor = 0; neighbor < numPoints; neighbor++)
 				{
 					if (point == neighbor)
 						continue;
 
-                    var distance = distances[point][neighbor];
+                    var distance = distances(point, neighbor);
                     
 					//Check at which position in the nearest distances the current distance would fit:
 					var neighborIndex = numNeighbors;
@@ -69,52 +72,54 @@ namespace HdbscanSharp.Hdbscanstar
         /// Constructs the minimum spanning tree of mutual reachability distances for the data set, given
         /// the core distances for each point.
         /// </summary>
-        /// <param name="distances">A double[][] where index [i][j] indicates the jth attribute of data point i</param>
+        /// <param name="distances">The function to get the distance</param>
+        /// <param name="numPoints">The number of elements in dataset</param>
         /// <param name="coreDistances">An array of core distances for each data point</param>
         /// <param name="selfEdges">If each point should have an edge to itself with weight equal to core distance</param>
         /// <returns> An MST for the data set using the mutual reachability distances</returns>
         public static UndirectedGraph ConstructMst(
-			double[][] distances,
+	        Func<int, int, double> distances,
+	        int numPoints,
 			double[] coreDistances,
 			bool selfEdges)
 		{
 			var selfEdgeCapacity = 0;
 			if (selfEdges)
-				selfEdgeCapacity = distances.Length;
+				selfEdgeCapacity = numPoints;
 
 			//One bit is set (true) for each attached point, or unset (false) for unattached points:
 			var attachedPoints = new BitSet();
 
 			//Each point has a current neighbor point in the tree, and a current nearest distance:
-			var nearestMRDNeighbors = new int[distances.Length - 1 + selfEdgeCapacity];
-			var nearestMRDDistances = new double[distances.Length - 1 + selfEdgeCapacity];
+			var nearestMRDNeighbors = new int[numPoints - 1 + selfEdgeCapacity];
+			var nearestMRDDistances = new double[numPoints - 1 + selfEdgeCapacity];
 
-			for (var i = 0; i < distances.Length - 1; i++)
+			for (var i = 0; i < numPoints - 1; i++)
 			{
 				nearestMRDDistances[i] = double.MaxValue;
 			}
 
 			//The MST is expanded starting with the last point in the data set:
-			var currentPoint = distances.Length - 1;
+			var currentPoint = numPoints - 1;
 			var numAttachedPoints = 1;
-			attachedPoints.Set(distances.Length - 1);
+			attachedPoints.Set(numPoints - 1);
 
 			//Continue attaching points to the MST until all points are attached:
-			while (numAttachedPoints < distances.Length)
+			while (numAttachedPoints < numPoints)
 			{
 				var nearestMRDPoint = -1;
 				var nearestMRDDistance = double.MaxValue;
 
 				//Iterate through all unattached points, updating distances using the current point:
-				for (var neighbor = 0; neighbor < distances.Length; neighbor++)
+				for (var neighbor = 0; neighbor < numPoints; neighbor++)
 				{
 					if (currentPoint == neighbor)
 						continue;
 
-					if (attachedPoints.Get(neighbor) == true)
+					if (attachedPoints.Get(neighbor))
 						continue;
 
-                    var distance = distances[currentPoint][neighbor];
+                    var distance = distances(currentPoint, neighbor);
 					var mutualReachabiltiyDistance = distance;
 
 					if (coreDistances[currentPoint] > mutualReachabiltiyDistance)
@@ -144,8 +149,8 @@ namespace HdbscanSharp.Hdbscanstar
 			}
 
 			//Create an array for vertices in the tree that each point attached to:
-			var otherVertexIndices = new int[distances.Length - 1 + selfEdgeCapacity];
-			for (var i = 0; i < distances.Length - 1; i++)
+			var otherVertexIndices = new int[numPoints - 1 + selfEdgeCapacity];
+			for (var i = 0; i < numPoints - 1; i++)
 			{
 				otherVertexIndices[i] = i;
 			}
@@ -153,16 +158,16 @@ namespace HdbscanSharp.Hdbscanstar
 			//If necessary, attach self edges:
 			if (selfEdges)
 			{
-				for (var i = distances.Length - 1; i < distances.Length * 2 - 1; i++)
+				for (var i = numPoints - 1; i < numPoints * 2 - 1; i++)
 				{
-					var vertex = i - (distances.Length - 1);
+					var vertex = i - (numPoints - 1);
 					nearestMRDNeighbors[i] = vertex;
 					otherVertexIndices[i] = vertex;
 					nearestMRDDistances[i] = coreDistances[vertex];
 				}
 			}
 
-			return new UndirectedGraph(distances.Length, nearestMRDNeighbors, otherVertexIndices, nearestMRDDistances);
+			return new UndirectedGraph(numPoints, nearestMRDNeighbors, otherVertexIndices, nearestMRDDistances);
 		}
 
 		/// <summary>

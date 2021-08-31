@@ -1,8 +1,5 @@
 ﻿using HdbscanSharp.Distance;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Tests
 {
@@ -18,7 +15,7 @@ namespace Tests
 			var b = new double[] { 19.990000000000002 };
 
 			var distFunc = new CosineSimilarity();
-			var distance = distFunc.ComputeDistance(a, b);
+			var distance = distFunc.ComputeDistance(0, 1, a, b);
 			if (distance < 0)
 			{
 				Assert.Fail("Distance must be positive.");

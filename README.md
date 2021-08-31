@@ -29,9 +29,11 @@ using HdbscanSharp.Runner;
 
 var result = HdbscanRunner.Run(new HdbscanParameters
 {
-  DataSet = dataset,
+  DataSet = dataset, // double[][] for normal matrix or Dictionary<int, int>[] for sparse matrix
   MinPoints = 25,
   MinClusterSize = 25,
+  CacheDistance = true, // use caching for distance
+  MaxDegreeOfParallelism = 1, // to indicate all threads, you can specify 0.
   DistanceFunction = new CosineSimilarity() // See HdbscanSharp/Distance folder for more distance function
 });
 
@@ -54,11 +56,34 @@ var result = HdbscanRunner.Run(new HdbscanParameters
 // produce unexpected results. It may be advisable to increase the value of MinPoints and/or MinClusterSize.
 ```
 
-**For more complete examples, please see the DocumentClusteringExample and IrisDatasetExample folders.**
+**For more complete example, please see the project IrisDatasetExample.**
 
-# Improve speed
+# Improving performance
 
 You have many options.
+
+## Reduce the dataset
+
+Split the dataset in multiple smaller batches and run the algorithm for each batch.
+The algorithm does not scale linearly.
+At least, it can return clusters while using less memory, CPU and time.
+
+## Use caching (with maybe multiple threads)
+
+2 ways:
+
+- The `CosineSimilarity` class accept a parameter to indicate if you want caching enable and a second parameter to indicate if you will use it with multiple threads.
+- Use the parameter `CacheDistance`
+
+Note:
+If CacheDistance is false, MaxDegreeOfParallelism has no impact.
+The CacheDistance can be useful to use multiple threads to calculate the distance matrix.
+But, it can use a lot a memory depending on the DataSet and unfortunately, it may impact negatively the performance if too much memory is used. So, use with caution and measure.
+
+## Use sparse matrix
+
+If the dataset is filled with mostly the same values, you could use sparse matrix.
+The algorithm will skip the missing values and it could massively improve the performance by having less calculation to do.
 
 ## Reduce the dimensions
 
@@ -99,15 +124,11 @@ var result = HdbscanRunner.Run(new HdbscanParameters
 });
 ```
 
-## Use multiple thread
-
-By default, it doesn't use multiple thread. You must specify `UseMultipleThread = true`. Optionally, you can limit the number of thread with the option `MaxDegreeOfParallelism`. When you activate `UseMultipleThread`, it will use by default all thread (`Environment.ProcessorCount`).
-
 ## GPU acceleration
 
 Note: I assume you have a Nvidia graphic card.
 
-We suggest to use ILGPU (http://www.ilgpu.net/) (dotnet core support)
+I suggest to use ILGPU (http://www.ilgpu.net/) (dotnet core support)
 
 Be aware that there is a cost time to communicate with the GPU. So you need lot of data to benefits. The memory can be limited depending on the use case and the GPU used. You may need to split your dataset, do batch process and combine the result.
 

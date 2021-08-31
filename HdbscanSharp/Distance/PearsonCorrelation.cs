@@ -5,9 +5,9 @@ namespace HdbscanSharp.Distance
 	/// <summary>
 	/// Computes the euclidean distance between two points, d = 1 - (cov(X,Y) / (std_dev(X) * std_dev(Y)))
 	/// </summary>
-	public class PearsonCorrelation : IDistanceCalculator
+	public class PearsonCorrelation : IDistanceCalculator<double[]>
 	{
-		public double ComputeDistance(double[] attributesOne, double[] attributesTwo)
+		public double ComputeDistance(int indexOne, int indexTwo, double[] attributesOne, double[] attributesTwo)
 		{
 			double meanOne = 0;
 			double meanTwo = 0;

@@ -1,23 +1,19 @@
 ﻿using HdbscanSharp.Distance;
-using HdbscanSharp.Hdbscanstar;
 using HdbscanSharp.Runner;
 using System;
-using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace IrisDatasetExample
 {
-	class Program
+	internal static class Program
 	{
-		static void Main(string[] args)
+		private static void Main()
 		{
 			var dataset = LoadCsv("iris.csv", 5);
 
-			var result = HdbscanRunner.Run(new HdbscanParameters
+			var result = HdbscanRunner.Run(new HdbscanParameters<double[]>
 			{
 				DataSet = dataset,
 				MinPoints = 25,
@@ -32,7 +28,7 @@ namespace IrisDatasetExample
 
 				Console.Write("Specie #" + specie + " ");
 
-				for (int i = 0; i < size; i++)
+				for (var i = 0; i < size; i++)
 				{
 					var label = result.Labels[offset + i];
 					Console.Write(label);

@@ -3,13 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentClusteringExample", "DocumentClusteringExample\DocumentClusteringExample.csproj", "{9DEBA0E7-53DA-4465-AE10-3213D16549C6}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HdbscanSharp", "HdbscanSharp\HdbscanSharp.csproj", "{BBDC1AEE-02A4-43D9-B20B-C04025339002}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IrisDatasetExample", "IrisDatasetExample\IrisDatasetExample.csproj", "{54DF6220-94C6-4348-B02A-10CFCC9BF1D6}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderByMostSimilarDocumentExample", "OrderByMostSimilarDocumentExample\OrderByMostSimilarDocumentExample.csproj", "{50505188-008B-4446-9462-09A24DDD0AA8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{49248E97-C7DE-4E8D-BC9B-A5E3B0078AD5}"
 EndProject
@@ -19,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9DEBA0E7-53DA-4465-AE10-3213D16549C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9DEBA0E7-53DA-4465-AE10-3213D16549C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9DEBA0E7-53DA-4465-AE10-3213D16549C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9DEBA0E7-53DA-4465-AE10-3213D16549C6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BBDC1AEE-02A4-43D9-B20B-C04025339002}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BBDC1AEE-02A4-43D9-B20B-C04025339002}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBDC1AEE-02A4-43D9-B20B-C04025339002}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -31,10 +23,6 @@ Global
 		{54DF6220-94C6-4348-B02A-10CFCC9BF1D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54DF6220-94C6-4348-B02A-10CFCC9BF1D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54DF6220-94C6-4348-B02A-10CFCC9BF1D6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{50505188-008B-4446-9462-09A24DDD0AA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{50505188-008B-4446-9462-09A24DDD0AA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{50505188-008B-4446-9462-09A24DDD0AA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{50505188-008B-4446-9462-09A24DDD0AA8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{49248E97-C7DE-4E8D-BC9B-A5E3B0078AD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{49248E97-C7DE-4E8D-BC9B-A5E3B0078AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49248E97-C7DE-4E8D-BC9B-A5E3B0078AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
