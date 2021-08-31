@@ -1,2 +1,0 @@
-fully working PredictionIO hello-world example in docker-compose
- submitted by /u/lupsikpupsik [link] [comments]    

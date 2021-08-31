@@ -1,2 +1,0 @@
-Trump Twitter AI?
-I'm kinda new to AI, neural networks, and such, but I was wondering if this project would be possible: I really liked the video of the person that trained an AI to read all of the Game of Thrones books and create a book of its own. If you haven't seen it, is pretty funny: http://nyp.st/2xKrwac Anyways, I thought it would be really entertaining to do the same thing with all of Trump's tweets. Would this data set be big enough? Would this be possible? What would it entail for me to do this?  submitted by /u/nstu35 [link] [comments] 

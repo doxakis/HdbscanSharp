@@ -1,2 +1,0 @@
-New to Agile methodology. As a developer, what do I need to know?
-I recently accepted an offer from a Fortune 500 company for a backend developer. They are using Agile with 2 week sprints. I’ve never worked in an Agile environment so this is new territory for me. I let them know this during the interview process. What are some useful tips or resources I can use to get up to speed before I start working there?  submitted by /u/fullstackdev2017 [link] [comments] 

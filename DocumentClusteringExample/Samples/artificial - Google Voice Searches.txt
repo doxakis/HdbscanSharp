@@ -1,2 +1,0 @@
-Google Voice Searches
-I got a new laptop that has a mic. When using google with microphone, I am amazed that it could pick up words I said, and transform them into letters in the google text box. In the future, I want to be responsible for making software like google voice search. I have a few questions. What kind of professions make these voice searches? Is google voice search considered artificial intelligence? Starting from scratch how many years would it take me to learn how to make one of these programs?  submitted by /u/tracnts [link] [comments] 
