@@ -1,2 +1,0 @@
-Linq to XML for dummies (me) guide?
-I have tried to learn linq for xml a few times now and just can’t wrap my mind around it. What is a good article that explains linq in simple terms for someone to super versed in xml or linq but has to get. Project done parsing complex xml response from a web service.  submitted by /u/SmithBurger [link] [comments] 

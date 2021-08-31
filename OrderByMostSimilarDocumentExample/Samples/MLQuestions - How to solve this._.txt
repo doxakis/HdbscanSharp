@@ -1,2 +1,0 @@
-How to solve this.?
-I am having data for a list of customers who have actively replied/picked up my call like call received time/ mail opened or clicked time(i.e. more active time spend by them). From this data, I want to predict future best times like best time to mail/call today, tomorrow, like every day. But I am confused like a hell to proceed with this thing. 1)Find exponentially weighted moving average 2)Use clustering or KNN (or) any other ways I can solve this thing.?  submitted by /u/harry_0_0_7 [link] [comments] 

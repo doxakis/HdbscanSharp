@@ -1,2 +1,0 @@
-Asp.NET Core Simple CRUD Web API
-submitted by /u/lugrugzo [link] [comments] 

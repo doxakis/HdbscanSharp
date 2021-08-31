@@ -1,2 +1,0 @@
-Stuck need help getting every 3rd character to display what am i doing wrong?
-include  include  main() { char ch[30]; int i;  printf("enter string\n"); scanf("%c", &ch); for(i = 1;i <= 30; i++) { if(i % 4 == 0) { printf("%s", ch); } else { printf(" "); } } return 0;  }  submitted by /u/ViEnShOcK [link] [comments] 

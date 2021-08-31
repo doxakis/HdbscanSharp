@@ -1,2 +1,0 @@
-Question regarding Database Restores
-Hi All, We ran into a slight issue when expanding drive size on AWS, as such, we have to restore some databases but move the file location. I was wondering if anyone had any guidelines they can offer, and specifically if existing database files were copied over as a result of the restore. Any help provided would be great!  submitted by /u/coldflame563 [link] [comments] 

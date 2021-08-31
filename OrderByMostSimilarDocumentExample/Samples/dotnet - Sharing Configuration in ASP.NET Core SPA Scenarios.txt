@@ -1,2 +1,0 @@
-Sharing Configuration in ASP.NET Core SPA Scenarios
-submitted by /u/fullstackdelivery [link] [comments] 

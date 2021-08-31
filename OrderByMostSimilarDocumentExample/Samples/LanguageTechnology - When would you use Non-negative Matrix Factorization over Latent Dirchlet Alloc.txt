@@ -1,2 +1,0 @@
-When would you use Non-negative Matrix Factorization over Latent Dirchlet Allocation?
-Hey guys, I've been looking into Latent Dirchlet Allocation (LDA) https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation and NMF Non-negative Matrix Factorization (NMF) https://en.wikipedia.org/wiki/Non-negative_matrix_factorization but I'm not sure when you would choose one over the other. I figured they have kind of the same use, producing an interpretable text representation. Any ideas?  submitted by /u/ThomasAger [link] [comments] 

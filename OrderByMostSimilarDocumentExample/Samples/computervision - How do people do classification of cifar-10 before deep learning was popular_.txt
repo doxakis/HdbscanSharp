@@ -1,2 +1,0 @@
-How do people do classification of cifar-10 before deep learning was popular?
-Aside from bag of word and HoG SVM  submitted by /u/RavlaAlvar [link] [comments] 

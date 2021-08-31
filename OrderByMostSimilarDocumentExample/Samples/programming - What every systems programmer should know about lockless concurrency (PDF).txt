@@ -1,2 +1,0 @@
-What every systems programmer should know about lockless concurrency (PDF)
-submitted by /u/slavik262 [link] [comments] 

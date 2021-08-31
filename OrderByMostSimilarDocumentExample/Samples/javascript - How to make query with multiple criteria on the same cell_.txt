@@ -1,2 +1,0 @@
-How to make query with multiple criteria on the same cell?
-Right now I have a list of contact information on sheet 1, I have this simple query on sheets named California, New York, and so on. =query(Sheet1!A2:K, "where E = 'CA' ",0) This copies all entries with "CA" on column E to the "California" sheet. I have multiple selections on column E using data validation and a script so some cell on E would look like this CA, NY, AL. I need a query another way to have the same info be copied to each sheet. How can I do this? Thank you  submitted by /u/dennis3002 [link] [comments] 

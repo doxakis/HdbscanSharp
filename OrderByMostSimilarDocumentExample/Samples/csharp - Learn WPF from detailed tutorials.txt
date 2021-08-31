@@ -1,2 +1,0 @@
-Learn WPF from detailed tutorials
-I can find a lot of tutorials, but most of them teach us how to use "the wheel", which is already built... I'd like to understand how it's built, how it works and what happens in the background... the basics, from ground up.  submitted by /u/AlexMerlin1985 [link] [comments] 

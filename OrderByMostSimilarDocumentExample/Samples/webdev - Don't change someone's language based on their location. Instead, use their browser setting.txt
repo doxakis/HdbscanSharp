@@ -1,2 +1,0 @@
-Don't change someone's language based on their location. Instead, use their browser settings.
-As a web dev who lives abroad its frustrating to constantly have to translate the local language. My settings are very clear, I speak english! If you really have to do this, at give the option to easily revert their language.  submitted by /u/KuyaEduard [link] [comments] 

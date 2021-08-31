@@ -1,2 +1,0 @@
-How to analyze DLL to find all uses of a function?
-I have a need to produce some tooling that can look inside a DLL to find all uses of a specific function and pick out its parameters (should be hardcoded strings), so I can analyze them. This isn't something that reflection can do, is it? Am I correct that I'd need to use Roslyn for this? I've never used Roslyn so I'm not entirely sure where to start. Thanks!  submitted by /u/Woolbrick [link] [comments] 

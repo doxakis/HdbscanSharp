@@ -1,2 +1,0 @@
-Building synset word list
-I am trying to build a manual word list to identify keywords similar to ones I use. For example, economyList = ['economy','business','improvement','enterprise','credit','credits','tax','property','consumer','partnership','industrial','commercial']; I came across synset, which seems to have what I want but I don't know how to distinguish different words in this. If you have a better suggestion, please let me know.  submitted by /u/metalloidica [link] [comments] 

@@ -1,2 +1,0 @@
-TIL "Low Spec Mode" is called "Potato Mode" in LoL Client config file
-data:   lastKnownMachineSpec: 5 potatoModeEnabled: false unloadUxInGameEnabled: false    submitted by /u/szili90000 [link] [comments] 

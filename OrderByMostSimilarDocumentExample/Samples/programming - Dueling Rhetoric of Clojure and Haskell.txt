@@ -1,2 +1,0 @@
-Dueling Rhetoric of Clojure and Haskell
-submitted by /u/dukerutledge [link] [comments] 

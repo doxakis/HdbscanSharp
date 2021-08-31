@@ -1,2 +1,0 @@
-[P] TensorFlow implementation of Mask R-CNN for pixelwise object detection and segmentation
- submitted by /u/feather_of_maat [link] [comments]    

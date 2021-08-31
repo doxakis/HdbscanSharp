@@ -1,2 +1,0 @@
-Cordova Plugin to access iOS CallKit and Android ConnectionService via JavaScript
-submitted by /u/lacrossefan32 [link] [comments] 

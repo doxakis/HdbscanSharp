@@ -1,2 +1,0 @@
-How to open YouTube video in external mpv player using php?
-Basically, I need to open:  in an external video player in Linux (mpv). Where $video is a database entry with a YouTube url. I need it to open an external mpv player streaming from YouTube. Player has the functionality already to stream. It's for local use only and I'm the only one executing it. I've tried exec(), shell_exec() and system() and all I get back is shell output. Noob here obviously. I would really appreciate any help with this.  submitted by /u/DonovanNagel [link] [comments] 

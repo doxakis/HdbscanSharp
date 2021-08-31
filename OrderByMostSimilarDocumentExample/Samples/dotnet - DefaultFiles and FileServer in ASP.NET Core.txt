@@ -1,2 +1,0 @@
-DefaultFiles and FileServer in ASP.NET Core
-submitted by /u/fullstackdelivery [link] [comments] 

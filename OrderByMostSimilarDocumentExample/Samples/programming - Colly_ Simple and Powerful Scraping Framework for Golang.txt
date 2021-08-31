@@ -1,2 +1,0 @@
-Colly: Simple and Powerful Scraping Framework for Golang
-submitted by /u/profilz [link] [comments] 

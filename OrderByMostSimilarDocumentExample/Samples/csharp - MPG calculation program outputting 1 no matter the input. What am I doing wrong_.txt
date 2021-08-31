@@ -1,2 +1,0 @@
-MPG calculation program outputting 1 no matter the input. What am I doing wrong?
- submitted by /u/tfletch95 [link] [comments]    

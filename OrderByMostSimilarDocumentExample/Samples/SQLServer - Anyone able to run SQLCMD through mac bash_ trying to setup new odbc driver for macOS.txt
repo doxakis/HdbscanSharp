@@ -1,2 +1,0 @@
-Anyone able to run SQLCMD through mac bash? trying to setup new odbc driver for macOS
-Having trouble running sqlcmd -S "ServerNAme" -U "sqluser" -P "mypass" Using Sierra 10.6.13 Homebrewed the MSSQL ODBC 13.1 Driver to /usr/lib/cellar I also installed mysql to just /usr/lib and that works... idk what's going on ha.  submitted by /u/pretenddev [link] [comments] 

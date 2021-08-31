@@ -1,2 +1,0 @@
-Last year I automated my Christmas Tree with a Raspberry Pi, Particle, and Siri. [x-post from /r/raspberry_pi]
-submitted by /u/Wtfox [link] [comments] 

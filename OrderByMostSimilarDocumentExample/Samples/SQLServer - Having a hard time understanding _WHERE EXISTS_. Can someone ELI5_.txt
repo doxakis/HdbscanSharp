@@ -1,2 +1,0 @@
-Having a hard time understanding "WHERE EXISTS". Can someone ELI5?
-submitted by /u/starfish_warrior [link] [comments] 

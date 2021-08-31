@@ -1,2 +1,0 @@
-Convolutional Neural Network (CNN) for CIFAR-100 dataset
-Can any body help me with this problem https://stats.stackexchange.com/questions/310422/convolutional-neural-network-cnn-for-cifar-100-dataset  submitted by /u/atinesh229 [link] [comments] 

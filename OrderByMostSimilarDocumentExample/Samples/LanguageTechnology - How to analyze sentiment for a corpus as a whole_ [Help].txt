@@ -1,2 +1,0 @@
-How to analyze sentiment for a corpus as a whole? [Help]
-Hello, I've worked with sentiment analysis based on entities, but i was thinking about classify a corpus as a whole, to know if a movie review is positive for example. Please, if anyone could point me to some article or study to help me start, would help a lot! Thank you  submitted by /u/dionnys5 [link] [comments] 

@@ -1,2 +1,0 @@
-about SVM
-use the SVM to calculate whether a leaf is a watermelon leaf. My understanding is to calculate the target function, the data input each time, calculate the data to the objective function of the distance. This distance can represent leaflets is the possibility of watermelon leaves. Is this understanding right?  submitted by /u/frf12 [link] [comments] 

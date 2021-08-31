@@ -1,2 +1,0 @@
-Spyder: What's the best python IDE for OpenCV 3. Spyder output window becomes unresponsive.
-I am beginner and using spyder for my openCV 3 python project. The programs run fine but when the output window is launched it becomes unresponsive after the program ends(given some condition like 'esc' or 'Q' key) and I have to restart the kernel each and every time to run the code. I am using OpenCV 3.1 and python 3.5. EDIT: I am using mac with macOS 11.  submitted by /u/ghltshubh [link] [comments] 

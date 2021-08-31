@@ -1,2 +1,0 @@
-How to extract gradients in Keras for DDPG
-Hi, I'm trying to implement ddpg and to do so I need to access the gradient of the output of a neural net w.r.t. its inputs and another gradient of the output w.r.t its weights. I can't find a simple way of doing this in keras. I'm fairly new to keras and tensorflow so sorry if this is explained clearly somewhere, I haven't been able to find a good solution so far. Thanks  submitted by /u/happyMonkeySocks [link] [comments] 

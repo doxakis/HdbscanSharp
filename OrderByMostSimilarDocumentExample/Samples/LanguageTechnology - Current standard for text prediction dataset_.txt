@@ -1,2 +1,0 @@
-Current standard for text prediction dataset?
-Hey, I've got a new recurrent NN model I want to test on problems outside of my specific field. Sorry for the noob question, I'm not really in the NLP space - could you suggest a dataset for "next word or sequence of words" prediction that is publicly available and has current benchmarks to compare my model to?  submitted by /u/DefNotaZombie [link] [comments] 

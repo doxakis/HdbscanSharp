@@ -1,2 +1,0 @@
-Where do you store your session data and why?
-I’m interested in knowing where others store their session data. Built-in memory location on the web server, a database, caching layer, etc.  submitted by /u/codebyamir [link] [comments] 

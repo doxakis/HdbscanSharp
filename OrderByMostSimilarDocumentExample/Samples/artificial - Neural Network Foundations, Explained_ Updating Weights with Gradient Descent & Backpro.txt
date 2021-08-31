@@ -1,2 +1,0 @@
-Neural Network Foundations, Explained: Updating Weights with Gradient Descent & Backpropagation
- submitted by /u/molode [link] [comments]    

@@ -1,2 +1,0 @@
-[Question] I have a potentially very silly question about mapping human motion on a time series graph.
-https://imgur.com/35ozxHY This was taken from this paper: http://www.f-zhou.com/tc/2013_PAMI_HACA.pdf What does the Y-axis mean in the graph provided? It's supposed to map human motion onto the graph and segment the different kinds of movements (walking, running, jogging).  submitted by /u/hahaha_memes_hahaha [link] [comments] 

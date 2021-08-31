@@ -1,2 +1,0 @@
-Does Tensorflow supports OpenCL
-I have a 4gb "AMD Radeon R9 m375" Card. I want to know how can I accelerate my code on this card, I browsed the web and find that for AMD users there is only one way i.e. to use open source OpenCL. But does Tensorflow supports OpenCL or is there any other way to accelerate my code on AMD card.  submitted by /u/atinesh229 [link] [comments] 

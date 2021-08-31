@@ -1,2 +1,0 @@
-Best resources to learn how to scrape for web data and use APIs?
-I have some very basic knowledge on HTTP and HTML and JS, and I want to learn how to scrape web data and use APIs for a personal project I'm doing. What are the best beginner resources for doing so?  submitted by /u/Confusedperson12345 [link] [comments] 

@@ -1,2 +1,0 @@
-Postman or assertible open source alternative ?
-I assumed something basic like this would be there, but apparently there are none. Are there any postman or assertible open source alternative ? Prefer something which can deployed to heroku. Not looking for an desktop or chrome app.  submitted by /u/at84 [link] [comments] 

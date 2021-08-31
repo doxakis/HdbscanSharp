@@ -1,2 +1,0 @@
-ICCV 2017 Awards
-Best paper award: "Mask R-CNN" by Kaiming He, Georgia Gkioxari, Piotr Dollár, Ross Girshick.  Best student paper award: "Focal Loss for Dense Object Detection" by Tsung-Yi Lin, Priya Goyal, Ross Girshick, Kaiming He, Piotr Dollár.  Azriel Rosenfeld lifetime achievement award: Tomaso Poggio.  Distinguished researcher award: Luc van Gool, Richard Szeliski.  Mark Everingham award: The Caffe team, the ICVSS organizers.    submitted by /u/netw0rkf10w [link] [comments] 

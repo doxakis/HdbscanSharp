@@ -1,2 +1,0 @@
-Azure Ad GPOs?
-Azure AD vs AD I am wanting to create simple settings for devices that are Azure Ad joined. Such as: Computer Configuration > Administrative Templates > Control Panel > Personalization > Force a specific default lock screen image. Is there any options within Azure Ad for me to set up these kind of settings for the computers that are joined?  submitted by /u/samjoe89 [link] [comments] 

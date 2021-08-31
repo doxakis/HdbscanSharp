@@ -1,2 +1,0 @@
-Word vectors with tidy data principles, word counts, and matrix factorization
-submitted by /u/juliasilge [link] [comments] 

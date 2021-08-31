@@ -1,2 +1,0 @@
-Creating a TODO application using Stencil
-submitted by /u/javascripttuts [link] [comments] 

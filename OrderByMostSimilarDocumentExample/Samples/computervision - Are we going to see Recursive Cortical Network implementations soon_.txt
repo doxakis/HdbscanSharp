@@ -1,2 +1,0 @@
-Are we going to see Recursive Cortical Network implementations soon?
-The announcement blog post and paper from the team at Vicarious about their recent advancements in Recursive Cortical Networks for computer vision applications are both fascinating and exciting. Thing is, as someone currently without the skills to discern hype from fact, I'm really curious to know if this really is a big deal, and if so, how likely are we to see high level implementations readily available for amateur experimentation ?  submitted by /u/Spiph [link] [comments] 

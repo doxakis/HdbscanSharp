@@ -1,2 +1,0 @@
-Are there an open source tools where I could give it features and it could do basic plots or correlations between them?
-I am mainly looking for such tools for other members of my team who may not know how to use plotting tools in python, but would be happy with a UI dashboard where they could play around with features and plot them. Does such a tool already exist?  submitted by /u/mln00b13 [link] [comments] 

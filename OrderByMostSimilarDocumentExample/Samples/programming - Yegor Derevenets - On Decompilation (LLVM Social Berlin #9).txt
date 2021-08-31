@@ -1,2 +1,0 @@
-Yegor Derevenets - On Decompilation (LLVM Social Berlin #9)
-submitted by /u/1101_debian [link] [comments] 

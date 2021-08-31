@@ -1,2 +1,0 @@
-Any impressive open-source chatbots?
-And when I say chatbot, I don't mean something written with if-else statements lol. Preferably a chatbot that learns while speaking (it seems kinda stupid for it to not do that) or utilizes word prediction neural networks, like with TensorFlow or something. Doesn't have to be perfect or amazing, but I have yet to see a substantial one and I've been searching for a while. Anyone have any links? Thanks in advance!  submitted by /u/therealslimbrady1 [link] [comments] 

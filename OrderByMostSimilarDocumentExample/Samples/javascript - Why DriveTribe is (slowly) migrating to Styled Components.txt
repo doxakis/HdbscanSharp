@@ -1,2 +1,0 @@
-Why DriveTribe is (slowly) migrating to Styled Components
-submitted by /u/SirHound [link] [comments] 

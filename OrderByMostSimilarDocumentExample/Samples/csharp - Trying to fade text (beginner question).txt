@@ -1,2 +1,0 @@
-Trying to fade text (beginner question)
-Hi. I'm trying to fade text from an UI, but for the life of me can't figure out how to make it work. Here's my code so you can see what I'm trying to do. So far, I'm getting my code to appear, which is good, and also disappear, but it's completely ignoring the fadein/fadeout part (it just blinks in and out of existence), and I think the for loop is lagging everything into oblivion. Any advice on how to make it work is welcome. Thanks!  submitted by /u/Xepphy [link] [comments] 

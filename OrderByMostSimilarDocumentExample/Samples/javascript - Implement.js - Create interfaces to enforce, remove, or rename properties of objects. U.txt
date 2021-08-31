@@ -1,2 +1,0 @@
-Implement.js - Create interfaces to enforce, remove, or rename properties of objects. Useful for testing, handling API responses, or any time you need to verify the shape of an object
-submitted by /u/liming91 [link] [comments] 

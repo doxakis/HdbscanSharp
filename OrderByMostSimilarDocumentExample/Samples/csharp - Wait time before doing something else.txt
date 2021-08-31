@@ -1,2 +1,0 @@
-Wait time before doing something else
-Hello. This is a continuation to this post, where I wanted to fade text. Everything went well and everything. My only issue is that text fades in, and then immediately fades out. Here's the code as I have it right now. I tried using WaitForSeconds (which didn't work), and also making two functions with invoke and a bunch of malabarisms, but that was just dirty. Is there a clean way to do it? Thanks!  submitted by /u/Xepphy [link] [comments] 

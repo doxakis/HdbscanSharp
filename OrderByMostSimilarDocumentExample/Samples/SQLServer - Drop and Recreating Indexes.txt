@@ -1,2 +1,0 @@
-Drop and Recreating Indexes
-Hi all, So I'm inserting 20 M records to a table with over 800 M records every week. the procedure as it stands is to drop and recreate the indexes, in doing so it is taking forever. Any thoughts on how to optimize?  submitted by /u/coldflame563 [link] [comments] 

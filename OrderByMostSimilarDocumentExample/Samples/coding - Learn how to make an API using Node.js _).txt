@@ -1,2 +1,0 @@
-Learn how to make an API using Node.js :)
-submitted by /u/__brick [link] [comments] 

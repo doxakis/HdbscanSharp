@@ -1,2 +1,0 @@
-[R] TreeQN and ATreeC: Differentiable Tree Planning for Deep Reinforcement Learning
-submitted by /u/_rockt [link] [comments] 

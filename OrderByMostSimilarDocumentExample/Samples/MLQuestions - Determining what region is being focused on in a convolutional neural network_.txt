@@ -1,2 +1,0 @@
-Determining what region is being focused on in a convolutional neural network.
-I have trained a convolutional neural network looking at a bunch of images, and I want to know what regions of the image are affecting the decision the most. Anyone have any advice about how to do that?  submitted by /u/lolwtfomgbbq7 [link] [comments] 

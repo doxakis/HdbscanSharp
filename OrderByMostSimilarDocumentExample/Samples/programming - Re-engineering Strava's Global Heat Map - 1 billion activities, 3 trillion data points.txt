@@ -1,2 +1,0 @@
-Re-engineering Strava's Global Heat Map - 1 billion activities, 3 trillion data points, 10TB of data
-submitted by /u/GuinnessDraught [link] [comments] 
