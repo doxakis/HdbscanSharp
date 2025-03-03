@@ -1,25 +1,23 @@
 ﻿using HdbscanSharp.Distance;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Xunit;
 
-namespace Tests
+namespace Tests;
+
+public class CosineSimilarityTests
 {
-	[TestClass]
-	public class CosineSimilarityTests
+    [Fact]
+    public void TestDistanceIsPositiveEvenIfThereIsRounding()
     {
-		[TestMethod]
-		public void TestDistanceIsPositiveEvenIfThereIsRounding()
-		{
-			// See: https://github.com/doxakis/HdbscanSharp/issues/5
+        // See: https://github.com/doxakis/HdbscanSharp/issues/5
 
-			var a = new double[] { 20 };
-			var b = new double[] { 19.990000000000002 };
+        var a = new double[] { 20 };
+        var b = new double[] { 19.990000000000002 };
 
-			var distFunc = new CosineSimilarity();
-			var distance = distFunc.ComputeDistance(0, 1, a, b);
-			if (distance < 0)
-			{
-				Assert.Fail("Distance must be positive.");
-			}
-		}
-	}
+        var distFunc = new CosineSimilarity();
+        var distance = distFunc.ComputeDistance(0, 1, a, b);
+        if (distance < 0)
+        {
+            Assert.Fail("Distance must be positive.");
+        }
+    }
 }
