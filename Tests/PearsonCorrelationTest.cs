@@ -16,8 +16,8 @@ public class TestPearsonCorrelation
 		var a = new double[] { 21.33, 21.33, 21.33, 21.33, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 		var b = new double[] { 19.99, 19.99, 19.99, 19.990000000000002, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
-		var distFunc = new PearsonCorrelation();
-		var distance = distFunc.ComputeDistance(0, 1, a, b);
+		var distFunc = new PearsonCorrelation<double>();
+		var distance = distFunc.ComputeDistance(a, b);
 		if (distance < 0)
 		{
 			Assert.Fail("Distance must be positive.");
@@ -28,8 +28,8 @@ public class TestPearsonCorrelation
 	public void TestValidateOutlierScoreBetweenZeroAndOne()
 	{
 		// Cluster 1
-		var a = new double[] { 21.33, 21.33, 21.33, 21.33, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-		var b = new double[] { 19.99, 19.99, 19.99, 19.990000000000002, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+		var a = new double[] { 21.33, 21.33, 21.33, 21.33, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+		var b = new double[] { 19.99, 19.99, 19.99, 19.990000000000002, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
 		// Cluster 2
 		var c = new double[] { 1, 2, 3, 4, 5, 6, 6, 7, 7, 9, 3, 4, 3, 2, 2, 1 };
@@ -47,12 +47,12 @@ public class TestPearsonCorrelation
 		dataset.Add(e);
 		dataset.Add(f);
 			
-		var result = HdbscanRunner.Run(new HdbscanParameters<double[]>
+		var result = HdbscanRunner.Run(new HdbscanParameters<double>
 		{
 			DataSet = dataset.ToArray(),
 			MinPoints = 2,
 			MinClusterSize = 2,
-			DistanceFunction = new PearsonCorrelation()
+			DistanceFunction = new PearsonCorrelation<double>()
 		});
 			
 		var numInvalidScore = result.OutliersScore.Count(m => m.Score < 0 || m.Score > 1);

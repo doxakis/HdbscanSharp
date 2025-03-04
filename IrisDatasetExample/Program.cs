@@ -4,12 +4,12 @@ using System.Globalization;
 
 var dataset = LoadCsv("iris.csv", 5);
 
-var result = HdbscanRunner.Run(new HdbscanParameters<double[]>
+var result = HdbscanRunner.Run(new HdbscanParameters<double>
 {
     DataSet = dataset,
     MinPoints = 25,
     MinClusterSize = 25,
-    DistanceFunction = new CosineSimilarity()
+    DistanceFunction = new CosineSimilarity<double>()
 });
 
 for (var specie = 1; specie <= 3; specie++)

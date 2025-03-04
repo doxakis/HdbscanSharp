@@ -13,8 +13,8 @@ public class CosineSimilarityTests
         var a = new double[] { 20 };
         var b = new double[] { 19.990000000000002 };
 
-        var distFunc = new CosineSimilarity();
-        var distance = distFunc.ComputeDistance(0, 1, a, b);
+        var distFunc = new CosineSimilarity<double>();
+        var distance = distFunc.ComputeDistance(a, b);
         if (distance < 0)
         {
             Assert.Fail("Distance must be positive.");
