@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.0.0
+- [BREAKING] The class `IDistanceFunction` interface is now generic and does not have "index" parameters. The same applied for all of its implementations.
+- [BREAKING] The class `HdbscanParameters` was transformed into hierarchy: `HdbscanParameters` and `HdbscanParametersSparseMatrix` are sub-classes of `HdbscanParametersBase`. All of them are generic, where type parameter designates vector coordinate.
+- [BREAKING] The interface `ISparseMatrixSupport` was transformed into `ISparseMatrixDistanceFunction` for separate sparse matrix logic.
+- `Dataset` now can be `float[][]` or `Dictionary<int, float>[]`
+
 ### 2.0.0
 - [BREAKING] Remove parameter `UseMultipleThread` since we can use only the parameter `MaxDegreeOfParallelism`.
 - [BREAKING] The class `HdbscanParameters` accept a type parameter to allow indicating the dataset. (`double[]` for normal matrix or `Dictionary<int, int>` for sparse matrix)

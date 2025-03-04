@@ -10,8 +10,13 @@ HDBSCAN is a clustering algorithm developed by Campello, Moulavi, and Sander. It
 > From: https://github.com/scikit-learn-contrib/hdbscan
 
 # Supported framework
+
+Before 3.0.0:
 - .NET Standard 2.0
 - .NET Framework 4.5
+
+Since 3.0.0:
+- .NET 8+
 
 # Install from Nuget
 To get the latest version:
@@ -20,21 +25,21 @@ Install-Package HdbscanSharp
 ```
 
 # Examples
-```
+```csharp
 using HdbscanSharp.Distance;
 using HdbscanSharp.Hdbscanstar;
 using HdbscanSharp.Runner;
 
 // ...
 
-var result = HdbscanRunner.Run(new HdbscanParameters
+var result = HdbscanRunner.Run(new HdbscanParameters<double>
 {
   DataSet = dataset, // double[][] for normal matrix or Dictionary<int, int>[] for sparse matrix
   MinPoints = 25,
   MinClusterSize = 25,
   CacheDistance = true, // use caching for distance
   MaxDegreeOfParallelism = 1, // to indicate all threads, you can specify 0.
-  DistanceFunction = new CosineSimilarity() // See HdbscanSharp/Distance folder for more distance function
+  DistanceFunction = new CosineSimilarity<double>() // See HdbscanSharp/Distance folder for more distance function
 });
 
 // ...
@@ -72,7 +77,7 @@ At least, it can return clusters while using less memory, CPU and time.
 
 2 ways:
 
-- The `CosineSimilarity` class accept a parameter to indicate if you want caching enable and a second parameter to indicate if you will use it with multiple threads.
+- The `CosineSimilaritySparseMatrix` class accept a parameter to indicate if you want caching enable and a second parameter to indicate if you will use it with multiple threads.
 - Use the parameter `CacheDistance`
 
 Note:
@@ -85,6 +90,20 @@ But, it can use a lot a memory depending on the DataSet and unfortunately, it ma
 If the dataset is filled with mostly the same values, you could use sparse matrix.
 The algorithm will skip the missing values and it could massively improve the performance by having less calculation to do.
 
+```csharp
+Dictionary<int, double>[] dataset;
+
+// compute distances
+
+var result = HdbscanRunner.Run(new HdbscanParametersSparseMatrix<double>
+{
+  Dataset = dataset,
+  MinPoints = 25,
+  MinClusterSize = 25,
+  DistanceFunction = new CosineSimilaritySparseMatrix<double>() // See HdbscanSharp/Distance folder for more distance function
+});
+```
+
 ## Reduce the dimensions
 
 In order to speed up the overall process if you have a lot of vectors with high dimensions, I suggest to do a Principal Component Analysis.
@@ -92,7 +111,7 @@ The Accord.NET Framework provide a great implementation. (http://accord-framewor
 
 You can train on a random subset to determine the transform matrix.
 
-```
+```csharp
 using Accord.Statistics.Analysis;
 
 ...
@@ -110,17 +129,17 @@ var reducedVectorsWithPCA = pcaResult.Transform(vectors.ToArray());
 
 You can provide the distance matrix. Let's consider you have N elements in the dataset. The distance matrix would be N x N elements. You may consider to cache the result.
 
-```
+```csharp
 double[][] distances;
 
 // compute distances
 
-var result = HdbscanRunner.Run(new HdbscanParameters
+var result = HdbscanRunner.Run(new HdbscanParameters<double>
 {
   Distances = distances,
   MinPoints = 25,
   MinClusterSize = 25,
-  DistanceFunction = new CosineSimilarity() // See HdbscanSharp/Distance folder for more distance function
+  DistanceFunction = new CosineSimilarity<double>() // See HdbscanSharp/Distance folder for more distance function
 });
 ```
 
