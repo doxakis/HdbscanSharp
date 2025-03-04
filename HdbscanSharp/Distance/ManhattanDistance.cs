@@ -1,20 +1,20 @@
 ﻿using System;
+using System.Numerics;
+using System.Numerics.Tensors;
 
-namespace HdbscanSharp.Distance
+namespace HdbscanSharp.Distance;
+
+/// <summary>
+/// Computes the manhattan distance between two points, d = |x1-y1| + |x2-y2| + ... + |xn-yn|.
+/// </summary>
+public class ManhattanDistance<T> : IDistanceCalculator<T>
+	where T : unmanaged, INumberBase<T>
 {
-	/// <summary>
-	/// Computes the manhattan distance between two points, d = |x1-y1| + |x2-y2| + ... + |xn-yn|.
-	/// </summary>
-	public class ManhattanDistance : IDistanceCalculator<double[]>
+	public double ComputeDistance(T[] attributesOne, T[] attributesTwo)
 	{
-		public double ComputeDistance(int indexOne, int indexTwo, double[] attributesOne, double[] attributesTwo)
-		{
-			double distance = 0;
-			for (var i = 0; i < attributesOne.Length && i < attributesTwo.Length; i++)
-			{
-				distance += Math.Abs(attributesOne[i] - attributesTwo[i]);
-			}
-			return distance;
-		}
+		Span<T> diff = stackalloc T[Math.Max(attributesOne.Length, attributesTwo.Length)];
+		TensorPrimitives.Subtract(attributesOne, attributesTwo, diff);
+		var l1Norm = TensorPrimitives.SumOfMagnitudes<T>(diff);
+		return double.CreateTruncating(l1Norm);
 	}
 }
