@@ -12,7 +12,7 @@ public class ManhattanDistance<T> : IDistanceCalculator<T>
 {
 	public double ComputeDistance(T[] attributesOne, T[] attributesTwo)
 	{
-		Span<T> diff = stackalloc T[Math.Max(attributesOne.Length, attributesTwo.Length)];
+		Span<T> diff = stackalloc T[Math.Min(attributesOne.Length, attributesTwo.Length)];
 		TensorPrimitives.Subtract(attributesOne, attributesTwo, diff);
 		var l1Norm = TensorPrimitives.SumOfMagnitudes<T>(diff);
 		return double.CreateTruncating(l1Norm);
