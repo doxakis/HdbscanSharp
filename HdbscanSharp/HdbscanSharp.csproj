@@ -18,4 +18,7 @@
 		<AssemblyOriginatorKeyFile>HdbscanSharp.snk</AssemblyOriginatorKeyFile>
 		<LangVersion>latest</LangVersion>
   </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Numerics.Tensors" Version="9.0.2"/>
+  </ItemGroup>
 </Project>
