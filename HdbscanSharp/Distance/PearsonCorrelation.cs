@@ -5,7 +5,7 @@ using System.Numerics.Tensors;
 namespace HdbscanSharp.Distance;
 
 /// <summary>
-/// Computes the euclidean distance between two points, d = 1 - (cov(X,Y) / (std_dev(X) * std_dev(Y)))
+/// Computes the Pearson distance between two points, d = 1 - (cov(X,Y) / (std_dev(X) * std_dev(Y)))
 /// </summary>
 public class PearsonCorrelation<T> : IDistanceCalculator<T>
     where T : unmanaged, IRootFunctions<T>, INumber<T>, IDivisionOperators<T, T, T>

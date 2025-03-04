@@ -7,7 +7,7 @@ using System.Numerics;
 namespace HdbscanSharp.Distance;
 
 /// <summary>
-/// Computes cosine similarity between two points, d = 1 - ((X*Y) / (||X||*||Y||))
+/// Computes cosine distance between two points, d = 1 - ((X*Y) / (||X||*||Y||))
 /// </summary>
 public class CosineSimilaritySparseMatrix<T> : ISparseMatrixDistanceCalculator<T>
     where T : IRootFunctions<T>, INumber<T>, IDivisionOperators<T, T, T>
