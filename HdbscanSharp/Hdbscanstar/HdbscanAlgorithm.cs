@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using HdbscanSharp.Utils;
 
 namespace HdbscanSharp.Hdbscanstar;
 
+[SuppressMessage("ReSharper", "InconsistentNaming")]
 public class HdbscanAlgorithm
 {
 	/// <summary>

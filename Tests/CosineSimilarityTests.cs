@@ -10,8 +10,8 @@ public class CosineSimilarityTests
     {
         // See: https://github.com/doxakis/HdbscanSharp/issues/5
 
-        var a = new double[] { 20 };
-        var b = new double[] { 19.990000000000002 };
+        double[] a = [20];
+        double[] b = [19.990000000000002];
 
         var distFunc = new CosineSimilarity<double>();
         var distance = distFunc.ComputeDistance(a, b);
