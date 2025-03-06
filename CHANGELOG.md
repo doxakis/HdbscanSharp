@@ -1,5 +1,37 @@
 # Changelog
 
+### 3.0.0
+- Add GenericCosineSimilarity and GenericEuclideanDistance to allow generic math operation and use hardware acceleration (Advanced Vector Extensions, aka AVX) when available
+- [BREAKING] HdbscanParameters has been removed and replaced with arguments to HdbscanRunner.Run in order to allow generic math operation
+
+for example, the following code:
+```
+var result = HdbscanRunner.Run(new HdbscanParameters
+{
+    DataSet = dataset,
+    MinPoints = 25,
+    MinClusterSize = 25,
+    CacheDistance = true,
+    MaxDegreeOfParallelism = 1,
+    DistanceFunction = new CosineSimilarity()
+});
+```
+
+can be changed to:
+```
+var result = HdbscanRunner.Run(
+    dataset.Length, // The number of element in the dataset
+    25, // MinPoints
+    25, // MinClusterSize
+    DistanceHelpers.GetFunc(new CosineSimilarity(
+        false, // use caching for distance
+        false), // specify if used with multiple threads
+    dataset, // double[][] for normal matrix or Dictionary<int, int>[] for sparse matrix
+    null,
+    true, // use caching for distance
+    1)); // to indicate to use all threads, you can specify 0.
+```
+
 ### 2.0.0
 - [BREAKING] Remove parameter `UseMultipleThread` since we can use only the parameter `MaxDegreeOfParallelism`.
 - [BREAKING] The class `HdbscanParameters` accept a type parameter to allow indicating the dataset. (`double[]` for normal matrix or `Dictionary<int, int>` for sparse matrix)

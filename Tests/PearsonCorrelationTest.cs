@@ -1,15 +1,14 @@
 using HdbscanSharp.Distance;
 using HdbscanSharp.Runner;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using System.Linq;
+using Xunit;
 
 namespace Tests
 {
-    [TestClass]
     public class TestPearsonCorrelation
 	{
-		[TestMethod]
+        [Fact]
 		public void TestDistanceIsPositiveEvenIfThereIsRounding()
 		{
 			// See: https://github.com/doxakis/HdbscanSharp/issues/5
@@ -25,7 +24,7 @@ namespace Tests
 			}
 		}
 		
-		[TestMethod]
+        [Fact]
         public void TestValidateOutlierScoreBetweenZeroAndOne()
         {
 			// Cluster 1
@@ -48,16 +47,10 @@ namespace Tests
 			dataset.Add(e);
 			dataset.Add(f);
 			
-			var result = HdbscanRunner.Run(new HdbscanParameters<double[]>
-			{
-				DataSet = dataset.ToArray(),
-				MinPoints = 2,
-				MinClusterSize = 2,
-				DistanceFunction = new PearsonCorrelation()
-			});
+			var result = HdbscanRunner.Run(dataset.Count, 2, 2, DistanceHelpers.GetFunc(new PearsonCorrelation(), dataset.ToArray()));
 			
 			var numInvalidScore = result.OutliersScore.Count(m => m.Score < 0 || m.Score > 1);
-			Assert.AreEqual(numInvalidScore, 0);
+			Assert.Equal(0, numInvalidScore);
 		}
     }
 }

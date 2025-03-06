@@ -13,13 +13,9 @@ namespace IrisDatasetExample
 		{
 			var dataset = LoadCsv("iris.csv", 5);
 
-			var result = HdbscanRunner.Run(new HdbscanParameters<double[]>
-			{
-				DataSet = dataset,
-				MinPoints = 25,
-				MinClusterSize = 25,
-				DistanceFunction = new CosineSimilarity()
-			});
+			var result = HdbscanRunner.Run(dataset.Length, 25, 25, GenericCosineSimilarity.GetFunc(dataset));
+			//var result = HdbscanRunner.Run(dataset.Length, 25, 25, GenericEuclideanDistance.GetFunc(dataset));
+			//var result = HdbscanRunner.Run(dataset.Length, 25, 25, DistanceHelpers.GetFunc(new CosineSimilarity(true, true), dataset));
 
 			for (var specie = 1; specie <= 3; specie++)
 			{

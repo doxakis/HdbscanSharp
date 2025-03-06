@@ -11,7 +11,7 @@ HDBSCAN is a clustering algorithm developed by Campello, Moulavi, and Sander. It
 
 # Supported framework
 - .NET Standard 2.0
-- .NET Framework 4.5
+- .NET 8.0 or latest
 
 # Install from Nuget
 To get the latest version:
@@ -20,22 +20,33 @@ Install-Package HdbscanSharp
 ```
 
 # Examples
-```
+```csharp
 using HdbscanSharp.Distance;
 using HdbscanSharp.Hdbscanstar;
 using HdbscanSharp.Runner;
 
-// ...
+// (you need to have at least .net 8. Otherwise, you are limited to use DistanceHelpers since GenericCosineSimilarity use TensorPrimitives for generic math)
+// (By using TensorPrimitives, it can use hardware acceleration (Advanced Vector Extensions, aka AVX) when available)
 
-var result = HdbscanRunner.Run(new HdbscanParameters
-{
-  DataSet = dataset, // double[][] for normal matrix or Dictionary<int, int>[] for sparse matrix
-  MinPoints = 25,
-  MinClusterSize = 25,
-  CacheDistance = true, // use caching for distance
-  MaxDegreeOfParallelism = 1, // to indicate all threads, you can specify 0.
-  DistanceFunction = new CosineSimilarity() // See HdbscanSharp/Distance folder for more distance function
-});
+var result = HdbscanRunner.Run(
+    dataset.Length, // The number of element in the dataset
+    25, // MinPoints
+    25, // MinClusterSize
+    GenericCosineSimilarity.GetFunc(dataset)); // dataset is float[][] or double[][]. You may also use GenericEuclideanDistance for euclidean distance.
+
+// Or with DistanceHelpers: (more distances available and different options like sparse matrix, caching and multi-threading)
+
+var result = HdbscanRunner.Run(
+    dataset.Length, // The number of element in the dataset
+    25, // MinPoints
+    25, // MinClusterSize
+    DistanceHelpers.GetFunc(new CosineSimilarity( // See HdbscanSharp/Distance/NonGeneric folder for more distance function
+        false, // use caching for distance
+        false), // specify if used with multiple threads
+    dataset, // double[][] for normal matrix or Dictionary<int, int>[] for sparse matrix
+    null,
+    true, // use caching for distance
+    1)); // to indicate to use all threads, you can specify 0.
 
 // ...
 
@@ -61,6 +72,10 @@ var result = HdbscanRunner.Run(new HdbscanParameters
 # Improving performance
 
 You have many options.
+
+## Use hardware acceleration (Advanced Vector Extensions, aka AVX) when available
+
+By using GenericCosineSimilarity/GenericEuclideanDistance or your own version of the distance function. Consider using TensorPrimitives.
 
 ## Reduce the dataset
 
@@ -110,20 +125,6 @@ var reducedVectorsWithPCA = pcaResult.Transform(vectors.ToArray());
 
 You can provide the distance matrix. Let's consider you have N elements in the dataset. The distance matrix would be N x N elements. You may consider to cache the result.
 
-```
-double[][] distances;
-
-// compute distances
-
-var result = HdbscanRunner.Run(new HdbscanParameters
-{
-  Distances = distances,
-  MinPoints = 25,
-  MinClusterSize = 25,
-  DistanceFunction = new CosineSimilarity() // See HdbscanSharp/Distance folder for more distance function
-});
-```
-
 ## GPU acceleration
 
 Note: I assume you have a Nvidia graphic card.
@@ -132,7 +133,7 @@ I suggest to use ILGPU (http://www.ilgpu.net/) (dotnet core support)
 
 Be aware that there is a cost time to communicate with the GPU. So you need lot of data to benefits. The memory can be limited depending on the use case and the GPU used. You may need to split your dataset, do batch process and combine the result.
 
-First, you would write the kernel function and implement the distance function. (see folder: HdbscanSharp/Distance)
+First, you would write the kernel function and implement the distance function. (see folder: HdbscanSharp/Distance/NonGeneric)
 
 Steps:
 
@@ -146,7 +147,7 @@ Steps:
 - On the accelerator context call `Synchronize()`
 - Get the distance matrix with `GetAsArray()` on the reference you use previously to assign memory on GPU
 - Prepare the matrix in the right format
-- You would provide the distances matrix to Hdbscan (option: Distances)
+- You would provide the distances matrix to Hdbscan
 
 # Copyright and license
 Code released under the MIT license.
