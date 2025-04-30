@@ -5,6 +5,7 @@
     </PropertyGroup>
     <ItemGroup>
         <ProjectReference Include="..\HdbscanSharp\HdbscanSharp.csproj"/>
+        <PackageReference Include="CsvHelper" Version="33.0.1" />
         <None Update="iris.csv">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>

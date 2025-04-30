@@ -1,13 +1,42 @@
 ﻿using HdbscanSharp.Hdbscanstar;
 using System;
 using System.Collections.Generic;
-using System.Threading.Tasks;
-using HdbscanSharp.Distance;
+using System.Linq;
 
 namespace HdbscanSharp.Runner
 {
     public class HdbscanRunner
     {
+        public static HdbscanResult<A> Run<A, B>(
+            List<A> dataset,
+            Func<A, B> getVector,
+            int minPoints,
+            int minClusterSize,
+            Func<B[], Func<int, int, double>> getDistanceFunc,
+            List<HdbscanConstraint> constraints = null
+        )
+        {
+            var vectors = dataset.Select(getVector).ToArray();
+            var distanceFunc = getDistanceFunc(vectors);
+            var result = Run(dataset.Count, minPoints, minClusterSize, distanceFunc, constraints);
+            var groups = result.Labels
+                .Select((group, index) => (group, dataset[index]))
+                .GroupBy(x => x.group)
+                .ToDictionary(x => x.Key, x => x.Select(t => t.Item2).ToList());
+            var outliersScore = result.OutliersScore
+                .Select((outlierScore, index) => new OutlierScore<A>(
+                    outlierScore.Score, outlierScore.CoreDistance, dataset[index])
+                )
+                .ToList();
+
+            return new HdbscanResult<A>
+            {
+                Groups = groups,
+                OutliersScore = outliersScore,
+                HasInfiniteStability = result.HasInfiniteStability
+            };
+        }
+
         public static HdbscanResult Run(
             int datasetCount,
             int minPoints,

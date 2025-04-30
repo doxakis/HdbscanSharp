@@ -7,10 +7,9 @@ namespace HdbscanSharp.Hdbscanstar
 	/// OutlierScores are sorted in ascending order by outlier score, with core distances used to break
 	/// outlier score ties, and ids used to break core distance ties.
 	/// </summary>
-	public class OutlierScore : IComparable<OutlierScore> {
-
-		private readonly double _coreDistance;
-
+	public class OutlierScore : IComparable<OutlierScore>
+	{
+		public double CoreDistance { get; set; }
 		public double Score { get; set; }
 		public int Id { get; set; }
 
@@ -23,7 +22,7 @@ namespace HdbscanSharp.Hdbscanstar
 		public OutlierScore(double score, double coreDistance, int id)
 		{
 			Score = score;
-			_coreDistance = coreDistance;
+			CoreDistance = coreDistance;
 			Id = id;
 		}
 
@@ -35,13 +34,22 @@ namespace HdbscanSharp.Hdbscanstar
 			if (Score < other.Score)
 				return -1;
 			
-			if (_coreDistance > other._coreDistance)
+			if (CoreDistance > other.CoreDistance)
 				return 1;
 			
-			if (_coreDistance < other._coreDistance)
+			if (CoreDistance < other.CoreDistance)
 				return -1;
 			
 			return Id - other.Id;
 		}
+	}
+
+	public class OutlierScore<T>(double score, double coreDistance, T item)
+	{
+		public double CoreDistance { get; set; } = coreDistance;
+
+		public double Score { get; set; } = score;
+
+		public T Item { get; set; } = item;
 	}
 }
