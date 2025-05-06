@@ -22,6 +22,7 @@ namespace HdbscanSharp.Runner
             var groups = result.Labels
                 .Select((group, index) => (group, dataset[index]))
                 .GroupBy(x => x.group)
+                .OrderBy(x => x.Key)
                 .ToDictionary(x => x.Key, x => x.Select(t => t.Item2).ToList());
             var outliersScore = result.OutliersScore
                 .Select((outlierScore, index) => new OutlierScore<A>(
