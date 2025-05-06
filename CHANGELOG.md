@@ -1,5 +1,9 @@
 # Changelog
 
+### 3.0.1
+- Add new overloaded function of HdbscanRunner.Run so it is easier to perform segmentation on classes
+- Add new interface IHdbscanRunner and class HdbscanRunnerInstance. So it is possible to mock the algorithm for unit testing purpose.
+
 ### 3.0.0
 - Add GenericCosineSimilarity and GenericEuclideanDistance to allow generic math operation and use hardware acceleration (Advanced Vector Extensions, aka AVX) when available
 - [BREAKING] HdbscanParameters has been removed and replaced with arguments to HdbscanRunner.Run in order to allow generic math operation
