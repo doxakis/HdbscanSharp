@@ -5,6 +5,49 @@ using System.Linq;
 
 namespace HdbscanSharp.Runner
 {
+    public interface IHdbscanRunner
+    {
+        public HdbscanResult<A> Run<A, B>(
+            List<A> dataset,
+            Func<A, B> getVector,
+            int minPoints,
+            int minClusterSize,
+            Func<B[], Func<int, int, double>> getDistanceFunc,
+            List<HdbscanConstraint> constraints = null
+        );
+
+        public HdbscanResult Run(
+            int datasetCount,
+            int minPoints,
+            int minClusterSize,
+            Func<int, int, double> distanceFunc,
+            List<HdbscanConstraint> constraints = null);
+    }
+
+    public class HdbscanRunnerInstance : IHdbscanRunner
+    {
+        public HdbscanResult<A> Run<A, B>(
+            List<A> dataset,
+            Func<A, B> getVector,
+            int minPoints,
+            int minClusterSize,
+            Func<B[], Func<int, int, double>> getDistanceFunc,
+            List<HdbscanConstraint> constraints = null)
+        {
+            return HdbscanRunner.Run(dataset, getVector, minPoints, minClusterSize, getDistanceFunc, constraints);
+        }
+
+        public HdbscanResult Run(
+            int datasetCount,
+            int minPoints,
+            int minClusterSize,
+            Func<int, int, double> distanceFunc,
+            List<HdbscanConstraint> constraints = null)
+        {
+            return HdbscanRunner.Run(datasetCount, minPoints, minClusterSize, distanceFunc, constraints);
+        }
+    }
+
     public class HdbscanRunner
     {
         public static HdbscanResult<A> Run<A, B>(
