@@ -98,6 +98,11 @@ var result = HdbscanRunner.Run(
 
 **For more complete example, please see the project IrisDatasetExample.**
 
+# Unit testing
+
+As of version 3.0.1, you can use the interface IHdbscanRunner. So, you would use an instance of HdbscanRunnerInstance in your code.
+But for the unit tests, you can mock IHdbscanRunner using a mocking library such as NSubstitute or Moq.
+
 # Improving performance
 
 You have many options.
